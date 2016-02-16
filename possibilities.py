@@ -16,8 +16,8 @@ for i in num:
 print newlist
 print len(newlist)
 poppedlist=[]
-for item in newlist:
-	if ("2" in item and "c" in item):
+while item!=
+	if ("b" in item and "#" in item) or ("2" in item and "c" in item):
 		print "inside if"
 		poppedlist.append(newlist.pop(newlist.index(item)))
 
