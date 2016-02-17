@@ -1,0 +1,4 @@
+Number_of_sets=raw_input("Enter number of subsets in the question : ")
+for i in range(Number_of_sets):
+	print ("Enter the type of subset you wish to use from the following list")
+	input_type = raw_input("Type - 1 : vowels_ascending + consonants_ascending\nType - 2 : vowels_ascending + consonants_descending\nType - 3 : vowels_descending + consonants_ascending\nType - 4 : vowels_descending + consonants_descending\nType - 5 : consonants_ascending + vowels_ascending\nType - 6 : consonants_ascending + vowels_descending\nType - 7 : consonants_descending + vowels_ascending\nType - 8 : consonants_descending + vowels_descending\n")
