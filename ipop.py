@@ -276,7 +276,7 @@ def execute():# type 1 - vowels_descending + consonants_ascending
 	return finalList		
 
 finalList=execute()
-
+ 
 done=1
 while done!='0':
 	raw_input("Press enter to continue....")
