@@ -170,11 +170,26 @@ def bubbleSort(alist):
                 alist[i] = alist[i+1]
                 alist[i+1] = temp
 
-
+def shuffle(x):
+    x = list(x)
+    random.shuffle(x)
+    return x
+				
+def arrange(blist,item,num):
+		found = False
+		i=0
+		while not found:
+			if item==blist[i] or str(item)==str(blist[i]):
+				blist.insert(num,blist.pop(i))
+				found = True
+			i+=1
+		return blist
+				
 def arrangementInd(clist):
 	type_of_arrangement=raw_input("Type - 1 : Ascending order\nType - 2 : Descending order\nType - 3 : No particular order\n")
 	if type_of_arrangement=='2':
 		clist.reverse()            
+	return type_of_arrangement
 
 def arrangementWhole(clist):
 	type_of_arrangement=raw_input("Type - 1 : Straight\nType - 2 : Alternatively\nType - 3 : No particular order\n")
@@ -189,11 +204,15 @@ def arrangementWhole(clist):
 		    for j in range(0,len(clist)):
 		        if len(clist[j]) > i:
 		            vals.append(clist[j][i])
-	return vals  
+		return vals  
+	else:
+		return clist
+
 
 finalList=[]
 Number_of_sets=input("Enter number of subsets in the question : ")
 Type_of_subset=[]
+Type_of_arrangement=[]
 for i in range(Number_of_sets):
 	print ("Enter the type of subset you wish to use from the following list")
 	Type_of_subset1=raw_input("Type - 1 : Words arranged alphabetically\nType - 2 : Words arranged alphabetically based on last letter\nType - 3 : Words arranged starting with vowels\nType - 4 : Words arranged starting with consonants\nType - 5 : Words arranged with number of vowels in them\nType - 6 : Words arranged with number of consonants in them\nType - 7 : Words arranged in no particular order\nType - 8 : Numbers arranged in no particular order\nType - 9 : Numbers arranged according to their value\nType - 10 : Prime numbers\nType - 11 : Composite numbers\nType - 12 : Numbers based on some function\n")
@@ -294,8 +313,46 @@ for i in range(Number_of_sets):
 
 	else:
 		print "Invalid input"
-	arrangementInd(alist)
+	Type_of_arrangement.append(arrangementInd(alist))
 	finalList.append(alist)
-finalList=arrangementWhole(finalList)
+	outputList=tuple(finalList)
+	
 
-print finalList
+
+finalList=arrangementWhole(finalList)
+for i in range(len(finalList)):
+	finalList[i]=str(finalList[i])
+	
+
+	
+#inputList=raw_input("Enter 0th step\n").split()
+inputList=shuffle(finalList)
+
+outputList=list(outputList)
+
+print "Final list is ",finalList
+print "Input List is ",inputList
+
+def execute1():
+	i=0
+	j=0
+	k=0
+	sorted1=False
+	while not sorted1:
+		
+		while (i<len(outputList))and not sorted1:
+			
+			if j<len(outputList[i]):
+				arrange(inputList,outputList[i][j],k)
+				#print k
+				if (inputList==finalList):
+					sorted1=True
+				i+=1
+				k+=1
+				print inputList
+			else:
+				i+=1
+				
+		i=0	
+		j+=1
+		
