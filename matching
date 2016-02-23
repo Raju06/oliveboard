@@ -1,0 +1,4 @@
+list1=['A','B','C','D','E','F','G','H']
+list2=['history','chemistry','english','biology','hindi','physics','geography','math']
+print list1
+print list2
