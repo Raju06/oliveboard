@@ -178,11 +178,14 @@ def shuffle(x):
 def arrange(blist,item,num):
 		found = False
 		i=0
+		
 		while not found:
 			if item==blist[i] or str(item)==str(blist[i]):
 				blist.insert(num,blist.pop(i))
 				found = True
 			i+=1
+		#print arrlist
+		#print blist
 		return blist
 				
 def arrangementInd(clist):
@@ -277,7 +280,7 @@ for i in range(Number_of_sets):
 			alist=map(int,input_value)       
 		else:
 			prime_numbers=[]
-			for num in range(2,1001):#code to generate prime no's
+			for num in range(2,301):#code to generate prime no's
 			    if all(num%i!=0 for i in range(2,int(math.sqrt(num))+1)):
 			       prime_numbers.append(num)
 			
@@ -289,19 +292,20 @@ for i in range(Number_of_sets):
 			alist=map(int,input_value)       
 		else:
 			prime_numbers=[]
-			for num in range(2,1001):#code to generate prime no's
+			for num in range(2,301):#code to generate prime no's
 			    if all(num%i!=0 for i in range(2,int(math.sqrt(num))+1)):
 			       prime_numbers.append(num)
-			numbers_list=[i for i in range(2,1001)]
+			numbers_list=[i for i in range(2,301)]
 			composite_numbers=list(set(numbers_list)-set(prime_numbers))
 			alist = [ composite_numbers[i] for i in (random.sample(xrange(len(composite_numbers)), int(input_value[1])))]
 			quickSort(alist)
 	elif Type_of_subset1=='12':#for type 12
 		nsp=NumericStringParser()
 		expression=raw_input("Enter the expression without any spaces\n")
-		count=input("Enter count of numbers : ")
+		count=int(input("Enter count of numbers : "))
+		countlist=random.sample(range(1, 10), count)
 		alist=[]
-		for i in range(count):
+		for i in (countlist):
 			bexpression=[]
 			expression=list(expression)
 			for j in range(len(expression)):
@@ -326,13 +330,17 @@ for i in range(len(finalList)):
 
 	
 #inputList=raw_input("Enter 0th step\n").split()
-inputList=shuffle(finalList)
+inputlist1=raw_input("Enter input list(Enter 0 if you want to generate a random input list)\n")
+if inputlist1=='0':
+	inputList=shuffle(finalList)
+else:
+	inputList=inputlist1.split()
 
 outputList=list(outputList)
 
 print "Final list is ",finalList
 print "Input List is ",inputList
-sortedList=[]
+sortedListnew=[]
 
 def execute1():
 	i=0
@@ -344,14 +352,16 @@ def execute1():
 		while (i<len(outputList))and not sorted1:
 			
 			if j<len(outputList[i]):
-				arrange(inputList,outputList[i][j],k)
-				#print k
+				
+				#print inputList
 				if (inputList==finalList):
 					sorted1=True
+				else:
+					arrange(inputList,outputList[i][j],k)	#print "Hola"
+					sortedListnew.append(" ".join(inputList))
+
 				i+=1
 				k+=1
-				sortedList.append(" ".join(inputList))
-				print " ".join(inputList)
 			else:
 				i+=1
 				
@@ -374,7 +384,7 @@ def execute2():
 				i+=1
 				if (inputList==finalList):
 					sorted1=True
-				sortedList.append(" ".join(inputList))
+				sortedListnew.append(" ".join(inputList))
 				print " ".join(inputList)
 			else:
 				i+=1
@@ -386,7 +396,13 @@ if Number_of_sets!=2:
 else:
 	execute2()
 
-#print sortedList
+
+sortedList=[]
+for i in sortedListnew:
+       if i not in sortedList:
+          sortedList.append(i)
+for i in sortedList:
+	print i
 
 done=1
 while done!='0':
