@@ -212,19 +212,6 @@ def arrangementWhole(clist,type_of_arrangement):
 		clist=[inner for outer in clist for inner in outer]
 		return clist
 
-def printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist):
-	sentences=['A Machine arranges the given input in the following way.','Input - ',' is the last step of the given input.','Answer the following questions for the below input:','Input - ','Answer key:']
-	firstlist=[]
-	for i in range(len(sortedList1)):
-		firstlist.append(str('Step-')+str(i+1)+str(' : ')+str(sortedList1[i]))
-	questionslist=[]
-	for i in range(5):
-		questionslist.append(str(i+1)+str('. ')+str(questionlist[i]+'\n'+str('(a)'+optionlist[i][0]+'\n'+'(b)'+optionlist[i][1]+'\n'+'(c)'+optionlist[i][2]+'\n'+'(d)'+optionlist[i][3]+'\n'+'(e)'+optionlist[i][4])))
-	text=str('Set 1\n\n')+str(sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist))
-	file = open("sampleQuestions.txt", "w")
-	file.write(text)
-	file.close()
-
 def createlist():
 	finalList=[]
 	Number_of_sets=input("Enter number of subsets in the question : ")
@@ -522,8 +509,6 @@ print "sortedList1 is : ",sortedList1
 print "inputList2 is : ",inputList2
 numberlist=['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen','Twenty']
 done=1
-questionlist=[]
-optionlist=[]
 while done!='0':
 	raw_input("Press enter to continue....")
 	print ("Enter type of the question from following list ")
@@ -533,22 +518,15 @@ while done!='0':
 		print "Number of steps required to sort is : ",len(sortedList)
 		options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(sortedList)+1)), 5))]
 		if numberlist[len(sortedList)] not in options:
-			options[random.randrange(0,len(options))]=numberlist[len(sortedList)]
-			#print "Hola"
+			options.insert(random.randrange(0,len(options)),numberlist[len(sortedList)-1])
 		#print options
-		optionlist.append(options)
-		questionlist.append('How many steps are required to sort it?')
 	elif question_type=='2':
 		step=int(raw_input("Enter the step no. : "))
 		print "Step {} is : \n".format(step),sortedList[step-1]
 		options = [ sortedList[i] for i in (random.sample(xrange(len(sortedList)), min(5,len(sortedList))))]
 		if sortedList[step-1] not in options:
-			options[random.randrange(0,len(options))]=sortedList[step-1]
-			#print "Hola"
+			options.insert(random.randrange(0,len(options)),sortedList[step-1])
 		#print options
-		question2='What is step {}?'.format(step)
-		questionlist.append(question2)
-		optionlist.append(options)
 	elif question_type=='3':
 		print sortedList
 		order1=raw_input("Enter the order without any quotes ")
@@ -556,13 +534,9 @@ while done!='0':
 
 	
 		options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(sortedList)+1)), 5))]
-		if numberlist[sortedList.index(order1)+1] not in options:
-			options[random.randrange(0,len(options))]=numberlist[sortedList.index(order1)+1]
-			#print "Hola"
+		if numberlist[len(sortedList)] not in options:
+			options.insert(random.randrange(0,len(options)),numberlist[len(sortedList)-1])
 		#print options
-		question3='In which step do we get following order? \n {}'.format(order1)
-		questionlist.append(question3)
-		optionlist.append(options)
 	elif question_type=='4':
 		X=int(raw_input("Enter step no."))
 		Y=int(raw_input("Enter the position no. of the element wrt left/right "))
@@ -574,19 +548,10 @@ while done!='0':
 		else:
 			print "Element in step - {} at postion - {} from {} is : {}".format(X,Y,gh,listelement[len(listelement)-Y])
 
-		options = [ listelement[i] for i in (random.sample(xrange(len(listelement)), min(5,len(listelement))))]
-		if gh=='left':	
-			if listelement[Y-1] not in options:
-				options[random.randrange(0,len(options))]=listelement[Y-1]
-				#print "Hola"
-		else:
-			if listelement[len(listelement)-Y] not in options:
-				options[random.randrange(0,len(options))]=listelement[len(listelement)-Y]
-				#print "Hola"
-		#print options
-		question4='In step {}, what is no-({}) element from {}?'.format(X,Y,gh)
-		questionlist.append(question4)
-		optionlist.append(options)
+		options = [ listelement[i] for i in (random.sample(xrange(len(listelement)+1), min(5,len(listelement))))]
+		if listelement[step-1] not in options:
+			options.insert(random.randrange(0,len(options)),listelement[step-1])
+
 	elif question_type=='5':
 		X=int(raw_input("Enter step no."))
 		gh=raw_input("What is the element?(Enter all in small caps")
@@ -596,14 +561,6 @@ while done!='0':
 				ph=i+1
 				break
 		print "Element is at position - {} in step - {}".format(ph,X)
-		options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(listelement))), 5))]
-		if numberlist[ph] not in options:
-			options[random.randrange(0,len(options))]=numberlist[ph]
-			#print "Hola"
-		#print options
-		question5='What is the position of the element {} in step - {}?'.format(gh,X)
-		questionlist.append(question5)
-		optionlist.append(options)
 	elif question_type=='6':
 		X=int(raw_input("Enter step no."))
 		gh=raw_input("What is the first element?(Enter all in small caps)")
@@ -611,19 +568,7 @@ while done!='0':
 		listelement=sortedList[X-1].split()
 		value=abs(listelement.index(gh)-listelement.index(fh))
 		print "There are {} words between {} and {} in step - {}".format(value,gh,fh,X)
-		options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(listelement))), 5))]
-		if numberlist[value] not in options:
-			wer=random.randrange(0,len(options))
-			options[wer]=numberlist[value]
-			#print "Hola"
-			#print wer
-		#print options
-		question6='In step {} what are the number of words between {} and {}?'.format(X,gh,fh)
-		questionlist.append(question6)
-		optionlist.append(options)
 	else:
 		if question_type!='0':
 			print "error in input"
-printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist)
-
 		
