@@ -1,0 +1,49 @@
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - risk 179 line 31 garage 59 149 101 chocolate character 83
+Step-1 : character risk 179 line 31 garage 59 149 101 chocolate 83
+Step-2 : character risk 179 line garage 59 149 101 chocolate 83 31
+Step-3 : character chocolate risk 179 line garage 59 149 101 83 31
+Step-4 : character chocolate risk 179 line garage 149 101 83 59 31
+Step-5 : character chocolate garage risk 179 line 149 101 83 59 31
+Step-6 : character chocolate garage line risk 179 149 101 83 59 31
+Step-6 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 211 157 frame 131 113 iron plant childhood 61 drama 53
+
+1. How many steps are required to sort it?
+(a)Six
+(b)Zero
+(c)Seven
+(d)Five
+(e)Eight
+
+2. How many steps are required to sort it?
+(a)Eight
+(b)Three
+(c)Six
+(d)Seven
+(e)Four
+
+3. How many steps are required to sort it?
+(a)Five
+(b)Six
+(c)Four
+(d)Eight
+(e)One
+
+4. How many steps are required to sort it?
+(a)Zero
+(b)Eight
+(c)Seven
+(d)Three
+(e)Five
+
+5. How many steps are required to sort it?
+(a)Two
+(b)Eight
+(c)Three
+(d)Zero
+(e)Seven
