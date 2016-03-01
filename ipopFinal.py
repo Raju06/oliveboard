@@ -212,34 +212,73 @@ def arrangementWhole(clist,type_of_arrangement):
 		clist=[inner for outer in clist for inner in outer]
 		return clist
 
-def createlist():
+def printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist):
+ 	sentences=['A Machine arranges the given input in the following way.','Input - ',' is the last step of the given input.','Answer the following questions for the below input:','Input - ','Answer key:']
+ 	firstlist=[]
+ 	for i in range(len(sortedList1)):
+ 		firstlist.append(str('Step-')+str(i+1)+str(' : ')+str(sortedList1[i]))
+ 	questionslist=[]
+ 	for i in range(5):
+ 		questionslist.append(str(i+1)+str('. ')+str(questionlist[i]+'\n'+str('(a)'+optionlist[i][0]+'\n'+'(b)'+optionlist[i][1]+'\n'+'(c)'+optionlist[i][2]+'\n'+'(d)'+optionlist[i][3]+'\n'+'(e)'+optionlist[i][4])))
+ 	text=str('Set 1\n\n')+str(sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist))
+ 	file = open("sampleQuestions.txt", "w")
+ 	file.write(text)
+ 	file.close()
+
+def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input):
 	finalList=[]
-	Number_of_sets=input("Enter number of subsets in the question : ")
-	Type_of_subset=[]
-	Type_of_arrangement=[]
-	for i in range(Number_of_sets):
-		print ("Enter the type of subset you wish to use from the following list")
-		Type_of_subset1=raw_input("Type - 1 : Words arranged alphabetically\nType - 2 : Words arranged alphabetically based on last letter\nType - 3 : Words arranged starting with vowels\nType - 4 : Words arranged starting with consonants\nType - 5 : Words arranged with number of vowels in them\nType - 6 : Words arranged with number of consonants in them\nType - 7 : Words arranged in no particular order\nType - 8 : Numbers arranged in no particular order\nType - 9 : Numbers arranged according to their value\nType - 10 : Prime numbers\nType - 11 : Composite numbers\nType - 12 : Numbers based on some function\n")
-		Type_of_subset.append(Type_of_subset1)
+	iterationValue=0
+	subsetValue=1
+		
+	for i in range(int(Number_of_sets)):
+		
+		if iteration==0:
+			print ("Enter the type of subset you wish to use from the following list")
+			Type_of_subset1=raw_input("Type - 1 : Words arranged alphabetically\nType - 2 : Words arranged alphabetically based on last letter\nType - 3 : Words arranged starting with vowels\nType - 4 : Words arranged starting with consonants\nType - 5 : Words arranged with number of vowels in them\nType - 6 : Words arranged with number of consonants in them\nType - 7 : Words arranged in no particular order\nType - 8 : Numbers arranged in no particular order\nType - 9 : Numbers arranged according to their value\nType - 10 : Prime numbers\nType - 11 : Composite numbers\nType - 12 : Numbers based on some function\n")
+			Type_of_subset.append(Type_of_subset1)
+		else:
+			Type_of_subset1=Type_of_subset[iterationValue]
+			iterationValue+=1	
+		
 		if Type_of_subset1=='1':	#for type 1
-			input_value=raw_input("Enter the list of words in any order separated by single space\n(Enter 0 X if you want to generate X random words)\n").split()
+			if iteration==0:
+				input_value=raw_input("Enter the list of words in any order separated by single space\n(Enter 0 X if you want to generate X random words)\n").split()
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			for line in fh:
 				samplewords=line.split()
 			if input_value[0]!='0':	       
 				alist=input_value
+				if iteration==0:	
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				alist = [ samplewords[i] for i in (random.sample(xrange(len(samplewords)), int(input_value[1])))]	
+				if iteration==0:	
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 			bubbleSort(alist)
 		elif Type_of_subset1=='2':	#for type 2 
-			input_value=raw_input("Enter the list of words in any order separated by single space\n(Enter 0 X if you want to generate X random words)\n").split()
+			if iteration==0:
+				input_value=raw_input("Enter the list of words in any order separated by single space\n(Enter 0 X if you want to generate X random words)\n").split()
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			for line in fh:
 				samplewords=line.split()
 			if input_value[0]!='0':	       
 				alist=input_value
+				if iteration==0:
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				alist = [ samplewords[i] for i in (random.sample(xrange(len(samplewords)), int(input_value[1])))]
+				if iteration==0:	
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 			blist=tuple(alist)
 			for item in range(len(alist)):
 				alist[item]=alist[item][::-1]
@@ -248,7 +287,11 @@ def createlist():
 				alist[item]=alist[item][::-1]
 
 		elif Type_of_subset1=='3':#for type 3
-			input_value=raw_input("Enter the list of words beginning with vowels in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words beginning with vowels)\n").split()
+			if iteration==0:
+				input_value=raw_input("Enter the list of words beginning with vowels in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words beginning with vowels)\n").split()
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			samplewordsvowel=[]
 			for line in fh:
@@ -260,11 +303,21 @@ def createlist():
 					samplewordsvowel.append(samplewords[i])
 			if input_value[0]!='0':	       
 				alist=input_value
+				if iteration==0:	
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				alist = [ samplewordsvowel[i] for i in (random.sample(xrange(len(samplewordsvowel)), int(input_value[1])))]
+				if iteration==0:
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 			bubbleSort(alist)
 		elif Type_of_subset1=='4':#for type 4
-			input_value=raw_input("Enter the list of words beginning with consonants in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words beginning with consonants)\n").split()
+			if iteration==0:	
+				input_value=raw_input("Enter the list of words beginning with consonants in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words beginning with consonants)\n").split()
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			samplewordsconsonants=[]
 			for line in fh:
@@ -275,11 +328,21 @@ def createlist():
 					samplewordsconsonants.append(samplewords[i])
 			if input_value[0]!='0':	       
 				alist=input_value
+				if iteration==0:
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				alist = [ samplewordsconsonants[i] for i in (random.sample(xrange(len(samplewordsconsonants)), int(input_value[1])))]
+				if iteration==0:
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 			bubbleSort(alist)
 		elif Type_of_subset1=='5':#for type 5
-			input_value=raw_input("Enter the list of words containing vowels in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words with vowels in it)\n").split()
+			if iteration==0:	
+				input_value=raw_input("Enter the list of words containing vowels in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words with vowels in it)\n").split()
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			samplewordsvowel=[]
 			for line in fh:
@@ -296,8 +359,14 @@ def createlist():
 					j+=1
 			if input_value[0]!='0':	       
 				alist=input_value
+				if iteration==0:	
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				alist = [ samplewordsvowel[i] for i in (random.sample(xrange(len(samplewordsvowel)), int(input_value[1])))]
+				if iteration==0:	
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 			alist_rank=[]
 			blist=[]
 			for item in alist:
@@ -311,7 +380,11 @@ def createlist():
 				alist_rank[alist_rank.index(min(alist_rank))]=float('inf')
 			alist=blist	
 		elif Type_of_subset1=='6':#for type 6
-			input_value=raw_input("Enter the list of words containing consonants in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words with consonants in it)\n").split()
+			if iteration==0:	
+				input_value=raw_input("Enter the list of words containing consonants in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words with consonants in it)\n").split()
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			samplewordsconsonant=[]
 			for line in fh:
@@ -328,8 +401,14 @@ def createlist():
 					j+=1
 			if input_value[0]!='0':	       
 				alist=input_value
+				if iteration==0:
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				alist = [ samplewordsconsonant[i] for i in (random.sample(xrange(len(samplewordsconsonant)), int(input_value[1])))]
+				if iteration==0:
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 			alist_rank=[]
 			blist=[]
 			for item in alist:
@@ -343,33 +422,70 @@ def createlist():
 				alist_rank[alist_rank.index(min(alist_rank))]=float('inf')
 			alist=blist
 		elif Type_of_subset1=='7':#for type 7
-			input_value=raw_input("Enter the list of words in any order separated by single space\n(Enter 0 X if you want to generate X random words)\n").split()
+			if iteration==0:	
+				input_value=raw_input("Enter the list of words in any order separated by single space\n(Enter 0 X if you want to generate X random words)\n").split()
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			for line in fh:
 				samplewords=line.split()
 			if input_value[0]!='0':	       
 				alist=input_value
+				if iteration==0:	
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				alist = [ samplewords[i] for i in (random.sample(xrange(len(samplewords)), int(input_value[1])))]
+				if iteration==0:	
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 		elif Type_of_subset1=='8':#for type 8
-			input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random numbers)\n").split()
+			if iteration==0:
+				input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random numbers)\n").split()
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			samplenumbers=[i for i in range(1,1000)]
 			if input_value[0]!='0':	       
 				alist=map(int,input_value)
+				if iteration==0:					
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				alist = [ samplenumbers[i] for i in (random.sample(xrange(len(samplenumbers)), int(input_value[1])))]
+				if iteration==0:
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 		elif Type_of_subset1=='9':#for type 9
-			input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random numbers)\n").split()
+			if iteration==0:
+				input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random numbers)\n").split()
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			samplenumbers=[i for i in range(1,1000)]
 			if input_value[0]!='0':	       
 				alist=map(int,input_value)
+				if iteration==0:	
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				alist = [ samplenumbers[i] for i in (random.sample(xrange(len(samplenumbers)), int(input_value[1])))]
+				if iteration==0:
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 			quickSort(alist)
 		elif Type_of_subset1=='10':#for type 10
-			input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random prime numbers)\n").split()       
+			if iteration==0:	
+				input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random prime numbers)\n").split()       
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			if input_value[0]!='0':        
-				alist=map(int,input_value)       
+				alist=map(int,input_value)
+				if iteration==0:	
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))       
 			else:
 				prime_numbers=[]
 				for num in range(2,301):#code to generate prime no's
@@ -377,11 +493,21 @@ def createlist():
 				       prime_numbers.append(num)
 				
 				alist = [ prime_numbers[i] for i in (random.sample(xrange(len(prime_numbers)), int(input_value[1])))] 
+				if iteration==0:	
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 				quickSort(alist)
 		elif Type_of_subset1=='11':#for type 11
-			input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random Composite numbers)\n").split()       
+			if iteration==0:	
+				input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random Composite numbers)\n").split()       
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
 			if input_value[0]!='0':        
 				alist=map(int,input_value)       
+				if iteration==0:	
+					Subset_input.append('0')
+					Subset_input.append(str(len(alist)))
 			else:
 				prime_numbers=[]
 				for num in range(2,301):#code to generate prime no's
@@ -390,11 +516,21 @@ def createlist():
 				numbers_list=[i for i in range(2,301)]
 				composite_numbers=list(set(numbers_list)-set(prime_numbers))
 				alist = [ composite_numbers[i] for i in (random.sample(xrange(len(composite_numbers)), int(input_value[1])))]
+				if iteration==0:	
+					Subset_input.append(input_value[0])
+					Subset_input.append(input_value[1])
 				quickSort(alist)
 		elif Type_of_subset1=='12':#for type 12
 			nsp=NumericStringParser()
-			expression=raw_input("Enter the expression without any spaces\n")
-			count=int(input("Enter count of numbers : "))
+			if iteration==0:	
+				expression=raw_input("Enter the expression without any spaces\n")
+				count=int(input("Enter count of numbers : "))
+			else:
+				input_value='0'+str(Subset_input[subsetValue])
+				subsetValue+=2
+			if iteration==0:	
+				Subset_input.append(str(expression))
+				Subset_input.append(str(count))
 			countlist=random.sample(range(1, 10), count)
 			alist=[]
 			for i in (countlist):
@@ -410,11 +546,18 @@ def createlist():
 
 		else:
 			print "Invalid input"
-		Type_of_arrangement.append(arrangementInd(alist))
+		if iteration==0:	
+			Type_of_arrangement.append(arrangementInd(alist))
+
 		finalList.append(alist)
 		outputList=tuple(finalList)
-
-	type_of_arrangement=raw_input("Type - 1 : Straight\nType - 2 : Alternatively\nType - 3 : No particular order\n")	
+	if iteration==0:	
+		type_of_arrangement=raw_input("Type - 1 : Straight\nType - 2 : Alternatively\nType - 3 : No particular order\n")	
+	else:
+		type_of_arrangement=Type_of_arrangement_input[0]
+		Type_of_arrangement_input.pop(0)
+	if iteration==0:	
+		Type_of_arrangement_input.append(type_of_arrangement)
 	finalList=arrangementWhole(finalList,type_of_arrangement)
 	for i in range(len(finalList)):
 		finalList[i]=str(finalList[i])
@@ -422,15 +565,18 @@ def createlist():
 
 		
 	#inputList=raw_input("Enter 0th step\n").split()
-	inputlist1=raw_input("Enter input list(Enter 0 if you want to generate a random input list)\n")
+	if iteration==0:	
+		inputlist1=raw_input("Enter input list(Enter 0 if you want to generate a random input list)\n")
+	else:
+		inputlist1='0'
 	if inputlist1=='0':
 		inputList=shuffle(finalList)
 	else:
 		inputList=inputlist1.split()
 
 	outputList=list(outputList)
-	print "Final list is ",finalList
-	print "Input List is ",inputList
+	#print "Final list is ",finalList
+	#print "Input List is ",inputList
 	tupleinputlist=tuple(inputList)
 	inputList=list(inputList)
 	sortedListnew=[]
@@ -497,18 +643,27 @@ def createlist():
 	for i in sortedListnew:
 	       if i not in sortedList:
 	          sortedList.append(i)
-	for i in sortedList:
-		print i
-	return sortedList,list(tupleinputlist)
+	#for i in sortedList:
+	#	print i
+	return Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sortedList,list(tupleinputlist)
+iteration=0
+Number_of_sets=input("Enter number of subsets in the question : ")
+Type_of_subset=[]
+Type_of_arrangement=[]
+Type_of_arrangement_input=[]
+Subset_input=[]
+Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sortedList1,inputList1=createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input)
+#print Subset_input
+iteration=1
+Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sortedList,inputList2=createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input)
 
-sortedList1,inputList1=createlist()
-sortedList,inputList2=createlist()
-
-print "inputList1 is : ",inputList1
-print "sortedList1 is : ",sortedList1
-print "inputList2 is : ",inputList2
+#print "inputList1 is : ",inputList1
+#print "sortedList1 is : ",sortedList1
+#print "inputList2 is : ",inputList2
 numberlist=['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen','Twenty']
 done=1
+questionlist=[]
+optionlist=[]
 while done!='0':
 	raw_input("Press enter to continue....")
 	print ("Enter type of the question from following list ")
@@ -518,15 +673,22 @@ while done!='0':
 		print "Number of steps required to sort is : ",len(sortedList)
 		options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(sortedList)+1)), 5))]
 		if numberlist[len(sortedList)] not in options:
-			options.insert(random.randrange(0,len(options)),numberlist[len(sortedList)-1])
+			options[random.randrange(0,len(options))]=numberlist[len(sortedList)]
+			#print "Hola"
 		#print options
+		optionlist.append(options)
+		questionlist.append('How many steps are required to sort it?')
 	elif question_type=='2':
 		step=int(raw_input("Enter the step no. : "))
 		print "Step {} is : \n".format(step),sortedList[step-1]
 		options = [ sortedList[i] for i in (random.sample(xrange(len(sortedList)), min(5,len(sortedList))))]
 		if sortedList[step-1] not in options:
-			options.insert(random.randrange(0,len(options)),sortedList[step-1])
+			options[random.randrange(0,len(options))]=sortedList[step-1]
+			#print "Hola"
 		#print options
+		question2='What is step {}?'.format(step)
+		questionlist.append(question2)
+		optionlist.append(options)
 	elif question_type=='3':
 		print sortedList
 		order1=raw_input("Enter the order without any quotes ")
@@ -534,9 +696,13 @@ while done!='0':
 
 	
 		options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(sortedList)+1)), 5))]
-		if numberlist[len(sortedList)] not in options:
-			options.insert(random.randrange(0,len(options)),numberlist[len(sortedList)-1])
+		if numberlist[sortedList.index(order1)+1] not in options:
+			options[random.randrange(0,len(options))]=numberlist[sortedList.index(order1)+1]
+			#print "Hola"
 		#print options
+		question3='In which step do we get following order? \n {}'.format(order1)
+		questionlist.append(question3)
+		optionlist.append(options)
 	elif question_type=='4':
 		X=int(raw_input("Enter step no."))
 		Y=int(raw_input("Enter the position no. of the element wrt left/right "))
@@ -548,10 +714,19 @@ while done!='0':
 		else:
 			print "Element in step - {} at postion - {} from {} is : {}".format(X,Y,gh,listelement[len(listelement)-Y])
 
-		options = [ listelement[i] for i in (random.sample(xrange(len(listelement)+1), min(5,len(listelement))))]
-		if listelement[step-1] not in options:
-			options.insert(random.randrange(0,len(options)),listelement[step-1])
-
+		options = [ listelement[i] for i in (random.sample(xrange(len(listelement)), min(5,len(listelement))))]
+		if gh=='left':	
+			if listelement[Y-1] not in options:
+				options[random.randrange(0,len(options))]=listelement[Y-1]
+				#print "Hola"
+		else:
+			if listelement[len(listelement)-Y] not in options:
+				options[random.randrange(0,len(options))]=listelement[len(listelement)-Y]
+				#print "Hola"
+		#print options
+		question4='In step {}, what is no-({}) element from {}?'.format(X,Y,gh)
+		questionlist.append(question4)
+		optionlist.append(options)
 	elif question_type=='5':
 		X=int(raw_input("Enter step no."))
 		gh=raw_input("What is the element?(Enter all in small caps")
@@ -561,6 +736,14 @@ while done!='0':
 				ph=i+1
 				break
 		print "Element is at position - {} in step - {}".format(ph,X)
+		options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(listelement))), 5))]
+		if numberlist[ph] not in options:
+			options[random.randrange(0,len(options))]=numberlist[ph]
+			#print "Hola"
+		#print options
+		question5='What is the position of the element {} in step - {}?'.format(gh,X)
+		questionlist.append(question5)
+		optionlist.append(options)
 	elif question_type=='6':
 		X=int(raw_input("Enter step no."))
 		gh=raw_input("What is the first element?(Enter all in small caps)")
@@ -568,7 +751,17 @@ while done!='0':
 		listelement=sortedList[X-1].split()
 		value=abs(listelement.index(gh)-listelement.index(fh))
 		print "There are {} words between {} and {} in step - {}".format(value,gh,fh,X)
+		options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(listelement))), 5))]
+		if numberlist[value] not in options:
+			wer=random.randrange(0,len(options))
+			options[wer]=numberlist[value]
+			#print "Hola"
+			#print wer
+		#print options
+		question6='In step {} what are the number of words between {} and {}?'.format(X,gh,fh)
+		questionlist.append(question6)
+		optionlist.append(options)
 	else:
 		if question_type!='0':
 			print "error in input"
-		
+printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist)
