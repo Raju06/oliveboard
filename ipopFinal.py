@@ -239,12 +239,13 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 		else:
 			Type_of_subset1=Type_of_subset[iterationValue]
 			iterationValue+=1	
-		
+			input_value=[]
 		if Type_of_subset1=='1':	#for type 1
 			if iteration==0:
 				input_value=raw_input("Enter the list of words in any order separated by single space\n(Enter 0 X if you want to generate X random words)\n").split()
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			for line in fh:
@@ -264,7 +265,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:
 				input_value=raw_input("Enter the list of words in any order separated by single space\n(Enter 0 X if you want to generate X random words)\n").split()
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			for line in fh:
@@ -290,7 +292,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:
 				input_value=raw_input("Enter the list of words beginning with vowels in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words beginning with vowels)\n").split()
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			samplewordsvowel=[]
@@ -316,7 +319,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:	
 				input_value=raw_input("Enter the list of words beginning with consonants in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words beginning with consonants)\n").split()
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			samplewordsconsonants=[]
@@ -341,7 +345,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:	
 				input_value=raw_input("Enter the list of words containing vowels in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words with vowels in it)\n").split()
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			samplewordsvowel=[]
@@ -383,7 +388,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:	
 				input_value=raw_input("Enter the list of words containing consonants in any order separated by single space(all letters must in small caps)\n(Enter 0 X if you want to generate X random words with consonants in it)\n").split()
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			samplewordsconsonant=[]
@@ -425,7 +431,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:	
 				input_value=raw_input("Enter the list of words in any order separated by single space\n(Enter 0 X if you want to generate X random words)\n").split()
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			fh=open("samplewords.txt", "r")
 			for line in fh:
@@ -444,7 +451,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:
 				input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random numbers)\n").split()
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			samplenumbers=[i for i in range(1,1000)]
 			if input_value[0]!='0':	       
@@ -461,7 +469,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:
 				input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random numbers)\n").split()
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			samplenumbers=[i for i in range(1,1000)]
 			if input_value[0]!='0':	       
@@ -479,7 +488,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:	
 				input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random prime numbers)\n").split()       
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			if input_value[0]!='0':        
 				alist=map(int,input_value)
@@ -501,7 +511,8 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 			if iteration==0:	
 				input_value=raw_input("Enter the list of numbers in any order separated by single space\n(Enter 0 X if you want to generate X random Composite numbers)\n").split()       
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
 			if input_value[0]!='0':        
 				alist=map(int,input_value)       
@@ -526,12 +537,16 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 				expression=raw_input("Enter the expression without any spaces\n")
 				count=int(input("Enter count of numbers : "))
 			else:
-				input_value='0'+str(Subset_input[subsetValue])
+				input_value.append('0')
+				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
+				
 			if iteration==0:	
 				Subset_input.append(str(expression))
 				Subset_input.append(str(count))
-			countlist=random.sample(range(1, 10), count)
+			else:
+				count=int(input_value[1])
+			countlist=random.sample(range(1, 20), count)
 			alist=[]
 			for i in (countlist):
 				bexpression=[]
@@ -654,6 +669,7 @@ Type_of_arrangement_input=[]
 Subset_input=[]
 Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sortedList1,inputList1=createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input)
 #print Subset_input
+#print Subset_input[1]
 iteration=1
 Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sortedList,inputList2=createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input)
 
