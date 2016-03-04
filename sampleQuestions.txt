@@ -1,29 +1,57 @@
 Set 1
 
 A Machine arranges the given input in the following way.
-Input - economy clothes subject discount election window assignment tennis agency shower
-Step-1 : agency economy clothes subject discount election window assignment tennis shower
-Step-2 : agency assignment economy clothes subject discount election window tennis shower
-Step-3 : agency assignment clothes economy subject discount election window tennis shower
-Step-4 : agency assignment clothes discount economy subject election window tennis shower
-Step-5 : agency assignment clothes discount economy election subject window tennis shower
-Step-6 : agency assignment clothes discount economy election shower subject window tennis
-Step-7 : agency assignment clothes discount economy election shower subject tennis window
+Input - 43 minimum wood 241 113 service week 17 chance 163
+Step-1 : chance 43 minimum wood 241 113 service week 17 163
+Step-2 : chance 43 minimum wood 241 113 service week 163 17
+Step-3 : chance minimum 43 wood 241 113 service week 163 17
+Step-4 : chance minimum wood 241 113 service week 163 43 17
+Step-5 : chance minimum service wood 241 113 week 163 43 17
+Step-6 : chance minimum service wood 241 week 163 113 43 17
+Step-7 : chance minimum service week wood 241 163 113 43 17
 Step-7 is the last step of the given input.
 
 Answer the following questions for the below input:
-Input - model extent girl answer night mood outcome budget argument iron
+Input - world 199 queen effort score 163 167 293 catch 281
 
 1. How many steps are required to sort it?
 (a)Six
-(b)Seven
-(c)One
-(d)Five
-(e)Three
+(b)Three
+(c)Five
+(d)Two
+(e)One
 
-2. What is step 6?
-(a)answer model extent girl night mood outcome budget argument iron
-(b)answer argument budget extent girl iron model night mood outcome
-(c)answer argument budget extent girl iron model mood night outcome
-(d)answer argument budget extent model girl night mood outcome iron
-(e)answer argument budget model extent girl night mood outcome iron
+2. What is step 3?
+(a)catch effort queen world score 163 167 199 281 293
+(b)catch world 199 queen effort score 163 167 281 293
+(c)catch world 199 queen effort score 163 167 293 281
+(d)catch effort queen score world 163 167 199 281 293
+(e)catch effort world 199 queen score 163 167 281 293Set 1
+
+A Machine arranges the given input in the following way.
+Input - solution 32768 1048576 frame 8 awareness 32 65536 host professor
+Step-1 : solution 32768 1048576 frame 8 awareness 32 65536 host professor
+Step-2 : solution 32768 1048576 frame 8 awareness 65536 host professor 32
+Step-3 : solution professor 32768 1048576 frame 8 awareness 65536 host 32
+Step-4 : solution professor 32768 frame 8 awareness 65536 host 1048576 32
+Step-5 : solution professor host 32768 frame 8 awareness 65536 1048576 32
+Step-6 : solution professor host frame 8 awareness 65536 32768 1048576 32
+Step-7 : solution professor host frame awareness 8 65536 32768 1048576 32
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 524288 media 32 64 noise peace attempt volume 512 256
+
+1. How many steps are required to sort it?
+(a)Five
+(b)Seven
+(c)Three
+(d)Two
+(e)One
+
+2. What is step 3?
+(a)attempt 524288 media 32 64 noise peace volume 512 256
+(b)attempt media noise peace volume 524288 512 32 64 256
+(c)attempt media 524288 32 64 noise peace volume 512 256
+(d)attempt media noise 524288 peace volume 512 32 64 256
+(e)attempt media 524288 32 noise peace volume 512 64 256
