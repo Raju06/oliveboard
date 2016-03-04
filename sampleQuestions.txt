@@ -1,51 +1,29 @@
 Set 1
 
 A Machine arranges the given input in the following way.
-Input - 137 83 227 179 5 13 2 167 173 7
-Step-1 : 2 137 83 227 179 5 13 167 173 7
-Step-2 : 2 5 137 83 227 179 13 167 173 7
-Step-3 : 2 5 7 137 83 227 179 13 167 173
-Step-4 : 2 5 7 13 137 83 227 179 167 173
-Step-5 : 2 5 7 13 83 137 227 179 167 173
-Step-6 : 2 5 7 13 83 137 167 227 179 173
-Step-7 : 2 5 7 13 83 137 167 173 227 179
-Step-8 : 2 5 7 13 83 137 167 173 179 227
-Step-8 is the last step of the given input.
+Input - economy clothes subject discount election window assignment tennis agency shower
+Step-1 : agency economy clothes subject discount election window assignment tennis shower
+Step-2 : agency assignment economy clothes subject discount election window tennis shower
+Step-3 : agency assignment clothes economy subject discount election window tennis shower
+Step-4 : agency assignment clothes discount economy subject election window tennis shower
+Step-5 : agency assignment clothes discount economy election subject window tennis shower
+Step-6 : agency assignment clothes discount economy election shower subject window tennis
+Step-7 : agency assignment clothes discount economy election shower subject tennis window
+Step-7 is the last step of the given input.
 
 Answer the following questions for the below input:
-Input - 113 223 83 37 97 173 73 193 79 3
+Input - model extent girl answer night mood outcome budget argument iron
 
 1. How many steps are required to sort it?
-(a)Seven
-(b)Zero
-(c)Four
-(d)Three
-(e)Eight
-
-2. How many steps are required to sort it?
-(a)Four
-(b)Two
-(c)Seven
-(d)Eight
-(e)Zero
-
-3. How many steps are required to sort it?
-(a)Seven
-(b)Four
+(a)Six
+(b)Seven
 (c)One
 (d)Five
-(e)Eight
-
-4. How many steps are required to sort it?
-(a)Seven
-(b)Five
-(c)Zero
-(d)Eight
-(e)Six
-
-5. How many steps are required to sort it?
-(a)One
-(b)Seven
-(c)Two
-(d)Eight
 (e)Three
+
+2. What is step 6?
+(a)answer model extent girl night mood outcome budget argument iron
+(b)answer argument budget extent girl iron model night mood outcome
+(c)answer argument budget extent girl iron model mood night outcome
+(d)answer argument budget extent model girl night mood outcome iron
+(e)answer argument budget model extent girl night mood outcome iron

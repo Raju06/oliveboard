@@ -212,16 +212,16 @@ def arrangementWhole(clist,type_of_arrangement):
 		clist=[inner for outer in clist for inner in outer]
 		return clist
 
-def printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist):
+def printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist,number_of_questions):
  	sentences=['A Machine arranges the given input in the following way.','Input - ',' is the last step of the given input.','Answer the following questions for the below input:','Input - ','Answer key:']
  	firstlist=[]
  	for i in range(len(sortedList1)):
  		firstlist.append(str('Step-')+str(i+1)+str(' : ')+str(sortedList1[i]))
  	questionslist=[]
- 	for i in range(5):
+ 	for i in range(number_of_questions-1):
  		questionslist.append(str(i+1)+str('. ')+str(questionlist[i]+'\n'+str('(a)'+optionlist[i][0]+'\n'+'(b)'+optionlist[i][1]+'\n'+'(c)'+optionlist[i][2]+'\n'+'(d)'+optionlist[i][3]+'\n'+'(e)'+optionlist[i][4])))
  	text=str('Set 1\n\n')+str(sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist))
- 	file = open("sampleQuestions.txt", "w")
+ 	file = open("C:\Users\Olive\Desktop\oliveboard\sampleQuestions.txt", "w")
  	file.write(text)
  	file.close()
 
@@ -247,7 +247,7 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 				input_value.append('0')
 				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
-			fh=open("samplewords.txt", "r")
+			fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
 			for line in fh:
 				samplewords=line.split()
 			if input_value[0]!='0':	       
@@ -268,7 +268,7 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 				input_value.append('0')
 				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
-			fh=open("samplewords.txt", "r")
+			fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
 			for line in fh:
 				samplewords=line.split()
 			if input_value[0]!='0':	       
@@ -295,7 +295,7 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 				input_value.append('0')
 				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
-			fh=open("samplewords.txt", "r")
+			fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
 			samplewordsvowel=[]
 			for line in fh:
 				samplewords=line.split()
@@ -322,7 +322,7 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 				input_value.append('0')
 				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
-			fh=open("samplewords.txt", "r")
+			fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
 			samplewordsconsonants=[]
 			for line in fh:
 				samplewords=line.split()
@@ -348,7 +348,7 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 				input_value.append('0')
 				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
-			fh=open("samplewords.txt", "r")
+			fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
 			samplewordsvowel=[]
 			for line in fh:
 				samplewords=line.split()
@@ -391,7 +391,7 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 				input_value.append('0')
 				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
-			fh=open("samplewords.txt", "r")
+			fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
 			samplewordsconsonant=[]
 			for line in fh:
 				samplewords=line.split()
@@ -434,7 +434,7 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 				input_value.append('0')
 				input_value.append(str(Subset_input[subsetValue]))
 				subsetValue+=2
-			fh=open("samplewords.txt", "r")
+			fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
 			for line in fh:
 				samplewords=line.split()
 			if input_value[0]!='0':	       
@@ -545,7 +545,9 @@ def createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arra
 				Subset_input.append(str(expression))
 				Subset_input.append(str(count))
 			else:
+				expression=str(Subset_input[subsetValue-3])
 				count=int(input_value[1])
+				print expression
 			countlist=random.sample(range(1, 20), count)
 			alist=[]
 			for i in (countlist):
@@ -680,7 +682,9 @@ numberlist=['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine
 done=1
 questionlist=[]
 optionlist=[]
+number_of_questions=0
 while done!='0':
+	number_of_questions+=1
 	raw_input("Press enter to continue....")
 	print ("Enter type of the question from following list ")
 	question_type=raw_input("Type 1 : How many steps are required to sort it?\nType 2 : What is step X?\nType 3 : In which step do we get following order?\nType 4 : In step X, what is Yth element from left/right\nType 5 : what is position of element X in step Y\nType 6 : In step X what are the number of words between A and B?\nType 0 if you want to exit \n")
@@ -780,4 +784,4 @@ while done!='0':
 	else:
 		if question_type!='0':
 			print "error in input"
-printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist)
+printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist,number_of_questions)
