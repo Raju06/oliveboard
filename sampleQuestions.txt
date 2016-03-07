@@ -1,57 +1,2261 @@
 Set 1
 
 A Machine arranges the given input in the following way.
-Input - 43 minimum wood 241 113 service week 17 chance 163
-Step-1 : chance 43 minimum wood 241 113 service week 17 163
-Step-2 : chance 43 minimum wood 241 113 service week 163 17
-Step-3 : chance minimum 43 wood 241 113 service week 163 17
-Step-4 : chance minimum wood 241 113 service week 163 43 17
-Step-5 : chance minimum service wood 241 113 week 163 43 17
-Step-6 : chance minimum service wood 241 week 163 113 43 17
-Step-7 : chance minimum service week wood 241 163 113 43 17
-Step-7 is the last step of the given input.
+Input - 326 619 180 member complaint 286 228 810 mouth 58 company 138
+Step-1 : 810 326 619 180 member complaint 286 228 mouth 58 company 138
+Step-2 : 810 286 326 619 180 member complaint 228 mouth 58 company 138
+Step-3 : 810 286 mouth 326 619 180 member complaint 228 58 company 138
+Step-4 : 810 286 mouth 619 326 180 member complaint 228 58 company 138
+Step-5 : 810 286 mouth 619 228 326 180 member complaint 58 company 138
+Step-6 : 810 286 mouth 619 228 member 326 180 complaint 58 company 138
+Step-7 : 810 286 mouth 619 228 member 326 138 180 complaint 58 company
+Step-8 : 810 286 mouth 619 228 member 326 138 company 180 complaint 58
+Step-9 : 810 286 mouth 619 228 member 326 138 company 180 58 complaint
+Step-9 is the last step of the given input.
 
 Answer the following questions for the below input:
-Input - world 199 queen effort score 163 167 293 catch 281
+Input - 279 introduction 460 350 278 257 228 focus 493 world 280 bathroom
 
 1. How many steps are required to sort it?
 (a)Six
-(b)Three
-(c)Five
+(b)One
+(c)Zero
 (d)Two
-(e)One
+(e)Four
 
-2. What is step 3?
-(a)catch effort queen world score 163 167 199 281 293
-(b)catch world 199 queen effort score 163 167 281 293
-(c)catch world 199 queen effort score 163 167 293 281
-(d)catch effort queen score world 163 167 199 281 293
-(e)catch effort world 199 queen score 163 167 281 293Set 1
+2. In step 2 what are the number of words between 280 and 493?
+(a)Four
+(b)Five
+(c)One
+(d)Nine
+(e)Six
+
+3. What is step [5]?
+(a)493 280 279 introduction 460 350 278 257 228 focus world bathroom
+(b)493 280 introduction 279 460 350 278 257 228 focus world bathroom
+(c)493 280 introduction 460 279 350 278 257 228 focus world bathroom
+(d)493 280 introduction 460 279 bathroom 350 278 focus 257 228 world
+(e)493 280 introduction 460 279 bathroom 350 278 257 228 focus world
+
+4. In which step do we get following order? 
+ 493 279 introduction 460 350 278 257 228 focus world 280 bathroom
+(a)Zero
+(b)Six
+(c)One
+(d)Three
+(e)Four
+
+5. What is the position of the element 350 in step - [4]?
+(a)Eight
+(b)Six
+(c)One
+(d)Three
+(e)Two
+
+
+_______________Next Set__________________
+
+
+Set 1
 
 A Machine arranges the given input in the following way.
-Input - solution 32768 1048576 frame 8 awareness 32 65536 host professor
-Step-1 : solution 32768 1048576 frame 8 awareness 32 65536 host professor
-Step-2 : solution 32768 1048576 frame 8 awareness 65536 host professor 32
-Step-3 : solution professor 32768 1048576 frame 8 awareness 65536 host 32
-Step-4 : solution professor 32768 frame 8 awareness 65536 host 1048576 32
-Step-5 : solution professor host 32768 frame 8 awareness 65536 1048576 32
-Step-6 : solution professor host frame 8 awareness 65536 32768 1048576 32
-Step-7 : solution professor host frame awareness 8 65536 32768 1048576 32
+Input - 562 two assignment injury topic 958 contest 997 535 688 310 drawing
+Step-1 : 997 562 two assignment injury topic 958 contest 535 688 310 drawing
+Step-2 : 997 562 two assignment injury 958 contest 535 688 310 drawing topic
+Step-3 : 997 958 562 two assignment injury contest 535 688 310 drawing topic
+Step-4 : 997 958 688 562 two assignment injury contest 535 310 drawing topic
+Step-5 : 997 958 688 562 assignment injury contest 535 310 two drawing topic
+Step-6 : 997 958 688 562 injury contest 535 310 assignment two drawing topic
+Step-7 : 997 958 688 562 535 injury contest 310 assignment two drawing topic
+Step-8 : 997 958 688 562 535 injury 310 contest assignment two drawing topic
+Step-9 : 997 958 688 562 535 310 injury contest assignment two drawing topic
+Step-9 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - officer 799 chemistry study square sign 607 331 903 joint 862 75
+
+1. How many steps are required to sort it?
+(a)Seven
+(b)Eleven
+(c)Eight
+(d)Four
+(e)One
+
+2. What is the position of the element 75 in step - [1]?
+(a)Two
+(b)One
+(c)Twelve
+(d)Zero
+(e)Eight
+
+3. In step 8 what are the number of words between officer and 903?
+(a)Nine
+(b)Zero
+(c)Eleven
+(d)Seven
+(e)Two
+
+4. In step [7], what is no-(3) element from right?
+(a)331
+(b)sign
+(c)607
+(d)officer
+(e)903
+
+5. What is step [5]?
+(a)903 862 799 officer chemistry study 607 331 joint 75 sign square
+(b)903 862 799 chemistry study 607 331 joint 75 officer sign square
+(c)903 862 officer 799 chemistry study sign 607 331 joint 75 square
+(d)903 officer 799 chemistry study square sign 607 331 joint 862 75
+(e)903 862 799 607 chemistry study 331 75 joint officer sign square
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - assignment 5 effect 344 102 essay airline 438
+Step-1 : 438 assignment 5 effect 344 102 essay airline
+Step-2 : 438 344 assignment 5 effect 102 essay airline
+Step-3 : 438 344 5 effect 102 essay assignment airline
+Step-4 : 438 344 102 5 effect essay assignment airline
+Step-5 : 438 344 102 5 essay effect assignment airline
+Step-5 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - east 48 engineering ad 983 anxiety 263 331
+
+1. How many steps are required to sort it?
+(a)One
+(b)Six
+(c)Zero
+(d)Four
+(e)Two
+
+2. What is the position of the element ad in step - [3]?
+(a)Two
+(b)One
+(c)Eight
+(d)Five
+(e)Zero
+
+3. In which step do we get following order? 
+ 983 east 48 engineering anxiety 263 331 ad
+(a)One
+(b)Two
+(c)Six
+(d)Three
+(e)Four
+
+4. In step 0 what are the number of words between 48 and 331?
+(a)One
+(b)Zero
+(c)Five
+(d)Three
+(e)Two
+
+5. In step [2], what is no-(4) element from right?
+(a)983
+(b)331
+(c)anxiety
+(d)48
+(e)263
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 418 apartment 737 advice 218 extent instruction 542 482 air analysis 312
+Step-1 : 218 418 apartment 737 advice extent instruction 542 482 air analysis 312
+Step-2 : 218 418 apartment 737 advice extent 542 482 air analysis 312 instruction
+Step-3 : 218 312 418 apartment 737 advice extent 542 482 air analysis instruction
+Step-4 : 218 312 418 apartment 737 advice 542 482 air analysis extent instruction
+Step-5 : 218 312 418 737 advice 542 482 air analysis apartment extent instruction
+Step-6 : 218 312 418 482 737 advice 542 air analysis apartment extent instruction
+Step-7 : 218 312 418 482 542 737 advice air analysis apartment extent instruction
 Step-7 is the last step of the given input.
 
 Answer the following questions for the below input:
-Input - 524288 media 32 64 noise peace attempt volume 512 256
+Input - addition 349 associate 600 515 951 atmosphere 253 effect age 91 influence
+
+1. What is the position of the element 253 in step - [1]?
+(a)Two
+(b)Five
+(c)Nine
+(d)Seven
+(e)Eight
+
+2. What is step [4]?
+(a)91 253 349 515 addition associate 600 951 age atmosphere effect influence
+(b)91 253 349 515 600 951 addition age associate atmosphere effect influence
+(c)91 253 addition 349 associate 600 515 951 atmosphere age effect influence
+(d)91 253 349 515 600 addition 951 age associate atmosphere effect influence
+(e)91 253 349 addition associate 600 515 951 atmosphere age effect influence
+
+3. In step 5 what are the number of words between 951 and addition?
+(a)Zero
+(b)Four
+(c)Seven
+(d)Three
+(e)Eleven
+
+4. In which step do we get following order? 
+ 91 253 349 addition associate 600 515 951 atmosphere age effect influence
+(a)Seven
+(b)One
+(c)Two
+(d)Four
+(e)Zero
+
+5. In step [2], what is no-(4) element from right?
+(a)600
+(b)influence
+(c)515
+(d)associate
+(e)atmosphere
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 64 380 kid 939 blue 1024 path 4 94
+Step-1 : 94 64 380 kid 939 blue 1024 path 4
+Step-2 : 94 4 64 380 kid 939 blue 1024 path
+Step-3 : 94 4 kid 64 380 939 blue 1024 path
+Step-4 : 94 4 kid 380 64 939 blue 1024 path
+Step-5 : 94 4 kid 380 64 blue 939 1024 path
+Step-5 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 928 256 selection 16 desk 386 512 106 front
 
 1. How many steps are required to sort it?
-(a)Five
+(a)One
+(b)Two
+(c)Four
+(d)Three
+(e)Six
+
+2. In step 5 what are the number of words between 256 and 106?
+(a)Four
+(b)Six
+(c)Seven
+(d)Eight
+(e)Five
+
+3. In step [4], what is no-(2) element from right?
+(a)512
+(b)928
+(c)106
+(d)256
+(e)16
+
+4. What is step [0]?
+(a)106 16 928 256 selection desk 386 512 front
+(b)106 16 desk 386 256 928 selection 512 front
+(c)106 16 desk 386 928 256 selection 512 front
+(d)106 16 desk 386 256 selection 928 512 front
+(e)106 928 256 selection 16 desk 386 512 front
+
+5. In which step do we get following order? 
+ 106 16 928 256 selection desk 386 512 front
+(a)One
+(b)Two
+(c)Four
+(d)Six
+(e)Zero
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 286 164 engine 76 obligation 119 ideal oven effect 252 ambition 280
+Step-1 : 76 286 164 engine obligation 119 ideal oven effect 252 ambition 280
+Step-2 : 76 286 164 engine obligation 119 ideal effect 252 ambition 280 oven
+Step-3 : 76 119 286 164 engine obligation ideal effect 252 ambition 280 oven
+Step-4 : 76 119 286 164 engine ideal effect 252 ambition 280 obligation oven
+Step-5 : 76 119 164 286 engine ideal effect 252 ambition 280 obligation oven
+Step-6 : 76 119 164 286 engine effect 252 ambition 280 ideal obligation oven
+Step-7 : 76 119 164 252 286 engine effect ambition 280 ideal obligation oven
+Step-8 : 76 119 164 252 286 effect ambition 280 engine ideal obligation oven
+Step-9 : 76 119 164 252 280 286 effect ambition engine ideal obligation oven
+Step-10 : 76 119 164 252 280 286 ambition effect engine ideal obligation oven
+Step-10 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 140 286 276 70 ad apple 162 event iron effect end 295
+
+1. What is step [7]?
+(a)70 140 162 276 286 295 ad apple effect end event iron
+(b)70 140 162 276 286 ad apple 295 effect end event iron
+(c)70 140 162 286 276 ad apple effect 295 end event iron
+(d)70 140 162 276 286 ad 295 apple effect end event iron
+(e)70 140 162 286 276 ad apple effect end 295 event iron
+
+2. What is the position of the element iron in step - [2]?
+(a)Twelve
+(b)Ten
+(c)Nine
+(d)Two
+(e)Six
+
+3. In which step do we get following order? 
+ 70 140 162 276 286 ad apple effect 295 end event iron
+(a)Six
+(b)One
+(c)Five
+(d)Zero
+(e)Seven
+
+4. In step 5 what are the number of words between 276 and 162?
+(a)One
+(b)Two
+(c)Ten
+(d)Three
+(e)Six
+
+5. In step [0], what is no-(9) element from left?
+(a)70
+(b)effect
+(c)ad
+(d)end
+(e)apple
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - election impact interaction 85 egg 689 army 266 impression 463 867
+Step-1 : 867 election impact interaction 85 egg 689 army 266 impression 463
+Step-2 : 867 election impact 85 egg 689 army 266 impression 463 interaction
+Step-3 : 867 689 election impact 85 egg army 266 impression 463 interaction
+Step-4 : 867 689 election impact 85 egg army 266 463 impression interaction
+Step-5 : 867 689 463 election impact 85 egg army 266 impression interaction
+Step-6 : 867 689 463 election 85 egg army 266 impact impression interaction
+Step-7 : 867 689 463 266 election 85 egg army impact impression interaction
+Step-8 : 867 689 463 266 85 egg army election impact impression interaction
+Step-9 : 867 689 463 266 85 army egg election impact impression interaction
+Step-9 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - organization 644 exercise 33 implement aspect 527 ease extent 401 18
+
+1. How many steps are required to sort it?
+(a)Nine
+(b)Two
+(c)Five
+(d)Three
+(e)Eight
+
+2. In which step do we get following order? 
+ 644 organization exercise 33 implement 527 ease extent 401 18 aspect
+(a)Four
+(b)Eight
+(c)Zero
+(d)Nine
+(e)Two
+
+3. In step [6], what is no-(5) element from right?
+(a)exercise
+(b)aspect
+(c)18
+(d)extent
+(e)organization
+
+4. What is step [6]?
+(a)644 527 organization exercise 33 implement extent 401 18 ease aspect
+(b)644 527 401 organization 33 implement extent 18 exercise ease aspect
+(c)644 527 401 organization exercise 33 implement extent 18 ease aspect
+(d)644 527 401 33 organization implement 18 extent exercise ease aspect
+(e)644 organization exercise 33 implement aspect 527 ease extent 401 18
+
+5. In step 3 what are the number of words between organization and 644?
+(a)Nine
+(b)Two
+(c)Five
+(d)Seven
+(e)Eight
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - interview 20 inspector 6 seat 10 pack exchange 12 18
+Step-1 : 6 interview 20 inspector seat 10 pack exchange 12 18
+Step-2 : 6 interview 20 inspector seat 10 pack 12 18 exchange
+Step-3 : 6 10 interview 20 inspector seat pack 12 18 exchange
+Step-4 : 6 10 interview 20 seat pack 12 18 inspector exchange
+Step-5 : 6 10 12 interview 20 seat pack 18 inspector exchange
+Step-6 : 6 10 12 20 seat pack 18 interview inspector exchange
+Step-7 : 6 10 12 18 20 seat pack interview inspector exchange
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - bag attitude 4 8 weight 6 18 inflation 12 personality
+
+1. In step 6 what are the number of words between 18 and 6?
+(a)Three
+(b)Eight
+(c)Zero
+(d)Six
+(e)Five
+
+2. How many steps are required to sort it?
+(a)Seven
+(b)Two
+(c)Five
+(d)Eight
+(e)Zero
+
+3. What is the position of the element weight in step - [1]?
+(a)One
 (b)Seven
-(c)Three
+(c)Six
+(d)Five
+(e)Two
+
+4. What is step [1]?
+(a)4 6 8 12 bag attitude 18 inflation personality weight
+(b)4 6 8 bag attitude 18 12 inflation personality weight
+(c)4 bag attitude 8 weight 6 18 inflation 12 personality
+(d)4 6 8 12 18 attitude bag inflation personality weight
+(e)4 6 8 12 attitude 18 bag inflation personality weight
+
+5. In step [1], what is no-(6) element from right?
+(a)8
+(b)inflation
+(c)12
+(d)attitude
+(e)weight
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - extent amount 389 inflation 526 700 330 insurance
+Step-1 : 700 extent amount 389 inflation 526 330 insurance
+Step-2 : 700 extent 389 inflation 526 330 insurance amount
+Step-3 : 700 526 extent 389 inflation 330 insurance amount
+Step-4 : 700 526 389 inflation 330 insurance extent amount
+Step-5 : 700 526 389 330 insurance inflation extent amount
+Step-5 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - address establishment 201 239 814 apartment 735 article
+
+1. What is step [5]?
+(a)814 735 239 establishment 201 article apartment address
+(b)814 735 239 201 establishment article apartment address
+(c)814 address establishment 201 239 apartment 735 article
+(d)814 735 establishment 201 239 apartment article address
+(e)814 establishment 201 239 apartment 735 article address
+
+2. In step [2], what is no-(4) element from right?
+(a)article
+(b)735
+(c)239
+(d)apartment
+(e)814
+
+3. In step 2 what are the number of words between apartment and 814?
+(a)Seven
+(b)Three
+(c)Five
+(d)Four
+(e)One
+
+4. How many steps are required to sort it?
+(a)Three
+(b)Six
+(c)Five
+(d)One
+(e)Four
+
+5. In which step do we get following order? 
+ 814 establishment 201 239 apartment 735 article address
+(a)Five
+(b)Zero
+(c)One
+(d)Two
+(e)Three
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - tree 172 knowledge member pot steak 39 engineering pair distribution 214 32
+Step-1 : engineering tree 172 knowledge member pot steak 39 pair distribution 214 32
+Step-2 : engineering 32 tree 172 knowledge member pot steak 39 pair distribution 214
+Step-3 : engineering 32 tree steak 172 knowledge member pot 39 pair distribution 214
+Step-4 : engineering 32 tree steak 39 172 knowledge member pot pair distribution 214
+Step-5 : engineering 32 tree steak 39 member 172 knowledge pot pair distribution 214
+Step-6 : engineering 32 tree steak 39 member pair 172 knowledge pot distribution 214
+Step-7 : engineering 32 tree steak 39 member pair 172 knowledge pot 214 distribution
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 259 stranger 28 impression historian region hearing cake 135 sort 142 emphasis
+
+1. How many steps are required to sort it?
+(a)Eight
+(b)Seven
+(c)Two
+(d)Ten
+(e)Four
+
+2. In step [9], what is no-(5) element from right?
+(a)region
+(b)cake
+(c)impression
+(d)28
+(e)142
+
+3. What is the position of the element stranger in step - [0]?
+(a)Four
+(b)Twelve
+(c)Six
+(d)Two
+(e)Eleven
+
+4. In step 2 what are the number of words between sort and stranger?
+(a)Six
+(b)Eleven
+(c)One
+(d)Zero
+(e)Eight
+
+5. What is step [2]?
+(a)historian 28 cake 259 stranger impression region hearing 135 sort 142 emphasis
+(b)historian 28 cake region 135 hearing impression 142 sort emphasis 259 stranger
+(c)historian 28 259 stranger impression region hearing cake 135 sort 142 emphasis
+(d)historian 28 cake region 135 hearing impression 259 stranger sort 142 emphasis
+(e)historian 28 cake region 135 hearing impression 142 259 stranger sort emphasis
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - passenger soil 608 938 921 blow sister singer breakfast union 806 imagination
+Step-1 : blow passenger soil 608 938 921 sister singer breakfast union 806 imagination
+Step-2 : blow 938 passenger soil 608 921 sister singer breakfast union 806 imagination
+Step-3 : blow 938 singer passenger soil 608 921 sister breakfast union 806 imagination
+Step-4 : blow 938 singer sister passenger soil 608 921 breakfast union 806 imagination
+Step-5 : blow 938 singer sister 921 passenger soil 608 breakfast union 806 imagination
+Step-6 : blow 938 singer sister 921 passenger union soil 608 breakfast 806 imagination
+Step-7 : blow 938 singer sister 921 passenger union 806 soil 608 breakfast imagination
+Step-8 : blow 938 singer sister 921 passenger union 806 imagination soil 608 breakfast
+Step-9 : blow 938 singer sister 921 passenger union 806 imagination breakfast soil 608
+Step-10 : blow 938 singer sister 921 passenger union 806 imagination breakfast 608 soil
+Step-10 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 655 while master income layer piano 81 dealer fact 139 age 971
+
+1. In step 3 what are the number of words between dealer and piano?
+(a)Eleven
+(b)Five
+(c)Seven
+(d)Nine
+(e)One
+
+2. What is step [2]?
+(a)fact 81 income while 139 dealer age 655 master piano 971 layer
+(b)fact 81 income while 655 master layer piano dealer 139 age 971
+(c)fact 655 while master income layer piano 81 dealer 139 age 971
+(d)fact 81 655 while master income layer piano dealer 139 age 971
+(e)fact 81 income while 139 dealer age 655 master layer piano 971
+
+3. In step [7], what is no-(3) element from left?
+(a)139
+(b)layer
+(c)while
+(d)master
+(e)income
+
+4. What is the position of the element 971 in step - [3]?
+(a)One
+(b)Three
+(c)Two
+(d)Twelve
+(e)Eight
+
+5. In which step do we get following order? 
+ fact 81 income while 139 dealer age 655 master piano layer 971
+(a)Three
+(b)Two
+(c)Six
+(d)Eight
+(e)Five
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - animal improvement 257 80 eye 116 entertainment action 256
+Step-1 : 80 animal improvement 257 eye 116 entertainment action 256
+Step-2 : 80 animal improvement 257 eye 116 entertainment 256 action
+Step-3 : 80 116 animal improvement 257 eye entertainment 256 action
+Step-4 : 80 116 improvement 257 eye entertainment 256 animal action
+Step-5 : 80 116 256 improvement 257 eye entertainment animal action
+Step-6 : 80 116 256 257 improvement eye entertainment animal action
+Step-6 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 517 960 attempt 844 opening administration election ear 548
+
+1. What is the position of the element administration in step - [1]?
+(a)One
+(b)Six
+(c)Eight
+(d)Four
+(e)Five
+
+2. In which step do we get following order? 
+ 517 548 960 attempt 844 administration election ear opening
+(a)Zero
+(b)One
+(c)Four
+(d)Three
+(e)Six
+
+3. What is step [2]?
+(a)517 960 attempt 844 administration election ear 548 opening
+(b)517 960 attempt 844 opening administration election ear 548
+(c)517 548 960 attempt 844 administration ear election opening
+(d)517 548 844 960 attempt administration ear election opening
+(e)517 548 844 960 administration attempt ear election opening
+
+4. How many steps are required to sort it?
+(a)Zero
+(b)Five
+(c)Six
+(d)Four
+(e)Two
+
+5. In step [0], what is no-(5) element from left?
+(a)administration
+(b)ear
+(c)election
+(d)844
+(e)attempt
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - bread 24 3 15 light 48 cookie 99 departure 80 shoulder rock
+Step-1 : 99 bread 24 3 15 light 48 cookie departure 80 shoulder rock
+Step-2 : 99 24 3 15 light 48 cookie departure 80 shoulder rock bread
+Step-3 : 99 80 24 3 15 light 48 cookie departure shoulder rock bread
+Step-4 : 99 80 24 3 15 light 48 departure shoulder rock cookie bread
+Step-5 : 99 80 48 24 3 15 light departure shoulder rock cookie bread
+Step-6 : 99 80 48 24 3 15 light shoulder rock departure cookie bread
+Step-7 : 99 80 48 24 3 15 shoulder rock light departure cookie bread
+Step-8 : 99 80 48 24 15 3 shoulder rock light departure cookie bread
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - score 48 newspaper debt 35 pain register 63 mode 8 3 15
+
+1. In which step do we get following order? 
+ 63 48 score newspaper 35 pain register 8 3 15 mode debt
+(a)Zero
+(b)Six
+(c)Eight
+(d)Ten
+(e)Four
+
+2. What is step [0]?
+(a)63 48 35 15 8 3 score register pain newspaper mode debt
+(b)63 48 35 score pain register 8 3 15 newspaper mode debt
+(c)63 48 35 15 8 score 3 register pain newspaper mode debt
+(d)63 48 35 score newspaper pain register 8 3 15 mode debt
+(e)63 48 score newspaper 35 pain register mode 8 3 15 debt
+
+3. How many steps are required to sort it?
+(a)Eight
+(b)Seven
+(c)Eleven
+(d)Five
+(e)One
+
+4. In step 5 what are the number of words between 3 and register?
+(a)Four
+(b)Two
+(c)Ten
+(d)Five
+(e)Zero
+
+5. What is the position of the element score in step - [8]?
+(a)Zero
+(b)Eleven
+(c)Five
+(d)Two
+(e)Four
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 710 513 introduction 368 examination 126 1001 attention 615
+Step-1 : 126 710 513 introduction 368 examination 1001 attention 615
+Step-2 : 126 710 attention 513 introduction 368 examination 1001 615
+Step-3 : 126 710 attention 513 615 introduction 368 examination 1001
+Step-4 : 126 710 attention 513 615 examination introduction 368 1001
+Step-5 : 126 710 attention 513 615 examination 1001 introduction 368
+Step-6 : 126 710 attention 513 615 examination 1001 368 introduction
+Step-6 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - emphasis 9 730 781 28 15 697 assumption ad
+
+1. In step 3 what are the number of words between 697 and 9?
+(a)Seven
+(b)Five
+(c)Four
+(d)One
+(e)Zero
+
+2. In which step do we get following order? 
+ 9 15 ad 28 emphasis 730 781 697 assumption
+(a)Five
+(b)Four
+(c)One
+(d)Eight
+(e)Six
+
+3. How many steps are required to sort it?
+(a)Zero
+(b)Three
+(c)One
+(d)Eight
+(e)Five
+
+4. In step [1], what is no-(2) element from left?
+(a)ad
+(b)emphasis
+(c)assumption
+(d)15
+(e)781
+
+5. What is step [1]?
+(a)9 15 ad 28 emphasis 730 781 697 assumption
+(b)9 15 ad 28 697 emphasis 730 781 assumption
+(c)9 15 ad 28 697 assumption 730 emphasis 781
+(d)9 15 ad 28 697 assumption emphasis 730 781
+(e)9 emphasis 730 781 28 15 697 assumption ad
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - finance 47 281 241 79 mail skill pollution 3 13 site
+Step-1 : 281 finance 47 241 79 mail skill pollution 3 13 site
+Step-2 : 281 47 241 79 mail skill pollution 3 13 site finance
+Step-3 : 281 241 47 79 mail skill pollution 3 13 site finance
+Step-4 : 281 241 47 79 skill pollution 3 13 site mail finance
+Step-5 : 281 241 79 47 skill pollution 3 13 site mail finance
+Step-6 : 281 241 79 47 skill 3 13 site pollution mail finance
+Step-7 : 281 241 79 47 13 skill 3 site pollution mail finance
+Step-8 : 281 241 79 47 13 3 skill site pollution mail finance
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 211 native 167 73 89 107 path 79 layer design minimum
+
+1. What is the position of the element 211 in step - [7]?
+(a)One
+(b)Seven
+(c)Eight
+(d)Ten
+(e)Zero
+
+2. In step [2], what is no-(5) element from left?
+(a)107
+(b)minimum
+(c)211
+(d)89
+(e)path
+
+3. How many steps are required to sort it?
+(a)Seven
+(b)Five
+(c)Eight
+(d)Four
+(e)Zero
+
+4. In step 0 what are the number of words between 107 and 167?
+(a)Ten
+(b)Five
+(c)Nine
+(d)One
+(e)Seven
+
+5. In which step do we get following order? 
+ 211 167 native 73 89 107 path 79 layer minimum design
+(a)Three
+(b)Six
+(c)Two
+(d)Four
+(e)One
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - light 128 driver 512 goal girl connection 256 store 64
+Step-1 : 512 light 128 driver goal girl connection 256 store 64
+Step-2 : 512 light 128 driver goal girl connection 256 64 store
+Step-3 : 512 256 light 128 driver goal girl connection 64 store
+Step-4 : 512 256 128 driver goal girl connection 64 light store
+Step-5 : 512 256 128 driver girl connection 64 goal light store
+Step-6 : 512 256 128 64 driver girl connection goal light store
+Step-7 : 512 256 128 64 driver connection girl goal light store
+Step-8 : 512 256 128 64 connection driver girl goal light store
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - organization 64 8 32 funeral cousin ball administration coffee 1024
+
+1. In which step do we get following order? 
+ 1024 64 32 8 organization funeral cousin coffee ball administration
+(a)Four
+(b)Two
+(c)Six
+(d)One
+(e)Five
+
+2. In step [1], what is no-(4) element from left?
+(a)administration
+(b)funeral
+(c)organization
+(d)32
+(e)8
+
+3. In step 1 what are the number of words between funeral and organization?
+(a)Four
+(b)Eight
+(c)Six
+(d)Five
+(e)Nine
+
+4. What is the position of the element organization in step - [5]?
+(a)Eight
+(b)Five
+(c)Two
+(d)Four
+(e)Three
+
+5. How many steps are required to sort it?
+(a)Five
+(b)Six
+(c)Zero
+(d)One
+(e)Four
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 164 45 progress standard series 91 121 duty
+Step-1 : 164 45 progress standard series 91 121 duty
+Step-2 : 164 45 progress series 91 121 duty standard
+Step-3 : 164 121 45 progress series 91 duty standard
+Step-4 : 164 121 45 progress 91 duty series standard
+Step-5 : 164 121 91 45 progress duty series standard
+Step-6 : 164 121 91 45 duty progress series standard
+Step-6 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - rock relation 228 287 213 aspect throat 141
+
+1. In which step do we get following order? 
+ 287 relation 228 213 aspect throat 141 rock
+(a)Five
+(b)Three
+(c)Six
 (d)Two
 (e)One
 
-2. What is step 3?
-(a)attempt 524288 media 32 64 noise peace volume 512 256
-(b)attempt media noise peace volume 524288 512 32 64 256
-(c)attempt media 524288 32 64 noise peace volume 512 256
-(d)attempt media noise 524288 peace volume 512 32 64 256
-(e)attempt media 524288 32 noise peace volume 512 64 256
+2. What is step [1]?
+(a)287 228 213 aspect throat 141 relation rock
+(b)287 rock relation 228 213 aspect throat 141
+(c)287 relation 228 213 aspect throat 141 rock
+(d)287 228 213 141 aspect throat relation rock
+(e)287 228 213 aspect 141 throat relation rock
+
+3. How many steps are required to sort it?
+(a)Four
+(b)One
+(c)Three
+(d)Six
+(e)Two
+
+4. In step [3], what is no-(1) element from right?
+(a)throat
+(b)rock
+(c)213
+(d)141
+(e)287
+
+5. In step 5 what are the number of words between aspect and 213?
+(a)Six
+(b)Four
+(c)Zero
+(d)One
+(e)Two
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - milk 16 direction skill development 10 presence 14 apartment 18 12
+Step-1 : 10 milk 16 direction skill development presence 14 apartment 18 12
+Step-2 : 10 development milk 16 direction skill presence 14 apartment 18 12
+Step-3 : 10 development 12 milk 16 direction skill presence 14 apartment 18
+Step-4 : 10 development 12 apartment milk 16 direction skill presence 14 18
+Step-5 : 10 development 12 apartment 14 milk 16 direction skill presence 18
+Step-6 : 10 development 12 apartment 14 presence milk 16 direction skill 18
+Step-7 : 10 development 12 apartment 14 presence 16 milk direction skill 18
+Step-8 : 10 development 12 apartment 14 presence 16 direction milk skill 18
+Step-9 : 10 development 12 apartment 14 presence 16 direction 18 milk skill
+Step-10 : 10 development 12 apartment 14 presence 16 direction 18 skill milk
+Step-10 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 20 year party comparison improvement 16 10 14 8 chart cake
+
+1. In step 1 what are the number of words between 20 and 8?
+(a)Two
+(b)Eight
+(c)One
+(d)Three
+(e)Nine
+
+2. In step [4], what is no-(2) element from right?
+(a)20
+(b)year
+(c)14
+(d)10
+(e)improvement
+
+3. How many steps are required to sort it?
+(a)Eight
+(b)Three
+(c)Zero
+(d)One
+(e)Six
+
+4. What is the position of the element improvement in step - [1]?
+(a)Three
+(b)Six
+(c)Zero
+(d)One
+(e)Eight
+
+5. In which step do we get following order? 
+ 8 year 10 cake 14 chart 16 20 party comparison improvement
+(a)Six
+(b)Five
+(c)Two
+(d)One
+(e)Seven
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - intention coffee 504 935 584 173 food 37 199
+Step-1 : 37 intention coffee 504 935 584 173 food 199
+Step-2 : 37 935 intention coffee 504 584 173 food 199
+Step-3 : 37 935 coffee intention 504 584 173 food 199
+Step-4 : 37 935 coffee 173 intention 504 584 food 199
+Step-5 : 37 935 coffee 173 584 intention 504 food 199
+Step-6 : 37 935 coffee 173 584 food intention 504 199
+Step-7 : 37 935 coffee 173 584 food 199 intention 504
+Step-8 : 37 935 coffee 173 584 food 199 504 intention
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - egg 637 73 53 59 reason 191 281 economy
+
+1. In step [1], what is no-(3) element from right?
+(a)reason
+(b)economy
+(c)281
+(d)191
+(e)637
+
+2. What is step [3]?
+(a)53 59 economy 191 73 egg 281 637 reason
+(b)53 59 economy egg 637 73 reason 191 281
+(c)53 59 egg 637 73 reason 191 281 economy
+(d)53 59 economy 191 egg 637 73 reason 281
+(e)53 59 economy 191 73 egg 637 reason 281
+
+3. What is the position of the element economy in step - [0]?
+(a)One
+(b)Seven
+(c)Two
+(d)Three
+(e)Five
+
+4. In step 0 what are the number of words between 191 and economy?
+(a)One
+(b)Six
+(c)Five
+(d)Three
+(e)Zero
+
+5. In which step do we get following order? 
+ 53 59 economy 191 73 egg 281 637 reason
+(a)Six
+(b)Three
+(c)Four
+(d)Zero
+(e)Two
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 19 5 aside 21 leadership freedom 13 7 loss south 11 status
+Step-1 : 21 19 5 aside leadership freedom 13 7 loss south 11 status
+Step-2 : 21 19 5 aside leadership freedom 13 7 south 11 status loss
+Step-3 : 21 19 13 5 aside leadership freedom 7 south 11 status loss
+Step-4 : 21 19 13 5 aside leadership freedom 7 11 south status loss
+Step-5 : 21 19 13 11 5 aside leadership freedom 7 south status loss
+Step-6 : 21 19 13 11 5 aside leadership 7 freedom south status loss
+Step-7 : 21 19 13 11 7 5 aside leadership freedom south status loss
+Step-8 : 21 19 13 11 7 5 leadership aside freedom south status loss
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - job sample 21 19 society view 11 9 7 13 priority suggestion
+
+1. What is step [2]?
+(a)21 19 sample society 11 9 7 13 priority suggestion view job
+(b)21 19 13 society 11 9 7 priority suggestion sample view job
+(c)21 19 13 11 9 society 7 suggestion priority sample view job
+(d)21 sample 19 society view 11 9 7 13 priority suggestion job
+(e)21 job sample 19 society view 11 9 7 13 priority suggestion
+
+2. In step 4 what are the number of words between 9 and sample?
+(a)Zero
+(b)Eight
+(c)Three
+(d)Two
+(e)Seven
+
+3. What is the position of the element sample in step - [7]?
+(a)Ten
+(b)Eight
+(c)One
+(d)Two
+(e)Five
+
+4. In which step do we get following order? 
+ 21 19 13 11 9 society 7 suggestion priority sample view job
+(a)Three
+(b)Five
+(c)One
+(d)Six
+(e)Nine
+
+5. How many steps are required to sort it?
+(a)One
+(b)Eight
+(c)Seven
+(d)Ten
+(e)Six
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - rock 403 115 chocolate feedback 17 269 family text 88 692
+Step-1 : 692 rock 403 115 chocolate feedback 17 269 family text 88
+Step-2 : 692 rock 403 115 feedback 17 269 family text 88 chocolate
+Step-3 : 692 403 rock 115 feedback 17 269 family text 88 chocolate
+Step-4 : 692 403 rock 115 feedback 17 269 text 88 family chocolate
+Step-5 : 692 403 269 rock 115 feedback 17 text 88 family chocolate
+Step-6 : 692 403 269 rock 115 17 text 88 feedback family chocolate
+Step-7 : 692 403 269 115 rock 17 text 88 feedback family chocolate
+Step-8 : 692 403 269 115 17 text 88 rock feedback family chocolate
+Step-9 : 692 403 269 115 88 17 text rock feedback family chocolate
+Step-9 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - blow wood 798 437 180 log routine 60 914 937 signature
+
+1. What is the position of the element 798 in step - [1]?
+(a)Nine
+(b)Zero
+(c)Four
+(d)Two
+(e)Six
+
+2. In step [1], what is no-(1) element from left?
+(a)60
+(b)437
+(c)937
+(d)log
+(e)blow
+
+3. What is step [6]?
+(a)937 914 798 437 180 60 wood signature routine log blow
+(b)937 914 wood 798 437 180 routine 60 signature log blow
+(c)937 914 798 437 wood 180 60 signature routine log blow
+(d)937 914 798 wood 437 180 60 signature routine log blow
+(e)937 914 798 wood 437 180 routine 60 signature log blow
+
+4. In step 8 what are the number of words between 60 and 437?
+(a)Five
+(b)Three
+(c)Seven
+(d)Eight
+(e)Zero
+
+5. How many steps are required to sort it?
+(a)Nine
+(b)Zero
+(c)Six
+(d)Five
+(e)Two
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 259 score 230 manner 110 insect golf dish speaker
+Step-1 : dish 259 score 230 manner 110 insect golf speaker
+Step-2 : dish 110 259 score 230 manner insect golf speaker
+Step-3 : dish 110 insect 259 score 230 manner golf speaker
+Step-4 : dish 110 insect golf 259 score 230 manner speaker
+Step-5 : dish 110 insect golf 230 259 score manner speaker
+Step-6 : dish 110 insect golf 230 manner 259 score speaker
+Step-7 : dish 110 insect golf 230 manner score 259 speaker
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 281 time back 635 661 spot front trouble box
+
+1. In step 1 what are the number of words between front and 281?
+(a)Six
+(b)Seven
+(c)Zero
+(d)One
+(e)Five
+
+2. In which step do we get following order? 
+ back 281 box front 635 spot time 661 trouble
+(a)Four
+(b)One
+(c)Five
+(d)Six
+(e)Two
+
+3. What is the position of the element back in step - [3]?
+(a)Zero
+(b)Three
+(c)Five
+(d)Eight
+(e)One
+
+4. In step [2], what is no-(5) element from left?
+(a)635
+(b)box
+(c)front
+(d)time
+(e)281
+
+5. How many steps are required to sort it?
+(a)Five
+(b)One
+(c)Zero
+(d)Three
+(e)Seven
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - accident 781 implement 910 pressure association 311 advantage imagination diamond 384 love
+Step-1 : implement accident 781 910 pressure association 311 advantage imagination diamond 384 love
+Step-2 : implement 311 accident 781 910 pressure association advantage imagination diamond 384 love
+Step-3 : implement 311 imagination accident 781 910 pressure association advantage diamond 384 love
+Step-4 : implement 311 imagination association accident 781 910 pressure advantage diamond 384 love
+Step-5 : implement 311 imagination association 384 accident 781 910 pressure advantage diamond love
+Step-6 : implement 311 imagination association 384 diamond accident 781 910 pressure advantage love
+Step-7 : implement 311 imagination association 384 diamond advantage accident 781 910 pressure love
+Step-8 : implement 311 imagination association 384 diamond advantage 781 accident 910 pressure love
+Step-9 : implement 311 imagination association 384 diamond advantage 781 pressure accident 910 love
+Step-9 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 394 567 459 government magazine access influence 415 shirt ground inflation entry
+
+1. In step 7 what are the number of words between access and influence?
+(a)Six
+(b)Nine
+(c)Five
+(d)Eight
+(e)Eleven
+
+2. In step [4], what is no-(9) element from left?
+(a)415
+(b)access
+(c)influence
+(d)magazine
+(e)inflation
+
+3. What is step [3]?
+(a)influence 567 magazine inflation 459 government entry 415 ground 394 access shirt
+(b)influence 567 magazine inflation 459 government entry 415 394 access shirt ground
+(c)influence 567 magazine 394 459 government access 415 shirt ground inflation entry
+(d)influence 567 magazine inflation 459 government entry 415 ground access 394 shirt
+(e)influence 567 magazine inflation 459 394 government access 415 shirt ground entry
+
+4. What is the position of the element shirt in step - [6]?
+(a)Ten
+(b)Seven
+(c)Eight
+(d)Zero
+(e)One
+
+5. How many steps are required to sort it?
+(a)Three
+(b)Ten
+(c)One
+(d)Zero
+(e)Nine
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 227 61 16 5 excitement product list 81 pleasure 9 4 277
+Step-1 : 81 227 61 16 5 excitement product list pleasure 9 4 277
+Step-2 : 81 277 227 61 16 5 excitement product list pleasure 9 4
+Step-3 : 81 277 product 227 61 16 5 excitement list pleasure 9 4
+Step-4 : 81 277 product 16 227 61 5 excitement list pleasure 9 4
+Step-5 : 81 277 product 16 227 pleasure 61 5 excitement list 9 4
+Step-6 : 81 277 product 16 227 pleasure 9 61 5 excitement list 4
+Step-7 : 81 277 product 16 227 pleasure 9 61 list 5 excitement 4
+Step-8 : 81 277 product 16 227 pleasure 9 61 list 4 5 excitement
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - impression 100 16 4 149 71 179 record 81 sympathy 277 temperature
+
+1. How many steps are required to sort it?
+(a)Six
+(b)Five
+(c)Eleven
+(d)Nine
+(e)One
+
+2. In step [4], what is no-(11) element from right?
+(a)impression
+(b)71
+(c)277
+(d)179
+(e)4
+
+3. What is step [3]?
+(a)100 277 temperature 81 179 sympathy impression 16 4 149 71 record
+(b)100 277 temperature 81 179 sympathy 16 149 impression 4 71 record
+(c)100 277 temperature impression 16 4 149 71 179 record 81 sympathy
+(d)100 277 temperature 81 179 sympathy 16 149 record 4 71 impression
+(e)100 277 temperature 81 179 sympathy 16 149 record impression 4 71
+
+4. What is the position of the element impression in step - [3]?
+(a)Two
+(b)Five
+(c)Ten
+(d)Six
+(e)Four
+
+5. In step 4 what are the number of words between 149 and temperature?
+(a)Ten
+(b)Nine
+(c)Zero
+(d)Five
+(e)Eight
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - success 294 industry summer 177 editor 84 freedom 2 28
+Step-1 : 294 success industry summer 177 editor 84 freedom 2 28
+Step-2 : 294 success industry summer 177 84 freedom 2 28 editor
+Step-3 : 294 177 success industry summer 84 freedom 2 28 editor
+Step-4 : 294 177 success industry 84 freedom 2 28 summer editor
+Step-5 : 294 177 84 success industry freedom 2 28 summer editor
+Step-6 : 294 177 84 success industry 2 28 freedom summer editor
+Step-7 : 294 177 84 28 success industry 2 freedom summer editor
+Step-8 : 294 177 84 28 industry 2 success freedom summer editor
+Step-9 : 294 177 84 28 2 industry success freedom summer editor
+Step-9 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 103 procedure 873 hand personality solution 159 304 position 641
+
+1. What is the position of the element 873 in step - [5]?
+(a)Zero
+(b)Four
+(c)Two
+(d)One
+(e)Nine
+
+2. In which step do we get following order? 
+ 873 103 procedure hand personality solution 159 304 position 641
+(a)Zero
+(b)Six
+(c)Three
+(d)Four
+(e)One
+
+3. What is step [5]?
+(a)873 103 procedure hand personality solution 159 304 position 641
+(b)873 641 103 procedure personality 159 304 position solution hand
+(c)873 103 procedure personality solution 159 304 position 641 hand
+(d)873 641 304 103 procedure personality 159 position solution hand
+(e)873 641 304 159 103 personality procedure position solution hand
+
+4. In step 6 what are the number of words between personality and 159?
+(a)Three
+(b)One
+(c)Zero
+(d)Seven
+(e)Four
+
+5. How many steps are required to sort it?
+(a)Four
+(b)Three
+(c)Five
+(d)Seven
+(e)Six
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - alcohol 256 penalty net 235 73 32 905 8
+Step-1 : 905 alcohol 256 penalty net 235 73 32 8
+Step-2 : 905 8 alcohol 256 penalty net 235 73 32
+Step-3 : 905 8 net alcohol 256 penalty 235 73 32
+Step-4 : 905 8 net 235 alcohol 256 penalty 73 32
+Step-5 : 905 8 net 235 32 alcohol 256 penalty 73
+Step-6 : 905 8 net 235 32 penalty alcohol 256 73
+Step-7 : 905 8 net 235 32 penalty 73 alcohol 256
+Step-8 : 905 8 net 235 32 penalty 73 256 alcohol
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 49 1024 employer 4 8 249 516 criticism river
+
+1. In step 4 what are the number of words between 49 and 516?
+(a)Four
+(b)Five
+(c)Eight
+(d)Three
+(e)Zero
+
+2. In step [5], what is no-(6) element from left?
+(a)1024
+(b)criticism
+(c)249
+(d)49
+(e)river
+
+3. What is step [3]?
+(a)516 1024 employer 49 4 8 249 criticism river
+(b)516 1024 49 employer 4 8 249 criticism river
+(c)516 49 1024 employer 4 8 249 criticism river
+(d)516 1024 employer 249 8 criticism 49 4 river
+(e)516 1024 employer 249 8 49 4 criticism river
+
+4. What is the position of the element 8 in step - [3]?
+(a)Three
+(b)Four
+(c)Seven
+(d)Five
+(e)Six
+
+5. In which step do we get following order? 
+ 516 1024 employer 249 49 4 8 criticism river
+(a)Six
+(b)Four
+(c)Two
+(d)Three
+(e)Five
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 15 night psychology 104 280 internet consideration profit president housing 291 championship
+Step-1 : psychology 15 night 104 280 internet consideration profit president housing 291 championship
+Step-2 : psychology 291 15 night 104 280 internet consideration profit president housing championship
+Step-3 : psychology 291 profit 15 night 104 280 internet consideration president housing championship
+Step-4 : psychology 291 profit president 15 night 104 280 internet consideration housing championship
+Step-5 : psychology 291 profit president 280 15 night 104 internet consideration housing championship
+Step-6 : psychology 291 profit president 280 night 15 104 internet consideration housing championship
+Step-7 : psychology 291 profit president 280 night housing 15 104 internet consideration championship
+Step-8 : psychology 291 profit president 280 night housing 104 15 internet consideration championship
+Step-9 : psychology 291 profit president 280 night housing 104 internet 15 consideration championship
+Step-10 : psychology 291 profit president 280 night housing 104 internet consideration 15 championship
+Step-10 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 176 finance link ability quarter 132 passenger 45 honey 261 practice director
+
+1. What is step [3]?
+(a)passenger 261 176 finance link ability quarter 132 45 honey practice director
+(b)passenger 261 ability 176 finance link quarter 132 45 honey practice director
+(c)passenger 176 finance link ability quarter 132 45 honey 261 practice director
+(d)passenger 261 ability link 176 finance quarter 132 45 honey practice director
+(e)passenger 261 ability link 176 honey finance quarter 132 45 practice director
+
+2. What is the position of the element practice in step - [1]?
+(a)Three
+(b)Seven
+(c)Nine
+(d)One
+(e)Eleven
+
+3. In step 6 what are the number of words between finance and passenger?
+(a)Zero
+(b)Four
+(c)Five
+(d)Eight
+(e)Six
+
+4. In step [4], what is no-(3) element from right?
+(a)ability
+(b)quarter
+(c)honey
+(d)link
+(e)132
+
+5. In which step do we get following order? 
+ passenger 261 ability link 176 honey finance 132 quarter 45 practice director
+(a)Seven
+(b)Zero
+(c)Six
+(d)Two
+(e)One
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - network payment husband question 233 151 property 89 101 109 lock
+Step-1 : 233 network payment husband question 151 property 89 101 109 lock
+Step-2 : 233 network payment husband 151 property 89 101 109 lock question
+Step-3 : 233 151 network payment husband property 89 101 109 lock question
+Step-4 : 233 151 network payment husband 89 101 109 lock property question
+Step-5 : 233 151 109 network payment husband 89 101 lock property question
+Step-6 : 233 151 109 network husband 89 101 lock payment property question
+Step-7 : 233 151 109 101 network husband 89 lock payment property question
+Step-8 : 233 151 109 101 husband 89 lock network payment property question
+Step-9 : 233 151 109 101 89 husband lock network payment property question
+Step-9 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 179 tip chart clothes rock 271 131 197 place length 281
+
+1. In step 5 what are the number of words between tip and 197?
+(a)Nine
+(b)Ten
+(c)Two
+(d)Five
+(e)Eight
+
+2. What is the position of the element chart in step - [0]?
+(a)Ten
+(b)Eight
+(c)Six
+(d)Eleven
+(e)Five
+
+3. What is step [1]?
+(a)281 179 tip clothes rock 271 131 197 place length chart
+(b)281 271 197 179 131 tip rock place length clothes chart
+(c)281 271 197 179 tip rock 131 place length clothes chart
+(d)281 179 tip chart clothes rock 271 131 197 place length
+(e)281 271 179 tip rock 131 197 place length clothes chart
+
+4. In which step do we get following order? 
+ 281 271 197 179 tip rock 131 place length clothes chart
+(a)Zero
+(b)Two
+(c)Five
+(d)Four
+(e)Six
+
+5. How many steps are required to sort it?
+(a)Six
+(b)Two
+(c)Five
+(d)Three
+(e)One
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 205 289 thing 85 203 muscle quality recommendation industry 174
+Step-1 : 85 205 289 thing 203 muscle quality recommendation industry 174
+Step-2 : 85 205 289 203 muscle quality recommendation industry 174 thing
+Step-3 : 85 174 205 289 203 muscle quality recommendation industry thing
+Step-4 : 85 174 205 289 203 muscle quality industry recommendation thing
+Step-5 : 85 174 203 205 289 muscle quality industry recommendation thing
+Step-6 : 85 174 203 205 289 muscle industry quality recommendation thing
+Step-7 : 85 174 203 205 289 industry muscle quality recommendation thing
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - purpose boat 201 62 214 25 top ice 237 band
+
+1. In which step do we get following order? 
+ 25 62 purpose boat 201 214 ice 237 band top
+(a)Zero
+(b)Four
+(c)Three
+(d)Eight
+(e)Five
+
+2. In step [2], what is no-(7) element from left?
+(a)ice
+(b)purpose
+(c)62
+(d)band
+(e)201
+
+3. What is the position of the element 214 in step - [3]?
+(a)Seven
+(b)One
+(c)Three
+(d)Six
+(e)Five
+
+4. What is step [6]?
+(a)25 purpose boat 201 62 214 ice 237 band top
+(b)25 62 purpose boat 201 214 ice 237 band top
+(c)25 62 201 boat 214 ice 237 band purpose top
+(d)25 62 boat 201 214 ice 237 band purpose top
+(e)25 62 201 boat 214 237 band ice purpose top
+
+5. In step 4 what are the number of words between band and 25?
+(a)Six
+(b)Seven
+(c)Four
+(d)Nine
+(e)Two
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - owner limit sign painting 154 129 benefit addition 65 46 tip uncle
+Step-1 : benefit owner limit sign painting 154 129 addition 65 46 tip uncle
+Step-2 : benefit 46 owner limit sign painting 154 129 addition 65 tip uncle
+Step-3 : benefit 46 limit owner sign painting 154 129 addition 65 tip uncle
+Step-4 : benefit 46 limit owner 65 sign painting 154 129 addition tip uncle
+Step-5 : benefit 46 limit owner 65 uncle sign painting 154 129 addition tip
+Step-6 : benefit 46 limit owner 65 uncle sign 129 painting 154 addition tip
+Step-7 : benefit 46 limit owner 65 uncle sign 129 painting tip 154 addition
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 105 266 revolution presentation horror recognition spot coach outcome 232 dream 172
+
+1. In which step do we get following order? 
+ coach 105 spot dream 172 horror outcome 232 266 revolution presentation recognition
+(a)Six
+(b)One
+(c)Seven
+(d)Nine
+(e)Zero
+
+2. In step 3 what are the number of words between horror and spot?
+(a)Six
+(b)One
+(c)Two
+(d)Three
+(e)Five
+
+3. In step [5], what is no-(9) element from right?
+(a)dream
+(b)172
+(c)266
+(d)spot
+(e)105
+
+4. What is the position of the element 232 in step - [8]?
+(a)Zero
+(b)Five
+(c)Seven
+(d)Eight
+(e)Three
+
+5. What is step [6]?
+(a)coach 105 spot dream 172 266 revolution presentation horror recognition outcome 232
+(b)coach 105 spot dream 172 horror outcome 266 revolution presentation recognition 232
+(c)coach 105 spot dream 172 horror outcome 232 revolution 266 presentation recognition
+(d)coach 105 spot 266 revolution presentation horror recognition outcome 232 dream 172
+(e)coach 105 266 revolution presentation horror recognition spot outcome 232 dream 172
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 9 166 592 789 branch birth art analysis man reputation
+Step-1 : 789 9 166 592 branch birth art analysis man reputation
+Step-2 : 789 branch 9 166 592 birth art analysis man reputation
+Step-3 : 789 branch 592 9 166 birth art analysis man reputation
+Step-4 : 789 branch 592 birth 9 166 art analysis man reputation
+Step-5 : 789 branch 592 birth 166 9 art analysis man reputation
+Step-6 : 789 branch 592 birth 166 man 9 art analysis reputation
+Step-7 : 789 branch 592 birth 166 man 9 reputation art analysis
+Step-8 : 789 branch 592 birth 166 man 9 reputation analysis art
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - organization practice scale respect road entertainment 790 174 940 329
+
+1. In step [4], what is no-(7) element from right?
+(a)respect
+(b)329
+(c)174
+(d)practice
+(e)organization
+
+2. In step 4 what are the number of words between practice and respect?
+(a)Two
+(b)Six
+(c)Zero
+(d)Three
+(e)Seven
+
+3. What is the position of the element 790 in step - [2]?
+(a)Three
+(b)Six
+(c)Five
+(d)One
+(e)Eight
+
+4. In which step do we get following order? 
+ 940 organization practice scale respect road entertainment 790 174 329
+(a)Four
+(b)Five
+(c)One
+(d)Zero
+(e)Seven
+
+5. How many steps are required to sort it?
+(a)Three
+(b)Seven
+(c)Six
+(d)Four
+(e)Five
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 157 137 227 aspect agency 173 employee animal advantage eye 191
+Step-1 : 227 157 137 aspect agency 173 employee animal advantage eye 191
+Step-2 : 227 157 137 aspect agency 173 employee animal eye 191 advantage
+Step-3 : 227 191 157 137 aspect agency 173 employee animal eye advantage
+Step-4 : 227 191 157 137 aspect 173 employee animal eye agency advantage
+Step-5 : 227 191 173 157 137 aspect employee animal eye agency advantage
+Step-6 : 227 191 173 157 137 aspect employee eye animal agency advantage
+Step-7 : 227 191 173 157 137 employee eye aspect animal agency advantage
+Step-8 : 227 191 173 157 137 eye employee aspect animal agency advantage
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 227 expression experience access 263 analysis 251 293 animal 269 alcohol
+
+1. In step 2 what are the number of words between expression and 293?
+(a)Two
+(b)Five
+(c)One
+(d)Four
+(e)Zero
+
+2. In which step do we get following order? 
+ 293 269 263 227 expression experience 251 animal analysis alcohol access
+(a)Five
+(b)Six
+(c)Three
+(d)Four
+(e)Two
+
+3. How many steps are required to sort it?
+(a)Five
+(b)Six
+(c)Zero
+(d)Three
+(e)Four
+
+4. In step [1], what is no-(4) element from right?
+(a)alcohol
+(b)251
+(c)experience
+(d)293
+(e)expression
+
+5. What is the position of the element experience in step - [3]?
+(a)Three
+(b)Nine
+(c)Five
+(d)Six
+(e)Ten
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 333 4 369 code 73 substance 14 6 experience program 477 16
+Step-1 : 16 333 4 369 code 73 substance 14 6 experience program 477
+Step-2 : 16 477 333 4 369 code 73 substance 14 6 experience program
+Step-3 : 16 477 substance 333 4 369 code 73 14 6 experience program
+Step-4 : 16 477 substance 14 333 4 369 code 73 6 experience program
+Step-5 : 16 477 substance 14 369 333 4 code 73 6 experience program
+Step-6 : 16 477 substance 14 369 program 333 4 code 73 6 experience
+Step-7 : 16 477 substance 14 369 program 6 333 4 code 73 experience
+Step-8 : 16 477 substance 14 369 program 6 333 experience 4 code 73
+Step-9 : 16 477 substance 14 369 program 6 333 experience 4 73 code
+Step-9 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 839 outside bill 16 10 738 860 face maintenance 20 844 4
+
+1. In which step do we get following order? 
+ 20 860 outside 16 844 maintenance 839 bill 10 738 face 4
+(a)Four
+(b)Two
+(c)Zero
+(d)Eight
+(e)Six
+
+2. What is step [7]?
+(a)20 860 outside 839 bill 16 10 738 face maintenance 844 4
+(b)20 860 outside 16 839 bill 10 738 face maintenance 844 4
+(c)20 860 839 outside bill 16 10 738 face maintenance 844 4
+(d)20 860 outside 16 844 maintenance 10 839 bill 738 face 4
+(e)20 860 outside 16 844 maintenance 10 839 face 4 bill 738
+
+3. How many steps are required to sort it?
+(a)Ten
+(b)Nine
+(c)Six
+(d)Four
+(e)Three
+
+4. What is the position of the element maintenance in step - [6]?
+(a)Six
+(b)Zero
+(c)Eleven
+(d)One
+(e)Two
+
+5. In step 9 what are the number of words between 4 and face?
+(a)Nine
+(b)One
+(c)Seven
+(d)Four
+(e)Five
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 241 food 173 179 281 283 227 baseball metal chart engineering
+Step-1 : 283 241 food 173 179 281 227 baseball metal chart engineering
+Step-2 : 283 281 241 food 173 179 227 baseball metal chart engineering
+Step-3 : 283 281 241 food 173 179 227 metal chart baseball engineering
+Step-4 : 283 281 241 food 173 179 227 chart metal baseball engineering
+Step-5 : 283 281 241 227 food 173 179 chart metal baseball engineering
+Step-6 : 283 281 241 227 173 179 chart food metal baseball engineering
+Step-7 : 283 281 241 227 179 173 chart food metal baseball engineering
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 263 atmosphere 23 61 family 241 103 register selection 19 example
+
+1. In which step do we get following order? 
+ 263 241 103 61 23 19 selection atmosphere register example family
+(a)One
+(b)Two
+(c)Five
+(d)Seven
+(e)Eight
+
+2. How many steps are required to sort it?
+(a)Eight
+(b)Zero
+(c)Seven
+(d)Four
+(e)Two
+
+3. In step [7], what is no-(3) element from left?
+(a)atmosphere
+(b)example
+(c)103
+(d)register
+(e)241
+
+4. What is step [5]?
+(a)263 241 atmosphere 23 61 103 register selection 19 example family
+(b)263 241 103 61 23 selection 19 atmosphere register example family
+(c)263 241 103 atmosphere 23 61 register selection 19 example family
+(d)263 atmosphere 23 61 241 103 register selection 19 example family
+(e)263 241 103 atmosphere 23 61 selection 19 register example family
+
+5. What is the position of the element 241 in step - [6]?
+(a)Six
+(b)Ten
+(c)Two
+(d)Seven
+(e)Eight
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 30 cup hotel 482 setting future director 358 fire swimming 535 difficulty
+Step-1 : fire 30 cup hotel 482 setting future director 358 swimming 535 difficulty
+Step-2 : fire 30 swimming cup hotel 482 setting future director 358 535 difficulty
+Step-3 : fire 30 swimming cup 358 hotel 482 setting future director 535 difficulty
+Step-4 : fire 30 swimming cup 358 setting hotel 482 future director 535 difficulty
+Step-5 : fire 30 swimming cup 358 setting director hotel 482 future 535 difficulty
+Step-6 : fire 30 swimming cup 358 setting director 482 hotel future 535 difficulty
+Step-7 : fire 30 swimming cup 358 setting director 482 hotel difficulty future 535
+Step-8 : fire 30 swimming cup 358 setting director 482 hotel difficulty 535 future
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 870 top research vacation patient 860 bowl 829 associate 170 cause mail
+
+1. In step 1 what are the number of words between top and cause?
+(a)Two
+(b)Seven
+(c)Eleven
+(d)Ten
+(e)Four
+
+2. In which step do we get following order? 
+ cause 870 top research vacation patient 860 bowl 829 associate 170 mail
+(a)One
+(b)Zero
+(c)Five
+(d)Two
+(e)Six
+
+3. What is the position of the element 860 in step - [8]?
+(a)Eight
+(b)Six
+(c)Zero
+(d)Seven
+(e)Two
+
+4. What is step [4]?
+(a)cause 870 top research vacation patient 860 bowl 829 associate 170 mail
+(b)cause 170 bowl patient 829 mail 870 top research vacation 860 associate
+(c)cause 170 bowl patient 870 top research vacation 860 829 associate mail
+(d)cause 170 870 top research vacation patient 860 bowl 829 associate mail
+(e)cause 170 bowl 870 top research vacation patient 860 829 associate mail
+
+5. In step [1], what is no-(2) element from right?
+(a)170
+(b)cause
+(c)top
+(d)829
+(e)research
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 127 7 reason building appointment average income file 193
+Step-1 : appointment 127 7 reason building average income file 193
+Step-2 : appointment 7 127 reason building average income file 193
+Step-3 : appointment 7 file 127 reason building average income 193
+Step-4 : appointment 7 file average 127 reason building income 193
+Step-5 : appointment 7 file average 127 reason income building 193
+Step-6 : appointment 7 file average 127 reason income 193 building
+Step-6 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - studio interview indication 73 193 263 chemistry action score
+
+1. How many steps are required to sort it?
+(a)Two
+(b)Four
+(c)Five
+(d)One
+(e)Three
+
+2. In which step do we get following order? 
+ action 73 score indication 193 studio interview 263 chemistry
+(a)One
+(b)Two
+(c)Zero
+(d)Four
+(e)Five
+
+3. What is step [0]?
+(a)action 73 studio interview indication 193 263 chemistry score
+(b)action 73 score indication 193 studio interview 263 chemistry
+(c)action 73 score indication studio interview 193 263 chemistry
+(d)action studio interview indication 73 193 263 chemistry score
+(e)action 73 score studio interview indication 193 263 chemistry
+
+4. In step 1 what are the number of words between interview and action?
+(a)Five
+(b)One
+(c)Two
+(d)Three
+(e)Eight
+
+5. What is the position of the element 193 in step - [2]?
+(a)Four
+(b)One
+(c)Six
+(d)Zero
+(e)Three
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 310 177 6 4 642 brother 20 question position
+Step-1 : 20 310 177 6 4 642 brother question position
+Step-2 : 20 177 310 6 4 642 brother question position
+Step-3 : 20 177 question 310 6 4 642 brother position
+Step-4 : 20 177 question 6 310 4 642 brother position
+Step-5 : 20 177 question 6 310 position 4 642 brother
+Step-5 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - service 6 16 438 20 937 committee glass 977
+
+1. What is the position of the element 16 in step - [4]?
+(a)Six
+(b)Two
+(c)Eight
+(d)Four
+(e)Zero
+
+2. What is step [3]?
+(a)20 service 6 16 438 937 committee glass 977
+(b)20 977 service 16 937 glass 6 438 committee
+(c)20 977 service 16 937 6 438 committee glass
+(d)20 977 service 6 16 438 937 committee glass
+(e)20 977 service 16 6 438 937 committee glass
+
+3. How many steps are required to sort it?
+(a)Three
+(b)Five
+(c)One
+(d)Two
+(e)Zero
+
+4. In step 3 what are the number of words between 6 and service?
+(a)Three
+(b)Two
+(c)Five
+(d)Eight
+(e)Seven
+
+5. In which step do we get following order? 
+ 20 977 service 16 937 glass 6 438 committee
+(a)Five
+(b)One
+(c)Three
+(d)Two
+(e)Four
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - variety people bowl view 241 101 food reception 43
+Step-1 : food variety people bowl view 241 101 reception 43
+Step-2 : food 43 variety people bowl view 241 101 reception
+Step-3 : food 43 bowl variety people view 241 101 reception
+Step-4 : food 43 bowl reception variety people view 241 101
+Step-5 : food 43 bowl reception 101 variety people view 241
+Step-6 : food 43 bowl reception 101 people variety view 241
+Step-7 : food 43 bowl reception 101 people variety 241 view
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - bath 83 stable 211 109 cake team elevator friendship
+
+1. What is step [4]?
+(a)bath 83 cake friendship 109 stable 211 team elevator
+(b)bath 83 cake stable 211 109 team elevator friendship
+(c)bath 83 cake friendship stable 211 109 team elevator
+(d)bath 83 stable 211 109 cake team elevator friendship
+(e)bath 83 cake friendship 109 elevator stable 211 team
+
+2. What is the position of the element stable in step - [0]?
+(a)Three
+(b)Seven
+(c)Four
+(d)Eight
+(e)Two
+
+3. In which step do we get following order? 
+ bath 83 cake friendship stable 211 109 team elevator
+(a)Three
+(b)Five
+(c)Zero
+(d)One
+(e)Two
+
+4. How many steps are required to sort it?
+(a)Five
+(b)Three
+(c)Four
+(d)Zero
+(e)Two
+
+5. In step 2 what are the number of words between cake and bath?
+(a)Four
+(b)Eight
+(c)Two
+(d)Six
+(e)Zero
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - 330 3 arm 145 university obligation 831 24 8
+Step-1 : 24 330 3 arm 145 university obligation 831 8
+Step-2 : 24 831 330 3 arm 145 university obligation 8
+Step-3 : 24 831 university 330 3 arm 145 obligation 8
+Step-4 : 24 831 university 8 330 3 arm 145 obligation
+Step-5 : 24 831 university 8 330 obligation 3 arm 145
+Step-6 : 24 831 university 8 330 obligation 3 145 arm
+Step-6 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 24 awareness 99 231 3 346 employment 512 explanation
+
+1. In which step do we get following order? 
+ 99 512 24 awareness 231 3 346 employment explanation
+(a)One
+(b)Three
+(c)Zero
+(d)Five
+(e)Two
+
+2. What is step [1]?
+(a)99 512 explanation 24 346 employment awareness 231 3
+(b)99 512 explanation 24 346 employment 3 awareness 231
+(c)99 512 explanation 24 awareness 231 3 346 employment
+(d)99 512 explanation 24 346 awareness 231 3 employment
+(e)99 24 awareness 231 3 346 employment 512 explanation
+
+3. In step 2 what are the number of words between 346 and 3?
+(a)Three
+(b)Eight
+(c)One
+(d)Four
+(e)Six
+
+4. In step [5], what is no-(6) element from left?
+(a)231
+(b)awareness
+(c)explanation
+(d)24
+(e)employment
+
+5. What is the position of the element 512 in step - [1]?
+(a)Five
+(b)Eight
+(c)One
+(d)Three
+(e)Zero
+
+
+_______________Next Set__________________
+
+
+Set 1
+
+A Machine arranges the given input in the following way.
+Input - coffee impression attempt button user emphasis lake feature 63 3 24 35
+Step-1 : attempt coffee impression button user emphasis lake feature 63 3 24 35
+Step-2 : attempt 3 coffee impression button user emphasis lake feature 63 24 35
+Step-3 : attempt 3 feature coffee impression button user emphasis lake 63 24 35
+Step-4 : attempt 3 feature emphasis coffee impression button user lake 63 24 35
+Step-5 : attempt 3 feature emphasis 24 coffee impression button user lake 63 35
+Step-6 : attempt 3 feature emphasis 24 coffee impression 35 button user lake 63
+Step-7 : attempt 3 feature emphasis 24 coffee impression 35 lake button user 63
+Step-8 : attempt 3 feature emphasis 24 coffee impression 35 lake user button 63
+Step-9 : attempt 3 feature emphasis 24 coffee impression 35 lake user 63 button
+Step-9 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - instruction meaning author nature importance assignment action 63 airport 99 24 8
+
+1. What is the position of the element assignment in step - [9]?
+(a)Six
+(b)Zero
+(c)One
+(d)Five
+(e)Nine
+
+2. In step [6], what is no-(10) element from left?
+(a)action
+(b)importance
+(c)airport
+(d)99
+(e)meaning
+
+3. In which step do we get following order? 
+ action 8 nature airport 24 assignment author 63 instruction meaning importance 99
+(a)Three
+(b)Eleven
+(c)Eight
+(d)Zero
+(e)Two
+
+4. How many steps are required to sort it?
+(a)Zero
+(b)Eleven
+(c)Seven
+(d)One
+(e)Two
+
+5. What is step [4]?
+(a)action 8 nature airport 24 assignment author 63 meaning instruction importance 99
+(b)action 8 nature airport instruction meaning author importance assignment 63 99 24
+(c)action 8 nature airport 24 assignment author 63 meaning importance instruction 99
+(d)action 8 nature airport 24 instruction meaning author importance assignment 63 99
+(e)action 8 nature airport 24 assignment author 63 instruction meaning importance 99
+
+
+_______________Next Set__________________
+
+
