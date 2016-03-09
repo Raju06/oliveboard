@@ -1,10 +1,4 @@
-carsnew=[]
-q=[1200,1000,800,1500]
-cars=[[20,50,30],[30,30,40],[20,55,25],[40,25,35]]
-for i in range(len(cars)):
-	for k in range(len(cars[i])):
-		carsnew.append((cars[i][k]/100.0)*q[i])
-print carsnew
+k=(raw_input("Enter latitude or longitude"))
+geopoint = {'1':'41.123','2':'71.091'}
 
-while i < len(carsn:
-	c+=
+print geopoint[k]

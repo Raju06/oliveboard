@@ -203,7 +203,7 @@ def mainFunction():
 
 	def arrangementWhole(clist,type_of_arrangement1):
 		#raw_input("Type - 1 : Straight\nType - 2 : Alternatively\nType - 3 : No particular order\n")
-		print "type of arrangement is ",type_of_arrangement1		
+		#print "type of arrangement is ",type_of_arrangement1		
 		if type_of_arrangement1==2:
 				
 				maxl = len(clist[0])
@@ -229,7 +229,7 @@ def mainFunction():
 	 	for i in range(number_of_questions):
 	 		questionslist.append(str(i+1)+str('. ')+str(questionlist[i]+'\n'+str('(a)'+optionlist[i][0]+'\n'+'(b)'+optionlist[i][1]+'\n'+'(c)'+optionlist[i][2]+'\n'+'(d)'+optionlist[i][3]+'\n'+'(e)'+optionlist[i][4])))
 	 	text=str('Set 1\n\n')+str(sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist)+'\n\n\n'+"_______________Next Set__________________"+'\n\n\n')
-	 	file = open("C:\Users\Olive\Desktop\oliveboard\sampleQuestions.txt", "a")
+	 	file = open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\sampleQuestions.txt", "a")
 	 	file.write(text)
 	 	file.close()
 
@@ -271,7 +271,7 @@ def mainFunction():
 		subsetValue=1
 		ind_set1=tuple(ind_set)
 		sets_list1=tuple(sets_list)
-		
+		index_print=1
 
 		while len(sets_list)!=0:
 			er=0
@@ -290,7 +290,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
+				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
 				for line in fh:
 					samplewords=line.split()
 				alist = [ samplewords[i] for i in (random.sample(xrange(len(samplewords)), int(input_value[1])))]	
@@ -306,7 +306,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
+				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
 				for line in fh:
 					samplewords=line.split()
 				alist = [ samplewords[i] for i in (random.sample(xrange(len(samplewords)), int(input_value[1])))]
@@ -328,7 +328,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
+				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
 				samplewordsvowel=[]
 				for line in fh:
 					samplewords=line.split()
@@ -350,7 +350,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
+				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
 				samplewordsconsonants=[]
 				for line in fh:
 					samplewords=line.split()
@@ -371,7 +371,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
+				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
 				samplewordsvowel=[]
 				for line in fh:
 					samplewords=line.split()
@@ -409,7 +409,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
+				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
 				samplewordsconsonant=[]
 				for line in fh:
 					samplewords=line.split()
@@ -447,7 +447,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\samplewords.txt", "r")
+				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
 				for line in fh:
 					samplewords=line.split()
 				alist = [ samplewords[i] for i in (random.sample(xrange(len(samplewords)), int(input_value[1])))]
@@ -524,7 +524,7 @@ def mainFunction():
 					nsp=NumericStringParser()
 					expression_list=['2*x','(2*x)+1','x^2','x^3','2^x','(x^2)-1','(x^3)+1']
 					expression=str(expression_list[np.random.choice(len(expression_list),1)])
-					print expression
+					#print expression
 					count=(ind_set.pop())
 				else:
 					input_value.append('0')
@@ -537,7 +537,7 @@ def mainFunction():
 				else:
 					expression=str(Subset_input[subsetValue-3])
 					count=int(input_value[1])
-					print expression
+					#print expression
 				countlist=random.sample(range(1, 10), count)
 				alist=[]
 				for i in (countlist):
@@ -554,27 +554,40 @@ def mainFunction():
 			else:
 				print "Invalid input"
 			
+
 			if iteration==0:	
 				Type_of_arrangement.append(arrangementInd(alist,Type_of_arrangement,iteration))
+				dict_type_of_subset={'1' : 'Words arranged alphabetically','2' : 'Words arranged alphabetically based on last letter','3' : 'Words arranged starting with vowels', '4' : 'Words arranged starting with consonants', '5' : 'Words arranged with number of vowels in them', '6' : 'Words arranged with number of consonants in them','7': 'Words arranged in no particular order','8' : 'Numbers arranged in no particular order', '9' : 'Numbers arranged according to their value', '10' : 'Prime numbers','11' : 'Composite numbers', '12' : 'Numbers based on some function'}
+				dict_type_of_arrangement_indset={1:'Increasing',2:'Decreasing'}
+				print "Subset - {} :\n''{}'' in {} order\n".format(index_print,dict_type_of_subset[Type_of_subset1],dict_type_of_arrangement_indset[Type_of_arrangement[index_print-1]])
+				index_print+=1
+				if Type_of_subset1=='12':
+					print "Function is {}\n".format(''.join(expression))
 			else:
 				arrangementInd(alist,Type_of_arrangement[er],iteration)
 				er+=1
 			finalList.append(alist)
 			outputList=tuple(finalList)
-
+	
 		if iteration==0:	
 			if Number_of_sets==2:
 				type_of_arrangement = int(np.random.choice([1,2],1,p=[0.8,0.2]))
+
 			else:
 				type_of_arrangement=2
 			Type_of_arrangement_input.append(type_of_arrangement)
+			dict_Number_of_sets={1:'One',2:'Two',3:'Three'}
+			dict_type_of_arrangement={1:'Straight',2:'Alternatively'}
+			
+			print "Problem has {} subsets arranged {}.\n     _______Next Set___________                \n".format(dict_Number_of_sets[Number_of_sets],dict_type_of_arrangement[type_of_arrangement])
+			
 		else:
 			type_of_arrangement=Type_of_arrangement_input[0]
 			Type_of_arrangement_input.pop(0)		
 		finalList,type_of_arrangement1=arrangementWhole(finalList,type_of_arrangement)
 		for i in range(len(finalList)):
 			finalList[i]=str(finalList[i])
-			
+		
 
 			
 		#inputList=raw_input("Enter 0th step\n").split()
@@ -635,7 +648,7 @@ def mainFunction():
 						if (inputList==finalList):
 							sorted1=True
 						sortedListnew.append(" ".join(inputList))
-						print " ".join(inputList)
+						#print " ".join(inputList)
 					else:
 						i+=1
 				i=0
@@ -677,7 +690,7 @@ def mainFunction():
 	#print Subset_input[1]
 	iteration=1
 	Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sortedList,inputList2,sets_list,ind_set=createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sets_list,ind_set)
-
+	
 	#print "inputList1 is : ",inputList1
 	#print "sortedList1 is : ",sortedList1
 	#print "inputList2 is : ",inputList2
@@ -736,10 +749,6 @@ def mainFunction():
 			gh=str(np.random.choice(['left','right'],1)[0])
 			listelement=sortedList[X-1].split()
 			#print listelement
-			if gh=='left':
-				print "Element in step - {} at postion - {} from {} is : {}".format(X,Y,gh,listelement[Y-1])
-			else:
-				print "Element in step - {} at postion - {} from {} is : {}".format(X,Y,gh,listelement[len(listelement)-Y])
 
 			options = [ listelement[i] for i in (random.sample(xrange(len(listelement)), min(5,len(listelement))))]
 			if gh=='left':	
@@ -762,7 +771,7 @@ def mainFunction():
 				if listelement[i]==gh:
 					ph=i+1
 					break
-			print "Element is at position - {} in step - {}".format(ph,X)
+			#print "Element is at position - {} in step - {}".format(ph,X)
 			options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(listelement))), 5))]
 			if numberlist[ph] not in options:
 				options[random.randrange(0,len(options))]=numberlist[ph]
@@ -782,7 +791,7 @@ def mainFunction():
 				gh=fh
 				fh=temp321
 			value=abs(listelement.index(gh)-listelement.index(fh))
-			print "There are {} words between {} and {} in step - {}".format(value,gh,fh,X)
+			#print "There are {} words between {} and {} in step - {}".format(value,gh,fh,X)
 			options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(listelement))), 5))]
 			if numberlist[value] not in options:
 				wer=random.randrange(0,len(options))
@@ -798,6 +807,6 @@ def mainFunction():
 		num+=1
 	printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist,number_of_questions)
 
-countFinal=input('Enter number of sets to be written')
+countFinal=input('Enter number of sets to be written : ')
 for i in range(countFinal):
 	mainFunction()
