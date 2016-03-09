@@ -579,8 +579,8 @@ def mainFunction():
 			dict_Number_of_sets={1:'One',2:'Two',3:'Three'}
 			dict_type_of_arrangement={1:'Straight',2:'Alternatively'}
 			
-			print "Problem has {} subsets arranged {}.\n     _______Next Set___________                \n".format(dict_Number_of_sets[Number_of_sets],dict_type_of_arrangement[type_of_arrangement])
-			
+			final_output="Problem has {} subsets arranged {}.\n     _______Next Set___________                \n".format(dict_Number_of_sets[Number_of_sets],dict_type_of_arrangement[type_of_arrangement])
+			print final_output
 		else:
 			type_of_arrangement=Type_of_arrangement_input[0]
 			Type_of_arrangement_input.pop(0)		
@@ -809,4 +809,7 @@ def mainFunction():
 
 countFinal=input('Enter number of sets to be written : ')
 for i in range(countFinal):
-	mainFunction()
+	try:
+		mainFunction()
+	except:
+		pass
