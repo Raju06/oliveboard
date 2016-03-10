@@ -228,10 +228,9 @@ def mainFunction():
 	 	questionslist=[]
 	 	for i in range(number_of_questions):
 	 		questionslist.append(str(i+1)+str('. ')+str(questionlist[i]+'\n'+str('(a)'+optionlist[i][0]+'\n'+'(b)'+optionlist[i][1]+'\n'+'(c)'+optionlist[i][2]+'\n'+'(d)'+optionlist[i][3]+'\n'+'(e)'+optionlist[i][4])))
-	 	text=str('Set 1\n\n')+str(sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist)+'\n\n\n'+"_______________Next Set__________________"+'\n\n\n')
-	 	file = open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\sampleQuestions.txt", "a")
-	 	file.write(text)
-	 	file.close()
+	 	text=str(sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist)+'\n\n\n'+"_______________Next Set__________________"+'\n\n\n')
+	 	return text
+	 	
 
 	def createinput():
 		set_count = random.randrange(1,3)
@@ -805,11 +804,16 @@ def mainFunction():
 		else:
 			print "error in input"
 		num+=1
-	printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist,number_of_questions)
+	text=printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist,number_of_questions)
+	return text
 
 countFinal=input('Enter number of sets to be written : ')
 for i in range(countFinal):
 	try:
-		mainFunction()
+		text=str('Set {}\n\n').format(i+1)+mainFunction()
+		print "Set {}".format(i+1)
+		file = open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\sampleQuestions.txt", "a")
+	 	file.write(text)
+	 	file.close()
 	except:
 		pass
