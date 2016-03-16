@@ -9,6 +9,8 @@ import numpy as np
 from sets import Set
 
 def mainFunction():
+	global final_output
+	final_output=[]
 	
 	class NumericStringParser(object):
 	    '''
@@ -228,7 +230,7 @@ def mainFunction():
 	 	questionslist=[]
 	 	for i in range(number_of_questions):
 	 		questionslist.append(str(i+1)+str('. ')+str(questionlist[i]+'\n'+str('(a)'+optionlist[i][0]+'\n'+'(b)'+optionlist[i][1]+'\n'+'(c)'+optionlist[i][2]+'\n'+'(d)'+optionlist[i][3]+'\n'+'(e)'+optionlist[i][4])))
-	 	text=str(sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist)+'\n\n\n'+"_______________Next Set__________________"+'\n\n\n')
+	 	text=str('\n'.join(final_output)+'\n\n'+sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist)+'\n\n\n'+"_______________Next Set__________________"+'\n\n\n')
 	 	return text
 	 	
 
@@ -558,10 +560,12 @@ def mainFunction():
 				Type_of_arrangement.append(arrangementInd(alist,Type_of_arrangement,iteration))
 				dict_type_of_subset={'1' : 'Words arranged alphabetically','2' : 'Words arranged alphabetically based on last letter','3' : 'Words arranged starting with vowels', '4' : 'Words arranged starting with consonants', '5' : 'Words arranged with number of vowels in them', '6' : 'Words arranged with number of consonants in them','7': 'Words arranged in no particular order','8' : 'Numbers arranged in no particular order', '9' : 'Numbers arranged according to their value', '10' : 'Prime numbers','11' : 'Composite numbers', '12' : 'Numbers based on some function'}
 				dict_type_of_arrangement_indset={1:'Increasing',2:'Decreasing'}
-				print "Subset - {} :\n''{}'' in {} order\n".format(index_print,dict_type_of_subset[Type_of_subset1],dict_type_of_arrangement_indset[Type_of_arrangement[index_print-1]])
+				kle="Subset - {} :''{}'' in {} order".format(index_print,dict_type_of_subset[Type_of_subset1],dict_type_of_arrangement_indset[Type_of_arrangement[index_print-1]])
+				final_output.append(kle)
 				index_print+=1
 				if Type_of_subset1=='12':
-					print "Function is {}\n".format(''.join(expression))
+					kle2=str("Function is {}".format(''.join(expression)))
+					final_output.append(kle2)
 			else:
 				arrangementInd(alist,Type_of_arrangement[er],iteration)
 				er+=1
@@ -578,8 +582,8 @@ def mainFunction():
 			dict_Number_of_sets={1:'One',2:'Two',3:'Three'}
 			dict_type_of_arrangement={1:'Straight',2:'Alternatively'}
 			
-			final_output="Problem has {} subsets arranged {}.\n     _______Next Set___________                \n".format(dict_Number_of_sets[Number_of_sets],dict_type_of_arrangement[type_of_arrangement])
-			print final_output
+			final_output.append(str("Problem has {} subsets arranged {}.".format(dict_Number_of_sets[Number_of_sets],dict_type_of_arrangement[type_of_arrangement])))
+			#print final_output
 		else:
 			type_of_arrangement=Type_of_arrangement_input[0]
 			Type_of_arrangement_input.pop(0)		
@@ -700,7 +704,7 @@ def mainFunction():
 	num=0
 	number_of_questions=0
 	question_type_list=list(np.random.choice(['1','2','3','4','5','6'],5,replace=False))
-	print question_type_list
+	#print question_type_list
 	while num<5:
 		number_of_questions+=1
 		#raw_input("Press enter to continue....")
@@ -810,10 +814,12 @@ def mainFunction():
 countFinal=input('Enter number of sets to be written : ')
 for i in range(countFinal):
 	try:
-		text=str('Set {}\n\n').format(i+1)+mainFunction()
-		print "Set {}".format(i+1)
+		text=str('\nSet {}\n\n').format(i+1)+mainFunction()
+		#print "Set {}".format(i+1)
 		file = open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\sampleQuestions.txt", "a")
 	 	file.write(text)
 	 	file.close()
 	except:
+		print ('\n')+"Error in Set {}".format(i+1)
+		print '\n'.join(final_output)+('\n')
 		pass
