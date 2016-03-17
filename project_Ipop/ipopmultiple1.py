@@ -234,11 +234,12 @@ def mainFunction():
 	 	
 
 	def createinput():
-		set_count = random.randrange(1,3)
+		set_count = np.random.choice([1,2],1,p=[0.25,0.75])
+		set_count=set_count[0]
 		sets_list=[]
-		elements_words=np.array([1,2,3,4,5,6])
+		elements_words=np.array([1,2,3,5,6])
 		elements_numbers=np.array([9,10,11,12])
-		words_list=np.random.choice(elements_words,2,replace=False,p=[0.3,0.1,0.2,0.1,0.2,0.1])
+		words_list=np.random.choice(elements_words,2,replace=False,p=[0.3,0.1,0.3,0.2,0.1])
 		words_list=list(words_list)
 		numbers_list=np.random.choice(elements_numbers,2,replace=False,p=[0.3,0.2,0.1,0.4])	
 		numbers_list=list(numbers_list)
@@ -696,11 +697,14 @@ def mainFunction():
 	Type_of_arrangement_input=[]
 	Subset_input=[]
 	Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sortedList1,inputList1,sets_list,ind_set=createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sets_list,ind_set)
+	global sortedList1_length
+	sortedList1_length=len(sortedList1)
 	#print Subset_input
 	#print Subset_input[1]
 	iteration=1
 	Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sortedList,inputList2,sets_list,ind_set=createlist(iteration,Number_of_sets,Type_of_subset,Subset_input,Type_of_arrangement,Type_of_arrangement_input,sets_list,ind_set)
-	
+	global sortedList_length
+	sortedList_length=len(sortedList)
 	#print "inputList1 is : ",inputList1
 	#print "sortedList1 is : ",sortedList1
 	#print "inputList2 is : ",inputList2
@@ -818,15 +822,20 @@ def mainFunction():
 	text=printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist,number_of_questions)
 	return text
 
+steps_Length=input('Enter minimum number of steps : ')
 countFinal=input('Enter number of sets to be written : ')
-for i in range(countFinal):
+sets_count=0
+while sets_count<countFinal:
+	
 	try:
-		text=str('\nSet {}\n\n').format(i+1)+mainFunction()
+		text=str('\nSet {}\n\n').format(sets_count+1)+mainFunction()
 		#print "Set {}".format(i+1)
-		file = open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\sampleQuestions.txt", "a")
-	 	file.write(text)
-	 	file.close()
+		if (steps_Length<sortedList1_length and sortedList1_length<steps_Length+2) and (steps_Length<sortedList_length and sortedList_length<steps_Length+2):	
+			file = open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\sampleQuestions.txt", "a")
+		 	file.write(text)
+		 	file.close()
+		 	sets_count+=1
 	except:
-		print ('\n')+"Error in Set {}".format(i+1)
+		print ('\n')+"Error in Set {}".format(sets_count+1)
 		print '\n'.join(final_output)+('\n')
 		pass
