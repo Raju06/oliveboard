@@ -15,7 +15,6 @@ def mainFunction():
 	class NumericStringParser(object):
 	    '''
 	    Most of this code comes from the fourFn.py pyparsing example
-
 	    '''
 	    def pushFirst(self, strg, loc, toks ):
 	        self.exprStack.append( toks[0] )
@@ -539,7 +538,15 @@ def mainFunction():
 					expression=str(Subset_input[subsetValue-3])
 					count=int(input_value[1])
 					#print expression
-				countlist=random.sample(range(1, 10), count)
+				#countlist=random.sample(range(1, 10), count)
+				#print countlist
+				intialvalue=random.sample(range(1, 5), 1)
+				#print intialvalue
+				countlist=[]
+				for i in range(count):
+					countlist.append(intialvalue[0])
+					intialvalue[0]+=1
+				#print countlist
 				alist=[]
 				for i in (countlist):
 					bexpression=[]
