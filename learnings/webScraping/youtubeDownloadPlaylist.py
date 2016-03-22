@@ -6,21 +6,23 @@ from pprint import pprint
 
 
     #display text while downloading the Google page
-res=requests.get('https://www.youtube.com/playlist?list=PLvFYFNbi-IBFeP5ALr50hoOmKiYRMvzUq')
+res=requests.get('https://www.youtube.com/watch?v=oT1A1KKf0SI&list=PLxxA5z-8B2xk4szCgFmgonNcCboyNneMD')
 res.raise_for_status()
 soup=bs4.BeautifulSoup(res.text,"html.parser")
 
-with open('C:\Users\Olive\Desktop\oliveboard\learnings\webScraping\prettifyHTML.txt', 'w') as f:
-   for line in soup.prettify('utf-8', 'minimal'):
-      f.write(str(line))
 
-linkElems=soup.select('.pl-video-title-link')
-for i in range(1):	
+
+linkElems=soup.select('.yt-uix-scroller-scroll-unit a')
+print "Downloading {} videos\n\n".format(len(linkElems))
+for i in range(len(linkElems)):	
 	#https://www.youtube.com/watch?v=Sqitl2Rlsis&list=PLSSPBo7OVSZszs6coWD3nnAhJyVe_2drG&index=45
-	Url=str('https://www.youtube.com')+linkElems[i]['href']
-	print('Downloading file no. {} ....').format(i+1)
-	yt = YouTube(Url)
-	yt.set_filename(yt.filename)
-	video=yt.get('mp4','360p')
-	video.download('C:\Users\Olive\Desktop')
-	print "Downloaded file"
+	try:	
+		Url=str('https://www.youtube.com')+linkElems[i]['href']
+		yt = YouTube(Url)
+		print('Downloading file "{}" ....').format(yt.filename)
+		yt.set_filename(yt.filename)
+		video=yt.get('mp4','720p')
+		video.download('C:\Users\konat\Desktop\Django')
+		print "Downloaded file"
+	except:
+		print "Error downloading file...\ncontinuing download to next file"
