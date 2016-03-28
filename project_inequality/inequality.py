@@ -6,6 +6,7 @@ def generateMatrix():
 
 
 expression=raw_input('Enter the expression separated by , :').split(',')
+print expression
 expression_list=[]
 for i in range(len(expression)):
 	expression_list.append(['','',''])
