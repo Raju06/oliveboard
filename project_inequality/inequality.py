@@ -1,5 +1,5 @@
 from itertools import permutations
-
+import numpy as np
 
 class expression:
 	def  __init__(self):
@@ -41,17 +41,24 @@ class expression:
 	def returnExpression(self):
 		return self.items
 
+def shuffle(x):
+	    x = list(x)
+	    random.shuffle(x)
+	    return x
+
 def opposite(operator):
-	if operator == '*':
-		return '%'
-	elif operator == '@':
-		return '$'
-	elif operator == '#':
-		return '#'
-	elif operator == '$':
-		return '@'
-	elif operator == '%':
-		return '*'
+
+	symbolDict={'equalTo':symbolList[0],'greaterThan':symbolList[1],'greaterThanEqualTo':symbolList[2],'lessThan':symbolList[3],'lessThanEqualTo':symbolList[4]}
+	if operator == symbolDict['greaterThan']:
+		return symbolDict['lessThan']
+	elif operator == symbolDict['greaterThanEqualTo']:
+		return symbolDict['lessThanEqualTo']
+	elif operator == symbolDict['equalTo']:
+		return symbolDict['equalTo']
+	elif operator == symbolDict['lessThan']:
+		return symbolDict['greaterThan']
+	elif operator == symbolDict['lessThanEqualTo']:
+		return symbolDict['greaterThanEqualTo']
 
 def expressionOpposite(exp):
 	expression=''
@@ -61,8 +68,12 @@ def expressionOpposite(exp):
 		i+=2
 	return expression+exp[0]
 
+def filter_list(L):
+    return [x for x in L if not any(set(x)<=set(y) for y in L if x is not y)]
 
 expression_list=raw_input('Enter the expression separated by comma(,) :').split(',')
+symbolList=list(np.random.choice(['*','@','#','$','%','^','&'],5))
+symbolList=shuffle(symbolList)
 
 def main(expression_list):
 	def equation(expression_list):
@@ -103,7 +114,6 @@ def main(expression_list):
 					break
 			if not found:
 				alist.append(temp)
-						
 	finalList=[]					
 	for i in range(len(alist)):
 		if expressionOpposite(alist[i]) not in finalList:
