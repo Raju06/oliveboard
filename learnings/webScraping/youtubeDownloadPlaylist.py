@@ -6,13 +6,13 @@ from pprint import pprint
 
 
     #display text while downloading the Google page
-res=requests.get('https://www.youtube.com/watch?v=oT1A1KKf0SI&list=PLxxA5z-8B2xk4szCgFmgonNcCboyNneMD')
+res=requests.get('https://www.youtube.com/channel/UCB-W28CalK9xkg4MZwwYfkw/videos')
 res.raise_for_status()
 soup=bs4.BeautifulSoup(res.text,"html.parser")
 
 
 
-linkElems=soup.select('.yt-uix-scroller-scroll-unit a')
+linkElems=soup.select('.yt-lockup-content a')
 print "Downloading {} videos\n\n".format(len(linkElems))
 for i in range(len(linkElems)):	
 	#https://www.youtube.com/watch?v=Sqitl2Rlsis&list=PLSSPBo7OVSZszs6coWD3nnAhJyVe_2drG&index=45
