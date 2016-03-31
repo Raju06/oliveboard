@@ -61,12 +61,15 @@ def opposite(operator):
 		return symbolDict['greaterThanEqualTo']
 
 def expressionOpposite(exp):
-	expression=''
-	i=0
-	while i<len(exp)-2:
-		expression+=exp[len(exp)-i-1]+opposite(exp[len(exp)-i-2])
-		i+=2
-	return expression+exp[0]
+	if len(exp)==0:
+		return ''
+	else:
+		expression=''
+		i=0
+		while i<len(exp)-2:
+			expression+=exp[len(exp)-i-1]+opposite(exp[len(exp)-i-2])
+			i+=2
+		return expression+exp[0]
 
 def filter_list(L):
     return [x for x in L if not any(set(x)<=set(y) for y in L if x is not y)]
@@ -125,12 +128,14 @@ def createExpression():
 def createQuestion(condition):
 	conditionMet=False
 	question=''
-	while not conditionMet or question in expression_list or expressionOpposite(question) in expression_list:
+	while not conditionMet:
 		variables=list(np.random.choice(q,2,replace=False))
 		symbol=random.choice(inputSymbols)
 		question=str(variables[0]+symbol+variables[1])
 		conditionMet=(condition==checkValidity(question))
-		time.sleep(.05)
+		for i in range(len(symbolList)):
+			if str(question[0]+symbolList[i]+question[2]) in expression_list or str(question[2]+symbolList[i]+question[0]) in expression_list :
+				conditionMet=False
 		print question
 	return question
 
@@ -190,4 +195,20 @@ def main(expression_list):
 
 finalList= main(expression_list)
 print finalList
-print createQuestion(True)
+
+questionList=[]
+answerList=[]
+count=0
+while count<2:
+	answerListTemp=random.choice([True,False])
+	questionListTemp=createQuestion(answerListTemp)
+	toAdd=True
+	for i in range(len(inputSymbols)):
+		if (str(questionListTemp[0]+inputSymbols[i]+questionListTemp[2]) in questionList) or (str(questionListTemp[2]+inputSymbols[i]+questionListTemp[0]) in questionList):
+			toAdd=False
+	if toAdd:
+		questionList.append(questionListTemp)
+		answerList.append(answerListTemp)
+		count+=1
+print answerList
+print questionList
