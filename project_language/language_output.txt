@@ -1,0 +1,23 @@
+
+
+['bang', 'for', 'the', 'bug']  is  ['re', 'li', 'ka', 'na']
+['the', 'big', 'bang', 'theory']  is  ['na', 'li', 'pe', 'so']
+['theory', 'for', 'bang', 'up']  is  ['so', 'ka', 'li', 'gig']
+['up', 'down', 'big', 'bug']  is  ['mo', 'gig', 'pe', 're']
+
+
+Left list index is
+[[1, 2, 3], [1, 3], [1, 2], [1, 4], [2, 4], [2, 3], [3, 4], [4]]
+
+Right list index is
+[[1, 4], [1, 2, 3], [1, 3], [1, 2], [2, 4], [2, 3], [3, 4], [4]]
+
+
+'bang' is 'li'
+'for' is 'ka'
+'the' is 'na'
+'bug' is 're'
+'big' is 'pe'
+'theory' is 'so'
+'up' is 'gig'
+'down' is 'mo'
