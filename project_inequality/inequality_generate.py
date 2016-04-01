@@ -1,7 +1,7 @@
-from itertools import permutations
-from itertools import combinations
 import numpy as np
 import random,time
+from itertools import combinations
+from itertools import permutations
 
 
 
@@ -288,3 +288,4 @@ while sets_count<countFinal:
 		pass
 
 
+			
