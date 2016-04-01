@@ -72,11 +72,7 @@ def filter_list(L):
     return [x for x in L if not any(set(x)<=set(y) for y in L if x is not y)]
 
 
-symbolList=[]
-text=['equalTo','greaterThan','greaterThanEqualTo','lessThan','lessThanEqualTo']
-for i in range(5):
-	symbolList.append(raw_input('Enter symbol for : '+text[i]))
-expression_list=raw_input('Enter the expression separated by comma(,) :').split(',')
+
 
 def main(expression_list):
 	def equation(expression_list):
@@ -123,4 +119,12 @@ def main(expression_list):
 			finalList.append(alist[i])
 	return finalList
 
-print main(expression_list)
+symbolList=[]
+text=['equalTo','greaterThan','greaterThanEqualTo','lessThan','lessThanEqualTo']
+for i in range(5):
+	symbolList.append(raw_input('Enter symbol for : '+text[i]))
+
+i=0
+while i<5:
+	expression_list=raw_input('Enter the expression separated by comma(,) :').split(',')
+	print main(expression_list)
