@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+ <head>
+  <title>
+   Log in | Codecademy
+  </title>
+  <link href="https://cdn-production.codecademy.com/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="/blog.rss" rel="alternate" title="Codecademy Blog" type="application/rss+xml"/>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="authenticity_token" name="csrf-param"/>
+  <meta content="n5W7fINWMDsD1Cga00Vozq2881UJcfxidPUDmToB58Q=" name="csrf-token"/>
+  <meta content="Codecademy is the easiest way to learn how to code. It's interactive, fun, and you can do it with your friends." name="description"/>
+  <meta content="codecademy,coding,code,programming" name="keywords"/>
+  <meta content="212500508799908" property="fb:app_id"/>
+  <meta content="https://www.codecademy.com/login?redirect=%2Fen%2Fcourses%2Fweb-ext%2Fprojects%2Fhtml-css-prj_broadway" property="og:url"/>
+  <meta content="Codecademy" property="og:site_name"/>
+  <meta content="article" property="og:type"/>
+  <meta content="Log in" property="og:title"/>
+  <meta content="Codecademy is the easiest way to learn how to code. It's interactive, fun, and you can do it with your friends." property="og:description"/>
+  <link href="https://cdn-production.codecademy.com/assets/rebrand/core-bc684cc8853ed1a511479400930f315a.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://cdn-production.codecademy.com/assets/rebrand/controllers/users/sessions/new-875f0d42a52ff5536404da8fda8d423b.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://cdn-production.codecademy.com/assets/webpack/vendor.bundle-92d6626475b92e0f539878dee89a09f1.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://cdn-production.codecademy.com/assets/webpack/portal.bundle-c400026062a38e9a67ca1ab4cabc768d.css" media="screen" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   //<![CDATA[
+var CCDATA = CCDATA || {};
+//]]>
+  </script>
+  <script id="CCDATA" type="text/javascript">
+   //<![CDATA[
+
+  var CCDATA = CCDATA || {};  CCDATA['env'] = "production"; CCDATA['request_host'] = "www.codecademy.com"; CCDATA['request_path'] = "/login?redirect=%2Fen%2Fcourses%2Fweb-ext%2Fprojects%2Fhtml-css-prj_broadway"; CCDATA['asset_host'] = "cdn-production.codecademy.com"; CCDATA['assets_compiled'] = true; CCDATA['pollForNotifications'] = false; CCDATA['locale'] = "en"; CCDATA['API_HOST'] = "/api"; CCDATA['authenticity_token'] = "n5W7fINWMDsD1Cga00Vozq2881UJcfxidPUDmToB58Q="; CCDATA['available_locales'] = "en|en-GB|en-US|fa|pt|et-EE|zh|ko|ky-KG|ru|de|pt-BR|ja|es|es-AR|ar|fr|fr-FR"; CCDATA['anonymous_user'] = {"experiments":{"exp_payment_modal_2016_02_25":"control","exp_badge_2015_11_16":"control"}};
+  CCDATA.secureSandboxIndexPath = 'https://cdn-production.codecademy.com/assets/secure/index-e15cd898fa5906b22c02b7fc4cf8e509.html';
+
+//]]>
+  </script>
+  <script src="https://cdn-production.codecademy.com/assets/webpack/head.bundle-d6b6bf8da075f13e3f71f98eb016727d.js" type="text/javascript">
+  </script>
+ </head>
+ <body browser="other">
+  <div data-react-class="PortalRouter" data-react-props='{"proData":{"paths":{"join_pro":"/pro"},"assets":{"wave_img":"/assets/pro/wave-pro-83cfd917d7d15d5ea2713e995253d292.svg"},"experiment_values":{"header":"Not sure where to start?","body":"Let us set you up for success with a personalized learning path.","hint":"Get live, fast support from Codecademy Advisors when you get stuck.","utm_content":"wheretostart","image_url":"https://s3.amazonaws.com/codecademy-images/pro/variants-path.svg","utm_campaign":"ad_narrative_testing_nov_2015","utm_source":"codecademy_platform"},"utm_params":{"utm_content":"wheretostart","utm_campaign":"ad_narrative_testing_nov_2015","utm_source":"codecademy_platform"},"paymentCheckoutProps":{"logoPath":"/assets/pro/pro-logo--white-a5922be8f5d8aefbc3b7ecf2425ce8cd.svg","redirectPath":"/pro/setup/info","learnMorePath":"/pro","assetPaths":{"projectIcon":"/assets/pro/ads/pro-content-736936a41ea43de4e3c14d95a78e163d.svg","pathIcon":"/assets/pro/ads/pro-path-dbceba3d58d52de409123476e1ac9aab.svg","advisorsIcon":"/assets/pro/ads/pro-advisors-618698353b7dab95651f7f4651a13016.svg"},"cartProps":{"title":"Monthly Plan","period":"month","price":"19.99"},"paymentFormProps":{"buttonName":"Purchase Codecademy Pro","providerPubKeys":{"stripe":"pk_live_7uz0L9P2cuPr0tqFYZYX9WXX","braintree":null},"braintreeClientTokenUrl":"/payments/braintree/client_token","cvvGraphic":"/assets/vendor/cvv-9d9fdcfc8c9cd82d0126cfec10db70d2.png","cardGraphic":"/assets/vendor/credit-cards-d6b67b4e45e71975628243ce2a298628.png","paypalGraphic":"/assets/vendor/paypal-cc36d571a8047893b3d413e3d00a144e.png","isUSA":false,"formPostUrl":"/payments/pay","couponId":null,"planId":"proV2b","disablePaypal":false}}},"routesData":{"routes":{"pro_my_path_ad_path_wrapper":"/pro/my-path?utm_campaign=ad_narrative_testing_nov_2015\u0026utm_medium=internal_ad_my_path_ad_tab\u0026utm_source=codecademy_platform","learn_path":"/learn"}},"flags":{"showHeader":true},"locales":["en","en"],"formats":{"number":{"percentage":{"style":"percent","maximumFractionDigits":0}},"date":{},"time":{}},"messages":{"navigation":{"next":"Next","view_all_exercises":"View All Exercises"},"components":{"narrative":{"learn":"Learn","instructions":"Instructions","support":"Support"},"code_editor":{"read_only":"Read-only"},"file_nav":{"read_only":"Read-only","open":"Open","read_only_msg":"You cannot open this file because it cannot be edited at this time."},"file_tool":{"delete_file_message":{"title":"Delete file?","message":"Are you sure you want to delete this file?  You cannot undo this."},"delete_directory_message":{"title":"Delete Directory?","message":"Are you sure you want to delete this directory?  This will delete all files inside it. You cannot undo this"}}}},"prerender":{"duration":7.140264999999999,"hostname":"app-021\n"}}'>
+   <section data-react-checksum="238932947" data-reactid=".39z2">
+    <header class="index__header___1TC-9 index__light___WCzAK" data-react-header="true" data-reactid=".39z2.0">
+     <nav class="index__wrapper___1waHX undefined fit-fixed" data-reactid=".39z2.0.0">
+      <section class="index__section___1V-7u index__sectionLeft___3nm70" data-reactid=".39z2.0.0.0">
+       <div class="index__tab___1YP8O" data-reactid=".39z2.0.0.0.0">
+        <a class="index__logo___36QSm" data-reactid=".39z2.0.0.0.0.0" href="/" title="Codecademy">
+         <img class="index__image___2C3Hs" data-reactid=".39z2.0.0.0.0.0.0" src="/assets/logo/logo--dark-blue.svg"/>
+        </a>
+       </div>
+      </section>
+      <section class="index__section___1V-7u index__sectionRight___3vkCZ index__hideOnMobile___14vVr" data-reactid=".39z2.0.0.2">
+       <div class="index__tab___1YP8O" data-reactid=".39z2.0.0.2.2:$loginButton">
+        <a class="index__btn___2NSAp index__btn-mint___1Idg6 index__outline___2BtPJ" data-btn="true" data-reactid=".39z2.0.0.2.2:$loginButton.0" href="/login?redirect=about%3A%2F%2Fblank" id="header__sign-in" style="min-width:100px;">
+         Log in
+        </a>
+       </div>
+       <div class="index__tab___1YP8O index__tabSpacingLeft___3LnHS" data-reactid=".39z2.0.0.2.2:$registerButton">
+        <a class="index__btn___2NSAp index__btn-mint___1Idg6" data-btn="true" data-reactid=".39z2.0.0.2.2:$registerButton.0" href="/register?redirect=about%3A%2F%2Fblank" id="header__sign-up" style="min-width:100px;">
+         Sign up
+        </a>
+       </div>
+      </section>
+     </nav>
+    </header>
+   </section>
+  </div>
+  <main class="sessions new ">
+   <article class="fit-fixed">
+    <div class="grid-row">
+     <div class="grid-col-12">
+      <div class="grid-row grid-col-12">
+       <div class="grid-col-6 grid-col--center login-registration-form grid-col--no-padding">
+        <div data-react-class="LoginRegistrationForms" data-react-props='{"isLogin":true,"errors":["You must be logged in to access this page. Please log in to continue."],"redirectUrl":"/en/courses/web-ext/projects/html-css-prj_broadway","isTeacherSignup":null,"resource":{},"paths":{"tos":"/terms","forgot_password":"/secret/new","oauth_google":"/users/auth/google_oauth2?signin=true","oauth_facebook":"/users/auth/facebook?signin=true","oauth_twitter":"/users/auth/twitter?signin=true","action_register":"/register","action_session":"/login","new_session":"/login?redirect=%2Fen%2Fcourses%2Fweb-ext%2Fprojects%2Fhtml-css-prj_broadway","new_registration":"/register?redirect=%2Fen%2Fcourses%2Fweb-ext%2Fprojects%2Fhtml-css-prj_broadway"},"translations":{"heading_sign_up":"Sign up and start coding in seconds.","heading_log_in":"Log in and continue coding.","last_step_signup":"One thing before you start","password_placeholder":"Password","forgot_password":"Forgot your password?","email_placeholder":"Email","username_placeholder":"Username","email_or_username_placeholder":"Email or username","sign_up_with":"Sign up with","sign_in_with":"Log in with","remember_me":"Remember me","log_in":"Log in","sign_up":"Sign up","get_started":"Get started!","by_signing_up_you_agree":"By signing up, you agree to our","tos":"Terms of service","country_placeholder":"Country","org_placeholder":"School / Organization"},"proData":{"paths":{"join_pro":"/pro"},"assets":{"wave_img":"/assets/pro/wave-pro-83cfd917d7d15d5ea2713e995253d292.svg"},"experiment_values":{"header":"Not sure where to start?","body":"Let us set you up for success with a personalized learning path.","hint":"Get live, fast support from Codecademy Advisors when you get stuck.","utm_content":"wheretostart","image_url":"https://s3.amazonaws.com/codecademy-images/pro/variants-path.svg","utm_campaign":"ad_narrative_testing_nov_2015","utm_source":"codecademy_platform"},"utm_params":{"utm_content":"wheretostart","utm_campaign":"ad_narrative_testing_nov_2015","utm_source":"codecademy_platform"},"paymentCheckoutProps":{"logoPath":"/assets/pro/pro-logo--white-a5922be8f5d8aefbc3b7ecf2425ce8cd.svg","redirectPath":"/pro/setup/info","learnMorePath":"/pro","assetPaths":{"projectIcon":"/assets/pro/ads/pro-content-736936a41ea43de4e3c14d95a78e163d.svg","pathIcon":"/assets/pro/ads/pro-path-dbceba3d58d52de409123476e1ac9aab.svg","advisorsIcon":"/assets/pro/ads/pro-advisors-618698353b7dab95651f7f4651a13016.svg"},"cartProps":{"title":"Monthly Plan","period":"month","price":"19.99"},"paymentFormProps":{"buttonName":"Purchase Codecademy Pro","providerPubKeys":{"stripe":"pk_live_7uz0L9P2cuPr0tqFYZYX9WXX","braintree":null},"braintreeClientTokenUrl":"/payments/braintree/client_token","cvvGraphic":"/assets/vendor/cvv-9d9fdcfc8c9cd82d0126cfec10db70d2.png","cardGraphic":"/assets/vendor/credit-cards-d6b67b4e45e71975628243ce2a298628.png","paypalGraphic":"/assets/vendor/paypal-cc36d571a8047893b3d413e3d00a144e.png","isUSA":false,"formPostUrl":"/payments/pay","couponId":null,"planId":"proV2b","disablePaypal":false}}},"routesData":{"routes":{"pro_my_path_ad_path_wrapper":"/pro/my-path?utm_campaign=ad_narrative_testing_nov_2015\u0026utm_medium=internal_ad_my_path_ad_tab\u0026utm_source=codecademy_platform","learn_path":"/learn"}},"locales":["en","en"],"formats":{"number":{"percentage":{"style":"percent","maximumFractionDigits":0}},"date":{},"time":{}},"messages":{"navigation":{"next":"Next","view_all_exercises":"View All Exercises"},"components":{"narrative":{"learn":"Learn","instructions":"Instructions","support":"Support"},"code_editor":{"read_only":"Read-only"},"file_nav":{"read_only":"Read-only","open":"Open","read_only_msg":"You cannot open this file because it cannot be edited at this time."},"file_tool":{"delete_file_message":{"title":"Delete file?","message":"Are you sure you want to delete this file?  You cannot undo this."},"delete_directory_message":{"title":"Delete Directory?","message":"Are you sure you want to delete this directory?  This will delete all files inside it. You cannot undo this"}}}},"prerender":{"duration":6.326192,"hostname":"app-021\n"}}'>
+         <div class="login-registration-forms" data-react-checksum="-1018755464" data-reactid=".39z1">
+          <div class="login-registration-form" data-reactid=".39z1.0">
+           <h4 class="login-form__title" data-reactid=".39z1.0.0">
+            Log in and continue coding.
+           </h4>
+           <form accept-charset="UTF-8" action="/login" autocomplete="off" class="new_user" data-reactid=".39z1.0.1" id="new-user" method="post">
+            <input data-reactid=".39z1.0.1.0" name="authenticity_token" type="hidden" value="n5W7fINWMDsD1Cga00Vozq2881UJcfxidPUDmToB58Q="/>
+            <input data-reactid=".39z1.0.1.1" name="redirect" type="hidden" value="/en/courses/web-ext/projects/html-css-prj_broadway"/>
+            <div class="form-field" data-reactid=".39z1.0.1.2">
+             <div class="field field--text" data-reactid=".39z1.0.1.2.$user_login" tabindex="0">
+              <input class="" data-reactid=".39z1.0.1.2.$user_login.0" id="user_login" name="user[login]" placeholder="Email or username" type="text" value=""/>
+             </div>
+            </div>
+            <input data-reactid=".39z1.0.1.3" name="disable-autocomplete" style="display:none;" type="text"/>
+            <div class="form-field" data-reactid=".39z1.0.1.4">
+             <div class="field field--text" data-reactid=".39z1.0.1.4.$user_password" tabindex="0">
+              <input class="" data-reactid=".39z1.0.1.4.$user_password.0" id="user_password" name="user[password]" placeholder="Password" type="password" value=""/>
+             </div>
+            </div>
+            <div class="field-errors" data-reactid=".39z1.0.1.5">
+             <div class="field-error" data-reactid=".39z1.0.1.5.$0=128775343392044306">
+              You must be logged in to access this page. Please log in to continue.
+             </div>
+            </div>
+            <input class="button button--large button--secondary button--fill-space" data-reactid=".39z1.0.1.6" id="user_submit" name="commit" type="submit" value="Log in"/>
+           </form>
+           <div class="social-registration-buttons social-registration-links" data-reactid=".39z1.0.2">
+            <span data-reactid=".39z1.0.2.0">
+             <span data-reactid=".39z1.0.2.0.0">
+              Log in with
+             </span>
+             <span data-reactid=".39z1.0.2.0.1">
+             </span>
+            </span>
+            <a data-reactid=".39z1.0.2.1" href="/users/auth/google_oauth2?signin=true">
+             Google
+            </a>
+            <span data-reactid=".39z1.0.2.2">
+             ,
+            </span>
+            <a data-reactid=".39z1.0.2.3" href="/users/auth/facebook?signin=true">
+             Facebook
+            </a>
+            <span data-reactid=".39z1.0.2.4">
+             , or
+            </span>
+            <a data-reactid=".39z1.0.2.5" href="/users/auth/twitter?signin=true">
+             Twitter
+            </a>
+           </div>
+           <a class="forgot-password" data-reactid=".39z1.0.3" href="/secret/new">
+            Forgot your password?
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </article>
+  </main>
+  <footer class="color-scheme--darkgrey" id="footer">
+   <div id="footer__main">
+    <article class="fit-fixed">
+     <div class="grid-row padding-top--half">
+      <div class="grid-col-4">
+       <img alt="Logo--grey" class="margin-bottom--1" id="footer__logo" src="https://cdn-production.codecademy.com/assets/logo/logo--grey-00c6742314db8c8da258f1a903583e19.svg"/>
+       <p>
+        Teaching the world how to code.
+       </p>
+       <div id="footer__company__links">
+        <a href="http://www.reddit.com/r/codecademy">
+         <span class="new-cc-icon icon-reddit icon--">
+         </span>
+        </a>
+        <a href="http://stackoverflow.com/tags">
+         <span class="new-cc-icon icon-stackoverflow icon--">
+         </span>
+        </a>
+        <a href="https://www.youtube.com/channel/UC5CMtpogD_P3mOoeiDHD5eQ">
+         <span class="new-cc-icon icon-youtube icon--">
+         </span>
+        </a>
+        <a href="https://twitter.com/Codecademy">
+         <span class="new-cc-icon icon-twitter icon--">
+         </span>
+        </a>
+        <a href="https://www.facebook.com/codecademy">
+         <span class="new-cc-icon icon-facebook icon--">
+         </span>
+        </a>
+        <a href="https://instagram.com/codecademy">
+         <span class="new-cc-icon icon-instagram icon--">
+         </span>
+        </a>
+        <a href="https://medium.com/about-codecademy">
+         <span class="new-cc-icon icon-medium icon--">
+         </span>
+        </a>
+       </div>
+      </div>
+      <div class="grid-col-8 grid-row grid-col--no-margin">
+       <div class="grid-col-4 grid-col--no-padding">
+        <h5>
+         <strong>
+          Company
+         </strong>
+        </h5>
+        <ul>
+         <li>
+          <a href="/about">
+           About
+          </a>
+         </li>
+         <li>
+          <a href="/stories">
+           Stories
+          </a>
+         </li>
+         <li>
+          <a href="/about/jobs">
+           We're hiring
+          </a>
+         </li>
+         <!--<li><a href="/about#contact">Contact us</a></li>-->
+         <li>
+          <a href="/blog">
+           Blog
+          </a>
+         </li>
+        </ul>
+        <h5 class="margin-top--1">
+         <strong>
+          Resources
+         </strong>
+        </h5>
+        <ul>
+         <li>
+          <a href="/articles">
+           Articles
+          </a>
+         </li>
+         <li>
+          <a href="/schools">
+           Schools
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid-col-8 grid-col--no-padding">
+        <h5>
+         <strong>
+          Learn To Code
+         </strong>
+        </h5>
+        <div class="grid-row">
+         <div class="grid-col-7 grid-col--no-padding grid-col--no-margin">
+          <ul>
+           <li>
+            <a href="/courses/make-a-website">
+             Make a Website
+            </a>
+           </li>
+           <li>
+            <a href="/skills/make-an-interactive-website">
+             Make an Interactive Website
+            </a>
+           </li>
+           <li>
+            <a href="/courses/learn-rails">
+             Learn Rails
+            </a>
+           </li>
+           <li>
+            <a href="/courses/rails-auth">
+             Ruby on Rails Authentication
+            </a>
+           </li>
+           <li>
+            <a href="/courses/learn-angularjs">
+             Learn AngularJS
+            </a>
+           </li>
+           <li>
+            <a href="/courses/learn-the-command-line">
+             Learn the Command Line
+            </a>
+           </li>
+           <li>
+            <a href="/courses/learn-sql">
+             Learn SQL
+            </a>
+           </li>
+           <li>
+            <a href="/courses/sql-analyzing-business-metrics">
+             SQL: Analyzing Business Metrics
+            </a>
+           </li>
+           <li>
+            <a href="/courses/learn-java">
+             Learn Java
+            </a>
+           </li>
+           <li>
+            <a href="/courses/learn-git">
+             Learn Git
+            </a>
+           </li>
+          </ul>
+         </div>
+         <div class="grid-col-5 grid-col--no-padding grid-col--no-margin">
+          <ul>
+           <li>
+            <a href="/tracks/web">
+             HTML &amp; CSS
+            </a>
+           </li>
+           <li>
+            <a href="/tracks/javascript">
+             JavaScript
+            </a>
+           </li>
+           <li>
+            <a href="/tracks/jquery">
+             jQuery
+            </a>
+           </li>
+           <li>
+            <a href="/tracks/php">
+             PHP
+            </a>
+           </li>
+           <li>
+            <a href="/tracks/python">
+             Python
+            </a>
+           </li>
+           <li>
+            <a href="/tracks/ruby">
+             Ruby
+            </a>
+           </li>
+           <li>
+            <a href="/apis">
+             Learn APIs
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </article>
+   </div>
+   <article id="footer__legal">
+    <div class="grid-row fit-fixed">
+     <div class="grid-col-6 grid-col--no-margin margin-top--none margin-bottom--none">
+      <div id="footer__legal__links">
+       <small>
+        <span>
+         <a href="/policy">
+          Privacy Policy
+         </a>
+        </span>
+        <span>
+         <a href="/terms">
+          Terms
+         </a>
+        </span>
+       </small>
+      </div>
+     </div>
+     <div class="grid-col-6 grid-col--no-margin grid-row margin-top--none margin-bottom--none">
+      <div class="grid-col-7 grid-col--no-spacing">
+       <div id="footer__legal__copyright">
+        <small>
+         Made in NYC © 2016 Codecademy
+        </small>
+       </div>
+      </div>
+      <div class="grid-col-5 grid-col--no-spacing margin-top-bottom--none grid-col--align-right" id="footer__locale">
+       <div class="field field--select field-select--small field-select--transparent">
+        <select class="locales" id="">
+         <option selected="selected" value="/en/learn?set_preferred=true">
+          English
+         </option>
+         <option value="/es/learn?set_preferred=true">
+          Español
+         </option>
+         <option value="/fr/learn?set_preferred=true">
+          Français
+         </option>
+         <option value="/pt-BR/learn?set_preferred=true">
+          Português (Brazil)
+         </option>
+        </select>
+        <div class="field-select__down-arrow-icon">
+         <span class="new-cc-icon icon-downarrow icon--">
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </article>
+  </footer>
+  <script src="https://cdn-production.codecademy.com/assets/templates/common-en-c2c4e21f7f650b28b527a71e08867ae9.js" type="text/javascript">
+  </script>
+  <div id="modal">
+  </div>
+  <script type="text/javascript">
+   //<![CDATA[
+
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+      analytics.load("awTEDiBEJ130cCHG1N74clKHGM3FLNzQ");
+      analytics.page();
+        analytics.identify('56ed5a904b7f5187cd000755', {"created_at":"2016-03-19 09:56:32 -0400","anonymous_user":"true","utm_source":"","utm_medium":"","utm_term":"","utm_campaign":"","utm_content":""}, { 'Customer.io': false });
+    }}();
+
+//]]>
+  </script>
+  <!-- start Mixpanel -->
+  <script type="text/javascript">
+   (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+    mixpanel.init("cae5cbbe77db18d216b3995c711c4077");
+  </script>
+  <!-- end Mixpanel -->
+  <div id="fb-root">
+  </div>
+  <script type="text/javascript">
+   //<![CDATA[
+
+var FB_APP_ID = '212500508799908';
+window.fbAsyncInit = function() {
+  var FB = (window.FB || undefined);
+  if (FB) {
+    FB.init({
+      appId      : FB_APP_ID
+    , channelUrl : window.root_url+'/channel.html'
+    , status     : true
+    , cookie     : true
+    , xfbml      : true
+    , version    : 'v2.2'
+    });
+  }
+};
+(function(d){
+  var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement('script'); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/sdk.js";
+  ref.parentNode.insertBefore(js, ref);
+}(document));
+
+//]]>
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1036078779778355');
+  fbq('track', "PageView");
+  </script>
+  <noscript>
+   <img height="1" src="https://www.facebook.com/tr?id=1036078779778355&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+  <script id="I18N" type="text/javascript">
+   //<![CDATA[
+
+  var I18n = (window.I18n || {});
+  I18n.defaultLocale = "en";
+  I18n.fallbacks = true;
+  I18n.locale = "en";
+  I18n.missingTranslationPrefix = '';
+    I18n.missingBehaviour = 'guess';
+
+//]]>
+  </script>
+  <script src="https://cdn-production.codecademy.com/assets/i18n/locale-en-59e605ea912ad171d280346efe59368b.js" type="text/javascript">
+  </script>
+  <script src="https://cdn-production.codecademy.com/assets/webpack/vendor.bundle-ec64a6f555d2594f05dcb5076406bd73.js" type="text/javascript">
+  </script>
+  <script src="https://cdn-production.codecademy.com/assets/webpack/login_registration_forms.bundle-ab558b7a6b8273c20e0bf70d31b5298e.js" type="text/javascript">
+  </script>
+  <script src="https://cdn-production.codecademy.com/assets/webpack/portal.bundle-3d00035c82f4026241c11f10a82905a3.js" type="text/javascript">
+  </script>
+  <script src="https://cdn-production.codecademy.com/assets/dist/common-9d3c1c739fa7af840e7f2739c5aa4a48.js" type="text/javascript">
+  </script>
+  <script src="https://cdn-production.codecademy.com/assets/dist/controllers/registration_modal_controller-31b72c343fdf80623b277e4affc87241.js" type="text/javascript">
+  </script>
+  <script src="https://cdn-production.codecademy.com/assets/dist/controllers/session_modal_controller-0b2c52d76ba87c3ce6ea8ff5cc827441.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   //<![CDATA[
+
+      require(["common","controllers/registration_modal_controller","controllers/session_modal_controller"], function(common,registration_modal_controller,session_modal_controller) {
+            if (common) { common.init(); }
+            if (registration_modal_controller) { registration_modal_controller.init(); }
+            if (session_modal_controller) { session_modal_controller.init(); }
+        
+      });
+
+//]]>
+  </script>
+ </body>
+</html>
