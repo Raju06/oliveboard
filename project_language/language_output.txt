@@ -1,23 +1,26 @@
 
 
-['bang', 'for', 'the', 'bug']  is  ['re', 'li', 'ka', 'na']
-['the', 'big', 'bang', 'theory']  is  ['na', 'li', 'pe', 'so']
-['theory', 'for', 'bang', 'up']  is  ['so', 'ka', 'li', 'gig']
-['up', 'down', 'big', 'bug']  is  ['mo', 'gig', 'pe', 're']
+['being', 'what', 'you', 'are']  is  ['ye', 'du', 'li', 'ma']
+['you', 'see', 'what', 'happen']  is  ['li', 'go', 'xi', 'ma']
+['what', 'does', 'it', 'means']  is  ['ki', 'hut', 'li', 'ne']
+['it', 'means', 'will', 'happen']  is  ['ha', 'ki', 'xi', 'hut']
+['being', 'it', 'will', 'see']  is  ['ki', 'du', 'go', 'ha']
 
 
 Left list index is
-[[1, 2, 3], [1, 3], [1, 2], [1, 4], [2, 4], [2, 3], [3, 4], [4]]
+[[1, 5], [1, 2, 3], [1, 2], [1], [2, 5], [2, 4], [3], [3, 4, 5], [3, 4], [4, 5]]
 
 Right list index is
-[[1, 4], [1, 2, 3], [1, 3], [1, 2], [2, 4], [2, 3], [3, 4], [4]]
+[[1], [1, 5], [1, 2, 3], [1, 2], [2, 5], [2, 4], [3, 4, 5], [3, 4], [3], [4, 5]]
 
 
-'bang' is 'li'
-'for' is 'ka'
-'the' is 'na'
-'bug' is 're'
-'big' is 'pe'
-'theory' is 'so'
-'up' is 'gig'
-'down' is 'mo'
+'being' is 'du'
+'what' is 'li'
+'you' is 'ma'
+'are' is 'ye'
+'see' is 'go'
+'happen' is 'xi'
+'does' is 'ne'
+'it' is 'ki'
+'means' is 'hut'
+'will' is 'ha'
