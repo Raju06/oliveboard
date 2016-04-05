@@ -128,3 +128,4 @@ i=0
 while i<5:
 	expression_list=raw_input('Enter the expression separated by comma(,) :').split(',')
 	print main(expression_list)
+	i+=1
