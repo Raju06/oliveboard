@@ -221,15 +221,18 @@ def mainFunction():
 			clist=[inner for outer in clist for inner in outer]
 			return clist,int(type_of_arrangement1)
 
-	def printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist,number_of_questions):
+	def printquestion(sortedList1,sortedList,inputList1,inputList2,questionlist,optionlist,number_of_questions):
 	 	sentences=['A Machine arranges the given input in the following way.','Input - ',' is the last step of the given input.','Answer the following questions for the below input:','Input - ','Answer key:']
 	 	firstlist=[]
+	 	secondlist=[]
 	 	for i in range(len(sortedList1)):
 	 		firstlist.append(str('Step-')+str(i+1)+str(' : ')+str(sortedList1[i]))
+	 	for i in range(len(sortedList)):
+	 		secondlist.append(str('Step-')+str(i+1)+str(' : ')+str(sortedList[i]))
 	 	questionslist=[]
 	 	for i in range(number_of_questions):
-	 		questionslist.append(str(i+1)+str('. ')+str(questionlist[i]+'\n'+str('(a)'+optionlist[i][0]+'\n'+'(b)'+optionlist[i][1]+'\n'+'(c)'+optionlist[i][2]+'\n'+'(d)'+optionlist[i][3]+'\n'+'(e)'+optionlist[i][4])))
-	 	text=str('\n'.join(final_output)+'\n\n'+sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist)+'\n\n\n'+"_______________Next Set__________________"+'\n\n\n')
+	 		questionslist.append(str(i+1)+str('. ')+str(questionlist[i]+'\n'+str('(1)'+optionlist[i][0]+'\n'+'(2)'+optionlist[i][1]+'\n'+'(3)'+optionlist[i][2]+'\n'+'(4)'+optionlist[i][3]+'\n'+'(5)'+optionlist[i][4]+'\n'+'Answer key : {}'.format(optionlist[i][5]))))
+	 	text=str('\n'+sentences[0])+str('\n')+str(sentences[1])+str(' '.join(inputList1)+'\n')+str('\n'.join(firstlist)+'\n')+str('Step-')+str(len(sortedList1))+str(sentences[2]+'\n\n')+str(sentences[3]+'\n')+str(sentences[4])+str(' '.join(inputList2)+'\n\n')+str('\n\n'.join(questionslist)+'\n\nCommon solution:\n'+'\n'.join(final_output)+str('\n\nInput-  '+' '.join(inputList2)+'\n')+str('\n'.join(secondlist)+'\n')+'\n\n\n'+"_______________Next Set__________________"+'\n\n\n')
 	 	return text
 	 	
 
@@ -566,14 +569,14 @@ def mainFunction():
 
 			if iteration==0:	
 				Type_of_arrangement.append(arrangementInd(alist,Type_of_arrangement,iteration))
-				dict_type_of_subset={'1' : 'Words arranged alphabetically','2' : 'Words arranged alphabetically based on last letter','3' : 'Words arranged starting with vowels', '4' : 'Words arranged starting with consonants', '5' : 'Words arranged with number of vowels in them', '6' : 'Words arranged with number of consonants in them','7': 'Words arranged in no particular order','8' : 'Numbers arranged in no particular order', '9' : 'Numbers arranged according to their value', '10' : 'Prime numbers','11' : 'Composite numbers', '12' : 'Numbers based on some function'}
+				if Type_of_subset1=='12':
+					dict_type_of_subset={'1' : 'Words that are arranged alphabetically','2' : 'Words that are arranged alphabetically based on last letter','3' : 'Words that are arranged starting with vowels', '4' : 'Words that are arranged starting with consonants', '5' : 'Words that are arranged based on number of vowels in them', '6' : 'Words that are arranged based on number of consonants in them','7': 'Words that arranged in no particular order','8' : 'Numbers that are arranged in no particular order', '9' : 'Numbers that are arranged according to their value', '10' : 'Prime numbers that are arranged according to their value','11' : 'Composite numbers that are arranged according to their value', '12' : 'Numbers that are arranged based on function {}'.format(''.join(expression))}
+				else:
+					dict_type_of_subset={'1' : 'Words that are arranged alphabetically','2' : 'Words that are arranged alphabetically based on last letter','3' : 'Words that are arranged starting with vowels', '4' : 'Words that are arranged starting with consonants', '5' : 'Words that are arranged based on number of vowels in them', '6' : 'Words that are arranged based on number of consonants in them','7': 'Words that arranged in no particular order','8' : 'Numbers that are arranged in no particular order', '9' : 'Numbers that are arranged according to their value', '10' : 'Prime numbers that are arranged according to their value','11' : 'Composite numbers that are arranged according to their value'}
 				dict_type_of_arrangement_indset={1:'Increasing',2:'Decreasing'}
-				kle="Subset - {} :''{}'' in {} order".format(index_print,dict_type_of_subset[Type_of_subset1],dict_type_of_arrangement_indset[Type_of_arrangement[index_print-1]])
+				kle="Subset-{} has {} in {} order".format(index_print,dict_type_of_subset[Type_of_subset1],dict_type_of_arrangement_indset[Type_of_arrangement[index_print-1]])
 				final_output.append(kle)
 				index_print+=1
-				if Type_of_subset1=='12':
-					kle2=str("Function is {}".format(''.join(expression)))
-					final_output.append(kle2)
 			else:
 				arrangementInd(alist,Type_of_arrangement[er],iteration)
 				er+=1
@@ -590,7 +593,12 @@ def mainFunction():
 			dict_Number_of_sets={1:'One',2:'Two',3:'Three'}
 			dict_type_of_arrangement={1:'Straight',2:'Alternatively'}
 			
-			final_output.append(str("Problem has {} subsets arranged {}.".format(dict_Number_of_sets[Number_of_sets],dict_type_of_arrangement[type_of_arrangement])))
+			final_output.insert(0,str("The arrangement has got the following {} subsets.".format(dict_Number_of_sets[Number_of_sets])))
+			if type_of_arrangement==1:
+				final_output.append('The two subsets are arranged one after other. In the first step the first element of first sorted subset is kept first and in the next step the last element of second sorted subset is kept last and the pattern continues.The arrangement continues until all the elements of individual subsets are arranged.')			
+			else:
+				final_output.append('The subsets are arranged alternatively such that in the first step,the first element from the first sorted subset is kept first. Similarly in the second step the first element from the second sorted subset is kept next and the pattern continues till all the elements from all the subsets are arranged.')
+
 			#print final_output
 		else:
 			type_of_arrangement=Type_of_arrangement_input[0]
@@ -729,19 +737,23 @@ def mainFunction():
 				options[random.randrange(0,len(options))]=numberlist[len(sortedList)]
 				#print "Hola"
 			#print options
+			options.append(str(options.index(numberlist[len(sortedList)])+1))
 			optionlist.append(options)
 			questionlist.append('How many steps are required to sort it?')
+			
 		elif question_type=='2':
-			step=np.random.choice(len(sortedList),1)
+			step=random.choice(range(len(sortedList)))
 			#print "Step {} is : \n".format(step),sortedList[step-1]
 			options = [ sortedList[i] for i in (random.sample(xrange(len(sortedList)), min(5,len(sortedList))))]
 			if sortedList[step-1] not in options:
 				options[random.randrange(0,len(options))]=sortedList[step-1]
 				#print "Hola"
 			#print options
-			question2='What is step {}?'.format(step)
+			question2='What is step-{}?'.format(step)
 			questionlist.append(question2)
+			options.append(str(options.index(sortedList[step-1])+1))
 			optionlist.append(options)
+			
 		elif question_type=='3':
 			#print sortedList
 			order1=sortedList[np.random.choice(len(sortedList),1)]
@@ -755,9 +767,11 @@ def mainFunction():
 			#print options
 			question3='In which step do we get following order? \n {}'.format(order1)
 			questionlist.append(question3)
+			options.append(str(options.index(numberlist[sortedList.index(order1)+1])+1))
 			optionlist.append(options)
+			
 		elif question_type=='4':
-			X=np.random.choice(len(sortedList),1)
+			X=random.choice(range(len(sortedList)))
 			list12=[i for i in range(1,(len(sortedList)+1))]
 			Y=int(np.random.choice(list12,1))
 			gh=str(np.random.choice(['left','right'],1)[0])
@@ -769,16 +783,19 @@ def mainFunction():
 				if listelement[Y-1] not in options:
 					options[random.randrange(0,len(options))]=listelement[Y-1]
 					#print "Hola"
+				options.append(str(options.index(listelement[Y-1])+1))
 			else:
 				if listelement[len(listelement)-Y] not in options:
 					options[random.randrange(0,len(options))]=listelement[len(listelement)-Y]
 					#print "Hola"
+				options.append(str(options.index(listelement[len(listelement)-Y])+1))
 			#print options
-			question4='In step {}, what is no-({}) element from {}?'.format(X,Y,gh)
+			question4='In step-{}, what is no-({}) element from {}?'.format(X,Y,gh)
 			questionlist.append(question4)
 			optionlist.append(options)
+			
 		elif question_type=='5':
-			X=np.random.choice(len(sortedList),1)
+			X=random.choice(range(len(sortedList)))
 			listelement=sortedList[X-1].split()
 			gh=listelement[np.random.choice(len(listelement),1)]
 			for i in range(len(listelement)):
@@ -791,11 +808,13 @@ def mainFunction():
 				options[random.randrange(0,len(options))]=numberlist[ph]
 				#print "Hola"
 			#print options
-			question5='What is the position of the element ''{}'' in step - {}?'.format(gh,X)
+			question5='What is the position of the element \'{}\' in step-{}?'.format(gh,X)
 			questionlist.append(question5)
+			options.append(str(options.index(numberlist[ph])+1))
 			optionlist.append(options)
+			
 		elif question_type=='6':
-			X=np.random.choice(len(sortedList))
+			X=random.choice(range(len(sortedList)))
 			Z=np.random.choice(len(sortedList),2,replace=False)
 			listelement=sortedList[X-1].split()
 			gh=listelement[Z[0]]
@@ -804,7 +823,7 @@ def mainFunction():
 				temp321=gh
 				gh=fh
 				fh=temp321
-			value=abs(listelement.index(gh)-listelement.index(fh))
+			value=abs(listelement.index(gh)-listelement.index(fh))-1
 			#print "There are {} words between {} and {} in step - {}".format(value,gh,fh,X)
 			options = [ numberlist[i] for i in (random.sample(xrange(max(5,len(listelement))), 5))]
 			if numberlist[value] not in options:
@@ -813,13 +832,15 @@ def mainFunction():
 				#print "Hola"
 				#print wer
 			#print options
-			question6='In step {} what are the number of words between ''{}'' and ''{}''?'.format(X,gh,fh)
+			question6='In step-{} how many number of words are there between \'{}\' and \'{}\'?'.format(X,gh,fh)
 			questionlist.append(question6)
+			options.append(str(options.index(numberlist[value])+1))	
 			optionlist.append(options)
+
 		else:
 			print "error in input"
 		num+=1
-	text=printquestion(sortedList1,inputList1,inputList2,questionlist,optionlist,number_of_questions)
+	text=printquestion(sortedList1,sortedList,inputList1,inputList2,questionlist,optionlist,number_of_questions)
 	return text
 
 steps_Length=input('Enter minimum number of steps : ')

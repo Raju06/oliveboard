@@ -146,12 +146,17 @@ def main(level_of_difficulty):
 					if stop:
 						optionlist1=noAnswerOption(questionItem,right_items_list)
 					else:
-						options=[answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2],["None of the above"]]
+						options=shuffle([answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2]])
 						done=True
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
 				questionlist.append("How can '{}' be written?".format(questionItem))
-				optionlist.append(shuffle(options))
+				options.append(["None of the above"])
+				for i in range(len(options)):
+					if options[i] in answerItem:
+						options.append(str(i+1))
+						break						
+				optionlist.append(options)
 			if questionType=='2':
 				questionItem=[left_items_list[random.randrange(0,len(left_items_list))]]
 				answerItem=[]
@@ -166,11 +171,15 @@ def main(level_of_difficulty):
 				#print questionItem
 				#print answerItem
 				#print optionlist1
-				options=[answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2],optionlist1[3]]
+				options=shuffle([answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2],optionlist1[3]])
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
 				questionlist.append("What can be the code for '{}' ?".format(questionItem))
-				optionlist.append(shuffle(options))
+				for i in range(len(options)):
+					if options[i] in answerItem:
+						options.append(str(i+1))
+						break
+				optionlist.append(options)
 			if questionType=='3':
 				questionItem=[right_items_list[random.randrange(0,len(right_items_list))]]
 				answerItem=[]
@@ -185,20 +194,25 @@ def main(level_of_difficulty):
 				#print questionItem
 				#print answerItem
 				#print optionlist1
-				options=[answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2],optionlist1[3]]
+				options=shuffle([answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2],optionlist1[3]])
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
 				questionlist.append("What can be coded as '{}' ?".format(questionItem))
-				optionlist.append(shuffle(options))
+				for i in range(len(options)):
+					if options[i] in answerItem:
+						options.append(str(i+1))
+						break
+				optionlist.append(options)
 			if questionType=='4':
 				count=0
 				for i in range(len(right_output_list)):
 					if len(right_output_list[i])==1:
 						count+=1
 				answerItem=count
-				options=[answerItem,answerItem+1,answerItem-1,answerItem+2,answerItem-2]
+				options=shuffle([answerItem,answerItem+1,answerItem-1,answerItem+2,answerItem-2])
 				questionlist.append("According to the problem,how many words can be decoded exactly?")
-				optionlist.append(shuffle(options))
+				options.append(str(options.index(answerItem)+1))
+				optionlist.append(options)
 			if questionType=='5':
 				def noAnswerOption(questionItem,right_items_list):
 					k=[]
@@ -261,12 +275,14 @@ def main(level_of_difficulty):
 								newOptionItem=list(newAnswerItem[0])+[newOption]
 								appended1=True
 
-						options=[newOptionItem,optionlist1[0],optionlist1[1],optionlist1[2],["None of the above"]]
+						options=shuffle([newOptionItem,optionlist1[0],optionlist1[1],optionlist1[2]])
 						done=True
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
 				questionlist.append("How can '{}' be written?".format(questionItem))
-				optionlist.append(shuffle(options))
+				options.append(["None of the above"])
+				options.append(str(options.index(newOptionItem)+1))
+				optionlist.append(options)
 			if questionType=='6':
 				def noAnswerOption(questionItem,left_items_list):
 					k=[]
@@ -306,18 +322,24 @@ def main(level_of_difficulty):
 					if stop:
 						optionlist1=noAnswerOption(questionItem,left_items_list)
 					else:
-						options=[answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2],["None of the above"]]
+						options=[answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2]]
 						done=True
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
 				questionlist.append("What can be coded as '{}' ?".format(questionItem))
-				optionlist.append(shuffle(options))
-		local_text="\n\n"
+				options=shuffle(options)
+				options.append(["None of the above"])
+				for i in range(len(options)):
+					if options[i] in answerItem:
+						options.append(str(i+1))
+						break
+				optionlist.append(options)
+		local_text=""
 		for i in range(len(questionlist)):
 			for j in range(5):
 				if type(optionlist[i][j])==list:
 					optionlist[i][j]=' '.join(str(e) for e in optionlist[i][j])
-			local_text+= "\nQuestion : {}\n\n{}\n\n(1){}\n(2){}\n(3){}\n(4){}\n(5){}\n".format(i+1,questionlist[i],optionlist[i][0],optionlist[i][1],optionlist[i][2],optionlist[i][3],optionlist[i][4])
+			local_text+= "\n{}.{}\n(1){}\n(2){}\n(3){}\n(4){}\n(5){}\nAnswer key:{}\n".format(i+1,questionlist[i],optionlist[i][0],optionlist[i][1],optionlist[i][2],optionlist[i][3],optionlist[i][4],optionlist[i][5])
 		return local_text
 
 
@@ -329,7 +351,7 @@ def main(level_of_difficulty):
 		output=createList(number_of_lines,number_of_words)
 		#print "Hola"
 	sets_list=output
-
+	global left_list
 	#print sets_list
 	left_list=sets_list
 	right_list=shuffle(sets_list)
@@ -341,9 +363,62 @@ def main(level_of_difficulty):
 	left_output_list,right_output_list=outputList(left_list,right_list)
 
 
+	list1=[]
+	list2=[]
+	text+='In a certain language \n'
 	for i in range(len(left_lines_list)):
-		text+="{} is {}\n".format(shuffle(left_lines_list[i]),shuffle(right_lines_list[i]))
-	text+='\n\n'
+		list1.append(' '.join(list(shuffle(left_lines_list[i]))))
+		list2.append(' '.join(str(x) for x in list(shuffle(right_lines_list[i]))))
+	for i in range(len(left_lines_list)):
+		text+="\'{}\' is written as \'{}\'\n".format(list1[i],list2[i])
+	
+	left_output_items_list=[]
+	right_output_items_list=[]
+	resultList=[]
+	for i in range(len(left_output_list)):
+		left_item=[]
+		right_item=[]
+		left_output_items_list.append([])
+		right_output_items_list.append([])
+		for j in range(len(left_output_list[i])):
+			left_output_items_list[i].append(left_items_list[left_output_list[i][j]])
+			right_output_items_list[i].append(right_items_list[right_output_list[i][j]])	
+			left_item.append(str(left_items_list[left_output_list[i][j]]))
+			right_item.append(str(right_items_list[right_output_list[i][j]]))
+
+
+		resultList.append([left_item,right_item])
+	
+	solutiontext='Common solution: \n\n'
+	for i in range(len(left_lines_list)):
+		solutiontext+="\'{}\' is written as \'{}\'---------------({})\n".format(list1[i],list2[i],i+1)
+
+	resultList2=[]
+	for i in range(len(left_list)):
+		itemName=left_items_list[i]
+		for j in range(len(resultList)):
+			for k in range(len(resultList[j])):
+				for m in range(len(resultList[j][k])):
+					if resultList[j][k][m]==itemName:
+						indexName=j
+						break
+		resultList2.append([left_list[i],itemName,resultList[indexName][1]])
+	
+
+	text1,text2,text3,text4='','','',''
+	for i in range(len(resultList2)):
+		if len(resultList2[i][0])==4:
+			text4+='From {}: {} is {}\n'.format(','.join(str(x) for x in resultList2[i][0]),resultList2[i][1],'/'.join(resultList2[i][2]))
+		elif len(resultList2[i][0])==3:
+			text3+='From {}: {} is {}\n'.format(','.join(str(x) for x in resultList2[i][0]),resultList2[i][1],'/'.join(resultList2[i][2]))
+		elif len(resultList2[i][0])==2:
+			text2+='From {}: {} is {}\n'.format(','.join(str(x) for x in resultList2[i][0]),resultList2[i][1],'/'.join(resultList2[i][2]))
+		elif len(resultList2[i][0])==1:
+			text1+='From {}: By elimination, {} is {}\n'.format(','.join(str(x) for x in resultList2[i][0]),resultList2[i][1],'/'.join(resultList2[i][2]))
+		else:
+			print "Error"	
+
+	solutiontext+='\n'+text4+text3+text2+text1+'\n'+'Summary:\n'
 
 	left_output_items_list=[]
 	right_output_items_list=[]
@@ -360,18 +435,17 @@ def main(level_of_difficulty):
 			right_item+=str(right_items_list[right_output_list[i][j]])+str('/')
 
 
-		text+= "{} is {}\n".format(left_item[:len(left_item)-1],right_item[:len(right_item)-1])
-
+		solutiontext+= "{} is {}\n".format(left_item[:len(left_item)-1],right_item[:len(right_item)-1])
 
 	text+=generateQuestions(left_items_list,right_items_list,left_output_items_list,right_output_items_list)
+	text+=str('\n\n')+solutiontext
 	return text
 
 countFinal=input('Enter number of sets to be written : ')
 sets_count=0
 while sets_count<countFinal:
-	
 	try:
-		level_of_difficulty=random.randrange(1,4)
+		level_of_difficulty=random.randrange(1,3)
 		text=str('\nSet {}\n\n').format(sets_count+1)+main(level_of_difficulty)
 		#print "Set {}".format(i+1)
 		criteria_met=True
@@ -379,7 +453,7 @@ while sets_count<countFinal:
 			if len(left_lines_list[i])<3:
 				criteria_met=False
 				break
-		if criteria_met:		
+		if criteria_met:
 			file = open("C:\Users\Olive\Desktop\oliveboard\project_language\sampleQuestions.txt", "a")
 		 	file.write(text)
 		 	file.close()

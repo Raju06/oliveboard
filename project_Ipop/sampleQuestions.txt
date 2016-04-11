@@ -1,0 +1,793 @@
+
+Set 1
+
+
+A Machine arranges the given input in the following way.
+Input - depth 93 arm hand 111 102 203 186 49 nail
+Step-1 : 203 depth 93 arm hand 111 102 186 49 nail
+Step-2 : 203 93 arm hand 111 102 186 49 nail depth
+Step-3 : 203 186 93 arm hand 111 102 49 nail depth
+Step-4 : 203 186 93 arm 111 102 49 nail hand depth
+Step-5 : 203 186 111 93 arm 102 49 nail hand depth
+Step-6 : 203 186 111 93 102 49 nail arm hand depth
+Step-7 : 203 186 111 102 93 49 nail arm hand depth
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 171 122 revolution singer 165 154 226 ability 224 medicine
+
+1. How many steps are required to sort it?
+(1)One
+(2)Two
+(3)Seven
+(4)Zero
+(5)Six
+Answer key : 3
+
+2. In step-1 how many number of words are there between '154' and 'singer'?
+(1)One
+(2)Five
+(3)Six
+(4)Nine
+(5)Seven
+Answer key : 1
+
+3. What is step-5?
+(1)226 224 171 165 122 revolution 154 medicine ability singer
+(2)226 224 171 165 154 122 revolution medicine ability singer
+(3)226 171 122 revolution singer 165 154 ability 224 medicine
+(4)226 224 171 122 revolution 165 154 ability medicine singer
+(5)226 224 171 122 revolution 165 154 medicine ability singer
+Answer key : 1
+
+4. What is the position of the element '224' in step-1?
+(1)Four
+(2)Seven
+(3)Nine
+(4)Five
+(5)One
+Answer key : 3
+
+5. In step-5, what is no-(5) element from left?
+(1)revolution
+(2)singer
+(3)154
+(4)171
+(5)122
+Answer key : 5
+
+Common solution:
+The arrangement has got the following Two subsets.
+Subset-1 has Composite numbers that are arranged according to their value in Decreasing order
+Subset-2 has Words that are arranged based on number of vowels in them in Decreasing order
+The two subsets are arranged one after other. In the first step the first element of first sorted subset is kept first and in the next step the last element of second sorted subset is kept last and the pattern continues.The arrangement continues until all the elements of individual subsets are arranged.
+
+Input-  171 122 revolution singer 165 154 226 ability 224 medicine
+Step-1 : 226 171 122 revolution singer 165 154 ability 224 medicine
+Step-2 : 226 171 122 revolution 165 154 ability 224 medicine singer
+Step-3 : 226 224 171 122 revolution 165 154 ability medicine singer
+Step-4 : 226 224 171 122 revolution 165 154 medicine ability singer
+Step-5 : 226 224 171 165 122 revolution 154 medicine ability singer
+Step-6 : 226 224 171 165 122 154 revolution medicine ability singer
+Step-7 : 226 224 171 165 154 122 revolution medicine ability singer
+
+
+
+_______________Next Set__________________
+
+
+
+Set 2
+
+
+A Machine arranges the given input in the following way.
+Input - 303 owner analyst attention income 880 airport 202 actor 681
+Step-1 : 880 303 owner analyst attention income airport 202 actor 681
+Step-2 : 880 303 owner analyst attention income airport 202 681 actor
+Step-3 : 880 681 303 owner analyst attention income airport 202 actor
+Step-4 : 880 681 303 owner analyst attention income 202 airport actor
+Step-5 : 880 681 303 owner attention income 202 analyst airport actor
+Step-6 : 880 681 303 202 owner attention income analyst airport actor
+Step-7 : 880 681 303 202 owner income attention analyst airport actor
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - east 99 462 oil effect union 534 777 advertising age
+
+1. In which step do we get following order? 
+ 777 534 462 99 oil union effect east age advertising
+(1)Six
+(2)Three
+(3)Seven
+(4)Two
+(5)Five
+Answer key : 1
+
+2. What is step-0?
+(1)777 east 99 462 oil effect union 534 advertising age
+(2)777 534 462 99 union oil effect east age advertising
+(3)777 534 462 east 99 oil effect union age advertising
+(4)777 534 east 99 462 oil effect union age advertising
+(5)777 534 462 99 oil effect union east age advertising
+Answer key : 2
+
+3. What is the position of the element 'union' in step-3?
+(1)Seven
+(2)Nine
+(3)Eight
+(4)Five
+(5)Three
+Answer key : 3
+
+4. In step-0 how many number of words are there between 'oil' and '534'?
+(1)Two
+(2)One
+(3)Three
+(4)Six
+(5)Five
+Answer key : 3
+
+5. In step-6, what is no-(6) element from left?
+(1)age
+(2)534
+(3)777
+(4)oil
+(5)union
+Answer key : 5
+
+Common solution:
+The arrangement has got the following Two subsets.
+Subset-1 has Numbers that are arranged according to their value in Decreasing order
+Subset-2 has Words that are arranged starting with vowels in Decreasing order
+The two subsets are arranged one after other. In the first step the first element of first sorted subset is kept first and in the next step the last element of second sorted subset is kept last and the pattern continues.The arrangement continues until all the elements of individual subsets are arranged.
+
+Input-  east 99 462 oil effect union 534 777 advertising age
+Step-1 : 777 east 99 462 oil effect union 534 advertising age
+Step-2 : 777 east 99 462 oil effect union 534 age advertising
+Step-3 : 777 534 east 99 462 oil effect union age advertising
+Step-4 : 777 534 462 east 99 oil effect union age advertising
+Step-5 : 777 534 462 99 oil effect union east age advertising
+Step-6 : 777 534 462 99 oil union effect east age advertising
+Step-7 : 777 534 462 99 union oil effect east age advertising
+
+
+
+_______________Next Set__________________
+
+
+
+Set 3
+
+
+A Machine arranges the given input in the following way.
+Input - spot estate midnight temperature plenty 8 event 3 15
+Step-1 : spot estate midnight temperature plenty 8 event 3 15
+Step-2 : spot 15 estate midnight temperature plenty 8 event 3
+Step-3 : spot 15 temperature estate midnight plenty 8 event 3
+Step-4 : spot 15 temperature event estate midnight plenty 8 3
+Step-5 : spot 15 temperature event 8 estate midnight plenty 3
+Step-6 : spot 15 temperature event 8 midnight estate plenty 3
+Step-7 : spot 15 temperature event 8 midnight estate 3 plenty
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - environment 24 function 48 partner extension road 35 example
+
+1. What is step-3?
+(1)environment 48 example function 35 road 24 partner extension
+(2)environment 48 example function 24 partner extension road 35
+(3)environment 48 example function 35 24 partner extension road
+(4)environment 24 function 48 partner extension road 35 example
+(5)environment 48 example 24 function partner extension road 35
+Answer key : 5
+
+2. In step-0, what is no-(5) element from left?
+(1)road
+(2)function
+(3)35
+(4)48
+(5)24
+Answer key : 3
+
+3. What is the position of the element '35' in step-2?
+(1)Six
+(2)Seven
+(3)Four
+(4)Eight
+(5)One
+Answer key : 4
+
+4. In which step do we get following order? 
+ environment 24 function 48 partner extension road 35 example
+(1)Seven
+(2)Three
+(3)One
+(4)Zero
+(5)Five
+Answer key : 3
+
+5. How many steps are required to sort it?
+(1)Zero
+(2)Five
+(3)Four
+(4)Three
+(5)Seven
+Answer key : 5
+
+Common solution:
+The arrangement has got the following Three subsets.
+Subset-1 has Words that are arranged alphabetically based on last letter in Decreasing order
+Subset-2 has Numbers that are arranged based on function (x^2)-1 in Decreasing order
+Subset-3 has Words that are arranged based on number of vowels in them in Decreasing order
+The subsets are arranged alternatively such that in the first step,the first element from the first sorted subset is kept first. Similarly in the second step the first element from the second sorted subset is kept next and the pattern continues till all the elements from all the subsets are arranged.
+
+Input-  environment 24 function 48 partner extension road 35 example
+Step-1 : environment 24 function 48 partner extension road 35 example
+Step-2 : environment 48 24 function partner extension road 35 example
+Step-3 : environment 48 example 24 function partner extension road 35
+Step-4 : environment 48 example function 24 partner extension road 35
+Step-5 : environment 48 example function 35 24 partner extension road
+Step-6 : environment 48 example function 35 road 24 partner extension
+Step-7 : environment 48 example function 35 road extension 24 partner
+
+
+
+_______________Next Set__________________
+
+
+
+Set 4
+
+
+A Machine arranges the given input in the following way.
+Input - experience understanding file leadership 193 149 operation choice 7
+Step-1 : leadership experience understanding file 193 149 operation choice 7
+Step-2 : leadership 7 experience understanding file 193 149 operation choice
+Step-3 : leadership 7 experience file understanding 193 149 operation choice
+Step-4 : leadership 7 experience file 149 understanding 193 operation choice
+Step-5 : leadership 7 experience file 149 operation understanding 193 choice
+Step-6 : leadership 7 experience file 149 operation choice understanding 193
+Step-7 : leadership 7 experience file 149 operation choice 193 understanding
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 229 article 89 youth guitar equipment east effect 127
+
+1. What is step-0?
+(1)youth 229 equipment article 89 guitar east effect 127
+(2)youth 229 article 89 guitar equipment east effect 127
+(3)youth 229 equipment guitar 127 effect east 89 article
+(4)youth 229 equipment guitar 127 article 89 east effect
+(5)youth 229 equipment guitar 127 effect east article 89
+Answer key : 3
+
+2. In step-4 how many number of words are there between '127' and 'equipment'?
+(1)Zero
+(2)One
+(3)Six
+(4)Two
+(5)Seven
+Answer key : 2
+
+3. In step-6, what is no-(5) element from left?
+(1)youth
+(2)guitar
+(3)equipment
+(4)article
+(5)127
+Answer key : 5
+
+4. How many steps are required to sort it?
+(1)Seven
+(2)Five
+(3)One
+(4)Two
+(5)Zero
+Answer key : 1
+
+5. In which step do we get following order? 
+ youth 229 equipment guitar 127 effect east article 89
+(1)Four
+(2)Six
+(3)One
+(4)Zero
+(5)Three
+Answer key : 2
+
+Common solution:
+The arrangement has got the following Three subsets.
+Subset-1 has Words that are arranged alphabetically in Decreasing order
+Subset-2 has Prime numbers that are arranged according to their value in Increasing order
+Subset-3 has Words that are arranged starting with vowels in Increasing order
+The subsets are arranged alternatively such that in the first step,the first element from the first sorted subset is kept first. Similarly in the second step the first element from the second sorted subset is kept next and the pattern continues till all the elements from all the subsets are arranged.
+
+Input-  229 article 89 youth guitar equipment east effect 127
+Step-1 : youth 229 article 89 guitar equipment east effect 127
+Step-2 : youth 229 equipment article 89 guitar east effect 127
+Step-3 : youth 229 equipment guitar article 89 east effect 127
+Step-4 : youth 229 equipment guitar 127 article 89 east effect
+Step-5 : youth 229 equipment guitar 127 effect article 89 east
+Step-6 : youth 229 equipment guitar 127 effect east article 89
+Step-7 : youth 229 equipment guitar 127 effect east 89 article
+
+
+
+_______________Next Set__________________
+
+
+
+Set 5
+
+
+A Machine arranges the given input in the following way.
+Input - 144 14 estate maximum 263 396 intention 692 buyer 296
+Step-1 : 692 144 14 estate maximum 263 396 intention buyer 296
+Step-2 : 692 144 14 estate maximum 263 396 intention 296 buyer
+Step-3 : 692 396 144 14 estate maximum 263 intention 296 buyer
+Step-4 : 692 396 144 14 maximum 263 intention 296 estate buyer
+Step-5 : 692 396 296 144 14 maximum 263 intention estate buyer
+Step-6 : 692 396 296 144 14 263 intention maximum estate buyer
+Step-7 : 692 396 296 263 144 14 intention maximum estate buyer
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 953 height 261 663 975 television phase 951 643 heat
+
+1. In step-5 how many number of words are there between '643' and '951'?
+(1)Four
+(2)Nine
+(3)Zero
+(4)Three
+(5)Five
+Answer key : 4
+
+2. What is step-1?
+(1)975 953 261 663 television 951 643 heat phase height
+(2)975 953 951 663 261 643 television heat phase height
+(3)975 953 height 261 663 television phase 951 643 heat
+(4)975 953 951 663 643 261 television heat phase height
+(5)975 953 951 261 663 television 643 heat phase height
+Answer key : 3
+
+3. In which step do we get following order? 
+ 975 953 951 261 663 television 643 heat phase height
+(1)Zero
+(2)Six
+(3)Seven
+(4)Three
+(5)Four
+Answer key : 5
+
+4. How many steps are required to sort it?
+(1)Two
+(2)Zero
+(3)Seven
+(4)Four
+(5)Three
+Answer key : 3
+
+5. In step-3, what is no-(7) element from right?
+(1)heat
+(2)261
+(3)663
+(4)951
+(5)television
+Answer key : 3
+
+Common solution:
+The arrangement has got the following Two subsets.
+Subset-1 has Numbers that are arranged according to their value in Decreasing order
+Subset-2 has Words that are arranged based on number of vowels in them in Decreasing order
+The two subsets are arranged one after other. In the first step the first element of first sorted subset is kept first and in the next step the last element of second sorted subset is kept last and the pattern continues.The arrangement continues until all the elements of individual subsets are arranged.
+
+Input-  953 height 261 663 975 television phase 951 643 heat
+Step-1 : 975 953 height 261 663 television phase 951 643 heat
+Step-2 : 975 953 261 663 television phase 951 643 heat height
+Step-3 : 975 953 261 663 television 951 643 heat phase height
+Step-4 : 975 953 951 261 663 television 643 heat phase height
+Step-5 : 975 953 951 663 261 television 643 heat phase height
+Step-6 : 975 953 951 663 261 643 television heat phase height
+Step-7 : 975 953 951 663 643 261 television heat phase height
+
+
+
+_______________Next Set__________________
+
+
+
+Set 6
+
+
+A Machine arranges the given input in the following way.
+Input - 506 677 audience air contact 612 note internet employer
+Step-1 : employer 506 677 audience air contact 612 note internet
+Step-2 : employer 677 506 audience air contact 612 note internet
+Step-3 : employer 677 internet 506 audience air contact 612 note
+Step-4 : employer 677 internet contact 506 audience air 612 note
+Step-5 : employer 677 internet contact 612 506 audience air note
+Step-6 : employer 677 internet contact 612 audience 506 air note
+Step-7 : employer 677 internet contact 612 audience note 506 air
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 539 appointment extension image girl 439 790 vegetable ratio
+
+1. In which step do we get following order? 
+ vegetable 790 image ratio 539 extension girl 439 appointment
+(1)Two
+(2)Seven
+(3)Zero
+(4)Six
+(5)Four
+Answer key : 2
+
+2. What is the position of the element '790' in step-2?
+(1)Two
+(2)Eight
+(3)Five
+(4)Six
+(5)One
+Answer key : 1
+
+3. How many steps are required to sort it?
+(1)Five
+(2)Zero
+(3)One
+(4)Three
+(5)Seven
+Answer key : 5
+
+4. What is step-6?
+(1)vegetable 790 image ratio 539 extension girl appointment 439
+(2)vegetable 790 image ratio 539 appointment extension girl 439
+(3)vegetable 790 image ratio 539 extension appointment girl 439
+(4)vegetable 790 539 appointment extension image girl 439 ratio
+(5)vegetable 790 image 539 appointment extension girl 439 ratio
+Answer key : 1
+
+5. In step-0, what is no-(4) element from right?
+(1)extension
+(2)ratio
+(3)image
+(4)439
+(5)girl
+Answer key : 1
+
+Common solution:
+The arrangement has got the following Three subsets.
+Subset-1 has Words that are arranged based on number of vowels in them in Decreasing order
+Subset-2 has Numbers that are arranged according to their value in Decreasing order
+Subset-3 has Words that are arranged starting with vowels in Decreasing order
+The subsets are arranged alternatively such that in the first step,the first element from the first sorted subset is kept first. Similarly in the second step the first element from the second sorted subset is kept next and the pattern continues till all the elements from all the subsets are arranged.
+
+Input-  539 appointment extension image girl 439 790 vegetable ratio
+Step-1 : vegetable 539 appointment extension image girl 439 790 ratio
+Step-2 : vegetable 790 539 appointment extension image girl 439 ratio
+Step-3 : vegetable 790 image 539 appointment extension girl 439 ratio
+Step-4 : vegetable 790 image ratio 539 appointment extension girl 439
+Step-5 : vegetable 790 image ratio 539 extension appointment girl 439
+Step-6 : vegetable 790 image ratio 539 extension girl appointment 439
+Step-7 : vegetable 790 image ratio 539 extension girl 439 appointment
+
+
+
+_______________Next Set__________________
+
+
+
+Set 7
+
+
+A Machine arranges the given input in the following way.
+Input - ability attention 696 631 559 346 563 understanding 381 opening
+Step-1 : 696 ability attention 631 559 346 563 understanding 381 opening
+Step-2 : 696 attention 631 559 346 563 understanding 381 opening ability
+Step-3 : 696 631 attention 559 346 563 understanding 381 opening ability
+Step-4 : 696 631 559 346 563 understanding 381 opening attention ability
+Step-5 : 696 631 563 559 346 understanding 381 opening attention ability
+Step-6 : 696 631 563 559 346 381 understanding opening attention ability
+Step-7 : 696 631 563 559 381 346 understanding opening attention ability
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - 631 384 instance 775 injury 688 investment 894 902 iron
+
+1. In step-6, what is no-(6) element from right?
+(1)688
+(2)902
+(3)775
+(4)384
+(5)894
+Answer key : 4
+
+2. How many steps are required to sort it?
+(1)Three
+(2)One
+(3)Four
+(4)Seven
+(5)Two
+Answer key : 4
+
+3. In step-1 how many number of words are there between 'injury' and '384'?
+(1)Eight
+(2)Two
+(3)Six
+(4)Five
+(5)One
+Answer key : 2
+
+4. What is the position of the element 'iron' in step-6?
+(1)Nine
+(2)Four
+(3)One
+(4)Three
+(5)Seven
+Answer key : 5
+
+5. What is step-6?
+(1)902 894 631 384 775 688 investment iron instance injury
+(2)902 894 775 688 631 384 iron investment instance injury
+(3)902 631 384 instance 775 injury 688 investment 894 iron
+(4)902 894 775 631 384 688 iron investment instance injury
+(5)902 894 775 631 384 688 investment iron instance injury
+Answer key : 4
+
+Common solution:
+The arrangement has got the following Two subsets.
+Subset-1 has Numbers that are arranged according to their value in Decreasing order
+Subset-2 has Words that are arranged starting with vowels in Decreasing order
+The two subsets are arranged one after other. In the first step the first element of first sorted subset is kept first and in the next step the last element of second sorted subset is kept last and the pattern continues.The arrangement continues until all the elements of individual subsets are arranged.
+
+Input-  631 384 instance 775 injury 688 investment 894 902 iron
+Step-1 : 902 631 384 instance 775 injury 688 investment 894 iron
+Step-2 : 902 631 384 instance 775 688 investment 894 iron injury
+Step-3 : 902 894 631 384 instance 775 688 investment iron injury
+Step-4 : 902 894 631 384 775 688 investment iron instance injury
+Step-5 : 902 894 775 631 384 688 investment iron instance injury
+Step-6 : 902 894 775 631 384 688 iron investment instance injury
+Step-7 : 902 894 775 688 631 384 iron investment instance injury
+
+
+
+_______________Next Set__________________
+
+
+
+Set 8
+
+
+A Machine arranges the given input in the following way.
+Input - 824 philosophy thanks exchange 952 emphasis 879 education expert
+Step-1 : expert 824 philosophy thanks exchange 952 emphasis 879 education
+Step-2 : expert 824 thanks philosophy exchange 952 emphasis 879 education
+Step-3 : expert 824 thanks exchange philosophy 952 emphasis 879 education
+Step-4 : expert 824 thanks exchange 879 philosophy 952 emphasis education
+Step-5 : expert 824 thanks exchange 879 emphasis philosophy 952 education
+Step-6 : expert 824 thanks exchange 879 emphasis education philosophy 952
+Step-7 : expert 824 thanks exchange 879 emphasis education 952 philosophy
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - act concept 816 secretary 461 examination star 145 evening
+
+1. In which step do we get following order? 
+ examination 816 secretary evening 461 act concept star 145
+(1)Three
+(2)Two
+(3)Six
+(4)Five
+(5)One
+Answer key : 4
+
+2. In step-1, what is no-(4) element from left?
+(1)star
+(2)evening
+(3)816
+(4)secretary
+(5)145
+Answer key : 3
+
+3. In step-6 how many number of words are there between 'evening' and 'secretary'?
+(1)Two
+(2)Four
+(3)Six
+(4)One
+(5)Zero
+Answer key : 5
+
+4. How many steps are required to sort it?
+(1)Six
+(2)Two
+(3)Three
+(4)Zero
+(5)Seven
+Answer key : 5
+
+5. What is the position of the element 'star' in step-3?
+(1)Two
+(2)Four
+(3)Seven
+(4)Three
+(5)Six
+Answer key : 3
+
+Common solution:
+The arrangement has got the following Three subsets.
+Subset-1 has Words that are arranged starting with vowels in Decreasing order
+Subset-2 has Numbers that are arranged according to their value in Increasing order
+Subset-3 has Words that are arranged based on number of consonants in them in Increasing order
+The subsets are arranged alternatively such that in the first step,the first element from the first sorted subset is kept first. Similarly in the second step the first element from the second sorted subset is kept next and the pattern continues till all the elements from all the subsets are arranged.
+
+Input-  act concept 816 secretary 461 examination star 145 evening
+Step-1 : examination act concept 816 secretary 461 star 145 evening
+Step-2 : examination 816 act concept secretary 461 star 145 evening
+Step-3 : examination 816 secretary act concept 461 star 145 evening
+Step-4 : examination 816 secretary evening act concept 461 star 145
+Step-5 : examination 816 secretary evening 461 act concept star 145
+Step-6 : examination 816 secretary evening 461 concept act star 145
+Step-7 : examination 816 secretary evening 461 concept act 145 star
+
+
+
+_______________Next Set__________________
+
+
+
+Set 9
+
+
+A Machine arranges the given input in the following way.
+Input - box animal fire click 322 850 573 17
+Step-1 : 17 box animal fire click 322 850 573
+Step-2 : 17 box animal fire 322 850 573 click
+Step-3 : 17 322 box animal fire 850 573 click
+Step-4 : 17 322 animal fire 850 573 box click
+Step-5 : 17 322 573 animal fire 850 box click
+Step-6 : 17 322 573 animal 850 fire box click
+Step-7 : 17 322 573 850 animal fire box click
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - source size video match 31 452 617 432
+
+1. What is step-1?
+(1)31 source size match 452 617 432 video
+(2)31 432 452 size match 617 source video
+(3)31 432 size match 452 617 source video
+(4)31 432 452 617 match size source video
+(5)31 source size video match 452 617 432
+Answer key : 5
+
+2. In which step do we get following order? 
+ 31 432 source size match 452 617 video
+(1)Three
+(2)One
+(3)Six
+(4)Zero
+(5)Five
+Answer key : 1
+
+3. How many steps are required to sort it?
+(1)One
+(2)Three
+(3)Seven
+(4)Two
+(5)Zero
+Answer key : 3
+
+4. What is the position of the element '452' in step-6?
+(1)Three
+(2)Five
+(3)Seven
+(4)Six
+(5)Four
+Answer key : 1
+
+5. In step-5 how many number of words are there between 'source' and '432'?
+(1)Four
+(2)Two
+(3)One
+(4)Five
+(5)Three
+Answer key : 1
+
+Common solution:
+The arrangement has got the following Two subsets.
+Subset-1 has Numbers that are arranged according to their value in Increasing order
+Subset-2 has Words that are arranged based on number of vowels in them in Decreasing order
+The two subsets are arranged one after other. In the first step the first element of first sorted subset is kept first and in the next step the last element of second sorted subset is kept last and the pattern continues.The arrangement continues until all the elements of individual subsets are arranged.
+
+Input-  source size video match 31 452 617 432
+Step-1 : 31 source size video match 452 617 432
+Step-2 : 31 source size match 452 617 432 video
+Step-3 : 31 432 source size match 452 617 video
+Step-4 : 31 432 size match 452 617 source video
+Step-5 : 31 432 452 size match 617 source video
+Step-6 : 31 432 452 match 617 size source video
+Step-7 : 31 432 452 617 match size source video
+
+
+
+_______________Next Set__________________
+
+
+
+Set 10
+
+
+A Machine arranges the given input in the following way.
+Input - 283 town 251 historian oil explanation 239 user farm
+Step-1 : historian 283 town 251 oil explanation 239 user farm
+Step-2 : historian 239 283 town 251 oil explanation user farm
+Step-3 : historian 239 explanation 283 town 251 oil user farm
+Step-4 : historian 239 explanation farm 283 town 251 oil user
+Step-5 : historian 239 explanation farm 251 283 town oil user
+Step-6 : historian 239 explanation farm 251 oil 283 town user
+Step-7 : historian 239 explanation farm 251 oil town 283 user
+Step-7 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - air anxiety air 179 181 owner alcohol art 17
+
+1. What is the position of the element 'air' in step-0?
+(1)Zero
+(2)One
+(3)Two
+(4)Six
+(5)Seven
+Answer key : 5
+
+2. What is step-6?
+(1)anxiety 181 art air air 179 owner alcohol 17
+(2)anxiety 181 art owner 179 alcohol air air 17
+(3)anxiety 181 art owner air air 179 alcohol 17
+(4)anxiety 181 air air 179 owner alcohol art 17
+(5)anxiety 181 art owner 179 alcohol air 17 air
+Answer key : 2
+
+3. In step-5 how many number of words are there between '179' and '181'?
+(1)Seven
+(2)Three
+(3)One
+(4)Two
+(5)Five
+Answer key : 4
+
+4. How many steps are required to sort it?
+(1)Four
+(2)Six
+(3)Seven
+(4)Two
+(5)Zero
+Answer key : 3
+
+5. In which step do we get following order? 
+ anxiety 181 art owner 179 alcohol air air 17
+(1)Seven
+(2)Five
+(3)Zero
+(4)Six
+(5)One
+Answer key : 4
+
+Common solution:
+The arrangement has got the following Three subsets.
+Subset-1 has Words that are arranged based on number of consonants in them in Decreasing order
+Subset-2 has Prime numbers that are arranged according to their value in Increasing order
+Subset-3 has Words that are arranged starting with vowels in Increasing order
+The subsets are arranged alternatively such that in the first step,the first element from the first sorted subset is kept first. Similarly in the second step the first element from the second sorted subset is kept next and the pattern continues till all the elements from all the subsets are arranged.
+
+Input-  air anxiety air 179 181 owner alcohol art 17
+Step-1 : anxiety air air 179 181 owner alcohol art 17
+Step-2 : anxiety 181 air air 179 owner alcohol art 17
+Step-3 : anxiety 181 art air air 179 owner alcohol 17
+Step-4 : anxiety 181 art owner air air 179 alcohol 17
+Step-5 : anxiety 181 art owner 179 air air alcohol 17
+Step-6 : anxiety 181 art owner 179 alcohol air air 17
+Step-7 : anxiety 181 art owner 179 alcohol air 17 air
+
+
+
+_______________Next Set__________________
+
+

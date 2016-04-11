@@ -90,7 +90,7 @@ def mainProgram():
 		symbolDictNotation={'is neither smaller nor greater than':symbolList[0],'is neither smaller nor equal to':symbolList[1],'is not smaller than':symbolList[2],'is neither greater nor equal to':symbolList[3],'is not greater than':symbolList[4]}
 		for key in symbolDictNotation.keys():
 			text+='\'A{}B\' means \'A {} B\'\n'.format(symbolDictNotation[key],key)
-		text+='Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are false. Give answer\n'
+		text+='Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer\n'
 		return text
 
 	text=createRelations(text)
@@ -159,6 +159,29 @@ def mainProgram():
 		if len(resultSymbolList)==0:
 			returnValue=False
 		return returnValue
+
+	def createSolution(question):
+		found=False
+		for i in range(len(finalList)):
+			if question[0] in finalList[i] and question[2] in finalList[i]:
+				firstIndex=finalList[i].index(question[0])
+				secondIndex=finalList[i].index(question[2])
+				if firstIndex>secondIndex:
+					return [finalList[i][secondIndex:firstIndex+1]]
+				else:
+					return [finalList[i][firstIndex:secondIndex+1]]
+				found=True
+				break
+		if not found:
+			for i in range(len(finalList)):
+				if question[0] in finalList[i]:
+					exp1=finalList[i]
+					break
+			for i in range(len(finalList)):
+				if question[2] in finalList[i]:
+					exp2=finalList[i]
+			return [exp1,exp2]
+
 
 
 	def createQuestion(condition):
@@ -249,9 +272,19 @@ def mainProgram():
 		return questionList,answerList
 
 
-
+	def convertExp(exp):
+		symbolDictActual={'equalTo':'=','greaterThan':'>','greaterThanEqualTo':'>=','lessThan':'<','lessThanEqualTo':'<='}
+		actualExp=''
+		for i in range(len(exp)):
+			if exp[i] in symbolList:
+				actualExp+=symbolDictActual[symbolDict.keys()[symbolDict.values().index(exp[i])]]
+			else:
+				actualExp+=exp[i]
+		return actualExp
 
 	def subMain():
+		global finalList
+		global expression_list
 		expression_list=createExpression().split(',')
 		finalList= main(expression_list)
 		return expression_list,finalList
@@ -267,7 +300,33 @@ def mainProgram():
 			finalList_main.append(finalList)
 			expression_list_main.append(expression_list)	
 			i+=1
-			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\n(1) If only conclusion I is false.\n(2) If only conclusion II is false.\n(3) If either conclusion I or II is false.\n(4) If neither conclusion I or II is false.\n(5) If both conclusion I and II are false.\n\nAnswers are\nI. {}\nII. {}\n'.format(i,', '.join(expression_list),questionList[0],questionList[1],answerList[0],answerList[1])
+			if answerList[0]==True and answerList[1]==True:
+				key=5
+			elif answerList[0]==False and answerList[1]==False:
+				key=4
+			elif answerList[0]==True:
+				key=1
+			else:
+				key=2
+			solution1=createSolution(questionList[0])
+			solution2=createSolution(questionList[1])
+			correctedExp1=convertExp(questionList[0])
+			if answerList[0]==True:
+				solution1Text='[{} --> {}],\nWe can see that {} is True as by decoding the expression we get {} '.format(questionList[0],correctedExp1,correctedExp1,convertExp(solution1[0]))
+			else:
+				if len(solution1)==2:
+					solution1Text='[{} --> {}],\nWe can see that {} is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[0],correctedExp1,correctedExp1,convertExp(solution1[0]),convertExp(solution1[1]))
+				else:
+					solution1Text='[{} --> {}],\nWe can see that {} is False as there are opposite signs between them from decoded expression {} '.format(questionList[0],correctedExp1,correctedExp1,convertExp(solution1[0]))	
+			correctedExp2=convertExp(questionList[1])
+			if answerList[1]==True:
+				solution2Text='[{} --> {}],\nWe can see that {} is True as by decoding the expression we get {} '.format(questionList[1],correctedExp2,correctedExp2,convertExp(solution2[0]))
+			else:
+				if len(solution2)==2:
+					solution2Text='[{} --> {}],\nWe can see that {} is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[1],correctedExp2,correctedExp2,convertExp(solution2[0]),convertExp(solution2[1]))
+				else:
+					solution2Text='[{} --> {}],\nWe can see that {} is False as there are opposite signs between them from decoded expression {} '.format(questionList[1],correctedExp2,correctedExp2,convertExp(solution2[0]))	
+			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\n(1) If only conclusion I is true.\n(2) If only conclusion II is true.\n(3) If either conclusion I or II is true.\n(4) If neither conclusion I or II is true.\n(5) If both conclusion I and II are true.\nAnswer key: {}\nSolution:\n{}\n{}\n\n'.format(i,','.join(expression_list),questionList[0],questionList[1],key,solution1Text,solution2Text)
 		else:
 			print "Avoiding infiniteLoop"
 	return text
@@ -282,6 +341,7 @@ while sets_count<countFinal:
 		file = open("C:\Users\Olive\Desktop\oliveboard\project_inequality\sampleQuestions.txt", "a")
 	 	file.write(text)
 	 	file.close()
+	 	print finalList
 	 	sets_count+=1
 	except:
 		print ('\n')+"Error in Set {}".format(sets_count+1)
