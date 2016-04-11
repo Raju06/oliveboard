@@ -48,10 +48,10 @@ def mainProgram():
 		def returnExpression(self):
 			return self.items
 
-	def shuffle(x):
-		    x = list(x)
-		    random.shuffle(x)
-		    return x
+		def shuffle(x):
+			    x = list(x)
+			    random.shuffle(x)
+			    return x
 
 	def opposite(operator):
 		if operator == symbolDict['greaterThan']:
