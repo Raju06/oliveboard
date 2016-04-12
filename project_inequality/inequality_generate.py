@@ -48,10 +48,10 @@ def mainProgram():
 		def returnExpression(self):
 			return self.items
 
-		def shuffle(x):
-			    x = list(x)
-			    random.shuffle(x)
-			    return x
+	def shuffle(x):
+		    x = list(x)
+		    random.shuffle(x)
+		    return x
 
 	def opposite(operator):
 		if operator == symbolDict['greaterThan']:
@@ -101,7 +101,7 @@ def mainProgram():
 		,'numbers':['1','2','3','4','5','6','7','8','9'],'capitals':[x.upper() for x in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']]}
 		global q,inputSymbols
 		inputSymbols=list(np.random.choice(symbolList,4))
-		tempcreateExpression=random.randrange(0,3)
+		tempcreateExpression=random.choice([0,2])
 		levelType=random.randrange(1,3)
 		if tempcreateExpression == 0:
 			if levelType==1:
@@ -341,11 +341,7 @@ while sets_count<countFinal:
 		file = open("C:\Users\Olive\Desktop\oliveboard\project_inequality\sampleQuestions.txt", "a")
 	 	file.write(text)
 	 	file.close()
-	 	print finalList
 	 	sets_count+=1
 	except:
 		print ('\n')+"Error in Set {}".format(sets_count+1)
 		pass
-
-
-			
