@@ -2,36 +2,18 @@
 Set 1
 
 Consider the following:
-'A^B' means 'A is neither smaller nor equal to B'
+'A&B' means 'A is neither smaller nor equal to B'
 'A%B' means 'A is neither greater nor equal to B'
-'A$B' means 'A is not smaller than B'
-'A@B' means 'A is neither smaller nor greater than B'
-'A*B' means 'A is not greater than B'
+'A@B' means 'A is not smaller than B'
+'A$B' means 'A is neither smaller nor greater than B'
+'A^B' means 'A is not greater than B'
 Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
 
 1.Statement:
-j%i,r$z,j$o,z*s
+E@F,C@D,F$I,F%C
 Conclusion:
-I. i%z
-II. s$j
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[i%z --> i<z],
-We can see that i<z is False as by decoding the expression we get that there is no direct relation between expressions o<=j<i,r>=z<=s 
-[s$j --> s>=j],
-We can see that s>=j is False as by decoding the expression we get that there is no direct relation between expressions r>=z<=s,o<=j<i 
-
-
-2.Statement:
-5@9,6@7,7$8,5%3
-Conclusion:
-I. 9%3
-II. 6%3
+I. E@I
+II. D%E
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -39,17 +21,17 @@ II. 6%3
 (5) If both conclusion I and II are true.
 Answer key: 1
 Solution:
-[9%3 --> 9<3],
-We can see that 9<3 is True as by decoding the expression we get 3>5=9 
-[6%3 --> 6<3],
-We can see that 6<3 is False as by decoding the expression we get that there is no direct relation between expressions 6=7>=8,3>5=9 
+[E@I --> E>=I],
+We can see that E>=I is True as by decoding the expression we get E>=F=I 
+[D%E --> D<E],
+We can see that D<E is False as by decoding the expression we get that there is no direct relation between expressions F<C>=D,E>=F<C 
 
 
-3.Statement:
-l^n,x$l,v^x,n$f
+2.Statement:
+U@F,G^S,G&D,W^U
 Conclusion:
-I. n^v
-II. f^x
+I. W^F
+II. D&W
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -57,17 +39,17 @@ II. f^x
 (5) If both conclusion I and II are true.
 Answer key: 4
 Solution:
-[n^v --> n>v],
-We can see that n>v is False as there are opposite signs between them from decoded expression v>x>=l>n 
-[f^x --> f>x],
-We can see that f>x is False as there are opposite signs between them from decoded expression x>=l>n>=f 
+[W^F --> W<=F],
+We can see that W<=F is False as there are opposite signs between them from decoded expression W<=U>=F 
+[D&W --> D>W],
+We can see that D>W is False as by decoding the expression we get that there is no direct relation between expressions D<G<=S,W<=U>=F 
 
 
-4.Statement:
-p*z,z@x,x^w,r*p
+3.Statement:
+z@a,y%f,f$s,s@z
 Conclusion:
-I. r*z
-II. r*x
+I. f@z
+II. s@a
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -75,17 +57,17 @@ II. r*x
 (5) If both conclusion I and II are true.
 Answer key: 5
 Solution:
-[r*z --> r<=z],
-We can see that r<=z is True as by decoding the expression we get r<=p<=z 
-[r*x --> r<=x],
-We can see that r<=x is True as by decoding the expression we get r<=p<=z=x 
+[f@z --> f>=z],
+We can see that f>=z is True as by decoding the expression we get f=s>=z 
+[s@a --> s>=a],
+We can see that s>=a is True as by decoding the expression we get s>=z>=a 
 
 
-5.Statement:
-O*L,F@U,O^D,U@Z
+4.Statement:
+v$a,h$v,v&c,v$j
 Conclusion:
-I. F^O
-II. F^Z
+I. c$h
+II. h&a
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -93,10 +75,228 @@ II. F^Z
 (5) If both conclusion I and II are true.
 Answer key: 2
 Solution:
-[F^O --> F>O],
-We can see that F>O is False as by decoding the expression we get that there is no direct relation between expressions F=U=Z,D<O<=L 
-[F^Z --> F>Z],
-We can see that F>Z is True as by decoding the expression we get F=U=Z 
+[c$h --> c=h],
+We can see that c=h is False as there are opposite signs between them from decoded expression h=v>c 
+[h&a --> h>a],
+We can see that h>a is True as by decoding the expression we get h=v=a 
+
+
+5.Statement:
+u@o,o&p,p^n,i@u
+Conclusion:
+I. i@o
+II. p^i
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+[i@o --> i>=o],
+We can see that i>=o is True as by decoding the expression we get i>=u>=o 
+[p^i --> p<=i],
+We can see that p<=i is False as there are opposite signs between them from decoded expression i>=u>=o>p 
+
+
+Set 2
+
+Consider the following:
+'A$B' means 'A is neither smaller nor equal to B'
+'A&B' means 'A is neither greater nor equal to B'
+'A^B' means 'A is not smaller than B'
+'A@B' means 'A is neither smaller nor greater than B'
+'A#B' means 'A is not greater than B'
+Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
+
+1.Statement:
+b@h,h@x,m$p,x^m
+Conclusion:
+I. x@b
+II. h^m
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 5
+Solution:
+[x@b --> x=b],
+We can see that x=b is True as by decoding the expression we get b=h=x 
+[h^m --> h>=m],
+We can see that h>=m is True as by decoding the expression we get h=x>=m 
+
+
+2.Statement:
+V^X,R#V,I$P,V$S
+Conclusion:
+I. R#I
+II. R^S
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[R#I --> R<=I],
+We can see that R<=I is False as by decoding the expression we get that there is no direct relation between expressions R<=V>=X,I>P 
+[R^S --> R>=S],
+We can see that R>=S is False as there are opposite signs between them from decoded expression R<=V>S 
+
+
+3.Statement:
+R$J,R#O,V$R,R^Y
+Conclusion:
+I. J$V
+II. O$J
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[J$V --> J>V],
+We can see that J>V is False as there are opposite signs between them from decoded expression V>R>J 
+[O$J --> O>J],
+We can see that O>J is False as there are opposite signs between them from decoded expression O>=R>J 
+
+
+4.Statement:
+p#u,a@y,u#a,v^p
+Conclusion:
+I. y#u
+II. a#v
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[y#u --> y<=u],
+We can see that y<=u is False as there are opposite signs between them from decoded expression u<=a=y 
+[a#v --> a<=v],
+We can see that a<=v is False as there are opposite signs between them from decoded expression v>=p<=u<=a 
+
+
+5.Statement:
+m$j,n&f,f&c,f@y
+Conclusion:
+I. y$c
+II. m&y
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[y$c --> y>c],
+We can see that y>c is False as there are opposite signs between them from decoded expression y=f<c 
+[m&y --> m<y],
+We can see that m<y is False as by decoding the expression we get that there is no direct relation between expressions m>j,y=f<c 
+
+
+Set 1
+
+Consider the following:
+'A%B' means 'A is neither smaller nor equal to B'
+'A@B' means 'A is neither greater nor equal to B'
+'A#B' means 'A is not smaller than B'
+'A&B' means 'A is neither smaller nor greater than B'
+'A*B' means 'A is not greater than B'
+Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
+
+1.Statement:
+W#T,D*W,W%J,T@Y
+Conclusion:
+I. Y@J
+II. J*D
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[Y@J --> Y<J],
+We can see that Y<J is False as there are opposite signs between them from decoded expression J<W>=T<Y 
+[J*D --> J<=D],
+We can see that J<=D is False as there are opposite signs between them from decoded expression D<=W>J 
+
+
+2.Statement:
+M@K,C%M,C@I,T&C
+Conclusion:
+I. I%T
+II. T@K
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+[I%T --> I>T],
+We can see that I>T is True as by decoding the expression we get T=C<I 
+[T@K --> T<K],
+We can see that T<K is False as there are opposite signs between them from decoded expression T=C>M<K 
+
+
+3.Statement:
+V&O,K@U,V%E,U&S
+Conclusion:
+I. S&E
+II. E@O
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+[S&E --> S=E],
+We can see that S=E is False as by decoding the expression we get that there is no direct relation between expressions K<U=S,E<V=O 
+[E@O --> E<O],
+We can see that E<O is True as by decoding the expression we get E<V=O 
+
+
+4.Statement:
+o*t,k@o,o&h,h#u
+Conclusion:
+I. k@t
+II. k*h
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[k@t --> k<t],
+We can see that k<t is False as there are opposite signs between them from decoded expression k<o<=t 
+[k*h --> k<=h],
+We can see that k<=h is False as there are opposite signs between them from decoded expression k<o=h 
+
+
+5.Statement:
+O#U,O#Q,F#J,J*Y
+Conclusion:
+I. Y#Q
+II. J*O
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[Y#Q --> Y>=Q],
+We can see that Y>=Q is False as by decoding the expression we get that there is no direct relation between expressions F>=J<=Y,Q<=O>=U 
+[J*O --> J<=O],
+We can see that J<=O is False as by decoding the expression we get that there is no direct relation between expressions F>=J<=Y,Q<=O>=U 
 
 
 Set 2
@@ -105,15 +305,15 @@ Consider the following:
 'A&B' means 'A is neither smaller nor equal to B'
 'A^B' means 'A is neither greater nor equal to B'
 'A$B' means 'A is not smaller than B'
-'A%B' means 'A is neither smaller nor greater than B'
-'A*B' means 'A is not greater than B'
+'A*B' means 'A is neither smaller nor greater than B'
+'A%B' means 'A is not greater than B'
 Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
 
 1.Statement:
-z%i,d%z,z$r,z*b
+l%c,c$r,o*l,b^q
 Conclusion:
-I. i*r
-II. i$d
+I. l%b
+II. c$o
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -121,17 +321,17 @@ II. i$d
 (5) If both conclusion I and II are true.
 Answer key: 2
 Solution:
-[i*r --> i<=r],
-We can see that i<=r is False as there are opposite signs between them from decoded expression r<=z=i 
-[i$d --> i>=d],
-We can see that i>=d is True as by decoding the expression we get d=z=i 
+[l%b --> l<=b],
+We can see that l<=b is False as by decoding the expression we get that there is no direct relation between expressions o=l<=c>=r,b<q 
+[c$o --> c>=o],
+We can see that c>=o is True as by decoding the expression we get o=l<=c 
 
 
 2.Statement:
-v*d,l&w,h%v,d$l
+c^z,x%c,i$j,z&i
 Conclusion:
-I. l*v
-II. d*h
+I. x%i
+II. x%z
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -139,17 +339,17 @@ II. d*h
 (5) If both conclusion I and II are true.
 Answer key: 4
 Solution:
-[l*v --> l<=v],
-We can see that l<=v is False as there are opposite signs between them from decoded expression v<=d>=l 
-[d*h --> d<=h],
-We can see that d<=h is False as there are opposite signs between them from decoded expression h=v<=d 
+[x%i --> x<=i],
+We can see that x<=i is False as there are opposite signs between them from decoded expression x<=c<z>i 
+[x%z --> x<=z],
+We can see that x<=z is False as there are opposite signs between them from decoded expression x<=c<z 
 
 
 3.Statement:
-f^i,q*f,q%p,b&q
+p$y,y$d,y%t,t^w
 Conclusion:
-I. i*p
-II. q%i
+I. p^t
+II. p^w
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -157,17 +357,35 @@ II. q%i
 (5) If both conclusion I and II are true.
 Answer key: 4
 Solution:
-[i*p --> i<=p],
-We can see that i<=p is False as there are opposite signs between them from decoded expression p=q<=f<i 
-[q%i --> q=i],
-We can see that q=i is False as there are opposite signs between them from decoded expression q<=f<i 
+[p^t --> p<t],
+We can see that p<t is False as there are opposite signs between them from decoded expression p>=y<=t 
+[p^w --> p<w],
+We can see that p<w is False as there are opposite signs between them from decoded expression p>=y<=t<w 
 
 
 4.Statement:
-h%l,l*v,i^a,a&h
+x&z,w*l,a^w,l^x
 Conclusion:
-I. a&l
-II. h*v
+I. a*z
+II. z^w
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[a*z --> a=z],
+We can see that a=z is False as by decoding the expression we get that there is no direct relation between expressions a<w=l<x,l<x>z 
+[z^w --> z<w],
+We can see that z<w is False as by decoding the expression we get that there is no direct relation between expressions l<x>z,a<w=l<x 
+
+
+5.Statement:
+v$a,a^k,a$q,q$u
+Conclusion:
+I. v$q
+II. a$u
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -175,45 +393,127 @@ II. h*v
 (5) If both conclusion I and II are true.
 Answer key: 5
 Solution:
-[a&l --> a>l],
-We can see that a>l is True as by decoding the expression we get a>h=l 
-[h*v --> h<=v],
-We can see that h<=v is True as by decoding the expression we get h=l<=v 
+[v$q --> v>=q],
+We can see that v>=q is True as by decoding the expression we get v>=a>=q 
+[a$u --> a>=u],
+We can see that a>=u is True as by decoding the expression we get a>=q>=u 
 
 
-5.Statement:
-h%l,t$m,h$g,r$t
-Conclusion:
-I. r$h
-II. r$m
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 2
-Solution:
-[r$h --> r>=h],
-We can see that r>=h is False as by decoding the expression we get that there is no direct relation between expressions r>=t>=m,g<=h=l 
-[r$m --> r>=m],
-We can see that r>=m is True as by decoding the expression we get r>=t>=m 
-
-
-Set 3
+Set 1
 
 Consider the following:
-'A^B' means 'A is neither smaller nor equal to B'
-'A$B' means 'A is neither greater nor equal to B'
+'A@B' means 'A is neither smaller nor equal to B'
+'A*B' means 'A is neither greater nor equal to B'
 'A&B' means 'A is not smaller than B'
 'A#B' means 'A is neither smaller nor greater than B'
 'A%B' means 'A is not greater than B'
 Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
 
 1.Statement:
-J#P,F#K,K#E,P#F
+w@s,r&g,h%r,r#w
 Conclusion:
-I. F#J
-II. E#F
+I. g&w
+II. s@h
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[g&w --> g>=w],
+We can see that g>=w is False as there are opposite signs between them from decoded expression w=r>=g 
+[s@h --> s>h],
+We can see that s>h is False as by decoding the expression we get that there is no direct relation between expressions r=w>s,h<=r=w 
+
+
+2.Statement:
+q#l,s@q,t#p,a&s
+Conclusion:
+I. s@l
+II. p#s
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+[s@l --> s>l],
+We can see that s>l is True as by decoding the expression we get s>q=l 
+[p#s --> p=s],
+We can see that p=s is False as by decoding the expression we get that there is no direct relation between expressions t=p,a>=s>q=l 
+
+
+3.Statement:
+E%I,E%J,E&D,B@E
+Conclusion:
+I. B@D
+II. J&D
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+[B@D --> B>D],
+We can see that B>D is False as there are opposite signs between them from decoded expression B>E>=D 
+[J&D --> J>=D],
+We can see that J>=D is True as by decoding the expression we get D<=E<=J 
+
+
+4.Statement:
+t*v,n#m,n*h,o%n
+Conclusion:
+I. n#v
+II. m*h
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+[n#v --> n=v],
+We can see that n=v is False as by decoding the expression we get that there is no direct relation between expressions h>n=m,t<v 
+[m*h --> m<h],
+We can see that m<h is True as by decoding the expression we get h>n=m 
+
+
+5.Statement:
+U@Q,Z&U,Q@J,U*D
+Conclusion:
+I. D@Q
+II. J@U
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+[D@Q --> D>Q],
+We can see that D>Q is True as by decoding the expression we get D>U>Q 
+[J@U --> J>U],
+We can see that J>U is False as there are opposite signs between them from decoded expression U>Q>J 
+
+
+Set 2
+
+Consider the following:
+'A#B' means 'A is neither smaller nor equal to B'
+'A&B' means 'A is neither greater nor equal to B'
+'A%B' means 'A is not smaller than B'
+'A^B' means 'A is neither smaller nor greater than B'
+'A@B' means 'A is not greater than B'
+Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
+
+1.Statement:
+d%b,m^k,t@m,b@t
+Conclusion:
+I. b@m
+II. k%b
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -221,17 +521,35 @@ II. E#F
 (5) If both conclusion I and II are true.
 Answer key: 5
 Solution:
-[F#J --> F=J],
-We can see that F=J is True as by decoding the expression we get J=P=F 
-[E#F --> E=F],
-We can see that E=F is True as by decoding the expression we get F=K=E 
+[b@m --> b<=m],
+We can see that b<=m is True as by decoding the expression we get b<=t<=m 
+[k%b --> k>=b],
+We can see that k>=b is True as by decoding the expression we get b<=t<=m=k 
 
 
 2.Statement:
-3^6,3^9,7#8,8^2
+s&t,s^l,s^i,g%s
 Conclusion:
-I. 7^2
-II. 7#9
+I. i%t
+II. i^g
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[i%t --> i>=t],
+We can see that i>=t is False as there are opposite signs between them from decoded expression i=s<t 
+[i^g --> i=g],
+We can see that i=g is False as there are opposite signs between them from decoded expression g>=s=i 
+
+
+3.Statement:
+R^E,A#D,M@Q,Q#A
+Conclusion:
+I. Q#D
+II. D^R
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -239,35 +557,35 @@ II. 7#9
 (5) If both conclusion I and II are true.
 Answer key: 1
 Solution:
-[7^2 --> 7>2],
-We can see that 7>2 is True as by decoding the expression we get 7=8>2 
-[7#9 --> 7=9],
-We can see that 7=9 is False as by decoding the expression we get that there is no direct relation between expressions 7=8>2,9<3>6 
-
-
-3.Statement:
-5&9,7$2,1#5,9&3
-Conclusion:
-I. 1#7
-II. 3&2
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[1#7 --> 1=7],
-We can see that 1=7 is False as by decoding the expression we get that there is no direct relation between expressions 1=5>=9>=3,7<2 
-[3&2 --> 3>=2],
-We can see that 3>=2 is False as by decoding the expression we get that there is no direct relation between expressions 1=5>=9>=3,7<2 
+[Q#D --> Q>D],
+We can see that Q>D is True as by decoding the expression we get Q>A>D 
+[D^R --> D=R],
+We can see that D=R is False as by decoding the expression we get that there is no direct relation between expressions Q>A>D,R=E 
 
 
 4.Statement:
-k#o,u^g,r$q,o%u
+v@b,s&e,b@x,h&v
 Conclusion:
-I. u$r
-II. o%q
+I. v@x
+II. x&s
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+[v@x --> v<=x],
+We can see that v<=x is True as by decoding the expression we get v<=b<=x 
+[x&s --> x<s],
+We can see that x<s is False as by decoding the expression we get that there is no direct relation between expressions h<v<=b<=x,s<e 
+
+
+5.Statement:
+Y&A,T#M,Y&T,F#Y
+Conclusion:
+I. M&A
+II. A#T
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -275,17 +593,27 @@ II. o%q
 (5) If both conclusion I and II are true.
 Answer key: 4
 Solution:
-[u$r --> u<r],
-We can see that u<r is False as by decoding the expression we get that there is no direct relation between expressions k=o<=u,r<q 
-[o%q --> o<=q],
-We can see that o<=q is False as by decoding the expression we get that there is no direct relation between expressions k=o<=u,r<q 
+[M&A --> M<A],
+We can see that M<A is False as there are opposite signs between them from decoded expression A>Y<T>M 
+[A#T --> A>T],
+We can see that A>T is False as there are opposite signs between them from decoded expression T>Y<A 
 
 
-5.Statement:
-4&3,3^9,3&1,9$8
+Set 1
+
+Consider the following:
+'A$B' means 'A is neither smaller nor equal to B'
+'A#B' means 'A is neither greater nor equal to B'
+'A%B' means 'A is not smaller than B'
+'A^B' means 'A is neither smaller nor greater than B'
+'A@B' means 'A is not greater than B'
+Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
+
+1.Statement:
+q#g,q$k,s$l,y#s
 Conclusion:
-I. 8&1
-II. 4&1
+I. s#q
+II. k#g
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -293,27 +621,199 @@ II. 4&1
 (5) If both conclusion I and II are true.
 Answer key: 2
 Solution:
-[8&1 --> 8>=1],
-We can see that 8>=1 is False as there are opposite signs between them from decoded expression 1<=3>9<8 
-[4&1 --> 4>=1],
-We can see that 4>=1 is True as by decoding the expression we get 4>=3>=1 
+[s#q --> s<q],
+We can see that s<q is False as by decoding the expression we get that there is no direct relation between expressions y<s>l,k<q<g 
+[k#g --> k<g],
+We can see that k<g is True as by decoding the expression we get k<q<g 
 
 
-Set 4
+2.Statement:
+v#u,b#w,v%h,w^f
+Conclusion:
+I. v^f
+II. b#f
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+[v^f --> v=f],
+We can see that v=f is False as by decoding the expression we get that there is no direct relation between expressions h<=v<u,b<w=f 
+[b#f --> b<f],
+We can see that b<f is True as by decoding the expression we get b<w=f 
+
+
+3.Statement:
+g$x,k^i,x#k,m$g
+Conclusion:
+I. m$x
+II. i$x
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 5
+Solution:
+[m$x --> m>x],
+We can see that m>x is True as by decoding the expression we get m>g>x 
+[i$x --> i>x],
+We can see that i>x is True as by decoding the expression we get x<k=i 
+
+
+4.Statement:
+f$m,l%g,w$n,g%w
+Conclusion:
+I. f$n
+II. m$g
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[f$n --> f>n],
+We can see that f>n is False as by decoding the expression we get that there is no direct relation between expressions f>m,g>=w>n 
+[m$g --> m>g],
+We can see that m>g is False as by decoding the expression we get that there is no direct relation between expressions f>m,g>=w>n 
+
+
+5.Statement:
+A@D,C#A,S#E,A#Z
+Conclusion:
+I. A#S
+II. S#Z
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[A#S --> A<S],
+We can see that A<S is False as by decoding the expression we get that there is no direct relation between expressions C<A<=D,S<E 
+[S#Z --> S<Z],
+We can see that S<Z is False as by decoding the expression we get that there is no direct relation between expressions S<E,C<A<Z 
+
+
+Set 2
+
+Consider the following:
+'A&B' means 'A is neither smaller nor equal to B'
+'A%B' means 'A is neither greater nor equal to B'
+'A*B' means 'A is not smaller than B'
+'A^B' means 'A is neither smaller nor greater than B'
+'A@B' means 'A is not greater than B'
+Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
+
+1.Statement:
+m^u,n&m,m@a,m^x
+Conclusion:
+I. x@a
+II. u@n
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+[x@a --> x<=a],
+We can see that x<=a is True as by decoding the expression we get x=m<=a 
+[u@n --> u<=n],
+We can see that u<=n is False as there are opposite signs between them from decoded expression n>m=u 
+
+
+2.Statement:
+m@c,q&j,c^q,j*a
+Conclusion:
+I. q^m
+II. j^m
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[q^m --> q=m],
+We can see that q=m is False as there are opposite signs between them from decoded expression m<=c=q 
+[j^m --> j=m],
+We can see that j=m is False as by decoding the expression we get that there is no direct relation between expressions c=q>j>=a,m<=c=q 
+
+
+3.Statement:
+M%P,U^M,P%Z,D^Q
+Conclusion:
+I. Z^D
+II. U%Z
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+[Z^D --> Z=D],
+We can see that Z=D is False as by decoding the expression we get that there is no direct relation between expressions U=M<P<Z,D=Q 
+[U%Z --> U<Z],
+We can see that U<Z is True as by decoding the expression we get U=M<P<Z 
+
+
+4.Statement:
+o^p,o@s,o@c,w@o
+Conclusion:
+I. c@p
+II. w@p
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+[c@p --> c<=p],
+We can see that c<=p is False as there are opposite signs between them from decoded expression c>=o=p 
+[w@p --> w<=p],
+We can see that w<=p is True as by decoding the expression we get w<=o=p 
+
+
+5.Statement:
+m&z,p%a,z@d,p&f
+Conclusion:
+I. d%a
+II. a&f
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+[d%a --> d<a],
+We can see that d<a is False as by decoding the expression we get that there is no direct relation between expressions m>z<=d,f<p<a 
+[a&f --> a>f],
+We can see that a>f is True as by decoding the expression we get f<p<a 
+
+
+Set 1
 
 Consider the following:
 'A%B' means 'A is neither smaller nor equal to B'
 'A$B' means 'A is neither greater nor equal to B'
-'A*B' means 'A is not smaller than B'
-'A@B' means 'A is neither smaller nor greater than B'
-'A#B' means 'A is not greater than B'
+'A@B' means 'A is not smaller than B'
+'A*B' means 'A is neither smaller nor greater than B'
+'A&B' means 'A is not greater than B'
 Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
 
 1.Statement:
-1$5,8*9,9%6,9$1
+Q%I,P*Q,G*K,Z*P
 Conclusion:
-I. 1$6
-II. 9$5
+I. K*Z
+II. Q*Z
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -321,17 +821,17 @@ II. 9$5
 (5) If both conclusion I and II are true.
 Answer key: 2
 Solution:
-[1$6 --> 1<6],
-We can see that 1<6 is False as there are opposite signs between them from decoded expression 1>9>6 
-[9$5 --> 9<5],
-We can see that 9<5 is True as by decoding the expression we get 9<1<5 
+[K*Z --> K=Z],
+We can see that K=Z is False as by decoding the expression we get that there is no direct relation between expressions G=K,Z=P=Q>I 
+[Q*Z --> Q=Z],
+We can see that Q=Z is True as by decoding the expression we get Z=P=Q 
 
 
 2.Statement:
-p*t,t*a,t#y,t$b
+I*B,N$H,R@N,H@I
 Conclusion:
-I. a#p
-II. b*p
+I. H@B
+II. R@H
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -339,17 +839,35 @@ II. b*p
 (5) If both conclusion I and II are true.
 Answer key: 1
 Solution:
-[a#p --> a<=p],
-We can see that a<=p is True as by decoding the expression we get p>=t>=a 
-[b*p --> b>=p],
-We can see that b>=p is False as there are opposite signs between them from decoded expression p>=t<b 
+[H@B --> H>=B],
+We can see that H>=B is True as by decoding the expression we get H>=I=B 
+[R@H --> R>=H],
+We can see that R>=H is False as there are opposite signs between them from decoded expression R>=N<H 
 
 
 3.Statement:
-E*L,V#J,J%N,J*Q
+g$y,l$g,g%x,g$d
 Conclusion:
-I. Q*L
-II. J*L
+I. x$d
+II. d$y
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+[x$d --> x<d],
+We can see that x<d is True as by decoding the expression we get d>g>x 
+[d$y --> d<y],
+We can see that d<y is False as there are opposite signs between them from decoded expression d>g<y 
+
+
+4.Statement:
+Z&L,Z&O,E$I,X&E
+Conclusion:
+I. O$E
+II. Z&E
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -357,281 +875,181 @@ II. J*L
 (5) If both conclusion I and II are true.
 Answer key: 4
 Solution:
-[Q*L --> Q>=L],
-We can see that Q>=L is False as by decoding the expression we get that there is no direct relation between expressions V<=J>=Q,E>=L 
-[J*L --> J>=L],
-We can see that J>=L is False as by decoding the expression we get that there is no direct relation between expressions V<=J>N,E>=L 
+[O$E --> O<E],
+We can see that O<E is False as by decoding the expression we get that there is no direct relation between expressions O>=Z<=L,X<=E<I 
+[Z&E --> Z<=E],
+We can see that Z<=E is False as by decoding the expression we get that there is no direct relation between expressions O>=Z<=L,X<=E<I 
+
+
+5.Statement:
+L%U,L&H,L$Z,Q*L
+Conclusion:
+I. Z&Q
+II. U$Z
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+[Z&Q --> Z<=Q],
+We can see that Z<=Q is False as there are opposite signs between them from decoded expression Q=L<Z 
+[U$Z --> U<Z],
+We can see that U<Z is True as by decoding the expression we get Z>L>U 
+
+
+Set 2
+
+Consider the following:
+'A%B' means 'A is neither smaller nor equal to B'
+'A$B' means 'A is neither greater nor equal to B'
+'A&B' means 'A is not smaller than B'
+'A@B' means 'A is neither smaller nor greater than B'
+'A*B' means 'A is not greater than B'
+Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
+
+1.Statement:
+w@b,f&q,w$g,n@w
+Conclusion:
+I. b&n
+II. b$g
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 5
+Solution:
+[b&n --> b>=n],
+We can see that b>=n is True as by decoding the expression we get n=w=b 
+[b$g --> b<g],
+We can see that b<g is True as by decoding the expression we get g>w=b 
+
+
+2.Statement:
+T$Y,G@T,W&L,Y$P
+Conclusion:
+I. G$P
+II. Y@W
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+[G$P --> G<P],
+We can see that G<P is True as by decoding the expression we get G=T<Y<P 
+[Y@W --> Y=W],
+We can see that Y=W is False as by decoding the expression we get that there is no direct relation between expressions G=T<Y<P,W>=L 
+
+
+3.Statement:
+a%o,o*x,p&m,x*p
+Conclusion:
+I. a%x
+II. x*m
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[a%x --> a>x],
+We can see that a>x is False as there are opposite signs between them from decoded expression a>o<=x 
+[x*m --> x<=m],
+We can see that x<=m is False as there are opposite signs between them from decoded expression x<=p>=m 
 
 
 4.Statement:
-Y*D,R$Q,E$R,R%Y
+R%L,P@Z,Y*M,M$R
 Conclusion:
-I. Y%Q
+I. P%L
+II. M%P
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+[P%L --> P>L],
+We can see that P>L is False as by decoding the expression we get that there is no direct relation between expressions P=Z,M<R>L 
+[M%P --> M>P],
+We can see that M>P is False as by decoding the expression we get that there is no direct relation between expressions M<R>L,P=Z 
+
+
+5.Statement:
+Z$E,Z%Q,N*Z,Z%R
+Conclusion:
+I. E%R
 II. Q$E
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
 (4) If neither conclusion I or II is true.
 (5) If both conclusion I and II are true.
-Answer key: 4
+Answer key: 5
 Solution:
-[Y%Q --> Y>Q],
-We can see that Y>Q is False as there are opposite signs between them from decoded expression Y<R<Q 
+[E%R --> E>R],
+We can see that E>R is True as by decoding the expression we get R<Z<E 
 [Q$E --> Q<E],
-We can see that Q<E is False as there are opposite signs between them from decoded expression E<R<Q 
+We can see that Q<E is True as by decoding the expression we get Q<Z<E 
 
 
-5.Statement:
-9#8,2@5,5$9,5*1
-Conclusion:
-I. 2*1
-II. 8#2
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 1
-Solution:
-[2*1 --> 2>=1],
-We can see that 2>=1 is True as by decoding the expression we get 2=5>=1 
-[8#2 --> 8<=2],
-We can see that 8<=2 is False as there are opposite signs between them from decoded expression 2=5<9<=8 
-
-
-Set 5
+Set 1
 
 Consider the following:
 'A&B' means 'A is neither smaller nor equal to B'
-'A#B' means 'A is neither greater nor equal to B'
-'A*B' means 'A is not smaller than B'
-'A$B' means 'A is neither smaller nor greater than B'
-'A%B' means 'A is not greater than B'
-Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
-
-1.Statement:
-D$C,D*E,K$D,D%S
-Conclusion:
-I. K*C
-II. E$S
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 1
-Solution:
-[K*C --> K>=C],
-We can see that K>=C is True as by decoding the expression we get K=D=C 
-[E$S --> E=S],
-We can see that E=S is False as there are opposite signs between them from decoded expression S>=D>=E 
-
-
-2.Statement:
-6*2,1*8,2#7,2%3
-Conclusion:
-I. 3*7
-II. 6#7
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[3*7 --> 3>=7],
-We can see that 3>=7 is False as there are opposite signs between them from decoded expression 3>=2<7 
-[6#7 --> 6<7],
-We can see that 6<7 is False as there are opposite signs between them from decoded expression 6>=2<7 
-
-
-3.Statement:
-J*Y,J$Q,U$J,L%M
-Conclusion:
-I. U%Q
-II. Y%Q
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 5
-Solution:
-[U%Q --> U<=Q],
-We can see that U<=Q is True as by decoding the expression we get U=J=Q 
-[Y%Q --> Y<=Q],
-We can see that Y<=Q is True as by decoding the expression we get Q=J>=Y 
-
-
-4.Statement:
-s$v,s%i,i#x,q*s
-Conclusion:
-I. v#i
-II. v%q
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 2
-Solution:
-[v#i --> v<i],
-We can see that v<i is False as there are opposite signs between them from decoded expression i>=s=v 
-[v%q --> v<=q],
-We can see that v<=q is True as by decoding the expression we get q>=s=v 
-
-
-5.Statement:
-Z$E,K*Z,Z#R,D$X
-Conclusion:
-I. R$D
-II. E#R
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 2
-Solution:
-[R$D --> R=D],
-We can see that R=D is False as by decoding the expression we get that there is no direct relation between expressions R>Z=E,D=X 
-[E#R --> E<R],
-We can see that E<R is True as by decoding the expression we get R>Z=E 
-
-
-Set 6
-
-Consider the following:
-'A$B' means 'A is neither smaller nor equal to B'
 'A%B' means 'A is neither greater nor equal to B'
-'A&B' means 'A is not smaller than B'
-'A^B' means 'A is neither smaller nor greater than B'
-'A*B' means 'A is not greater than B'
-Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
-
-1.Statement:
-f*y,y&l,l&w,c$f
-Conclusion:
-I. y&w
-II. f&l
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 1
-Solution:
-[y&w --> y>=w],
-We can see that y>=w is True as by decoding the expression we get y>=l>=w 
-[f&l --> f>=l],
-We can see that f>=l is False as there are opposite signs between them from decoded expression f<=y>=l 
-
-
-2.Statement:
-r^u,h*t,v&h,h*r
-Conclusion:
-I. t*u
-II. u*v
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[t*u --> t<=u],
-We can see that t<=u is False as by decoding the expression we get that there is no direct relation between expressions v>=h<=t,h<=r=u 
-[u*v --> u<=v],
-We can see that u<=v is False as by decoding the expression we get that there is no direct relation between expressions h<=r=u,v>=h<=r 
-
-
-3.Statement:
-5$1,5&2,5$3,6$5
-Conclusion:
-I. 3&6
-II. 3&2
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[3&6 --> 3>=6],
-We can see that 3>=6 is False as there are opposite signs between them from decoded expression 6>5>3 
-[3&2 --> 3>=2],
-We can see that 3>=2 is False as there are opposite signs between them from decoded expression 3<5>=2 
-
-
-4.Statement:
-9^1,1^5,1$2,2$7
-Conclusion:
-I. 5^7
-II. 2$5
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[5^7 --> 5=7],
-We can see that 5=7 is False as there are opposite signs between them from decoded expression 7<2<1=5 
-[2$5 --> 2>5],
-We can see that 2>5 is False as there are opposite signs between them from decoded expression 2<1=5 
-
-
-5.Statement:
-j$i,a$h,k^j,i^c
-Conclusion:
-I. k^i
-II. a^j
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[k^i --> k=i],
-We can see that k=i is False as there are opposite signs between them from decoded expression k=j>i 
-[a^j --> a=j],
-We can see that a=j is False as by decoding the expression we get that there is no direct relation between expressions a>h,k=j>i=c 
-
-
-Set 7
-
-Consider the following:
-'A%B' means 'A is neither smaller nor equal to B'
-'A&B' means 'A is neither greater nor equal to B'
 'A@B' means 'A is not smaller than B'
-'A$B' means 'A is neither smaller nor greater than B'
-'A#B' means 'A is not greater than B'
+'A*B' means 'A is neither smaller nor greater than B'
+'A$B' means 'A is not greater than B'
 Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
 
 1.Statement:
-J&G,G#X,X@N,Z$T
+U@M,U%N,P%J,J%S
 Conclusion:
-I. T@J
-II. X@J
+I. N%S
+II. P%S
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
 (4) If neither conclusion I or II is true.
 (5) If both conclusion I and II are true.
-Answer key: 4
+Answer key: 2
 Solution:
-[T@J --> T>=J],
-We can see that T>=J is False as by decoding the expression we get that there is no direct relation between expressions Z=T,J<G<=X>=N 
-[X@J --> X>=J],
-We can see that X>=J is False as there are opposite signs between them from decoded expression J<G<=X 
+[N%S --> N<S],
+We can see that N<S is False as by decoding the expression we get that there is no direct relation between expressions N>U>=M,P<J<S 
+[P%S --> P<S],
+We can see that P<S is True as by decoding the expression we get P<J<S 
 
 
 2.Statement:
-R#K,H@A,U&F,K#U
+V&U,S@W,U*M,M$S
 Conclusion:
-I. F&A
-II. U&A
+I. U@W
+II. V&M
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+[U@W --> U>=W],
+We can see that U>=W is False as by decoding the expression we get that there is no direct relation between expressions V>U=M<=S,M<=S>=W 
+[V&M --> V>M],
+We can see that V>M is True as by decoding the expression we get V>U=M 
+
+
+3.Statement:
+z$f,p@y,r%l,y&r
+Conclusion:
+I. z$r
+II. r&f
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -639,35 +1057,35 @@ II. U&A
 (5) If both conclusion I and II are true.
 Answer key: 4
 Solution:
-[F&A --> F<A],
-We can see that F<A is False as by decoding the expression we get that there is no direct relation between expressions K<=U<F,H>=A 
-[U&A --> U<A],
-We can see that U<A is False as by decoding the expression we get that there is no direct relation between expressions R<=K<=U,H>=A 
+[z$r --> z<=r],
+We can see that z<=r is False as by decoding the expression we get that there is no direct relation between expressions z<=f,y>r<l 
+[r&f --> r>f],
+We can see that r>f is False as by decoding the expression we get that there is no direct relation between expressions p>=y>r,z<=f 
 
 
-3.Statement:
-h%u,j%z,g$j,j%d
+4.Statement:
+u@s,u%b,l*u,y&v
 Conclusion:
-I. g%d
-II. g%z
+I. l*y
+II. v%u
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
 (4) If neither conclusion I or II is true.
 (5) If both conclusion I and II are true.
-Answer key: 5
+Answer key: 4
 Solution:
-[g%d --> g>d],
-We can see that g>d is True as by decoding the expression we get g=j>d 
-[g%z --> g>z],
-We can see that g>z is True as by decoding the expression we get g=j>z 
+[l*y --> l=y],
+We can see that l=y is False as by decoding the expression we get that there is no direct relation between expressions l=u>=s,y>v 
+[v%u --> v<u],
+We can see that v<u is False as by decoding the expression we get that there is no direct relation between expressions y>v,l=u<b 
 
 
-4.Statement:
-2$5,6#3,2@7,3@9
+5.Statement:
+g$f,f*t,t@z,e@l
 Conclusion:
-I. 5@7
-II. 7#6
+I. z$f
+II. e*z
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -675,245 +1093,27 @@ II. 7#6
 (5) If both conclusion I and II are true.
 Answer key: 1
 Solution:
-[5@7 --> 5>=7],
-We can see that 5>=7 is True as by decoding the expression we get 7<=2=5 
-[7#6 --> 7<=6],
-We can see that 7<=6 is False as by decoding the expression we get that there is no direct relation between expressions 7<=2=5,6<=3>=9 
+[z$f --> z<=f],
+We can see that z<=f is True as by decoding the expression we get f=t>=z 
+[e*z --> e=z],
+We can see that e=z is False as by decoding the expression we get that there is no direct relation between expressions e>=l,g<=f=t>=z 
 
 
-5.Statement:
-b$x,r#b,x&c,k#r
-Conclusion:
-I. b#k
-II. b#c
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[b#k --> b<=k],
-We can see that b<=k is False as there are opposite signs between them from decoded expression k<=r<=b 
-[b#c --> b<=c],
-We can see that b<=c is False as there are opposite signs between them from decoded expression b=x<c 
-
-
-Set 8
+Set 1
 
 Consider the following:
-'A^B' means 'A is neither smaller nor equal to B'
-'A*B' means 'A is neither greater nor equal to B'
-'A#B' means 'A is not smaller than B'
-'A@B' means 'A is neither smaller nor greater than B'
-'A&B' means 'A is not greater than B'
-Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
-
-1.Statement:
-X^L,O^X,X@W,X&D
-Conclusion:
-I. W@L
-II. O^D
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[W@L --> W=L],
-We can see that W=L is False as there are opposite signs between them from decoded expression W=X>L 
-[O^D --> O>D],
-We can see that O>D is False as there are opposite signs between them from decoded expression O>X<=D 
-
-
-2.Statement:
-o^h,o&x,p#o,h#l
-Conclusion:
-I. l&p
-II. h#x
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[l&p --> l<=p],
-We can see that l<=p is False as there are opposite signs between them from decoded expression p>=o>h>=l 
-[h#x --> h>=x],
-We can see that h>=x is False as there are opposite signs between them from decoded expression x>=o>h 
-
-
-3.Statement:
-5*4,4^9,1@2,4&8
-Conclusion:
-I. 8@5
-II. 9^1
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[8@5 --> 8=5],
-We can see that 8=5 is False as there are opposite signs between them from decoded expression 5<4<=8 
-[9^1 --> 9>1],
-We can see that 9>1 is False as by decoding the expression we get that there is no direct relation between expressions 5<4>9,1=2 
-
-
-4.Statement:
-S@P,G#L,S#K,X&G
-Conclusion:
-I. X#S
-II. P#K
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 2
-Solution:
-[X#S --> X>=S],
-We can see that X>=S is False as by decoding the expression we get that there is no direct relation between expressions X<=G>=L,K<=S=P 
-[P#K --> P>=K],
-We can see that P>=K is True as by decoding the expression we get K<=S=P 
-
-
-5.Statement:
-9#1,9&6,4^9,9@5
-Conclusion:
-I. 1&4
-II. 5#1
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 2
-Solution:
-[1&4 --> 1<=4],
-We can see that 1<=4 is False as there are opposite signs between them from decoded expression 4>9>=1 
-[5#1 --> 5>=1],
-We can see that 5>=1 is True as by decoding the expression we get 5=9>=1 
-
-
-Set 9
-
-Consider the following:
-'A&B' means 'A is neither smaller nor equal to B'
-'A*B' means 'A is neither greater nor equal to B'
-'A^B' means 'A is not smaller than B'
-'A$B' means 'A is neither smaller nor greater than B'
-'A#B' means 'A is not greater than B'
-Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
-
-1.Statement:
-o&j,q$o,n*h,o$n
-Conclusion:
-I. o*h
-II. q*n
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 5
-Solution:
-[o*h --> o<h],
-We can see that o<h is True as by decoding the expression we get o=n<h 
-[q*n --> q<n],
-We can see that q<n is True as by decoding the expression we get q=o=n 
-
-
-2.Statement:
-K$E,E&J,J*X,F#W
-Conclusion:
-I. W#J
-II. K&J
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 2
-Solution:
-[W#J --> W<=J],
-We can see that W<=J is False as by decoding the expression we get that there is no direct relation between expressions F<=W,K=E>J<X 
-[K&J --> K>J],
-We can see that K>J is True as by decoding the expression we get K=E>J 
-
-
-3.Statement:
-n*k,h^n,y$e,k$g
-Conclusion:
-I. n*g
-II. e^k
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 1
-Solution:
-[n*g --> n<g],
-We can see that n<g is True as by decoding the expression we get n<k=g 
-[e^k --> e>=k],
-We can see that e>=k is False as by decoding the expression we get that there is no direct relation between expressions y=e,h>=n<k=g 
-
-
-4.Statement:
-9*2,6^8,6$7,2*3
-Conclusion:
-I. 9*7
-II. 3*9
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[9*7 --> 9<7],
-We can see that 9<7 is False as by decoding the expression we get that there is no direct relation between expressions 9<2<3,7=6>=8 
-[3*9 --> 3<9],
-We can see that 3<9 is False as there are opposite signs between them from decoded expression 9<2<3 
-
-
-5.Statement:
-B#J,B#H,C^S,Z$B
-Conclusion:
-I. Z#H
-II. J^Z
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 5
-Solution:
-[Z#H --> Z<=H],
-We can see that Z<=H is True as by decoding the expression we get Z=B<=H 
-[J^Z --> J>=Z],
-We can see that J>=Z is True as by decoding the expression we get Z=B<=J 
-
-
-Set 10
-
-Consider the following:
-'A$B' means 'A is neither smaller nor equal to B'
-'A#B' means 'A is neither greater nor equal to B'
+'A#B' means 'A is neither smaller nor equal to B'
+'A^B' means 'A is neither greater nor equal to B'
 'A&B' means 'A is not smaller than B'
-'A@B' means 'A is neither smaller nor greater than B'
-'A%B' means 'A is not greater than B'
+'A*B' means 'A is neither smaller nor greater than B'
+'A@B' means 'A is not greater than B'
 Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer
 
 1.Statement:
-1%4,5@1,2&3,2$7
+p*d,r&p,v^m,d^w
 Conclusion:
-I. 7$4
-II. 4&5
+I. v&w
+II. r&d
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -921,17 +1121,17 @@ II. 4&5
 (5) If both conclusion I and II are true.
 Answer key: 2
 Solution:
-[7$4 --> 7>4],
-We can see that 7>4 is False as by decoding the expression we get that there is no direct relation between expressions 7<2>=3,5=1<=4 
-[4&5 --> 4>=5],
-We can see that 4>=5 is True as by decoding the expression we get 5=1<=4 
+[v&w --> v>=w],
+We can see that v>=w is False as by decoding the expression we get that there is no direct relation between expressions v<m,r>=p=d<w 
+[r&d --> r>=d],
+We can see that r>=d is True as by decoding the expression we get r>=p=d 
 
 
 2.Statement:
-1@9,6@8,8#5,7#6
+N&A,A&S,H^Y,V@N
 Conclusion:
-I. 7#5
-II. 8#7
+I. S@N
+II. Y&N
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -939,35 +1139,17 @@ II. 8#7
 (5) If both conclusion I and II are true.
 Answer key: 1
 Solution:
-[7#5 --> 7<5],
-We can see that 7<5 is True as by decoding the expression we get 7<6=8<5 
-[8#7 --> 8<7],
-We can see that 8<7 is False as there are opposite signs between them from decoded expression 7<6=8 
+[S@N --> S<=N],
+We can see that S<=N is True as by decoding the expression we get N>=A>=S 
+[Y&N --> Y>=N],
+We can see that Y>=N is False as by decoding the expression we get that there is no direct relation between expressions H<Y,V<=N>=A>=S 
 
 
 3.Statement:
-o@l,i$o,i&c,m@i
+U^Q,Q*R,D^P,Q^L
 Conclusion:
-I. c@l
-II. m@c
-(1) If only conclusion I is true.
-(2) If only conclusion II is true.
-(3) If either conclusion I or II is true.
-(4) If neither conclusion I or II is true.
-(5) If both conclusion I and II are true.
-Answer key: 4
-Solution:
-[c@l --> c=l],
-We can see that c=l is False as there are opposite signs between them from decoded expression c<=i>o=l 
-[m@c --> m=c],
-We can see that m=c is False as there are opposite signs between them from decoded expression m=i>=c 
-
-
-4.Statement:
-D%L,D@Q,X#A,U&D
-Conclusion:
-I. U&Q
-II. X&U
+I. U^R
+II. U^P
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -975,17 +1157,17 @@ II. X&U
 (5) If both conclusion I and II are true.
 Answer key: 1
 Solution:
-[U&Q --> U>=Q],
-We can see that U>=Q is True as by decoding the expression we get U>=D=Q 
-[X&U --> X>=U],
-We can see that X>=U is False as by decoding the expression we get that there is no direct relation between expressions X<A,U>=D=Q 
+[U^R --> U<R],
+We can see that U<R is True as by decoding the expression we get U<Q=R 
+[U^P --> U<P],
+We can see that U<P is False as by decoding the expression we get that there is no direct relation between expressions U<Q=R,D<P 
 
 
-5.Statement:
-8#7,2$5,7%4,7@2
+4.Statement:
+G@T,P@G,R#J,T^R
 Conclusion:
-I. 2$4
-II. 8@5
+I. P@R
+II. P#J
 (1) If only conclusion I is true.
 (2) If only conclusion II is true.
 (3) If either conclusion I or II is true.
@@ -993,8 +1175,26 @@ II. 8@5
 (5) If both conclusion I and II are true.
 Answer key: 4
 Solution:
-[2$4 --> 2>4],
-We can see that 2>4 is False as there are opposite signs between them from decoded expression 2=7<=4 
-[8@5 --> 8=5],
-We can see that 8=5 is False as by decoding the expression we get that there is no direct relation between expressions 8<7<=4,7=2>5 
+[P@R --> P<=R],
+We can see that P<=R is False as there are opposite signs between them from decoded expression P<=G<=T<R 
+[P#J --> P>J],
+We can see that P>J is False as by decoding the expression we get that there is no direct relation between expressions P<=G<=T<R,T<R>J 
+
+
+5.Statement:
+q@e,u@q,t^u,e&k
+Conclusion:
+I. u@e
+II. t@e
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+[u@e --> u<=e],
+We can see that u<=e is True as by decoding the expression we get u<=q<=e 
+[t@e --> t<=e],
+We can see that t<=e is False as there are opposite signs between them from decoded expression t<u<=q<=e 
 
