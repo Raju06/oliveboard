@@ -35,3 +35,4 @@ alist=raw_input().split()
 
 bubbleSort(alist)
 print " ".join(alist)
+	

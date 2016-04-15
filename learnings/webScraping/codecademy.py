@@ -10,7 +10,7 @@ emailElem=browser.find_element_by_id('user_login')
 emailElem.send_keys('konatalaramesh@gmail.com')
 
 passwordElem=browser.find_element_by_id('user_password')
-passwordElem.send_keys('myself...')
+passwordElem.send_keys('')
 passwordElem.submit()
 currentUrl="https://www.codecademy.com/en/courses/web-ext/projects/html-css-prj_broadway"
 
