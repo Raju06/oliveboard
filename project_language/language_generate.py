@@ -150,7 +150,7 @@ def main(level_of_difficulty):
 						done=True
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
-				questionlist.append("How can '{}' be written?".format(questionItem))
+				questionlist.append("How can '{}' be coded?".format(questionItem))
 				options.append(["None of the above"])
 				for i in range(len(options)):
 					if options[i] in answerItem:
@@ -174,7 +174,7 @@ def main(level_of_difficulty):
 				options=shuffle([answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2],optionlist1[3]])
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
-				questionlist.append("What can be the code for '{}' ?".format(questionItem))
+				questionlist.append("What is the code for '{}' ?".format(questionItem))
 				for i in range(len(options)):
 					if options[i] in answerItem:
 						options.append(str(i+1))
@@ -197,7 +197,7 @@ def main(level_of_difficulty):
 				options=shuffle([answerItem[random.randrange(0,len(answerItem))],optionlist1[0],optionlist1[1],optionlist1[2],optionlist1[3]])
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
-				questionlist.append("What can be coded as '{}' ?".format(questionItem))
+				questionlist.append("Which word is coded as '{}' ?".format(questionItem))
 				for i in range(len(options)):
 					if options[i] in answerItem:
 						options.append(str(i+1))
@@ -210,7 +210,7 @@ def main(level_of_difficulty):
 						count+=1
 				answerItem=count
 				options=shuffle([answerItem,answerItem+1,answerItem-1,answerItem+2,answerItem-2])
-				questionlist.append("According to the problem,how many words can be decoded exactly?")
+				questionlist.append("For how many distinct words can their respective codes be determined?")
 				options.append(str(options.index(answerItem)+1))
 				optionlist.append(options)
 			if questionType=='5':
@@ -279,7 +279,7 @@ def main(level_of_difficulty):
 						done=True
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
-				questionlist.append("How can '{}' be written?".format(questionItem))
+				questionlist.append("How can '{}' be coded?".format(questionItem))
 				options.append(["None of the above"])
 				options.append(str(options.index(newOptionItem)+1))
 				optionlist.append(options)
@@ -326,7 +326,7 @@ def main(level_of_difficulty):
 						done=True
 				if type(questionItem)==list:
 					questionItem=' '.join(str(e) for e in questionItem)
-				questionlist.append("What can be coded as '{}' ?".format(questionItem))
+				questionlist.append("Which of the following can be coded as '{}' ?".format(questionItem))
 				options=shuffle(options)
 				options.append(["None of the above"])
 				for i in range(len(options)):
@@ -365,7 +365,7 @@ def main(level_of_difficulty):
 
 	list1=[]
 	list2=[]
-	text+='In a certain language \n'
+	text+='In a certain code language \n'
 	for i in range(len(left_lines_list)):
 		list1.append(' '.join(list(shuffle(left_lines_list[i]))))
 		list2.append(' '.join(str(x) for x in list(shuffle(right_lines_list[i]))))

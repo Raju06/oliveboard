@@ -90,7 +90,7 @@ def mainProgram():
 		symbolDictNotation={'is neither smaller nor greater than':symbolList[0],'is neither smaller nor equal to':symbolList[1],'is not smaller than':symbolList[2],'is neither greater nor equal to':symbolList[3],'is not greater than':symbolList[4]}
 		for key in symbolDictNotation.keys():
 			text+='\'A{}B\' means \'A {} B\'\n'.format(symbolDictNotation[key],key)
-		text+='Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. Give answer\n'
+		text+='Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. \n'
 		return text
 
 	text=createRelations(text)
@@ -311,21 +311,22 @@ def mainProgram():
 			solution1=createSolution(questionList[0])
 			solution2=createSolution(questionList[1])
 			correctedExp1=convertExp(questionList[0])
+			print finalList
 			if answerList[0]==True:
-				solution1Text='[{} --> {}],\nWe can see that {} is True as by decoding the expression we get {} '.format(questionList[0],correctedExp1,correctedExp1,convertExp(solution1[0]))
+				solution1Text='{} means {}, is True as by decoding the expression we get {} '.format(questionList[0],correctedExp1,convertExp(solution1[0]))
 			else:
 				if len(solution1)==2:
-					solution1Text='[{} --> {}],\nWe can see that {} is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[0],correctedExp1,correctedExp1,convertExp(solution1[0]),convertExp(solution1[1]))
+					solution1Text='{} means {}, is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[0],correctedExp1,convertExp(solution1[0]),convertExp(solution1[1]))
 				else:
-					solution1Text='[{} --> {}],\nWe can see that {} is False as there are opposite signs between them from decoded expression {} '.format(questionList[0],correctedExp1,correctedExp1,convertExp(solution1[0]))	
+					solution1Text='{} means {}, is False as there are opposite signs between them from decoded expression {} '.format(questionList[0],correctedExp1,convertExp(solution1[0]))	
 			correctedExp2=convertExp(questionList[1])
 			if answerList[1]==True:
-				solution2Text='[{} --> {}],\nWe can see that {} is True as by decoding the expression we get {} '.format(questionList[1],correctedExp2,correctedExp2,convertExp(solution2[0]))
+				solution2Text='{} means {}, is True as by decoding the expression we get {} '.format(questionList[1],correctedExp2,convertExp(solution2[0]))
 			else:
 				if len(solution2)==2:
-					solution2Text='[{} --> {}],\nWe can see that {} is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[1],correctedExp2,correctedExp2,convertExp(solution2[0]),convertExp(solution2[1]))
+					solution2Text='{} means {}, is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[1],correctedExp2,convertExp(solution2[0]),convertExp(solution2[1]))
 				else:
-					solution2Text='[{} --> {}],\nWe can see that {} is False as there are opposite signs between them from decoded expression {} '.format(questionList[1],correctedExp2,correctedExp2,convertExp(solution2[0]))	
+					solution2Text='{} means {}, is False as there are opposite signs between them from decoded expression {} '.format(questionList[1],correctedExp2,convertExp(solution2[0]))	
 			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\n(1) If only conclusion I is true.\n(2) If only conclusion II is true.\n(3) If either conclusion I or II is true.\n(4) If neither conclusion I or II is true.\n(5) If both conclusion I and II are true.\nAnswer key: {}\nSolution:\n{}\n{}\n\n'.format(i,','.join(expression_list),questionList[0],questionList[1],key,solution1Text,solution2Text)
 		else:
 			print "Avoiding infiniteLoop"

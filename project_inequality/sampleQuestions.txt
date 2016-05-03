@@ -398,3 +398,93 @@ We can see that E=T is True as by decoding the expression we get T=L=E
 [Q#E --> Q=E],
 We can see that Q=E is True as by decoding the expression we get E=L=Q 
 
+
+Set 1
+
+Consider the following:
+'A%B' means 'A is neither smaller nor equal to B'
+'A^B' means 'A is neither greater nor equal to B'
+'A@B' means 'A is not smaller than B'
+'A#B' means 'A is neither smaller nor greater than B'
+'A$B' means 'A is not greater than B'
+Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. 
+
+1.Statement:
+h#k,s^h,a$o,o@s
+Conclusion:
+I. o@k
+II. s^k
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+o@k means o>=k, is False as there are opposite signs between them from decoded expression o>=s<h=k 
+s^k means s<k, is True as by decoding the expression we get s<h=k 
+
+
+2.Statement:
+X^H,I@B,I%N,U@I
+Conclusion:
+I. I%H
+II. U@B
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 2
+Solution:
+I%H means I>H, is False as by decoding the expression we get that there is no direct relation between expressions N<I>=B,X<H 
+U@B means U>=B, is True as by decoding the expression we get U>=I>=B 
+
+
+3.Statement:
+p#n,m%f,p#r,h#p
+Conclusion:
+I. n#r
+II. n#f
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+n#r means n=r, is True as by decoding the expression we get r=p=n 
+n#f means n=f, is False as by decoding the expression we get that there is no direct relation between expressions r=p=n,m>f 
+
+
+4.Statement:
+M@R,Q#D,E%Q,D#G
+Conclusion:
+I. E#M
+II. D#M
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+E#M means E=M, is False as by decoding the expression we get that there is no direct relation between expressions E>Q=D=G,M>=R 
+D#M means D=M, is False as by decoding the expression we get that there is no direct relation between expressions E>Q=D=G,M>=R 
+
+
+5.Statement:
+v%d,q@o,z^v,v@k
+Conclusion:
+I. o^k
+II. o@v
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+o^k means o<k, is False as by decoding the expression we get that there is no direct relation between expressions q>=o,z<v>=k 
+o@v means o>=v, is False as by decoding the expression we get that there is no direct relation between expressions q>=o,z<v>=k 
+
