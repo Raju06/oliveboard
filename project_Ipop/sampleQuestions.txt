@@ -1,0 +1,162 @@
+
+Set 1
+
+
+A Machine arranges the given input in the following way.
+Input - heat 428 514 stage supermarket revenue 650 812 permission 955 research
+Step-1 : 955 heat 428 514 stage supermarket revenue 650 812 permission research
+Step-2 : 955 heat 428 514 stage revenue 650 812 permission research supermarket
+Step-3 : 955 812 heat 428 514 stage revenue 650 permission research supermarket
+Step-4 : 955 812 heat 428 514 revenue 650 permission research stage supermarket
+Step-5 : 955 812 650 heat 428 514 revenue permission research stage supermarket
+Step-6 : 955 812 650 heat 428 514 permission research revenue stage supermarket
+Step-7 : 955 812 650 514 heat 428 permission research revenue stage supermarket
+Step-8 : 955 812 650 514 428 heat permission research revenue stage supermarket
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - fire 640 block 469 housing judge 860 914 mouse 329 professor
+
+1. In step-2, what is no-(4) element from right?
+(1)judge
+(2)block
+(3)housing
+(4)professor
+(5)mouse
+Answer key : 5
+
+2. In which step do we get following order? 
+ 914 860 640 469 judge mouse 329 professor housing fire block
+(1)Eight
+(2)Zero
+(3)Six
+(4)Four
+(5)Five
+Answer key : 5
+
+3. How many steps are required to sort it?
+(1)One
+(2)Eight
+(3)Three
+(4)Seven
+(5)Zero
+Answer key : 2
+
+4. What is the position of the element 'mouse' in step-2?
+(1)Four
+(2)Ten
+(3)Eight
+(4)Zero
+(5)One
+Answer key : 3
+
+5. What is step-2?
+(1)914 860 640 469 mouse 329 professor judge housing fire block
+(2)914 fire 640 block 469 housing judge 860 mouse 329 professor
+(3)914 860 640 469 housing judge mouse 329 professor fire block
+(4)914 fire 640 469 housing judge 860 mouse 329 professor block
+(5)914 860 640 469 judge mouse 329 professor housing fire block
+Answer key : 4
+
+Common solution:
+The arrangement has got the following Two subsets.
+Subset-1 has Numbers that are arranged according to their value in Decreasing order
+Subset-2 has Words that are arranged alphabetically in Increasing order
+The two subsets are arranged one after other. In the first step the first element of first sorted subset is kept first and in the next step the last element of second sorted subset is kept last and the pattern continues.The arrangement continues until all the elements of individual subsets are arranged.
+
+Input-  fire 640 block 469 housing judge 860 914 mouse 329 professor
+Step-1 : 914 fire 640 block 469 housing judge 860 mouse 329 professor
+Step-2 : 914 fire 640 469 housing judge 860 mouse 329 professor block
+Step-3 : 914 860 fire 640 469 housing judge mouse 329 professor block
+Step-4 : 914 860 640 469 housing judge mouse 329 professor fire block
+Step-5 : 914 860 640 469 judge mouse 329 professor housing fire block
+Step-6 : 914 860 640 469 mouse 329 professor judge housing fire block
+Step-7 : 914 860 640 469 329 mouse professor judge housing fire block
+Step-8 : 914 860 640 469 329 professor mouse judge housing fire block
+
+
+
+_______________Next Set__________________
+
+
+
+Set 2
+
+
+A Machine arranges the given input in the following way.
+Input - tale river meaning feeling breast mood 216 125 343 512
+Step-1 : 512 tale river meaning feeling breast mood 216 125 343
+Step-2 : 512 tale river meaning feeling breast 216 125 343 mood
+Step-3 : 512 343 tale river meaning feeling breast 216 125 mood
+Step-4 : 512 343 river meaning feeling breast 216 125 tale mood
+Step-5 : 512 343 216 river meaning feeling breast 125 tale mood
+Step-6 : 512 343 216 river meaning feeling 125 breast tale mood
+Step-7 : 512 343 216 125 river meaning feeling breast tale mood
+Step-8 : 512 343 216 125 meaning feeling river breast tale mood
+Step-8 is the last step of the given input.
+
+Answer the following questions for the below input:
+Input - document 125 alcohol couple 64 8 chemistry distribution 27 kid
+
+1. In step-2 how many number of words are there between 'distribution' and 'alcohol'?
+(1)Seven
+(2)Three
+(3)Nine
+(4)Eight
+(5)Six
+Answer key : 2
+
+2. In step-0, what is no-(4) element from right?
+(1)alcohol
+(2)document
+(3)125
+(4)distribution
+(5)couple
+Answer key : 2
+
+3. What is step-5?
+(1)125 64 document alcohol couple 8 chemistry distribution 27 kid
+(2)125 document alcohol couple 64 8 chemistry distribution 27 kid
+(3)125 64 27 8 alcohol distribution document couple chemistry kid
+(4)125 64 27 document alcohol 8 distribution couple chemistry kid
+(5)125 64 27 8 document alcohol distribution couple chemistry kid
+Answer key : 4
+
+4. How many steps are required to sort it?
+(1)Eight
+(2)One
+(3)Seven
+(4)Three
+(5)Zero
+Answer key : 1
+
+5. In which step do we get following order? 
+ 125 64 27 document alcohol couple 8 distribution chemistry kid
+(1)Five
+(2)Zero
+(3)Two
+(4)Eight
+(5)Four
+Answer key : 5
+
+Common solution:
+The arrangement has got the following Two subsets.
+Subset-1 has Numbers that are arranged based on function x^3 in Decreasing order
+Subset-2 has Words that are arranged based on number of vowels in them in Decreasing order
+The two subsets are arranged one after other. In the first step the first element of first sorted subset is kept first and in the next step the last element of second sorted subset is kept last and the pattern continues.The arrangement continues until all the elements of individual subsets are arranged.
+
+Input-  document 125 alcohol couple 64 8 chemistry distribution 27 kid
+Step-1 : 125 document alcohol couple 64 8 chemistry distribution 27 kid
+Step-2 : 125 64 document alcohol couple 8 chemistry distribution 27 kid
+Step-3 : 125 64 document alcohol couple 8 distribution 27 chemistry kid
+Step-4 : 125 64 27 document alcohol couple 8 distribution chemistry kid
+Step-5 : 125 64 27 document alcohol 8 distribution couple chemistry kid
+Step-6 : 125 64 27 8 document alcohol distribution couple chemistry kid
+Step-7 : 125 64 27 8 alcohol distribution document couple chemistry kid
+Step-8 : 125 64 27 8 distribution alcohol document couple chemistry kid
+
+
+
+_______________Next Set__________________
+
+

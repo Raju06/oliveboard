@@ -1,0 +1,158 @@
+
+Set 1
+
+In a certain language 
+'media date dot card' is written as '93 20 90 56'
+'dot sign media' is written as '90 67 93'
+'fruit act sign date' is written as '67 56 54 94'
+'force dot fruit' is written as '94 78 90'
+
+1.How can 'force dot buddy' be written?
+(1)67 94 54
+(2)78 90 59
+(3)78 94 90
+(4)94 93 20
+(5)None of the above
+Answer key:2
+
+2.What can be coded as '90 20 56' ?
+(1)fruit media dot
+(2)fruit card sign
+(3)date dot sign
+(4)date dot card
+(5)None of the above
+Answer key:4
+
+3.According to the problem,how many words can be decoded exactly?
+(1)9
+(2)10
+(3)8
+(4)6
+(5)7
+Answer key:3
+
+4.How can 'card act' be written?
+(1)94 56
+(2)90 56
+(3)20 54
+(4)20 67
+(5)None of the above
+Answer key:3
+
+5.What can be the code for 'media' ?
+(1)94
+(2)20
+(3)93
+(4)90
+(5)67
+Answer key:3
+
+
+Common solution: 
+
+'media date dot card' is written as '93 20 90 56'---------------(1)
+'dot sign media' is written as '90 67 93'---------------(2)
+'fruit act sign date' is written as '67 56 54 94'---------------(3)
+'force dot fruit' is written as '94 78 90'---------------(4)
+
+From 4,2,1: dot is 90
+From 2,1: media is 93
+From 3,1: date is 56
+From 3,2: sign is 67
+From 3,4: fruit is 94
+From 3: By elimination, act is 54
+From 4: By elimination, force is 78
+From 1: By elimination, card is 20
+
+Summary:
+media is 93
+date is 56
+sign is 67
+fruit is 94
+act is 54
+dot is 90
+force is 78
+card is 20
+
+Set 2
+
+In a certain language 
+'key wind post loss knife' is written as '74 26 80 85 10'
+'cream milk post loss stuff' is written as '81 49 10 53 85'
+'role knife stuff mud' is written as '40 81 43 80'
+'post mud wind loss' is written as '85 26 40 10'
+'stuff wind milk hall' is written as '17 81 49 26'
+
+1.How can 'wind loss' be written?
+(1)74 81
+(2)81 80
+(3)17 85
+(4)26 85
+(5)None of the above
+Answer key:4
+
+2.What can be coded as '17' ?
+(1)stuff
+(2)hall
+(3)cream
+(4)knife
+(5)loss
+Answer key:2
+
+3.According to the problem,how many words can be decoded exactly?
+(1)13
+(2)9
+(3)11
+(4)10
+(5)12
+Answer key:3
+
+4.What can be coded as '26 80' ?
+(1)stuff mud
+(2)wind knife
+(3)milk key
+(4)hall milk
+(5)None of the above
+Answer key:2
+
+5.How can 'knife loss test' be written?
+(1)26 49 53
+(2)80 85 16
+(3)43 10 26
+(4)17 49 26
+(5)None of the above
+Answer key:2
+
+
+Common solution: 
+
+'key wind post loss knife' is written as '74 26 80 85 10'---------------(1)
+'cream milk post loss stuff' is written as '81 49 10 53 85'---------------(2)
+'role knife stuff mud' is written as '40 81 43 80'---------------(3)
+'post mud wind loss' is written as '85 26 40 10'---------------(4)
+'stuff wind milk hall' is written as '17 81 49 26'---------------(5)
+
+From 4,2,1: post is 10
+From 5,3,2: stuff is 81
+From 5,1,4: wind is 26
+From 1,4,2: loss is 85
+From 3,1: knife is 80
+From 4,3: mud is 40
+From 2,5: milk is 49
+From 5: By elimination, hall is 17
+From 1: By elimination, key is 74
+From 2: By elimination, cream is 53
+From 3: By elimination, role is 43
+
+Summary:
+post is 10
+stuff is 81
+wind is 26
+hall is 17
+knife is 80
+loss is 85
+mud is 40
+key is 74
+cream is 53
+milk is 49
+role is 43

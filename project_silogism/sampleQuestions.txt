@@ -1,0 +1,255 @@
+
+Set 1
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+Some tool are bag.
+All bag are face.
+Some bag are body.
+Conclusion:
+(I) Some face are body.
+(II) All face being tool is a possibility.
+(III) Some tool being face is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+Some golf are cash.
+All cash are note.
+Some cash are book.
+Conclusion:
+(I) Some note are book.
+(II) All note being golf is a possibility.
+(III) Some golf being note is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+Some post are meal.
+All meal are sort.
+Some meal are taste.
+Conclusion:
+(I) Some sort are taste.
+(II) All sort being post is a possibility.
+(III) Some post being sort is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+Some blank are cup.
+All cup are speed.
+Some cup are juice.
+Conclusion:
+(I) Some speed are juice.
+(II) All speed being blank is a possibility.
+(III) Some blank being speed is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+Some area are log.
+All log are chip.
+Some log are store.
+Conclusion:
+(I) Some chip are store.
+(II) All chip being area is a possibility.
+(III) Some area being chip is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 2
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+All song are apple.
+All song are trick.
+Some trick are power.
+Conclusion:
+(I) All trick are apple.
+(II) Some song being power is a possibility.
+(III) All power are apple.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+All rock are coast.
+All rock are agent.
+Some agent are pair.
+Conclusion:
+(I) All agent are coast.
+(II) Some rock being pair is a possibility.
+(III) All pair are coast.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+All step are wall.
+All step are stage.
+Some stage are head.
+Conclusion:
+(I) All stage are wall.
+(II) Some step being head is a possibility.
+(III) All head are wall.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+All price are photo.
+All price are gate.
+Some gate are size.
+Conclusion:
+(I) All gate are photo.
+(II) Some price being size is a possibility.
+(III) All size are photo.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+All east are mark.
+All east are share.
+Some share are mail.
+Conclusion:
+(I) All share are mark.
+(II) Some east being mail is a possibility.
+(III) All mail are mark.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 1
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+No wood is duty.
+No wood is queen.
+All duty are art.
+Conclusion:
+(I) All art are queen.
+(II) Some duty being queen is a possibility.
+(III) Some queen are duty.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+No guest is idea.
+No guest is book.
+All idea are line.
+Conclusion:
+(I) All line are book.
+(II) Some idea being book is a possibility.
+(III) Some book are idea.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+No log is fat.
+No log is bet.
+All fat are coach.
+Conclusion:
+(I) All coach are bet.
+(II) Some fat being bet is a possibility.
+(III) Some bet are fat.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+No north is kid.
+No north is blood.
+All kid are blow.
+Conclusion:
+(I) All blow are blood.
+(II) Some kid being blood is a possibility.
+(III) Some blood are kid.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+No cap is beer.
+No cap is drama.
+All beer are apple.
+Conclusion:
+(I) All apple are drama.
+(II) Some beer being drama is a possibility.
+(III) Some drama are beer.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+

@@ -45,7 +45,7 @@ for line in right_input:
 		if item not in right:
 			right.append(item)			
 
-
+			
 left_list=createLeftList(left,left_input)
 right_list=createRightList(right,right_input)
 
@@ -76,11 +76,12 @@ left_output,right_output=arrangeList(left,right)
 
 for i in range(len(left_output)):
 	text+="\n"+"'{}' is '{}'".format(left_output[i],'/'.join(right_output[i]))
-print "Successful"	
+print "Successful"
 
 file = open("C:\Users\Olive\Desktop\oliveboard\project_language\language_output.txt", "a")
 file.write(text)
 file.close()
+
 
 '''print "solved left list is \n",solved_left_list
 print "solved right list is \n",solved_right_list
