@@ -1,4 +1,4 @@
-import random
+import random,os
 import numpy as np
 import itertools
 def main(level_of_difficulty):
@@ -454,10 +454,13 @@ while sets_count<countFinal:
 				criteria_met=False
 				break
 		if criteria_met:
-			file = open("C:\Users\Olive\Desktop\oliveboard\project_language\sampleQuestions.txt", "a")
+			global fn
+			fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
+			file = open(fn, "a")
 		 	file.write(text)
 		 	file.close()
 		 	sets_count+=1
 	except:
 		print ('\n')+"Error in Set {}".format(sets_count+1)
 		pass
+print 'Done. Output written to file : {} '.format(fn)

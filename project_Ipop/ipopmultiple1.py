@@ -4,7 +4,7 @@ from pyparsing import (Literal,CaselessLiteral,Word,Combine,Group,Optional,
                        ZeroOrMore,Forward,nums,alphas,oneOf)
 import operator
 import random
-import math
+import math,os
 import numpy as np
 from sets import Set
 
@@ -852,7 +852,9 @@ while sets_count<countFinal:
 		text=str('\nSet {}\n\n').format(sets_count+1)+mainFunction()
 		#print "Set {}".format(i+1)
 		if (steps_Length<sortedList1_length and sortedList1_length<steps_Length+2) and (steps_Length<sortedList_length and sortedList_length<steps_Length+2):	
-			file = open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\sampleQuestions.txt", "a")
+			global fn
+			fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
+			file = open(fn, "a")
 		 	file.write(text)
 		 	file.close()
 		 	sets_count+=1
@@ -860,3 +862,4 @@ while sets_count<countFinal:
 		print ('\n')+"Error in Set {}".format(sets_count+1)
 		print '\n'.join(final_output)+('\n')
 		pass
+print 'Done. Output written to file : {} '.format(fn)
