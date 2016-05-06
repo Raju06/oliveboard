@@ -1,0 +1,392 @@
+﻿Based on the set of equations given, Choose the conclusion.
+
+1: x²+0x-64 = 0 
+5y²+14y+8 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 5
+
+Solution:
+First equation - 
+x²0x-64=0
+->x²+8x-8x-64=0
+->x(x-8)+8(x-8)=0
+->(x+8)(x-8)=0
+Thus we get, x = -8 or 8
+
+Second equation - 
+5y²+14y+8=0
+->5y²+10y+4y+8=0
+->y(-5y-4)+2(-5y-4)=0
+->(y+2)(-5y-4)=0
+Thus we get, y = -2 or -4/5
+
+Hence option 5
+
+2: 3x²-13x-10 = 0 
+y²-14y+45 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 1
+
+Solution:
+First equation - 
+6x²-26x-20=0
+->6x²-30x+4x-20=0
+->x(6x+4)-5(6x+4)=0
+->(x-5)(6x+4)=0
+Thus we get, x = 5 or -2/3
+
+Second equation - 
+y²-14y+45=0
+->y²-5y-9y+45=0
+->y(y-9)-5(y-9)=0
+->(y-5)(y-9)=0
+Thus we get, y = 5 or 9
+
+Hence option 1
+
+3: x²-4x-5 = 0 
+y²+6y+5 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 2
+
+Solution:
+First equation - 
+8x²-32x-40=0
+->8x²+8x-40x-40=0
+->8x(x-5)+8(x-5)=0
+->(8x+8)(x-5)=0
+Thus we get, x = -1 or 5
+
+Second equation - 
+y²+6y+5=0
+->y²+5y+y+5=0
+->y(y+1)+5(y+1)=0
+->(y+5)(y+1)=0
+Thus we get, y = -5 or -1
+
+Hence option 2
+
+4: x²+6x+9 = 0 
+8y²+25y+18 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 3
+
+Solution:
+First equation - 
+2x²+12x+18=0
+->2x²+6x+6x+18=0
+->-x(-2x-6)-3(-2x-6)=0
+->(-x-3)(-2x-6)=0
+Thus we get, x = -3 
+
+Second equation - 
+16y²+50y+36=0
+->16y²+18y+32y+36=0
+->-8y(2y+4)-9(2y+4)=0
+->(-8y-9)(2y+4)=0
+Thus we get, y = -9/8 or -2
+
+Hence option 3
+
+5: x²+2x-35 = 0 
+y²-11y+18 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 5
+
+Solution:
+First equation - 
+x²+2x-35=0
+->x²-5x+7x-35=0
+->x(x+7)-5(x+7)=0
+->(x-5)(x+7)=0
+Thus we get, x = 5 or -7
+
+Second equation - 
+4y²-44y+72=0
+->4y²-36y-8y+72=0
+->y(-4y+8)-9(-4y+8)=0
+->(y-9)(-4y+8)=0
+Thus we get, y = 9 or 2
+
+Hence option 5
+
+6: x²-10x+21 = 0 
+y²-4y+3 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 2
+
+Solution:
+First equation - 
+x²-10x+21=0
+->x²-7x-3x+21=0
+->x(x-3)-7(x-3)=0
+->(x-7)(x-3)=0
+Thus we get, x = 7 or 3
+
+Second equation - 
+6y²-24y+18=0
+->6y²-6y-18y+18=0
+->-6y(y-3)+6(y-3)=0
+->(-6y+6)(y-3)=0
+Thus we get, y = 1 or 3
+
+Hence option 2
+
+7: 2x²+21x+49 = 0 
+48y²+26y+3 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 3
+
+Solution:
+First equation - 
+2x²+21x+49=0
+->2x²+14x+7x+49=0
+->x(-2x-7)+7(-2x-7)=0
+->(x+7)(-2x-7)=0
+Thus we get, x = -7 or -7/2
+
+Second equation - 
+48y²+26y+3=0
+->48y²+8y+18y+3=0
+->6y(-8y-3)+1(-8y-3)=0
+->(6y+1)(-8y-3)=0
+Thus we get, y = -1/6 or -3/8
+
+Hence option 3
+
+8: x²+15x+56 = 0 
+9y²+70y+49 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 1
+
+Solution:
+First equation - 
+x²+15x+56=0
+->x²+7x+8x+56=0
+->x(x+8)+7(x+8)=0
+->(x+7)(x+8)=0
+Thus we get, x = -7 or -8
+
+Second equation - 
+9y²+70y+49=0
+->9y²+63y+7y+49=0
+->y(9y+7)+7(9y+7)=0
+->(y+7)(9y+7)=0
+Thus we get, y = -7 or -7/9
+
+Hence option 1
+
+9: x²+1x-20 = 0 
+y²+3y-18 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 5
+
+Solution:
+First equation - 
+x²+x-20=0
+->x²-4x+5x-20=0
+->x(x+5)-4(x+5)=0
+->(x-4)(x+5)=0
+Thus we get, x = 4 or -5
+
+Second equation - 
+3y²+9y-54=0
+->3y²-9y+18y-54=0
+->3y(y+6)-9(y+6)=0
+->(3y-9)(y+6)=0
+Thus we get, y = 3 or -6
+
+Hence option 5
+
+10: x²+13x+36 = 0 
+3y²+11y-4 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 1
+
+Solution:
+First equation - 
+x²+13x+36=0
+->x²+9x+4x+36=0
+->x(x+4)+9(x+4)=0
+->(x+9)(x+4)=0
+Thus we get, x = -9 or -4
+
+Second equation - 
+6y²+22y-8=0
+->6y²-2y+24y-8=0
+->-6y(y+4)+2(y+4)=0
+->(-6y+2)(y+4)=0
+Thus we get, y = 1/3 or -4
+
+Hence option 1
+
+11: x²-15x+54 = 0 
+8y²-18y-81 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 4
+
+Solution:
+First equation - 
+x²-15x+54=0
+->x²-9x-6x+54=0
+->x(x-6)-9(x-6)=0
+->(x-9)(x-6)=0
+Thus we get, x = 9 or 6
+
+Second equation - 
+8y²-18y-81=0
+->8y²-36y+18y-81=0
+->2y(-4y-9)-9(-4y-9)=0
+->(2y-9)(-4y-9)=0
+Thus we get, y = 9/2 or -9/4
+
+Hence option 4
+
+12: 2x²-15x+25 = 0 
+y²+11y+24 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 4
+
+Solution:
+First equation - 
+2x²-15x+25=0
+->2x²-5x-10x+25=0
+->-2x(x-5)+5(x-5)=0
+->(-2x+5)(x-5)=0
+Thus we get, x = 5/2 or 5
+
+Second equation - 
+y²+11y+24=0
+->y²+3y+8y+24=0
+->y(y+8)+3(y+8)=0
+->(y+3)(y+8)=0
+Thus we get, y = -3 or -8
+
+Hence option 4
+
+13: 7x²-43x+40 = 0 
+y²+9y+20 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 4
+
+Solution:
+First equation - 
+7x²-43x+40=0
+->7x²-35x-8x+40=0
+->x(7x-8)-5(7x-8)=0
+->(x-5)(7x-8)=0
+Thus we get, x = 5 or 8/7
+
+Second equation - 
+2y²+18y+40=0
+->2y²+8y+10y+40=0
+->2y(y+5)+8(y+5)=0
+->(2y+8)(y+5)=0
+Thus we get, y = -4 or -5
+
+Hence option 4
+
+14: 2x²-9x-18 = 0 
+4y²-15y-54 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 5
+
+Solution:
+First equation - 
+6x²-27x-54=0
+->6x²-36x+9x-54=0
+->x(6x+9)-6(6x+9)=0
+->(x-6)(6x+9)=0
+Thus we get, x = 6 or -3/2
+
+Second equation - 
+4y²-15y-54=0
+->4y²-24y+9y-54=0
+->y(-4y-9)-6(-4y-9)=0
+->(y-6)(-4y-9)=0
+Thus we get, y = 6 or -9/4
+
+Hence option 5
+
+15: x²+16x+63 = 0 
+3y²+11y+8 = 0 
+(1) If x ≤ y
+(2) If x ≥ y
+(3) If x < y
+(4) If x > y
+(5) If x = y or no specific relation can be established.
+Answer key: 3
+
+Solution:
+First equation - 
+x²+16x+63=0
+->x²+7x+9x+63=0
+->x(x+9)+7(x+9)=0
+->(x+7)(x+9)=0
+Thus we get, x = -7 or -9
+
+Second equation - 
+12y²+44y+32=0
+->12y²+32y+12y+32=0
+->-3y(4y+4)-8(4y+4)=0
+->(-3y-8)(4y+4)=0
+Thus we get, y = -8/3 or -1
+
+Hence option 3
+
