@@ -321,7 +321,7 @@ def mainProgram():
 				if len(solution1)==2:
 					solution1Text='{} means {}\nwhich is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[0],correctedExp1,convertExp(solution1[0]),convertExp(solution1[1]))
 				else:
-					solution1Text='{} means {}\nwhich is False as there are opposite signs between them from decoded expression {} '.format(questionList[0],correctedExp1,convertExp(solution1[0]))	
+					solution1Text='{} means {}\nwhich is False as we can see from the decoded expression {} '.format(questionList[0],correctedExp1,convertExp(solution1[0]))	
 			correctedExp2=convertExp(questionList[1])
 			if answerList[1]==True:
 				solution2Text='{} means {}\nwhich is True as by decoding the expression we get {} '.format(questionList[1],correctedExp2,convertExp(solution2[0]))
@@ -329,8 +329,8 @@ def mainProgram():
 				if len(solution2)==2:
 					solution2Text='{} means {}\nwhich is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[1],correctedExp2,convertExp(solution2[0]),convertExp(solution2[1]))
 				else:
-					solution2Text='{} means {}\nwhich is False as there are opposite signs between them from decoded expression {} '.format(questionList[1],correctedExp2,convertExp(solution2[0]))	
-			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\n(1) If only conclusion I is true.\n(2) If only conclusion II is true.\n(3) If either conclusion I or II is true.\n(4) If neither conclusion I or II is true.\n(5) If both conclusion I and II are true.\nAnswer key: {}\nSolution:\n{}\n{}\n\n{}\n\n'.format(i,','.join(expression_list),questionList[0],questionList[1],key,CommonSolutionText,solution1Text,solution2Text)
+					solution2Text='{} means {}\nwhich is False as we can see from the decoded expression {} '.format(questionList[1],correctedExp2,convertExp(solution2[0]))	
+			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\n(1) If only conclusion I is true.\n(2) If only conclusion II is true.\n(3) If either conclusion I or II is true.\n(4) If neither conclusion I or II is true.\n(5) If both conclusion I and II are true.\nAnswer key: {}\nSolution:\n{}\n{}\n\n{}\n\n'.format(i,', '.join(expression_list),questionList[0],questionList[1],key,CommonSolutionText,solution1Text,solution2Text)
 			
 		else:
 			print "Avoiding infiniteLoop"

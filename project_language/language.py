@@ -76,7 +76,7 @@ left_output,right_output=arrangeList(left,right)
 
 for i in range(len(left_output)):
 	text+="\n"+"'{}' is '{}'".format(left_output[i],'/'.join(right_output[i]))
-print "Successful"
+print text
 
 file = open("C:\Users\Olive\Desktop\oliveboard\project_language\language_output.txt", "a")
 file.write(text)

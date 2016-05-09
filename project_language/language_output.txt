@@ -1,151 +1,252 @@
 
 
-['you', 'know', 'better', 'too']  as  ['17', '86', '93', '39']
-['too', 'great', 'to', 'handle']  as  ['46', '32', '39', '81']
-['you', 'can', 'handle', 'it']  as  ['71', '32', '55', '86']
-['great', 'thing', 'happen', 'fast']  as  ['81', '51', '13', '90']
-['you', 'know', 'how', 'to', 'fast']  as  ['86', '93', '46', '13', '77']
-
-
-Left last index as
-[[1, 3, 5], [1, 5], [1], [1, 2], [2, 4], [2, 5], [2, 3], [3], [3], [4], [4], [4, 5], [5]]
-
-Right last index as
-[[1], [1, 3, 5], [1, 5], [1, 2], [2, 5], [2, 3], [2, 4], [3], [3], [4], [4, 5], [4], [5]]
-
-
-'you' as '86'
-'know' as '93'
-'better' as '17'
-'too' as '39'
-'great' as '81'
-'to' as '46'
-'handle' as '32'
-'can/it' as '71/55'
-'thing/happen' as '51/90'
-'fast' as '13'
-'how' as '77'
-
-['i', 'want', 'to', 'fly', 'high']  as  ['mi', 'pa', 'ki', 'tu', 'ma']
-['planes', 'fly', 'high', 'in', 'sky']  as  ['ni', 'la', 'tu', 'xe', 'ki']
-['you', 'need', 'to', 'look', 'at', 'sky']  as  ['jr', 'mi', 'np', 'md', 'xe', 'gh']
-['i', 'need', 'high', 'in', 'price']  as  ['tu', 'np', 'ma', 'bv', 'ni']
-
-
-Left last index as
-[[1, 4], [1], [1, 3], [1, 2], [1, 2, 4], [2], [2, 4], [2, 3], [3], [3, 4], [3], [3], [4]]
-
-Right last index as
-[[1, 3], [1], [1, 2], [1, 2, 4], [1, 4], [2, 4], [2], [2, 3], [3], [3, 4], [3], [3], [4]]
-
-
-'i' as 'ma'
-'want' as 'pa'
-'to' as 'mi'
-'fly' as 'ki'
-'high' as 'tu'
-'planes' as 'la'
-'in' as 'ni'
-'sky' as 'xe'
-'you/look/at' as 'jr/md/gh'
-'need' as 'np'
-'price' as 'bv'
-
-['bang', 'for', 'the', 'bug']  is  ['re', 'li', 'ka', 'na']
-['the', 'big', 'bang', 'theory']  is  ['na', 'li', 'pe', 'so']
-['theory', 'for', 'bang', 'up']  is  ['so', 'ka', 'li', 'gig']
-['up', 'down', 'big', 'bug']  is  ['mo', 'gig', 'pe', 're']
+['suit', 'mark', 'carry', 'bill', 'north']  is  ['19', '83', '80', '91', '89']
+['mark', 'north', 'force', 'bill', 'paint']  is  ['83', '89', '42', '71', '91']
+['shirt', 'gap', 'paint', 'eye', 'kid']  is  ['44', '42', '18', '69', '74']
+['shirt', 'force', 'suit', 'carry']  is  ['80', '18', '19', '71']
+['shirt', 'force', 'suit', 'kid', 'gap']  is  ['74', '18', '71', '69', '80']
 
 
 Left list index is
-[[1, 2, 3], [1, 3], [1, 2], [1, 4], [2, 4], [2, 3], [3, 4], [4]]
+[[1, 4, 5], [1, 2], [1, 4], [1, 2], [1, 2], [2, 4, 5], [2, 3], [3, 4, 5], [3, 5], [3], [3, 5]]
 
 Right list index is
-[[1, 4], [1, 2, 3], [1, 3], [1, 2], [2, 4], [2, 3], [3, 4], [4]]
+[[1, 4], [1, 2], [1, 4, 5], [1, 2], [1, 2], [2, 3], [2, 4, 5], [3], [3, 4, 5], [3, 5], [3, 5]]
 
 
-'bang' is 'li'
-'for' is 'ka'
-'the' is 'na'
-'bug' is 're'
-'big' is 'pe'
-'theory' is 'so'
-'up' is 'gig'
-'down' is 'mo'
+'suit' is '80'
+'mark/bill/north' is '83/91/89'
+'carry' is '19'
+'force' is '71'
+'paint' is '42'
+'shirt' is '18'
+'gap/kid' is '69/74'
+'eye' is '44'
 
-['better', 'do', 'it', 'now']  is  ['hu', 'li', 'ta', 'yu']
-['do', 'what', 'most', 'like']  is  ['kh', 'yu', 'phi', 'tek']
-['what', 'is', 'going', 'now']  is  ['li', 'kh', 'ko', 'jo']
-['is', 'everything', 'better', 'now']  is  ['li', 'ko', 'ta', 'mek']
-['most', 'things', 'are', 'better']  is  ['phi', 'ma', 'ta', 'la']
+['door', 'union', 'dot', 'steak', 'catch']  is  ['82', '15', '85', '74', '16']
+['actor', 'task', 'hall', 'steak', 'item']  is  ['74', '63', '19', '53', '68']
+['task', 'frame', 'ad', 'dad', 'son']  is  ['13', '44', '32', '12', '19']
+['actor', 'list', 'catch', 'style']  is  ['68', '15', '83', '49']
+['item', 'catch', 'frame', 'list', 'union']  is  ['63', '82', '32', '49', '15']
+[]  is  []
 
 
 Left list index is
-[[1, 4, 5], [1, 2], [1], [1, 3, 4], [2, 3], [2, 5], [2], [3, 4], [3], [4], [5], [5]]
+[[1], [1, 5], [1], [1, 2], [1, 4, 5], [2, 4], [2, 3], [2], [2, 5], [3, 5], [3], [3], [3], [4, 5], [4]]
 
 Right list index is
-[[1], [1, 3, 4], [1, 4, 5], [1, 2], [2, 3], [2, 5], [2], [3, 4], [3], [4], [5], [5]]
+[[1, 5], [1, 4, 5], [1], [1, 2], [1], [2, 5], [2, 3], [2], [2, 4], [3], [3], [3, 5], [3], [4], [4, 5]]
 
 
-'better' is 'ta'
-'do' is 'yu'
-'it' is 'hu'
-'now' is 'li'
-'what' is 'kh'
-'most' is 'phi'
-'like' is 'tek'
-'is' is 'ko'
-'going' is 'jo'
-'everything' is 'mek'
-'things/are' is 'ma/la'
+'door/dot' is '85/16'
+'union' is '82'
+'steak' is '74'
+'catch' is '15'
+'actor' is '68'
+'task' is '19'
+'hall' is '53'
+'item' is '63'
+'frame' is '32'
+'ad/dad/son' is '13/44/12'
+'list' is '49'
+'style' is '83'
 
-['play', 'fair', 'games', 'win']  is  ['56', '88', '97', '16']
-['we', 'always', 'play', 'fair']  is  ['88', '71', '97', '66']
-['always', 'there', 'is', 'chance']  is  ['50', '66', '11', '33']
-['play', 'there', 'and', 'win']  is  ['56', '50', '70', '97']
-['we', 'take', 'chance']  is  ['11', '99', '71']
+['kid', 'exam', 'arm', 'food', 'tea']  is  ['68', '70', '57', '58', '38']
+['kid', 'hotel', 'food', 'force', 'block']  is  ['85', '17', '57', '70', '82']
+['skill', 'coat', 'exam', 'block', 'force']  is  ['72', '85', '66', '82', '68']
+['food', 'tea', 'focus', 'issue']  is  ['38', '18', '71', '57']
+['skill', 'issue', 'wave', 'focus']  is  ['72', '71', '18', '94']
 
 
 Left list index is
-[[1, 2, 4], [1, 2], [1], [1, 4], [2, 5], [2, 3], [3, 4], [3], [3, 5], [4], [5]]
+[[1, 2], [1, 3], [1], [1, 2, 4], [1, 4], [2], [2, 3], [2, 3], [3, 5], [3], [4, 5], [4, 5], [5]]
 
 Right list index is
-[[1, 4], [1, 2], [1, 2, 4], [1], [2, 5], [2, 3], [3, 4], [3, 5], [3], [4], [5]]
+[[1, 3], [1, 2], [1, 2, 4], [1], [1, 4], [2, 3], [2], [2, 3], [3, 5], [3], [4, 5], [4, 5], [5]]
 
 
-'play' is '97'
-'fair' is '88'
-'games' is '16'
-'win' is '56'
-'we' is '71'
-'always' is '66'
-'there' is '50'
-'is' is '33'
-'chance' is '11'
-'and' is '70'
-'take' is '99'
+'kid' is '70'
+'exam' is '68'
+'arm' is '58'
+'food' is '57'
+'tea' is '38'
+'hotel' is '17'
+'force/block' is '85/82'
+'skill' is '72'
+'coat' is '66'
+'focus/issue' is '18/71'
+'wave' is '94'
 
-['being', 'what', 'you', 'are']  is  ['ye', 'du', 'li', 'ma']
-['you', 'see', 'what', 'happen']  is  ['li', 'go', 'xi', 'ma']
-['what', 'does', 'it', 'means']  is  ['ki', 'hut', 'li', 'ne']
-['it', 'means', 'will', 'happen']  is  ['ha', 'ki', 'xi', 'hut']
-['being', 'it', 'will', 'see']  is  ['ki', 'du', 'go', 'ha']
+['chart', 'dog', 'town', 'gold', 'gate']  is  ['36', '93', '59', '62', '21']
+['dish', 'air', 'chart', 'dog', 'guest']  is  ['51', '18', '56', '21', '93']
+['plant', 'gold', 'cream', 'dog']  is  ['78', '21', '59', '39']
+['line', 'mood', 'air', 'chart', 'gate']  is  ['51', '93', '36', '77', '97']
+['plant', 'coast', 'guest', 'price', 'town']  is  ['47', '78', '18', '62', '68']
 
 
 Left list index is
-[[1, 5], [1, 2, 3], [1, 2], [1], [2, 5], [2, 4], [3], [3, 4, 5], [3, 4], [4, 5]]
+[[1, 2, 4], [1, 2, 3], [1, 5], [1, 3], [1, 4], [2], [2, 4], [2, 5], [3, 5], [3], [4], [4], [5], [5]]
 
 Right list index is
-[[1], [1, 5], [1, 2, 3], [1, 2], [2, 5], [2, 4], [3, 4, 5], [3, 4], [3], [4, 5]]
+[[1, 4], [1, 2, 4], [1, 3], [1, 5], [1, 2, 3], [2, 4], [2, 5], [2], [3, 5], [3], [4], [4], [5], [5]]
 
 
-'being' is 'du'
-'what' is 'li'
-'you' is 'ma'
-'are' is 'ye'
-'see' is 'go'
-'happen' is 'xi'
-'does' is 'ne'
-'it' is 'ki'
-'means' is 'hut'
-'will' is 'ha'
+'chart' is '93'
+'dog' is '21'
+'town' is '62'
+'gold' is '59'
+'gate' is '36'
+'dish' is '56'
+'air' is '51'
+'guest' is '18'
+'plant' is '78'
+'cream' is '39'
+'line/mood' is '77/97'
+'coast/price' is '47/68'
+
+['lock', 'bonus', 'force', 'week', 'cause']  is  ['15', '36', '11', '77', '98']
+['horse', 'piece', 'world', 'brush', 'idea']  is  ['83', '89', '75', '20', '18']
+['idea', 'rate', 'piece', 'drop']  is  ['75', '16', '74', '18']
+['cause', 'fire', 'horse', 'drop', 'bus']  is  ['74', '34', '89', '15', '67']
+['rate', 'cause', 'role', 'drop', 'force']  is  ['98', '16', '74', '32', '15']
+
+
+Left list index is
+[[1], [1], [1, 5], [1], [1, 4, 5], [2, 4], [2, 3], [2], [2], [2, 3], [3, 5], [3, 4, 5], [4], [4], [5]]
+
+Right list index is
+[[1, 4, 5], [1], [1], [1], [1, 5], [2], [2, 4], [2, 3], [2], [2, 3], [3, 5], [3, 4, 5], [4], [4], [5]]
+
+
+'lock/bonus/week' is '36/11/77'
+'force' is '98'
+'cause' is '15'
+'horse' is '89'
+'piece/idea' is '75/18'
+'world/brush' is '83/20'
+'rate' is '16'
+'drop' is '74'
+'fire/bus' is '34/67'
+'role' is '32'
+
+['dad', 'life', 'wall', 'gold']  is  ['42', '34', '83', '97']
+['bonus', 'math', 'disk', 'match']  is  ['78', '98', '72', '37']
+['bonus', 'lack', 'gold', 'ice']  is  ['97', '37', '48', '35']
+['ice', 'lack', 'disk']  is  ['35', '72', '48']
+
+
+Left list index is
+[[1], [1], [1], [1, 3], [2, 3], [2], [2, 4], [2], [3, 4], [3, 4]]
+
+Right list index is
+[[1], [1], [1], [1, 3], [2], [2], [2, 4], [2, 3], [3, 4], [3, 4]]
+
+
+'dad/life/wall' is '42/34/83'
+'gold' is '97'
+'bonus' is '37'
+'math/match' is '78/98'
+'disk' is '72'
+'lack/ice' is '48/35'
+
+['log', 'goal', 'error', 'gate']  is  ['25', '13', '59', '34']
+['key', 'gate', 'plan', 'brain']  is  ['69', '13', '91', '35']
+['brain', 'pin', 'plan']  is  ['69', '35', '31']
+['log', 'key', 'plan']  is  ['69', '25', '91']
+
+
+Left list index is
+[[1, 4], [1], [1], [1, 2], [2, 4], [2, 3, 4], [2, 3], [3]]
+
+Right list index is
+[[1, 4], [1, 2], [1], [1], [2, 3, 4], [2, 4], [2, 3], [3]]
+
+
+'log' is '25'
+'goal/error' is '59/34'
+'gate' is '13'
+'key' is '91'
+'plan' is '69'
+'brain' is '35'
+'pin' is '31'
+
+['code', 'week', 'game', 'board']  is  ['19', '37', '78', '67']
+['code', 'towel', 'radio', 'game']  is  ['39', '67', '37', '56']
+['point', 'west', 'bowl']  is  ['68', '72', '50']
+['east', 'arm', 'habit']  is  ['32', '52', '71']
+
+
+Left list index is
+[[1, 2], [1], [1, 2], [1], [2], [2], [3], [3], [3], [4], [4], [4]]
+
+Right list index is
+[[1], [1, 2], [1], [1, 2], [2], [2], [3], [3], [3], [4], [4], [4]]
+
+
+'code/game' is '37/67'
+'week/board' is '19/78'
+'towel/radio' is '39/56'
+'point/west/bowl' is '68/72/50'
+'east/arm/habit' is '32/52/71'
+
+['desk', 'bet', 'basis']  is  ['20', '12', '24']
+['judge', 'bet', 'skin']  is  ['68', '24', '93']
+['face', 'goal', 'skin', 'judge']  is  ['89', '93', '94', '68']
+['step', 'skin', 'list', 'wood']  is  ['81', '77', '68', '62']
+
+
+Left list index is
+[[1], [1, 2], [1], [2, 3], [2, 3, 4], [3], [3], [4], [4], [4]]
+
+Right list index is
+[[1], [1], [1, 2], [2, 3, 4], [2, 3], [3], [3], [4], [4], [4]]
+
+
+'desk/basis' is '20/12'
+'bet' is '24'
+'judge' is '93'
+'skin' is '68'
+'face/goal' is '89/94'
+'step/list/wood' is '81/77/62'
+
+['theme', 'beer', 'piano', 'juice']  is  ['37', '71', '87', '21']
+['chain', 'news', 'tooth', 'paper']  is  ['88', '42', '30', '66']
+['news', 'aside', 'theme', 'pin']  is  ['71', '66', '48', '54']
+['piece', 'juice', 'mess']  is  ['56', '37', '52']
+
+
+Left list index is
+[[1, 3], [1], [1], [1, 4], [2], [2, 3], [2], [2], [3], [3], [4], [4]]
+
+Right list index is
+[[1, 4], [1, 3], [1], [1], [2], [2], [2], [2, 3], [3], [3], [4], [4]]
+
+
+'theme' is '71'
+'beer/piano' is '87/21'
+'juice' is '37'
+'chain/tooth/paper' is '88/42/30'
+'news' is '66'
+'aside/pin' is '48/54'
+'piece/mess' is '56/52'
+
+['dish', 'task', 'sky', 'fruit']  is  ['81', '60', '43', '20']
+['north', 'sound', 'draft', 'fish']  is  ['77', '35', '53', '79']
+['fruit', 'plant', 'dot']  is  ['48', '20', '14']
+['power', 'task', 'mom', 'north']  is  ['88', '11', '53', '43']
+
+
+Left list index is
+[[1], [1, 4], [1], [1, 3], [2, 4], [2], [2], [2], [3], [3], [4], [4]]
+
+Right list index is
+[[1], [1], [1, 4], [1, 3], [2], [2], [2, 4], [2], [3], [3], [4], [4]]
+
+
+'dish/sky' is '81/60'
+'task' is '43'
+'fruit' is '20'
+'north' is '53'
+'sound/draft/fish' is '77/35/79'
+'plant/dot' is '48/14'
+'power/mom' is '88/11'

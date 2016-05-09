@@ -14,19 +14,19 @@ def main(level_of_difficulty):
 	        try:
 	            offset = lst.index(element, offset+1)
 	        except ValueError:
-	            return result
+	        	return result
 	        result.append(offset)
 
 	def createDifficultylevel(level_of_difficulty):
 		if level_of_difficulty==1:
 			number_of_lines=4
-			number_of_words=random.randrange(7,10)
+			number_of_words=random.randrange(8,11)
 		elif level_of_difficulty==2:
-			number_of_lines=5
-			number_of_words=random.randrange(9,12)
+			number_of_lines=4
+			number_of_words=random.randrange(11,13)
 		elif level_of_difficulty==3:
-			number_of_lines=6
-			number_of_words=random.randrange(11,14)
+			number_of_lines=5
+			number_of_words=random.randrange(13,16)
 		else:
 			pass
 		return number_of_lines,number_of_words
@@ -52,6 +52,8 @@ def main(level_of_difficulty):
 							if sets_source[k-1][0] not in sets_list[i]:
 								sets_list[i].append(sets_source[k-1].pop())
 								appended=True
+			for sublist in sets_list:
+				sublist.sort()
 			return sets_list
 		else:
 			return 0
@@ -63,7 +65,7 @@ def main(level_of_difficulty):
 		words_list=[]
 		while len(words_list)<len(left_list):
 			item_index=random.randrange(0,len(samplewords))
-			if len(str(samplewords[item_index]))<6:
+			if len(str(samplewords[item_index]))<6 and samplewords[item_index] not in words_list:
 				#print "Hola"
 				words_list.append(samplewords[item_index])
 		return words_list
@@ -71,13 +73,13 @@ def main(level_of_difficulty):
 	def createRightlist(right_list):
 		return list(np.random.choice([i for i in range(10,100)],len(right_list),replace=False))
 
-	def createLineslist(items_list,list,number_of_lines):
+	def createLineslist(items_list,alist,number_of_lines):
 		lines_list=[]
 		for i in range(number_of_lines):
 			lines_list.append([])
-		for i in range(len(list)):
-			for j in range(len(list[i])):
-				lines_list[list[i][j]-1].append(items_list[i])
+		for i in range(len(alist)):
+			for j in range(len(alist[i])):
+				lines_list[alist[i][j]-1].append(items_list[i])
 		return lines_list
 
 	def outputList(left_list,right_list):
@@ -209,7 +211,7 @@ def main(level_of_difficulty):
 					if len(right_output_list[i])==1:
 						count+=1
 				answerItem=count
-				options=shuffle([answerItem,answerItem+1,answerItem-1,answerItem+2,answerItem-2])
+				options=shuffle([answerItem,answerItem-3,answerItem-1,answerItem-4,answerItem-2])
 				questionlist.append("For how many distinct words can their respective codes be determined?")
 				options.append(str(options.index(answerItem)+1))
 				optionlist.append(options)
@@ -361,8 +363,7 @@ def main(level_of_difficulty):
 	left_lines_list=createLineslist(left_items_list,left_list,number_of_lines)
 	right_lines_list=createLineslist(right_items_list,right_list,number_of_lines)
 	left_output_list,right_output_list=outputList(left_list,right_list)
-
-
+	
 	list1=[]
 	list2=[]
 	text+='In a certain code language \n'
@@ -385,8 +386,6 @@ def main(level_of_difficulty):
 			right_output_items_list[i].append(right_items_list[right_output_list[i][j]])	
 			left_item.append(str(left_items_list[left_output_list[i][j]]))
 			right_item.append(str(right_items_list[right_output_list[i][j]]))
-
-
 		resultList.append([left_item,right_item])
 	
 	solutiontext='Common solution: \n\n'
@@ -403,7 +402,6 @@ def main(level_of_difficulty):
 						indexName=j
 						break
 		resultList2.append([left_list[i],itemName,resultList[indexName][1]])
-	
 
 	text1,text2,text3,text4='','','',''
 	for i in range(len(resultList2)):
@@ -445,7 +443,7 @@ countFinal=input('Enter number of sets to be written : ')
 sets_count=0
 while sets_count<countFinal:
 	try:
-		level_of_difficulty=random.randrange(1,3)
+		level_of_difficulty=random.randrange(1,4)
 		text=str('\nSet {}\n\n').format(sets_count+1)+main(level_of_difficulty)
 		#print "Set {}".format(i+1)
 		criteria_met=True

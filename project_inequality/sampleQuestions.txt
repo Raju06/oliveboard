@@ -1493,3 +1493,118 @@ which is False as by decoding the expression we get that there is no direct rela
 O$R means O>=R
 which is False as by decoding the expression we get that there is no direct relation between expressions A<O,X>=Y>=R>=Q 
 
+
+Set 1
+
+Consider the following:
+'A$B' means 'A is neither smaller nor equal to B'
+'A%B' means 'A is neither greater nor equal to B'
+'A^B' means 'A is not smaller than B'
+'A@B' means 'A is neither smaller nor greater than B'
+'A&B' means 'A is not greater than B'
+Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. 
+
+1.Statement:
+C$G, G&B, O^C, B&K
+Conclusion:
+I. O$B
+II. K$G
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+Common solution is O>=C>G<=B<=K
+
+O$B means O>B
+which is False as there are opposite signs between them from decoded expression O>=C>G<=B 
+
+K$G means K>G
+which is False as there are opposite signs between them from decoded expression G<=B<=K 
+
+
+2.Statement:
+E^Z, Y^K, I$E, E@G
+Conclusion:
+I. E^K
+II. Z@Y
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+Common solution is I>E>=Z, G=E>=Z, Y>=K, I>E=G
+
+E^K means E>=K
+which is False as by decoding the expression we get that there is no direct relation between expressions I>E>=Z,Y>=K 
+
+Z@Y means Z=Y
+which is False as by decoding the expression we get that there is no direct relation between expressions I>E>=Z,Y>=K 
+
+
+3.Statement:
+q^g, l^x, o@l, g%o
+Conclusion:
+I. g@l
+II. g%x
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+Common solution is q>=g<o, g<o=l>=x
+
+g@l means g=l
+which is False as there are opposite signs between them from decoded expression g<o=l 
+
+g%x means g<x
+which is False as there are opposite signs between them from decoded expression g<o=l>=x 
+
+
+4.Statement:
+S&W, R$M, R@S, Y^R
+Conclusion:
+I. W^R
+II. M^S
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 1
+Solution:
+Common solution is Y>=R=S<=W, M<R=S<=W, S=R>M, Y>=R>M
+
+W^R means W>=R
+which is True as by decoding the expression we get R=S<=W 
+
+M^S means M>=S
+which is False as there are opposite signs between them from decoded expression M<R=S 
+
+
+5.Statement:
+X%K, K$G, B&X, X%N
+Conclusion:
+I. B&N
+II. G&N
+(1) If only conclusion I is true.
+(2) If only conclusion II is true.
+(3) If either conclusion I or II is true.
+(4) If neither conclusion I or II is true.
+(5) If both conclusion I and II are true.
+Answer key: 4
+Solution:
+Common solution is B<=X<K>G, N>X<K>G, B<=X<N
+
+B&N means B<=N
+which is False as there are opposite signs between them from decoded expression B<=X<N 
+
+G&N means G<=N
+which is False as there are opposite signs between them from decoded expression N>X<K>G 
+

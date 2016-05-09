@@ -2,1002 +2,1213 @@
 Set 1
 
 In a certain code language 
-'suit mark carry bill north' is written as '19 83 80 91 89'
-'mark north force bill paint' is written as '83 89 42 71 91'
-'shirt gap paint eye kid' is written as '44 42 18 69 74'
-'shirt force suit carry' is written as '80 18 19 71'
-'shirt force suit kid gap' is written as '74 18 71 69 80'
+'kid exam arm food tea' is written as '68 70 57 58 38'
+'kid hotel food force block' is written as '85 17 57 70 82'
+'skill coat exam block force' is written as '72 85 66 82 68'
+'food tea focus issue' is written as '38 18 71 57'
+'skill issue wave focus' is written as '72 71 18 94'
 
-1.How can 'suit force glass' be coded?
-(1)89 80 19
-(2)42 89 18
-(3)80 71 38
-(4)71 74 69
+1.What is the code for 'force' ?
+(1)72
+(2)58
+(3)82
+(4)18
+(5)70
+Answer key:3
+
+2.Which word is coded as '72' ?
+(1)focus
+(2)skill
+(3)wave
+(4)coat
+(5)block
+Answer key:2
+
+3.For how many distinct words can their respective codes be determined?
+(1)5
+(2)8
+(3)6
+(4)9
+(5)7
+Answer key:4
+
+4.How can 'focus kid exam' be coded?
+(1)85 71 38
+(2)68 17 82
+(3)70 68 18
+(4)71 82 17
 (5)None of the above
 Answer key:3
 
-2.For how many distinct words can their respective codes be determined?
-(1)7
-(2)9
-(3)8
-(4)6
-(5)5
-Answer key:1
-
-3.How can 'suit north gap' be coded?
-(1)80 89 44
-(2)74 69 91
-(3)74 71 83
-(4)74 80 83
+5.Which of the following can be coded as '82 68 85' ?
+(1)arm exam focus
+(2)force exam block
+(3)skill block exam
+(4)food issue coat
 (5)None of the above
-Answer key:4
-
-4.What is the code for 'shirt' ?
-(1)18
-(2)19
-(3)69
-(4)80
-(5)89
-Answer key:1
-
-5.Which word is coded as '19' ?
-(1)gap
-(2)carry
-(3)bill
-(4)paint
-(5)force
 Answer key:2
 
 
 Common solution: 
 
-'suit mark carry bill north' is written as '19 83 80 91 89'---------------(1)
-'mark north force bill paint' is written as '83 89 42 71 91'---------------(2)
-'shirt gap paint eye kid' is written as '44 42 18 69 74'---------------(3)
-'shirt force suit carry' is written as '80 18 19 71'---------------(4)
-'shirt force suit kid gap' is written as '74 18 71 69 80'---------------(5)
+'kid exam arm food tea' is written as '68 70 57 58 38'---------------(1)
+'kid hotel food force block' is written as '85 17 57 70 82'---------------(2)
+'skill coat exam block force' is written as '72 85 66 82 68'---------------(3)
+'food tea focus issue' is written as '38 18 71 57'---------------(4)
+'skill issue wave focus' is written as '72 71 18 94'---------------(5)
 
-From 5,3,4: shirt is 18
-From 5,1,4: suit is 80
-From 2,5,4: force is 71
-From 5,3: gap is 74/69
-From 5,3: kid is 74/69
-From 2,1: north is 91/83
-From 1,4: carry is 19
-From 2,1: bill is 91/83
-From 1,2: mark is 89
-From 2,3: paint is 42
-From 3: By elimination, eye is 44
+From 1,2,4: food is 57
+From 2,3: block is 82/85
+From 1,2: kid is 70
+From 1,3: exam is 68
+From 2,3: force is 82/85
+From 3,5: skill is 72
+From 1,4: tea is 38
+From 4,5: issue is 71/18
+From 4,5: focus is 71/18
+From 3: By elimination, coat is 66
+From 5: By elimination, wave is 94
+From 1: By elimination, arm is 58
+From 2: By elimination, hotel is 17
 
 Summary:
-shirt is 18
-gap/kid is 74/69
-suit is 80
-force is 71
-north/bill is 91/83
-carry is 19
-mark is 89
-paint is 42
-eye is 44
+block/force is 82/85
+coat is 66
+kid is 70
+food is 57
+exam is 68
+wave is 94
+skill is 72
+arm is 58
+tea is 38
+hotel is 17
+issue/focus is 71/18
 
 Set 2
 
 In a certain code language 
-'tip form film' is written as '57 89 70'
-'child tip form basis' is written as '31 89 70 29'
-'ideal basis pause film' is written as '57 27 37 31'
-'poet tip power film' is written as '57 89 51 10'
+'door union dot steak catch' is written as '82 15 85 74 16'
+'actor task hall steak item' is written as '74 63 19 53 68'
+'task frame ad dad son' is written as '13 44 32 12 19'
+'actor list catch style' is written as '68 15 83 49'
+'item catch frame list union' is written as '63 82 32 49 15'
 
-1.What is the code for 'child' ?
-(1)27
-(2)31
-(3)89
-(4)29
-(5)57
+1.How can 'catch item grade' be coded?
+(1)82 53 85
+(2)15 63 80
+(3)85 13 68
+(4)13 82 63
+(5)None of the above
+Answer key:2
+
+2.Which word is coded as '32' ?
+(1)list
+(2)dot
+(3)door
+(4)frame
+(5)hall
 Answer key:4
 
-2.How can 'basis poet money' be coded?
-(1)31 10 59
-(2)37 57 29
-(3)89 70 27
-(4)70 29 89
-(5)None of the above
+3.For how many distinct words can their respective codes be determined?
+(1)9
+(2)7
+(3)10
+(4)8
+(5)6
+Answer key:3
+
+4.What is the code for 'steak' ?
+(1)74
+(2)68
+(3)53
+(4)63
+(5)49
 Answer key:1
 
-3.Which of the following can be coded as '89 10 27' ?
-(1)poet pause tip
-(2)power film pause
-(3)poet child film
-(4)pause power child
+5.How can 'style frame' be coded?
+(1)44 15
+(2)83 32
+(3)68 85
+(4)85 68
 (5)None of the above
-Answer key:1
-
-4.How can 'child pause power' be coded?
-(1)29 37 10
-(2)70 51 57
-(3)57 89 37
-(4)29 27 70
-(5)None of the above
-Answer key:1
-
-5.Which word is coded as '89' ?
-(1)basis
-(2)pause
-(3)poet
-(4)film
-(5)tip
-Answer key:5
+Answer key:2
 
 
 Common solution: 
 
-'tip form film' is written as '57 89 70'---------------(1)
-'child tip form basis' is written as '31 89 70 29'---------------(2)
-'ideal basis pause film' is written as '57 27 37 31'---------------(3)
-'poet tip power film' is written as '57 89 51 10'---------------(4)
+'door union dot steak catch' is written as '82 15 85 74 16'---------------(1)
+'actor task hall steak item' is written as '74 63 19 53 68'---------------(2)
+'task frame ad dad son' is written as '13 44 32 12 19'---------------(3)
+'actor list catch style' is written as '68 15 83 49'---------------(4)
+'item catch frame list union' is written as '63 82 32 49 15'---------------(5)
 
-From 2,4,1: tip is 89
-From 4,1,3: film is 57
-From 2,1: form is 70
-From 3,2: basis is 31
-From 4: By elimination, poet is 10/51
-From 3: By elimination, pause is 27/37
-From 3: By elimination, ideal is 27/37
-From 2: By elimination, child is 29
-From 4: By elimination, power is 10/51
+From 1,4,5: catch is 15
+From 2,5: item is 63
+From 1,2: steak is 74
+From 1,5: union is 82
+From 3,5: frame is 32
+From 4,5: list is 49
+From 2,3: task is 19
+From 2,4: actor is 68
+From 2: By elimination, hall is 53
+From 3: By elimination, ad is 13/12/44
+From 3: By elimination, son is 13/12/44
+From 4: By elimination, style is 83
+From 1: By elimination, door is 85/16
+From 3: By elimination, dad is 13/12/44
+From 1: By elimination, dot is 85/16
 
 Summary:
-form is 70
-poet/power is 10/51
-basis is 31
-tip is 89
-pause/ideal is 27/37
-child is 29
-film is 57
+hall is 53
+item is 63
+ad/son/dad is 13/12/44
+steak is 74
+union is 82
+style is 83
+door/dot is 85/16
+frame is 32
+list is 49
+task is 19
+actor is 68
+catch is 15
 
 Set 3
 
 In a certain code language 
-'mom gear tone hope study' is written as '66 34 43 84 69'
-'study task hope movie mom' is written as '50 17 69 84 34'
-'mom screw task' is written as '15 50 84'
-'movie bill task' is written as '50 17 96'
-'study tone hope gear mark' is written as '69 34 43 66 47'
+'chart dog town gold gate' is written as '36 93 59 62 21'
+'dish air chart dog guest' is written as '51 18 56 21 93'
+'plant gold cream dog' is written as '78 21 59 39'
+'line mood air chart gate' is written as '51 93 36 77 97'
+'plant coast guest price town' is written as '47 78 18 62 68'
 
-1.Which word is coded as '15' ?
-(1)mark
-(2)screw
-(3)mom
-(4)task
-(5)movie
-Answer key:2
+1.Which of the following can be coded as '56 78 39' ?
+(1)gold dish chart
+(2)guest line coast
+(3)cream dish plant
+(4)plant guest coast
+(5)None of the above
+Answer key:3
 
-2.How can 'gear mark sort' be coded?
-(1)17 66 50
-(2)17 43 66
-(3)50 34 15
-(4)43 47 29
+2.Which word is coded as '59' ?
+(1)air
+(2)line
+(3)dish
+(4)town
+(5)gold
+Answer key:5
+
+3.What is the code for 'chart' ?
+(1)62
+(2)51
+(3)93
+(4)78
+(5)39
+Answer key:3
+
+4.How can 'plant gold base' be coded?
+(1)21 62 59
+(2)36 39 51
+(3)47 68 51
+(4)78 59 87
 (5)None of the above
 Answer key:4
 
-3.For how many distinct words can their respective codes be determined?
-(1)10
-(2)8
-(3)12
-(4)11
-(5)9
-Answer key:1
-
-4.How can 'tone study screw' be coded?
-(1)96 84 47
-(2)69 15 66
-(3)34 96 15
-(4)34 66 43
+5.How can 'chart price cream' be coded?
+(1)56 97 59
+(2)56 78 97
+(3)97 59 78
+(4)39 68 93
 (5)None of the above
-Answer key:2
-
-5.Which of the following can be coded as '50 47' ?
-(1)bill gear
-(2)mark task
-(3)hope gear
-(4)mom task
-(5)None of the above
-Answer key:2
+Answer key:4
 
 
 Common solution: 
 
-'mom gear tone hope study' is written as '66 34 43 84 69'---------------(1)
-'study task hope movie mom' is written as '50 17 69 84 34'---------------(2)
-'mom screw task' is written as '15 50 84'---------------(3)
-'movie bill task' is written as '50 17 96'---------------(4)
-'study tone hope gear mark' is written as '69 34 43 66 47'---------------(5)
+'chart dog town gold gate' is written as '36 93 59 62 21'---------------(1)
+'dish air chart dog guest' is written as '51 18 56 21 93'---------------(2)
+'plant gold cream dog' is written as '78 21 59 39'---------------(3)
+'line mood air chart gate' is written as '51 93 36 77 97'---------------(4)
+'plant coast guest price town' is written as '47 78 18 62 68'---------------(5)
 
-From 5,2,1: hope is 34
-From 2,1,3: mom is 84
-From 2,5,1: study is 69
-From 2,4,3: task is 50
-From 1,5: tone is 66
-From 5,1: gear is 43
-From 4,2: movie is 17
-From 4: By elimination, bill is 96
-From 5: By elimination, mark is 47
-From 3: By elimination, screw is 15
+From 1,2,3: dog is 21
+From 1,2,4: chart is 93
+From 2,4: air is 51
+From 3,5: plant is 78
+From 1,5: town is 62
+From 1,4: gate is 36
+From 1,3: gold is 59
+From 2,5: guest is 18
+From 4: By elimination, line is 77/97
+From 2: By elimination, dish is 56
+From 5: By elimination, coast is 47/68
+From 4: By elimination, mood is 77/97
+From 5: By elimination, price is 47/68
+From 3: By elimination, cream is 39
 
 Summary:
-tone is 66
-bill is 96
-gear is 43
-hope is 34
-mark is 47
-mom is 84
-study is 69
-movie is 17
-task is 50
-screw is 15
+line/mood is 77/97
+air is 51
+plant is 78
+dish is 56
+town is 62
+dog is 21
+chart is 93
+gate is 36
+gold is 59
+guest is 18
+coast/price is 47/68
+cream is 39
 
 Set 4
 
 In a certain code language 
-'board belt tooth chart' is written as '68 10 78 72'
-'tooth eye chart belt' is written as '27 78 68 72'
-'belt soup tooth' is written as '72 78 12'
-'chart chest soup' is written as '37 12 68'
+'lock bonus force week cause' is written as '15 36 11 77 98'
+'horse piece world brush idea' is written as '83 89 75 20 18'
+'idea rate piece drop' is written as '75 16 74 18'
+'cause fire horse drop bus' is written as '74 34 89 15 67'
+'rate cause role drop force' is written as '98 16 74 32 15'
 
-1.How can 'chart belt' be coded?
-(1)72 10
-(2)72 12
-(3)78 68
-(4)78 10
-(5)None of the above
-Answer key:3
+1.What is the code for 'drop' ?
+(1)32
+(2)74
+(3)98
+(4)11
+(5)18
+Answer key:2
 
-2.Which word is coded as '72' ?
-(1)tooth
-(2)eye
-(3)chart
-(4)soup
-(5)belt
-Answer key:1
-
-3.What is the code for 'board' ?
-(1)10
-(2)78
-(3)68
-(4)72
-(5)12
-Answer key:1
-
-4.How can 'chest tooth rock' be coded?
-(1)72 12 68
-(2)10 37 72
-(3)27 68 72
-(4)37 72 71
+2.How can 'drop fire' be coded?
+(1)18 15
+(2)18 75
+(3)16 89
+(4)67 74
 (5)None of the above
 Answer key:4
 
-5.Which of the following can be coded as '12 68' ?
-(1)chart soup
-(2)belt eye
-(3)board soup
-(4)board eye
+3.How can 'bonus drop stage' be coded?
+(1)34 11 83
+(2)98 89 77
+(3)77 74 27
+(4)11 67 75
 (5)None of the above
-Answer key:1
+Answer key:3
+
+4.For how many distinct words can their respective codes be determined?
+(1)3
+(2)5
+(3)4
+(4)2
+(5)6
+Answer key:5
+
+5.Which word is coded as '36' ?
+(1)horse
+(2)piece
+(3)fire
+(4)drop
+(5)lock
+Answer key:5
 
 
 Common solution: 
 
-'board belt tooth chart' is written as '68 10 78 72'---------------(1)
-'tooth eye chart belt' is written as '27 78 68 72'---------------(2)
-'belt soup tooth' is written as '72 78 12'---------------(3)
-'chart chest soup' is written as '37 12 68'---------------(4)
+'lock bonus force week cause' is written as '15 36 11 77 98'---------------(1)
+'horse piece world brush idea' is written as '83 89 75 20 18'---------------(2)
+'idea rate piece drop' is written as '75 16 74 18'---------------(3)
+'cause fire horse drop bus' is written as '74 34 89 15 67'---------------(4)
+'rate cause role drop force' is written as '98 16 74 32 15'---------------(5)
 
-From 2,1,3: tooth is 72
-From 2,3,1: belt is 78
-From 2,1,4: chart is 68
-From 3,4: soup is 12
-From 2: By elimination, eye is 27
-From 1: By elimination, board is 10
-From 4: By elimination, chest is 37
+From 1,4,5: cause is 15
+From 3,4,5: drop is 74
+From 2,3: piece is 18/75
+From 2,3: idea is 18/75
+From 2,4: horse is 89
+From 1,5: force is 98
+From 3,5: rate is 16
+From 4: By elimination, fire is 67/34
+From 1: By elimination, lock is 77/11/36
+From 2: By elimination, world is 83/20
+From 2: By elimination, brush is 83/20
+From 1: By elimination, bonus is 77/11/36
+From 4: By elimination, bus is 67/34
+From 1: By elimination, week is 77/11/36
+From 5: By elimination, role is 32
 
 Summary:
-eye is 27
-tooth is 72
-board is 10
-chest is 37
-belt is 78
-chart is 68
-soup is 12
+piece/idea is 18/75
+fire/bus is 67/34
+lock/bonus/week is 77/11/36
+world/brush is 83/20
+horse is 89
+force is 98
+cause is 15
+rate is 16
+role is 32
+drop is 74
 
 Set 5
 
 In a certain code language 
-'girl half south' is written as '52 81 53'
-'plant south girl self' is written as '47 81 89 52'
-'girl south gap half' is written as '81 53 52 29'
-'plant half egg' is written as '65 53 47'
+'dad life wall gold' is written as '42 34 83 97'
+'bonus math disk match' is written as '78 98 72 37'
+'bonus lack gold ice' is written as '97 37 48 35'
+'ice lack disk' is written as '35 72 48'
 
-1.How can 'self half law' be coded?
-(1)89 53 94
-(2)65 29 81
-(3)47 53 65
-(4)29 53 52
-(5)None of the above
-Answer key:1
+1.Which word is coded as '83' ?
+(1)lack
+(2)math
+(3)match
+(4)disk
+(5)dad
+Answer key:5
 
-2.Which of the following can be coded as '52 65 89' ?
-(1)self girl egg
-(2)gap self egg
-(3)south plant gap
-(4)egg plant self
-(5)None of the above
-Answer key:1
-
-3.How can 'girl egg plant' be coded?
-(1)81 89 65
-(2)47 53 52
-(3)65 52 47
-(4)65 81 47
-(5)None of the above
+2.What is the code for 'bonus' ?
+(1)34
+(2)97
+(3)37
+(4)42
+(5)35
 Answer key:3
 
-4.Which word is coded as '53' ?
-(1)half
-(2)egg
-(3)self
-(4)plant
-(5)gap
+3.How can 'math ice guest' be coded?
+(1)78 48 73
+(2)83 97 48
+(3)42 83 48
+(4)83 48 34
+(5)None of the above
 Answer key:1
 
-5.For how many distinct words can their respective codes be determined?
-(1)8
-(2)5
-(3)7
-(4)6
-(5)9
-Answer key:3
+4.For how many distinct words can their respective codes be determined?
+(1)0
+(2)-1
+(3)1
+(4)2
+(5)3
+Answer key:5
+
+5.Which of the following can be coded as '78 72 35' ?
+(1)match ice disk
+(2)dad gold ice
+(3)dad disk bonus
+(4)math match disk
+(5)None of the above
+Answer key:1
 
 
 Common solution: 
 
-'girl half south' is written as '52 81 53'---------------(1)
-'plant south girl self' is written as '47 81 89 52'---------------(2)
-'girl south gap half' is written as '81 53 52 29'---------------(3)
-'plant half egg' is written as '65 53 47'---------------(4)
+'dad life wall gold' is written as '42 34 83 97'---------------(1)
+'bonus math disk match' is written as '78 98 72 37'---------------(2)
+'bonus lack gold ice' is written as '97 37 48 35'---------------(3)
+'ice lack disk' is written as '35 72 48'---------------(4)
 
-From 1,3,2: girl is 52
-From 3,1,4: half is 53
-From 2,3,1: south is 81
-From 2,4: plant is 47
-From 4: By elimination, egg is 65
-From 2: By elimination, self is 89
-From 3: By elimination, gap is 29
+From 1,3: gold is 97
+From 2,3: bonus is 37
+From 3,4: ice is 48/35
+From 3,4: lack is 48/35
+From 2,4: disk is 72
+From 1: By elimination, dad is 42/83/34
+From 2: By elimination, math is 78/98
+From 2: By elimination, match is 78/98
+From 1: By elimination, life is 42/83/34
+From 1: By elimination, wall is 42/83/34
 
 Summary:
-girl is 52
-half is 53
-egg is 65
-self is 89
-plant is 47
-south is 81
-gap is 29
+dad/life/wall is 42/83/34
+math/match is 78/98
+gold is 97
+bonus is 37
+ice/lack is 48/35
+disk is 72
 
 Set 6
 
 In a certain code language 
-'unit cup sea' is written as '31 51 34'
-'sea unit scene post' is written as '99 82 51 34'
-'space wife scene unit' is written as '49 99 51 81'
-'wife youth cup self' is written as '46 81 31 68'
-'wife self month youth' is written as '46 68 91 81'
+'log goal error gate' is written as '25 13 59 34'
+'key gate plan brain' is written as '69 13 91 35'
+'brain pin plan' is written as '69 35 31'
+'log key plan' is written as '69 25 91'
 
-1.For how many distinct words can their respective codes be determined?
-(1)8
-(2)10
-(3)6
-(4)7
-(5)9
-Answer key:1
-
-2.What is the code for 'unit' ?
-(1)68
-(2)49
-(3)31
-(4)91
-(5)51
+1.What is the code for 'pin' ?
+(1)25
+(2)91
+(3)13
+(4)34
+(5)31
 Answer key:5
 
-3.How can 'unit space' be coded?
-(1)49 51
-(2)82 31
-(3)49 82
-(4)31 49
-(5)None of the above
-Answer key:1
-
-4.How can 'unit scene birth' be coded?
-(1)82 68 46
-(2)34 99 82
-(3)51 99 22
-(4)51 82 46
-(5)None of the above
-Answer key:3
-
-5.Which word is coded as '82' ?
-(1)post
-(2)youth
-(3)sea
-(4)scene
-(5)unit
-Answer key:1
-
-
-Common solution: 
-
-'unit cup sea' is written as '31 51 34'---------------(1)
-'sea unit scene post' is written as '99 82 51 34'---------------(2)
-'space wife scene unit' is written as '49 99 51 81'---------------(3)
-'wife youth cup self' is written as '46 81 31 68'---------------(4)
-'wife self month youth' is written as '46 68 91 81'---------------(5)
-
-From 3,1,2: unit is 51
-From 4,3,5: wife is 81
-From 5,4: youth is 68/46
-From 2,1: sea is 34
-From 1,4: cup is 31
-From 3,2: scene is 99
-From 5,4: self is 68/46
-From 5: By elimination, month is 91
-From 2: By elimination, post is 82
-From 3: By elimination, space is 49
-
-Summary:
-youth/self is 68/46
-sea is 34
-cup is 31
-month is 91
-unit is 51
-post is 82
-scene is 99
-wife is 81
-space is 49
-
-Set 7
-
-In a certain code language 
-'unit dog belt' is written as '40 54 38'
-'belt food bath earth' is written as '83 54 92 85'
-'bath shirt hook' is written as '32 47 83'
-'sport light dream bath' is written as '83 75 94 62'
-'hook earth unit light shirt' is written as '47 32 92 75 40'
-
-1.How can 'sport dream' be coded?
-(1)32 75
-(2)40 38
-(3)54 32
-(4)94 62
-(5)None of the above
-Answer key:4
-
-2.Which word is coded as '38' ?
-(1)bath
-(2)sport
-(3)light
-(4)shirt
-(5)dog
-Answer key:5
-
-3.What is the code for 'belt' ?
-(1)47
-(2)75
-(3)38
-(4)92
-(5)54
-Answer key:5
-
-4.Which of the following can be coded as '94 75' ?
-(1)shirt light
-(2)dream light
-(3)sport hook
-(4)bath sport
-(5)None of the above
-Answer key:2
-
-5.How can 'hook shirt apple' be coded?
-(1)54 32 85
-(2)62 92 40
-(3)32 47 46
-(4)54 47 92
-(5)None of the above
-Answer key:3
-
-
-Common solution: 
-
-'unit dog belt' is written as '40 54 38'---------------(1)
-'belt food bath earth' is written as '83 54 92 85'---------------(2)
-'bath shirt hook' is written as '32 47 83'---------------(3)
-'sport light dream bath' is written as '83 75 94 62'---------------(4)
-'hook earth unit light shirt' is written as '47 32 92 75 40'---------------(5)
-
-From 3,2,4: bath is 83
-From 2,5: earth is 92
-From 5,3: shirt is 32/47
-From 4,5: light is 75
-From 1,5: unit is 40
-From 1,2: belt is 54
-From 5,3: hook is 32/47
-From 4: By elimination, dream is 62/94
-From 2: By elimination, food is 85
-From 4: By elimination, sport is 62/94
-From 1: By elimination, dog is 38
-
-Summary:
-earth is 92
-dream/sport is 62/94
-shirt/hook is 32/47
-food is 85
-bath is 83
-light is 75
-unit is 40
-belt is 54
-dog is 38
-
-Set 8
-
-In a certain code language 
-'north end end' is written as '56 90 50'
-'radio end duty fan' is written as '39 50 62 24'
-'duty pipe work end' is written as '56 24 52 21'
-'north pipe radio work' is written as '21 62 52 90'
-
-1.Which of the following can be coded as '56 21' ?
-(1)end work
-(2)end end
-(3)fan north
-(4)end north
-(5)None of the above
-Answer key:1
-
-2.For how many distinct words can their respective codes be determined?
-(1)8
-(2)5
-(3)6
-(4)4
-(5)7
-Answer key:3
-
-3.How can 'north fan' be coded?
-(1)39 90
-(2)56 52
-(3)50 56
-(4)52 24
-(5)None of the above
-Answer key:1
-
-4.How can 'work end story' be coded?
-(1)56 24 52
-(2)90 62 24
-(3)21 50 82
-(4)56 21 52
-(5)None of the above
-Answer key:3
-
-5.What is the code for 'pipe' ?
-(1)24
-(2)90
-(3)50
-(4)21
-(5)39
-Answer key:4
-
-
-Common solution: 
-
-'north end end' is written as '56 90 50'---------------(1)
-'radio end duty fan' is written as '39 50 62 24'---------------(2)
-'duty pipe work end' is written as '56 24 52 21'---------------(3)
-'north pipe radio work' is written as '21 62 52 90'---------------(4)
-
-From 1,2: end is 56
-From 1,4: north is 90
-From 3,2: duty is 24
-From 2,4: radio is 62
-From 4,3: pipe is 21/52
-From 4,3: work is 21/52
-From 3,1: end is 56
-From 2: By elimination, fan is 39
-
-Summary:
-end is 50
-north is 90
-duty is 24
-radio is 62
-pipe/work is 21/52
-fan is 39
-end is 56
-
-Set 9
-
-In a certain code language 
-'hand job scale' is written as '30 17 60'
-'wave job scale layer' is written as '60 24 30 98'
-'head mark net hand' is written as '22 77 53 17'
-'hand net layer head model' is written as '77 24 59 17 53'
-'wave head model' is written as '98 59 77'
-
-1.How can 'net hand sugar' be coded?
-(1)98 59 24
-(2)60 59 17
-(3)30 17 77
-(4)53 17 15
-(5)None of the above
-Answer key:4
-
-2.How can 'hand head job' be coded?
-(1)60 98 24
-(2)53 17 77
-(3)77 60 17
-(4)17 98 60
-(5)None of the above
-Answer key:3
-
-3.What is the code for 'net' ?
-(1)53
-(2)17
-(3)24
-(4)60
-(5)98
-Answer key:1
-
-4.For how many distinct words can their respective codes be determined?
-(1)10
-(2)7
-(3)8
-(4)9
-(5)11
-Answer key:4
-
-5.Which of the following can be coded as '24 17 53' ?
-(1)scale head net
-(2)scale mark wave
-(3)net layer hand
-(4)model mark net
-(5)None of the above
-Answer key:3
-
-
-Common solution: 
-
-'hand job scale' is written as '30 17 60'---------------(1)
-'wave job scale layer' is written as '60 24 30 98'---------------(2)
-'head mark net hand' is written as '22 77 53 17'---------------(3)
-'hand net layer head model' is written as '77 24 59 17 53'---------------(4)
-'wave head model' is written as '98 59 77'---------------(5)
-
-From 4,3,5: head is 77
-From 3,4,1: hand is 17
-From 5,2: wave is 98
-From 4,3: net is 53
-From 2,4: layer is 24
-From 2,1: job is 60
-From 5,4: model is 59
-From 1,2: scale is 30
-From 3: By elimination, mark is 22
-
-Summary:
-wave is 98
-net is 53
-mark is 22
-head is 77
-layer is 24
-hand is 17
-job is 60
-model is 59
-scale is 30
-
-Set 10
-
-In a certain code language 
-'state form pause while' is written as '66 74 91 49'
-'honey pause form soil' is written as '79 49 91 51'
-'state town south' is written as '11 66 27'
-'poem form while honey' is written as '49 36 74 51'
-
-1.What is the code for 'while' ?
-(1)79
-(2)66
-(3)74
-(4)51
-(5)36
-Answer key:3
-
-2.Which of the following can be coded as '36 27' ?
-(1)pause form
-(2)state pause
-(3)form honey
-(4)town poem
+2.Which of the following can be coded as '35 31 59' ?
+(1)log key pin
+(2)gate log pin
+(3)gate pin plan
+(4)pin brain goal
 (5)None of the above
 Answer key:4
 
 3.For how many distinct words can their respective codes be determined?
-(1)8
-(2)9
-(3)7
-(4)6
-(5)5
-Answer key:3
-
-4.How can 'state town curve' be coded?
-(1)66 27 94
-(2)51 74 36
-(3)79 91 11
-(4)66 51 36
-(5)None of the above
+(1)6
+(2)4
+(3)2
+(4)5
+(5)3
 Answer key:1
 
-5.How can 'south pause poem' be coded?
-(1)74 36 27
-(2)27 79 91
-(3)79 11 36
-(4)91 11 36
+4.Which word is coded as '31' ?
+(1)pin
+(2)error
+(3)goal
+(4)gate
+(5)brain
+Answer key:1
+
+5.How can 'plan brain mind' be coded?
+(1)69 35 11
+(2)69 34 13
+(3)59 69 34
+(4)69 13 31
 (5)None of the above
-Answer key:4
+Answer key:1
 
 
 Common solution: 
 
-'state form pause while' is written as '66 74 91 49'---------------(1)
-'honey pause form soil' is written as '79 49 91 51'---------------(2)
-'state town south' is written as '11 66 27'---------------(3)
-'poem form while honey' is written as '49 36 74 51'---------------(4)
+'log goal error gate' is written as '25 13 59 34'---------------(1)
+'key gate plan brain' is written as '69 13 91 35'---------------(2)
+'brain pin plan' is written as '69 35 31'---------------(3)
+'log key plan' is written as '69 25 91'---------------(4)
 
-From 1,4,2: form is 49
-From 4,1: while is 74
-From 4,2: honey is 51
-From 2,1: pause is 91
-From 1,3: state is 66
-From 4: By elimination, poem is 36
-From 2: By elimination, soil is 79
-From 3: By elimination, south is 27/11
-From 3: By elimination, town is 27/11
+From 2,3,4: plan is 69
+From 2,4: key is 91
+From 2,3: brain is 35
+From 1,2: gate is 13
+From 1,4: log is 25
+From 1: By elimination, goal is 34/59
+From 3: By elimination, pin is 31
+From 1: By elimination, error is 34/59
 
 Summary:
-while is 74
-honey is 51
-poem is 36
-form is 49
-pause is 91
-soil is 79
-south/town is 27/11
-state is 66
+key is 91
+plan is 69
+brain is 35
+goal/error is 34/59
+gate is 13
+pin is 31
+log is 25
+
+Set 7
+
+In a certain code language 
+'code week game board' is written as '19 37 78 67'
+'code towel radio game' is written as '39 67 37 56'
+'point west bowl' is written as '68 72 50'
+'east arm habit' is written as '32 52 71'
+
+1.What is the code for 'arm' ?
+(1)72
+(2)50
+(3)52
+(4)67
+(5)37
+Answer key:3
+
+2.Which word is coded as '71' ?
+(1)west
+(2)code
+(3)week
+(4)bowl
+(5)east
+Answer key:5
+
+3.How can 'radio west queen' be coded?
+(1)56 32 19
+(2)68 71 37
+(3)39 68 36
+(4)68 78 67
+(5)None of the above
+Answer key:3
+
+4.Which of the following can be coded as '32 19 67' ?
+(1)west bowl towel
+(2)towel week board
+(3)towel game code
+(4)game week arm
+(5)None of the above
+Answer key:4
+
+5.How can 'bowl week code' be coded?
+(1)67 78 32
+(2)19 72 56
+(3)50 19 67
+(4)56 68 50
+(5)None of the above
+Answer key:3
+
+
+Common solution: 
+
+'code week game board' is written as '19 37 78 67'---------------(1)
+'code towel radio game' is written as '39 67 37 56'---------------(2)
+'point west bowl' is written as '68 72 50'---------------(3)
+'east arm habit' is written as '32 52 71'---------------(4)
+
+From 1,2: game is 37/67
+From 1,2: code is 37/67
+From 1: By elimination, board is 78/19
+From 2: By elimination, radio is 39/56
+From 3: By elimination, point is 68/50/72
+From 3: By elimination, bowl is 68/50/72
+From 4: By elimination, arm is 52/32/71
+From 4: By elimination, east is 52/32/71
+From 1: By elimination, week is 78/19
+From 2: By elimination, towel is 39/56
+From 4: By elimination, habit is 52/32/71
+From 3: By elimination, west is 68/50/72
+
+Summary:
+board/week is 78/19
+game/code is 37/67
+radio/towel is 39/56
+point/bowl/west is 68/50/72
+arm/east/habit is 52/32/71
+
+Set 8
+
+In a certain code language 
+'desk bet basis' is written as '20 12 24'
+'judge bet skin' is written as '68 24 93'
+'face goal skin judge' is written as '89 93 94 68'
+'step skin list wood' is written as '81 77 68 62'
+
+1.How can 'bet goal space' be coded?
+(1)89 20 12
+(2)89 12 68
+(3)94 20 24
+(4)24 94 87
+(5)None of the above
+Answer key:4
+
+2.Which word is coded as '62' ?
+(1)wood
+(2)desk
+(3)skin
+(4)face
+(5)goal
+Answer key:1
+
+3.What is the code for 'judge' ?
+(1)93
+(2)12
+(3)68
+(4)89
+(5)62
+Answer key:1
+
+4.How can 'step goal list' be coded?
+(1)94 62 77
+(2)68 20 62
+(3)81 94 24
+(4)77 68 20
+(5)None of the above
+Answer key:1
+
+5.For how many distinct words can their respective codes be determined?
+(1)2
+(2)-1
+(3)1
+(4)0
+(5)3
+Answer key:5
+
+
+Common solution: 
+
+'desk bet basis' is written as '20 12 24'---------------(1)
+'judge bet skin' is written as '68 24 93'---------------(2)
+'face goal skin judge' is written as '89 93 94 68'---------------(3)
+'step skin list wood' is written as '81 77 68 62'---------------(4)
+
+From 2,3,4: skin is 68
+From 1,2: bet is 24
+From 2,3: judge is 93
+From 4: By elimination, wood is 77/81/62
+From 3: By elimination, face is 94/89
+From 1: By elimination, desk is 12/20
+From 4: By elimination, list is 77/81/62
+From 1: By elimination, basis is 12/20
+From 4: By elimination, step is 77/81/62
+From 3: By elimination, goal is 94/89
+
+Summary:
+wood/list/step is 77/81/62
+bet is 24
+face/goal is 94/89
+skin is 68
+desk/basis is 12/20
+judge is 93
+
+Set 9
+
+In a certain code language 
+'theme beer piano juice' is written as '37 71 87 21'
+'chain news tooth paper' is written as '88 42 30 66'
+'news aside theme pin' is written as '71 66 48 54'
+'piece juice mess' is written as '56 37 52'
+
+1.For how many distinct words can their respective codes be determined?
+(1)-1
+(2)1
+(3)0
+(4)2
+(5)3
+Answer key:5
+
+2.What is the code for 'news' ?
+(1)48
+(2)71
+(3)66
+(4)88
+(5)56
+Answer key:3
+
+3.Which word is coded as '21' ?
+(1)juice
+(2)paper
+(3)piece
+(4)tooth
+(5)piano
+Answer key:5
+
+4.Which of the following can be coded as '66 71 87' ?
+(1)pin news theme
+(2)beer news theme
+(3)aside mess chain
+(4)piece mess chain
+(5)None of the above
+Answer key:2
+
+5.How can 'mess juice news' be coded?
+(1)37 88 66
+(2)54 37 42
+(3)66 37 56
+(4)66 54 87
+(5)None of the above
+Answer key:3
+
+
+Common solution: 
+
+'theme beer piano juice' is written as '37 71 87 21'---------------(1)
+'chain news tooth paper' is written as '88 42 30 66'---------------(2)
+'news aside theme pin' is written as '71 66 48 54'---------------(3)
+'piece juice mess' is written as '56 37 52'---------------(4)
+
+From 1,4: juice is 37
+From 2,3: news is 66
+From 1,3: theme is 71
+From 3: By elimination, pin is 54/48
+From 4: By elimination, piece is 52/56
+From 2: By elimination, chain is 42/88/30
+From 1: By elimination, beer is 21/87
+From 3: By elimination, aside is 54/48
+From 1: By elimination, piano is 21/87
+From 2: By elimination, tooth is 42/88/30
+From 2: By elimination, paper is 42/88/30
+From 4: By elimination, mess is 52/56
+
+Summary:
+pin/aside is 54/48
+juice is 37
+news is 66
+theme is 71
+piece/mess is 52/56
+chain/tooth/paper is 42/88/30
+beer/piano is 21/87
+
+Set 10
+
+In a certain code language 
+'dish task sky fruit' is written as '81 60 43 20'
+'north sound draft fish' is written as '77 35 53 79'
+'fruit plant dot' is written as '48 20 14'
+'power task mom north' is written as '88 11 53 43'
+
+1.For how many distinct words can their respective codes be determined?
+(1)3
+(2)1
+(3)0
+(4)-1
+(5)2
+Answer key:1
+
+2.What is the code for 'fruit' ?
+(1)88
+(2)53
+(3)81
+(4)20
+(5)48
+Answer key:4
+
+3.Which word is coded as '20' ?
+(1)fruit
+(2)power
+(3)fish
+(4)mom
+(5)dot
+Answer key:1
+
+4.How can 'fish fruit wood' be coded?
+(1)77 79 35
+(2)77 20 23
+(3)79 77 43
+(4)88 48 77
+(5)None of the above
+Answer key:2
+
+5.How can 'power mom' be coded?
+(1)88 11
+(2)88 60
+(3)53 14
+(4)88 53
+(5)None of the above
+Answer key:1
+
+
+Common solution: 
+
+'dish task sky fruit' is written as '81 60 43 20'---------------(1)
+'north sound draft fish' is written as '77 35 53 79'---------------(2)
+'fruit plant dot' is written as '48 20 14'---------------(3)
+'power task mom north' is written as '88 11 53 43'---------------(4)
+
+From 2,4: north is 53
+From 1,4: task is 43
+From 1,3: fruit is 20
+From 2: By elimination, sound is 77/35/79
+From 4: By elimination, power is 88/11
+From 1: By elimination, sky is 60/81
+From 4: By elimination, mom is 88/11
+From 1: By elimination, dish is 60/81
+From 3: By elimination, plant is 14/48
+From 2: By elimination, fish is 77/35/79
+From 3: By elimination, dot is 14/48
+From 2: By elimination, draft is 77/35/79
+
+Summary:
+sound/fish/draft is 77/35/79
+power/mom is 88/11
+north is 53
+sky/dish is 60/81
+task is 43
+fruit is 20
+plant/dot is 14/48
 
 Set 11
 
 In a certain code language 
-'rain hotel tea' is written as '13 38 67'
-'owner rain scale' is written as '12 38 70'
-'guest owner layer scale' is written as '39 12 61 70'
-'fat rain guest' is written as '38 47 39'
+'scene way catch piano' is written as '38 98 17 47'
+'mail aside buyer' is written as '23 58 97'
+'share way goal piano' is written as '38 10 28 98'
+'share bath pound mail' is written as '94 28 23 71'
 
-1.How can 'tea guest joint' be coded?
-(1)13 39 37
-(2)47 61 67
-(3)61 13 70
-(4)67 13 12
+1.What is the code for 'buyer' ?
+(1)17
+(2)47
+(3)58
+(4)98
+(5)28
+Answer key:3
+
+2.How can 'mail pound apple' be coded?
+(1)10 94 23
+(2)97 23 94
+(3)23 71 36
+(4)94 58 97
+(5)None of the above
+Answer key:3
+
+3.How can 'mail aside' be coded?
+(1)97 23
+(2)98 10
+(3)23 98
+(4)98 28
 (5)None of the above
 Answer key:1
 
-2.Which of the following can be coded as '12 47 39' ?
-(1)rain owner hotel
-(2)guest fat scale
-(3)fat hotel tea
-(4)scale guest tea
-(5)None of the above
+4.Which word is coded as '98' ?
+(1)scene
+(2)way
+(3)share
+(4)buyer
+(5)goal
 Answer key:2
 
-3.How can 'layer rain tea' be coded?
-(1)12 39 70
-(2)12 61 70
-(3)47 67 38
-(4)38 67 61
+5.Which of the following can be coded as '23 94 28' ?
+(1)catch pound piano
+(2)scene goal aside
+(3)goal aside pound
+(4)bath mail share
 (5)None of the above
 Answer key:4
-
-4.For how many distinct words can their respective codes be determined?
-(1)4
-(2)5
-(3)7
-(4)6
-(5)8
-Answer key:4
-
-5.Which word is coded as '70' ?
-(1)guest
-(2)scale
-(3)owner
-(4)hotel
-(5)tea
-Answer key:3
 
 
 Common solution: 
 
-'rain hotel tea' is written as '13 38 67'---------------(1)
-'owner rain scale' is written as '12 38 70'---------------(2)
-'guest owner layer scale' is written as '39 12 61 70'---------------(3)
-'fat rain guest' is written as '38 47 39'---------------(4)
+'scene way catch piano' is written as '38 98 17 47'---------------(1)
+'mail aside buyer' is written as '23 58 97'---------------(2)
+'share way goal piano' is written as '38 10 28 98'---------------(3)
+'share bath pound mail' is written as '94 28 23 71'---------------(4)
 
-From 2,1,4: rain is 38
-From 3,2: owner is 70
-From 3,4: guest is 39
-From 2,3: scale is 12
-From 1: By elimination, tea is 13/67
-From 4: By elimination, fat is 47
-From 3: By elimination, layer is 61
-From 1: By elimination, hotel is 13/67
+From 1,3: piano is 98/38
+From 3,4: share is 28
+From 1,3: way is 98/38
+From 2,4: mail is 23
+From 4: By elimination, bath is 71/94
+From 2: By elimination, buyer is 97/58
+From 2: By elimination, aside is 97/58
+From 1: By elimination, scene is 47/17
+From 4: By elimination, pound is 71/94
+From 3: By elimination, goal is 10
+From 1: By elimination, catch is 47/17
 
 Summary:
-tea/hotel is 13/67
-fat is 47
-layer is 61
-rain is 38
-owner is 70
-guest is 39
-scale is 12
+bath/pound is 71/94
+buyer/aside is 97/58
+scene/catch is 47/17
+goal is 10
+piano/way is 98/38
+share is 28
+mail is 23
 
 Set 12
 
 In a certain code language 
-'poet movie court' is written as '95 85 50'
-'poet loss chart uncle' is written as '95 82 37 45'
-'uncle cup court' is written as '94 37 50'
-'poet loss cup ice' is written as '82 95 94 92'
+'sky bat pot lab city' is written as '32 93 84 56 94'
+'sky meat math' is written as '16 42 56'
+'pin meat angle pot city' is written as '32 69 42 93 33'
+'buyer drop bat space angle' is written as '94 69 26 78 36'
+'tree sky math lab angle' is written as '16 69 97 56 84'
 
-1.Which word is coded as '82' ?
-(1)loss
-(2)ice
-(3)movie
-(4)poet
-(5)cup
-Answer key:1
-
-2.How can 'ice chart mail' be coded?
-(1)94 95 92
-(2)92 45 99
-(3)82 50 37
-(4)37 94 82
+1.How can 'sky angle oil' be coded?
+(1)42 26 36
+(2)56 69 91
+(3)32 56 69
+(4)69 97 36
 (5)None of the above
 Answer key:2
 
-3.Which of the following can be coded as '50 82' ?
-(1)cup chart
-(2)court loss
-(3)court poet
-(4)court movie
-(5)None of the above
-Answer key:2
-
-4.For how many distinct words can their respective codes be determined?
-(1)7
-(2)9
+2.For how many distinct words can their respective codes be determined?
+(1)5
+(2)4
 (3)8
-(4)10
+(4)7
 (5)6
 Answer key:3
 
-5.How can 'loss cup ice' be coded?
-(1)92 94 82
-(2)95 37 45
-(3)92 50 95
-(4)85 95 37
+3.Which of the following can be coded as '42 26' ?
+(1)buyer meat
+(2)tree pot
+(3)buyer sky
+(4)math drop
 (5)None of the above
 Answer key:1
+
+4.Which word is coded as '16' ?
+(1)city
+(2)meat
+(3)math
+(4)bat
+(5)sky
+Answer key:3
+
+5.What is the code for 'city' ?
+(1)42
+(2)56
+(3)69
+(4)32
+(5)26
+Answer key:4
 
 
 Common solution: 
 
-'poet movie court' is written as '95 85 50'---------------(1)
-'poet loss chart uncle' is written as '95 82 37 45'---------------(2)
-'uncle cup court' is written as '94 37 50'---------------(3)
-'poet loss cup ice' is written as '82 95 94 92'---------------(4)
+'sky bat pot lab city' is written as '32 93 84 56 94'---------------(1)
+'sky meat math' is written as '16 42 56'---------------(2)
+'pin meat angle pot city' is written as '32 69 42 93 33'---------------(3)
+'buyer drop bat space angle' is written as '94 69 26 78 36'---------------(4)
+'tree sky math lab angle' is written as '16 69 97 56 84'---------------(5)
 
-From 4,2,1: poet is 95
-From 4,2: loss is 82
-From 3,2: uncle is 37
-From 3,1: court is 50
-From 3,4: cup is 94
-From 2: By elimination, chart is 45
-From 4: By elimination, ice is 92
-From 1: By elimination, movie is 85
+From 3,4,5: angle is 69
+From 1,2,5: sky is 56
+From 1,4: bat is 94
+From 1,3: city is 32/93
+From 2,3: meat is 42
+From 1,3: pot is 32/93
+From 1,5: lab is 84
+From 2,5: math is 16
+From 3: By elimination, pin is 33
+From 4: By elimination, space is 36/78/26
+From 4: By elimination, buyer is 36/78/26
+From 4: By elimination, drop is 36/78/26
+From 5: By elimination, tree is 97
 
 Summary:
-chart is 45
-ice is 92
-loss is 82
-uncle is 37
-court is 50
-movie is 85
-poet is 95
-cup is 94
+bat is 94
+city/pot is 32/93
+meat is 42
+pin is 33
+space/buyer/drop is 36/78/26
+angle is 69
+lab is 84
+tree is 97
+sky is 56
+math is 16
 
 Set 13
 
 In a certain code language 
-'shape lie way news' is written as '26 57 86 92'
-'cash queen meat lie' is written as '98 54 12 27'
-'shape news cash queen' is written as '86 12 54 57'
-'lie meat news study' is written as '53 98 57 27'
-'way lie grade study mom' is written as '98 63 92 34 53'
+'catch work bread mode cross' is written as '53 48 29 12 30'
+'bread queen story study' is written as '12 80 97 46'
+'catch trip ear sun mode' is written as '29 47 50 30 49'
+'mode arm queen gear bonus' is written as '36 46 30 34 14'
+'scale study cross catch bonus' is written as '14 29 42 80 48'
 
-1.How can 'mom news' be coded?
-(1)98 26
-(2)12 27
-(3)57 26
-(4)57 34
-(5)None of the above
-Answer key:4
-
-2.Which of the following can be coded as '34 86 92' ?
-(1)grade study news
-(2)way shape mom
-(3)study mom way
-(4)shape news way
-(5)None of the above
-Answer key:2
-
-3.How can 'news queen case' be coded?
-(1)57 12 71
-(2)86 34 63
-(3)54 27 53
-(4)63 54 98
+1.How can 'ear mode' be coded?
+(1)50 30
+(2)80 50
+(3)47 34
+(4)34 53
 (5)None of the above
 Answer key:1
 
-4.What is the code for 'queen' ?
-(1)34
-(2)12
-(3)57
-(4)86
-(5)63
-Answer key:2
+2.What is the code for 'ear' ?
+(1)29
+(2)48
+(3)36
+(4)47
+(5)97
+Answer key:4
 
-5.Which word is coded as '34' ?
-(1)study
-(2)mom
-(3)way
-(4)lie
-(5)shape
-Answer key:2
+3.For how many distinct words can their respective codes be determined?
+(1)9
+(2)6
+(3)10
+(4)8
+(5)7
+Answer key:3
+
+4.How can 'bonus arm bet' be coded?
+(1)14 47 49
+(2)47 97 34
+(3)14 34 58
+(4)80 49 30
+(5)None of the above
+Answer key:3
+
+5.Which of the following can be coded as '47 12 80' ?
+(1)work ear scale
+(2)story mode study
+(3)sun scale ear
+(4)study bread ear
+(5)None of the above
+Answer key:4
 
 
 Common solution: 
 
-'shape lie way news' is written as '26 57 86 92'---------------(1)
-'cash queen meat lie' is written as '98 54 12 27'---------------(2)
-'shape news cash queen' is written as '86 12 54 57'---------------(3)
-'lie meat news study' is written as '53 98 57 27'---------------(4)
-'way lie grade study mom' is written as '98 63 92 34 53'---------------(5)
+'catch work bread mode cross' is written as '53 48 29 12 30'---------------(1)
+'bread queen story study' is written as '12 80 97 46'---------------(2)
+'catch trip ear sun mode' is written as '29 47 50 30 49'---------------(3)
+'mode arm queen gear bonus' is written as '36 46 30 34 14'---------------(4)
+'scale study cross catch bonus' is written as '14 29 42 80 48'---------------(5)
 
-From 4,2,5: lie is 26
-From 4,3,1: news is 57
-From 1,5: way is 92
-From 4,5: study is 53
-From 2,4: meat is 27
-From 1,3: shape is 86
-From 3,2: cash is 12/54
-From 3,2: queen is 12/54
-From 5: By elimination, grade is 63/34
-From 5: By elimination, mom is 63/34
-From 1: By elimination, lie is 26
+From 1,3,5: catch is 29
+From 1,3,4: mode is 30
+From 4,5: bonus is 14
+From 1,2: bread is 12
+From 1,5: cross is 48
+From 2,5: study is 80
+From 2,4: queen is 46
+From 3: By elimination, trip is 50/47/49
+From 5: By elimination, scale is 42
+From 4: By elimination, gear is 34/36
+From 1: By elimination, work is 53
+From 4: By elimination, arm is 34/36
+From 3: By elimination, ear is 50/47/49
+From 2: By elimination, story is 97
+From 3: By elimination, sun is 50/47/49
 
 Summary:
-lie is 98
-way is 92
-grade/mom is 63/34
-study is 53
-meat is 27
-lie is 26
-shape is 86
-cash/queen is 12/54
-news is 57
+trip/ear/sun is 50/47/49
+bonus is 14
+scale is 42
+gear/arm is 34/36
+work is 53
+catch is 29
+bread is 12
+mode is 30
+cross is 48
+study is 80
+queen is 46
+story is 97
+
+Set 14
+
+In a certain code language 
+'tree bed trade stock order' is written as '42 90 83 68 86'
+'bed role hope mess tree' is written as '16 42 96 19 90'
+'stock debt cream bird' is written as '68 98 40 57'
+'mess end place trade sale' is written as '76 50 16 59 86'
+'bird end debt' is written as '57 40 59'
+
+1.Which word is coded as '76' ?
+(1)stock
+(2)mess
+(3)end
+(4)cream
+(5)sale
+Answer key:5
+
+2.Which of the following can be coded as '40 57' ?
+(1)trade sale
+(2)debt order
+(3)bird debt
+(4)tree bird
+(5)None of the above
+Answer key:3
+
+3.What is the code for 'trade' ?
+(1)42
+(2)76
+(3)50
+(4)96
+(5)86
+Answer key:5
+
+4.How can 'end cream role' be coded?
+(1)90 68 76
+(2)76 19 59
+(3)59 98 96
+(4)50 40 76
+(5)None of the above
+Answer key:3
+
+5.How can 'cream bed essay' be coded?
+(1)40 16 57
+(2)98 19 76
+(3)98 90 71
+(4)68 42 59
+(5)None of the above
+Answer key:3
+
+
+Common solution: 
+
+'tree bed trade stock order' is written as '42 90 83 68 86'---------------(1)
+'bed role hope mess tree' is written as '16 42 96 19 90'---------------(2)
+'stock debt cream bird' is written as '68 98 40 57'---------------(3)
+'mess end place trade sale' is written as '76 50 16 59 86'---------------(4)
+'bird end debt' is written as '57 40 59'---------------(5)
+
+From 1,3: stock is 68
+From 1,2: tree is 90/42
+From 2,4: mess is 16
+From 4,5: end is 59
+From 1,4: trade is 86
+From 3,5: debt is 40/57
+From 1,2: bed is 90/42
+From 3,5: bird is 40/57
+From 4: By elimination, place is 76/50
+From 3: By elimination, cream is 98
+From 2: By elimination, role is 19/96
+From 4: By elimination, sale is 76/50
+From 1: By elimination, order is 83
+From 2: By elimination, hope is 19/96
+
+Summary:
+stock is 68
+tree/bed is 90/42
+mess is 16
+end is 59
+trade is 86
+place/sale is 76/50
+cream is 98
+role/hope is 19/96
+order is 83
+debt/bird is 40/57
+
+Set 15
+
+In a certain code language 
+'video act music list' is written as '58 25 56 78'
+'act night click desk' is written as '10 25 85 81'
+'art glass steak' is written as '92 23 99'
+'shirt end night glass' is written as '49 23 95 85'
+
+1.What is the code for 'shirt' ?
+(1)10
+(2)56
+(3)92
+(4)95
+(5)25
+Answer key:4
+
+2.Which word is coded as '58' ?
+(1)desk
+(2)steak
+(3)video
+(4)night
+(5)shirt
+Answer key:3
+
+3.For how many distinct words can their respective codes be determined?
+(1)1
+(2)-1
+(3)2
+(4)3
+(5)0
+Answer key:4
+
+4.How can 'art music end' be coded?
+(1)95 56 85
+(2)23 92 81
+(3)78 95 92
+(4)25 58 56
+(5)None of the above
+Answer key:3
+
+5.How can 'glass act base' be coded?
+(1)56 92 23
+(2)81 49 85
+(3)56 78 58
+(4)23 25 43
+(5)None of the above
+Answer key:4
+
+
+Common solution: 
+
+'video act music list' is written as '58 25 56 78'---------------(1)
+'act night click desk' is written as '10 25 85 81'---------------(2)
+'art glass steak' is written as '92 23 99'---------------(3)
+'shirt end night glass' is written as '49 23 95 85'---------------(4)
+
+From 2,4: night is 85
+From 3,4: glass is 23
+From 1,2: act is 25
+From 4: By elimination, shirt is 49/95
+From 3: By elimination, steak is 92/99
+From 1: By elimination, video is 56/58/78
+From 4: By elimination, end is 49/95
+From 3: By elimination, art is 92/99
+From 1: By elimination, music is 56/58/78
+From 2: By elimination, click is 10/81
+From 1: By elimination, list is 56/58/78
+From 2: By elimination, desk is 10/81
+
+Summary:
+night is 85
+shirt/end is 49/95
+steak/art is 92/99
+video/music/list is 56/58/78
+glass is 23
+click/desk is 10/81
+act is 25
