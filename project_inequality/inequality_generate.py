@@ -90,7 +90,7 @@ def mainProgram():
 		symbolDictNotation={'is neither smaller nor greater than':symbolList[0],'is neither smaller nor equal to':symbolList[1],'is not smaller than':symbolList[2],'is neither greater nor equal to':symbolList[3],'is not greater than':symbolList[4]}
 		for key in symbolDictNotation.keys():
 			text+='\'A{}B\' means \'A {} B\'\n'.format(symbolDictNotation[key],key)
-		text+='Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are True. \n'
+		text+='Now in each of the following questions, assuming the given statements to be true, find which of the two conclusions given below them is/are true. \n'
 		return text
 
 	text=createRelations(text)
@@ -330,7 +330,7 @@ def mainProgram():
 					solution2Text='{} means {}\nwhich is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[1],correctedExp2,convertExp(solution2[0]),convertExp(solution2[1]))
 				else:
 					solution2Text='{} means {}\nwhich is False as we can see from the decoded expression {} '.format(questionList[1],correctedExp2,convertExp(solution2[0]))	
-			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\n(1) If only conclusion I is true.\n(2) If only conclusion II is true.\n(3) If either conclusion I or II is true.\n(4) If neither conclusion I or II is true.\n(5) If both conclusion I and II are true.\nAnswer key: {}\nSolution:\n{}\n{}\n\n{}\n\n'.format(i,', '.join(expression_list),questionList[0],questionList[1],key,CommonSolutionText,solution1Text,solution2Text)
+			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\n(1) If only conclusion I is true.\n(2) If only conclusion II is true.\n(3) If either conclusion I or II is true.\n(4) If neither conclusion I nor II is true.\n(5) If both the conclusions I and II are true.\nAnswer key: {}\nSolution:\n{}\n{}\n\n{}\n\n'.format(i,', '.join(expression_list),questionList[0],questionList[1],key,CommonSolutionText,solution1Text,solution2Text)
 			
 		else:
 			print "Avoiding infiniteLoop"
