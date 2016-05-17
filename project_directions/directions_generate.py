@@ -46,7 +46,6 @@ def createSolution(question,binaryPair,relationList):
 				questionChain=item[item.index(question[1]):item.index(question[0])+1][::-1]
 
 	start=0
-	print questionChain
 	while start<len(questionChain)-1:
 		if [questionChain[start],questionChain[start+1]] in binaryPair:
 			solutionChain.append(oppositeDirections[relationList[binaryPair.index([questionChain[start],questionChain[start+1]])]])
@@ -54,7 +53,6 @@ def createSolution(question,binaryPair,relationList):
 			solutionChain.append(relationList[binaryPair.index([questionChain[start+1],questionChain[start]])])
 		start+=1
 
-	print solutionChain
 	tempList=checkRelation([solutionChain[0],solutionChain[1]])
 	solutionList=tempList
 	start=2
@@ -105,6 +103,7 @@ def createExpression():
 
 binaryPair,relationList=createExpression()
 print binaryPair,relationList
-question=createQuestion(binaryPair)
-print question
-createSolution(question,binaryPair,relationList)
+for i in range(5):
+	question=createQuestion(binaryPair)
+	print question
+	createSolution(question,binaryPair,relationList)
