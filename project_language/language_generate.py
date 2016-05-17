@@ -450,23 +450,23 @@ def main(level_of_difficulty):
 countFinal=input('Enter number of sets to be written : ')
 sets_count=0
 while sets_count<countFinal:
-	#try:
-	level_of_difficulty=random.randrange(1,4)
-	text=str('\nSet {}\n\n').format(sets_count+1)+main(level_of_difficulty)
-	#print "Set {}".format(i+1)
-	criteria_met=True
-	for i in range(len(left_lines_list)):
-		if len(left_lines_list[i])<3:
-			criteria_met=False
-			break
-	if criteria_met:
-		global fn
-		fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
-		file = open(fn, "a")
-	 	file.write(text)
-	 	file.close()
-	 	sets_count+=1
-	#except:
-	#	print ('\n')+"Error in Set {}".format(sets_count+1)
-	#	pass
+	try:
+		level_of_difficulty=random.randrange(1,4)
+		text=str('\nSet {}\n\n').format(sets_count+1)+main(level_of_difficulty)
+		#print "Set {}".format(i+1)
+		criteria_met=True
+		for i in range(len(left_lines_list)):
+			if len(left_lines_list[i])<3:
+				criteria_met=False
+				break
+		if criteria_met:
+			global fn
+			fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
+			file = open(fn, "a")
+		 	file.write(text)
+		 	file.close()
+		 	sets_count+=1
+	except:
+		print ('\n')+"Error in Set {}".format(sets_count+1)
+		pass
 print 'Done. Output written to file : {} '.format(fn)

@@ -1,0 +1,323 @@
+
+Set 1
+
+In a certain code language 
+'gold style chip track towel' is written as 'st qw sv hu ry'
+'red car chip dust oven' is written as 'ew lq qv ry fq'
+'towel pair sand car red' is written as 'hu ty qt qv ew'
+'habit pizza sand mom' is written as 'dl np dh ty'
+'habit towel bunch mom chip' is written as 'hk np dl hu ry'
+
+1.For how many distinct words can their respective codes be determined?
+(1)3
+(2)4
+(3)5
+(4)2
+(5)6
+Answer key:5
+
+2.Which word is coded as 'hu' ?
+(1)habit
+(2)pizza
+(3)chip
+(4)gold
+(5)towel
+Answer key:5
+
+3.What is the code for 'track' ?
+(1)dh
+(2)qt
+(3)ry
+(4)sv
+(5)ew
+Answer key:4
+
+4.How can 'sand track red' be coded?
+(1)np hk st
+(2)qw ty ew
+(3)qv ty fq
+(4)ty hk st
+(5)None of the above
+Answer key:2
+
+5.Which of the following can be coded as 'qt qw' ?
+(1)pair style
+(2)track gold
+(3)gold towel
+(4)style pizza
+(5)None of the above
+Answer key:1
+
+
+Common solution: 
+
+'gold style chip track towel' is written as 'st qw sv hu ry'---------------(1)
+'red car chip dust oven' is written as 'ew lq qv ry fq'---------------(2)
+'towel pair sand car red' is written as 'hu ty qt qv ew'---------------(3)
+'habit pizza sand mom' is written as 'dl np dh ty'---------------(4)
+'habit towel bunch mom chip' is written as 'hk np dl hu ry'---------------(5)
+
+From 1,3,5: towel is hu
+From 1,2,5: chip is ry
+From 2,3: car is qv/ew
+From 3,4: sand is ty
+From 2,3: red is qv/ew
+From 4,5: habit is dl/np
+From 4,5: mom is dl/np
+From 1: By elimination, style is st/qw/sv
+From 5: By elimination, bunch is hk
+From 3: By elimination, pair is qt
+From 4: By elimination, pizza is dh
+From 1: By elimination, track is st/qw/sv
+From 2: By elimination, oven is lq/fq
+From 2: By elimination, dust is lq/fq
+From 1: By elimination, gold is st/qw/sv
+
+Summary:
+style/track/gold is st/qw/sv
+bunch is hk
+car/red is qv/ew
+sand is ty
+pair is qt
+pizza is dh
+towel is hu
+oven/dust is lq/fq
+chip is ry
+habit/mom is dl/np
+
+Set 2
+
+In a certain code language 
+'heat race dream blue' is written as '94 67 13 43'
+'foot view heat bat' is written as '50 67 38 40'
+'bat cash foot gift' is written as '78 40 50 89'
+'heat role race' is written as '59 67 13'
+
+1.What is the code for 'dream' ?
+(1)67
+(2)43
+(3)78
+(4)89
+(5)38
+Answer key:2
+
+2.For how many distinct words can their respective codes be determined?
+(1)2
+(2)1
+(3)3
+(4)0
+(5)4
+Answer key:5
+
+3.How can 'race heat west' be coded?
+(1)38 94 40
+(2)13 67 34
+(3)38 43 78
+(4)50 13 78
+(5)None of the above
+Answer key:2
+
+4.Which of the following can be coded as '43 67' ?
+(1)heat bat
+(2)dream heat
+(3)blue gift
+(4)foot bat
+(5)None of the above
+Answer key:2
+
+5.How can 'gift heat' be coded?
+(1)50 94
+(2)38 40
+(3)43 59
+(4)67 89
+(5)None of the above
+Answer key:4
+
+
+Common solution: 
+
+'heat race dream blue' is written as '94 67 13 43'---------------(1)
+'foot view heat bat' is written as '50 67 38 40'---------------(2)
+'bat cash foot gift' is written as '78 40 50 89'---------------(3)
+'heat role race' is written as '59 67 13'---------------(4)
+
+From 1,2,4: heat is 67
+From 2,3: bat is 40/50
+From 1,4: race is 13
+From 2,3: foot is 40/50
+From 1: By elimination, blue is 94/43
+From 3: By elimination, gift is 89/78
+From 4: By elimination, role is 59
+From 3: By elimination, cash is 89/78
+From 1: By elimination, dream is 94/43
+From 2: By elimination, view is 38
+
+Summary:
+blue/dream is 94/43
+gift/cash is 89/78
+bat/foot is 40/50
+role is 59
+heat is 67
+race is 13
+view is 38
+
+Set 3
+
+In a certain code language 
+'loan king steak' is written as '46 20 33'
+'tip house pie race' is written as '99 30 50 87'
+'boat job steak loan' is written as '89 42 20 46'
+'boat race data' is written as '29 87 89'
+
+1.How can 'steak job pie' be coded?
+(1)42 30 20
+(2)99 42 20
+(3)42 29 87
+(4)87 99 42
+(5)None of the above
+Answer key:1
+
+2.For how many distinct words can their respective codes be determined?
+(1)2
+(2)3
+(3)1
+(4)4
+(5)5
+Answer key:5
+
+3.Which word is coded as '50' ?
+(1)job
+(2)race
+(3)loan
+(4)pie
+(5)steak
+Answer key:4
+
+4.How can 'loan king storm' be coded?
+(1)89 87 29
+(2)50 29 20
+(3)46 33 71
+(4)89 87 46
+(5)None of the above
+Answer key:3
+
+5.Which of the following can be coded as '89 87 42' ?
+(1)data house job
+(2)job pie steak
+(3)house tip pie
+(4)job boat race
+(5)None of the above
+Answer key:4
+
+
+Common solution: 
+
+'loan king steak' is written as '46 20 33'---------------(1)
+'tip house pie race' is written as '99 30 50 87'---------------(2)
+'boat job steak loan' is written as '89 42 20 46'---------------(3)
+'boat race data' is written as '29 87 89'---------------(4)
+
+From 3,4: boat is 89
+From 1,3: loan is 46/20
+From 2,4: race is 87
+From 1,3: steak is 46/20
+From 2: By elimination, tip is 30/99/50
+From 2: By elimination, pie is 30/99/50
+From 2: By elimination, house is 30/99/50
+From 3: By elimination, job is 42
+From 1: By elimination, king is 33
+From 4: By elimination, data is 29
+
+Summary:
+tip/pie/house is 30/99/50
+boat is 89
+loan/steak is 46/20
+job is 42
+race is 87
+king is 33
+data is 29
+
+Set 4
+
+In a certain code language 
+'fun fee mail milk news' is written as 'gr dv ju qs mu'
+'milk fee craft apple' is written as 'uv fy mu qs'
+'study skill photo peace fun' is written as 'gr dt uw al qv'
+'food fun mail craft skill' is written as 'uv gr al ju hp'
+'skill box news mail queen' is written as 'al ju su dm dv'
+
+1.How can 'milk food plant' be coded?
+(1)mu hp 24
+(2)qs fy mu
+(3)dt ju fy
+(4)fy dm dv
+(5)None of the above
+Answer key:1
+
+2.For how many distinct words can their respective codes be determined?
+(1)6
+(2)3
+(3)4
+(4)7
+(5)5
+Answer key:4
+
+3.What is the code for 'food' ?
+(1)hp
+(2)dt
+(3)dv
+(4)qs
+(5)gr
+Answer key:1
+
+4.Which word is coded as 'uv' ?
+(1)craft
+(2)mail
+(3)peace
+(4)milk
+(5)box
+Answer key:1
+
+5.Which of the following can be coded as 'fy su' ?
+(1)fun apple
+(2)queen fun
+(3)fee milk
+(4)queen apple
+(5)None of the above
+Answer key:4
+
+
+Common solution: 
+
+'fun fee mail milk news' is written as 'gr dv ju qs mu'---------------(1)
+'milk fee craft apple' is written as 'uv fy mu qs'---------------(2)
+'study skill photo peace fun' is written as 'gr dt uw al qv'---------------(3)
+'food fun mail craft skill' is written as 'uv gr al ju hp'---------------(4)
+'skill box news mail queen' is written as 'al ju su dm dv'---------------(5)
+
+From 3,4,5: skill is al
+From 1,4,5: mail is ju
+From 1,3,4: fun is gr
+From 2,4: craft is uv
+From 1,2: milk is mu/qs
+From 1,2: fee is mu/qs
+From 1,5: news is dv
+From 5: By elimination, queen is su/dm
+From 3: By elimination, peace is qv/dt/uw
+From 5: By elimination, box is su/dm
+From 4: By elimination, food is hp
+From 3: By elimination, study is qv/dt/uw
+From 3: By elimination, photo is qv/dt/uw
+From 2: By elimination, apple is fy
+
+Summary:
+queen/box is su/dm
+peace/study/photo is qv/dt/uw
+craft is uv
+skill is al
+food is hp
+milk/fee is mu/qs
+mail is ju
+fun is gr
+news is dv
+apple is fy
