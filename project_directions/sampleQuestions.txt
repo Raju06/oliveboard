@@ -1,0 +1,302 @@
+In this question four statements are given followed by five options. Based on the statements given one of the options is definitely false. Identify that option and mark it as your answer.
+
+1.Statements:
+Q is to the South-East of N
+N is to the South-East of I
+I is to the North-East of Z
+Z is to the South-East of X
+
+(1)X is to the North-West of I
+(2)Z is to the East of Q
+(3)X is to the West of N
+(4)Q is to the South-East of I
+(5)X is to the North-West of I
+Answer key: 2
+Solution: 
+Option 1 being true is a possibility as 'X' can be either to the West or North-West or South-West of 'I'.
+Option 2 is definitely false as 'Z' is either to the West or North-West or South-West of 'Q'.
+Option 3 being true is a possibility as 'X' can be either to the North-West or West or South-West of 'N'.
+Option 4 is true as from the given relations we get 'Q' is to the South-East of 'I'.
+Option 5 being true is a possibility as 'X' can be either to the West or North-West or South-West of 'I'.
+
+
+2.Statements:
+q is to the West of u
+q is to the North-West of v
+p is to the West of q
+q is to the South-West of x
+
+(1)u is to the East of p
+(2)p is to the South-West of x
+(3)x is to the South-West of u
+(4)p is to the South of v
+(5)p is to the North-West of x
+Answer key: 4
+Solution: 
+Option 1 is true as from the given relations we get 'u' is to the East of 'p'.
+Option 2 is true as from the given relations we get 'p' is to the South-West of 'x'.
+Option 3 is true as from the given relations we get 'x' is to the South-West of 'u'.
+Option 4 is definitely false as 'p' is either to the North or North-West or North-East of 'v'.
+Option 5 is true as from the given relations we get 'p' is to the North-West of 'x'.
+
+
+3.Statements:
+j is to the North of x
+j is to the North-East of q
+y is to the North-East of j
+q is to the North-East of c
+
+(1)x is to the East of q
+(2)c is to the North-East of y
+(3)x is to the East of c
+(4)c is to the South-West of j
+(5)q is to the East of y
+Answer key: 2
+Solution: 
+Option 1 being true is a possibility as 'x' can be either to the East or North-East or South-East of 'q'.
+Option 2 is definitely false as 'c' is to the South-West of 'y'.
+Option 3 being true is a possibility as 'x' can be either to the East or North-East or South-East of 'c'.
+Option 4 is true as from the given relations we get 'c' is to the South-West of 'j'.
+Option 5 being true is a possibility as 'q' can be either to the East or North-East or South-East of 'y'.
+
+
+4.Statements:
+n is to the South-West of c
+n is to the South-East of t
+w is to the South-East of n
+c is to the South-East of r
+
+(1)c is to the North of w
+(2)t is to the North-West of c
+(3)c is to the North-East of w
+(4)r is to the North-East of w
+(5)c is to the North of w
+Answer key: 5
+Solution: 
+Option 1 being true is a possibility as 'c' can be either to the North or North-East or North-West of 'w'.
+Option 2 being true is a possibility as 't' can be either to the West or North-West or South-West of 'c'.
+Option 3 being true is a possibility as 'c' can be either to the North or North-East or North-West of 'w'.
+Option 4 being true is a possibility as 'r' can be either to the North-West or North or North-East of 'w'.
+Option 5 is definitely false as 'c' is either to the West or North-West or South-West of 'w'.
+
+
+5.Statements:
+1 is to the North-East of 4
+4 is to the South of 7
+4 is to the North-East of 8
+4 is to the East of 5
+
+(1)8 is to the South-East of 1
+(2)5 is to the South-West of 7
+(3)1 is to the South-West of 7
+(4)5 is to the South-East of 8
+(5)1 is to the South-West of 5
+Answer key: 1
+Solution: 
+Option 1 is definitely false as '8' is to the South-West of '1'.
+Option 2 is true as from the given relations we get '5' is to the South-West of '7'.
+Option 3 is true as from the given relations we get '1' is to the South-West of '7'.
+Option 4 being true is a possibility as '5' can be either to the East or North-East or South-East of '8'.
+Option 5 is true as from the given relations we get '1' is to the South-West of '5'.
+
+
+6.Statements:
+8 is to the South-East of 4
+8 is to the South-West of 3
+2 is to the North of 8
+8 is to the North-West of 1
+
+(1)3 is to the South-East of 4
+(2)3 is to the West of 4
+(3)2 is to the West of 3
+(4)2 is to the West of 3
+(5)2 is to the West of 4
+Answer key: 2
+Solution: 
+Option 1 being true is a possibility as '3' can be either to the East or North-East or South-East of '4'.
+Option 2 is definitely false as '3' is either to the East or North-East or South-East of '4'.
+Option 3 being true is a possibility as '2' can be either to the West or North-West or South-West of '3'.
+Option 4 being true is a possibility as '2' can be either to the West or North-West or South-West of '3'.
+Option 5 being true is a possibility as '2' can be either to the West or North-West or South-West of '4'.
+
+
+7.Statements:
+J is to the North of K
+J is to the North-West of C
+R is to the North-West of J
+K is to the East of O
+
+(1)O is to the North-West of C
+(2)C is to the South-East of K
+(3)R is to the East of K
+(4)O is to the South of R
+(5)O is to the North-West of C
+Answer key: 3
+Solution: 
+Option 1 being true is a possibility as 'O' can be either to the West or North-West or South-West of 'C'.
+Option 2 being true is a possibility as 'C' can be either to the East or North-East or South-East of 'K'.
+Option 3 is definitely false as 'R' is to the North-West of 'K'.
+Option 4 being true is a possibility as 'O' can be either to the South or South-East or South-West of 'R'.
+Option 5 being true is a possibility as 'O' can be either to the West or North-West or South-West of 'C'.
+
+
+8.Statements:
+4 is to the South-East of 3
+2 is to the West of 4
+2 is to the North-West of 8
+1 is to the West of 2
+
+(1)4 is to the North-West of 8
+(2)8 is to the South-East of 3
+(3)4 is to the East of 1
+(4)8 is to the North of 3
+(5)2 is to the South-West of 3
+Answer key: 4
+Solution: 
+Option 1 being true is a possibility as '4' can be either to the North or North-West or North-East of '8'.
+Option 2 being true is a possibility as '8' can be either to the South-East or South or South-West of '3'.
+Option 3 is true as from the given relations we get '4' is to the East of '1'.
+Option 4 is definitely false as '8' is to the East of '3'.
+Option 5 being true is a possibility as '2' can be either to the South-East or South or South-West of '3'.
+
+
+9.Statements:
+C is to the South-West of G
+G is to the South-West of O
+G is to the West of N
+G is to the South of H
+
+(1)O is to the North-East of C
+(2)N is to the North-East of C
+(3)O is to the North-East of N
+(4)C is to the South-East of H
+(5)O is to the North of N
+Answer key: 4
+Solution: 
+Option 1 is true as from the given relations we get 'O' is to the North-East of 'C'.
+Option 2 is true as from the given relations we get 'N' is to the North-East of 'C'.
+Option 3 being true is a possibility as 'O' can be either to the North or North-West or North-East of 'N'.
+Option 4 is definitely false as 'C' is to the South-West of 'H'.
+Option 5 being true is a possibility as 'O' can be either to the North or North-West or North-East of 'N'.
+
+
+10.Statements:
+z is to the North-East of x
+z is to the South of u
+z is to the South-East of d
+t is to the South-East of z
+
+(1)u is to the North-East of d
+(2)d is to the North-West of t
+(3)u is to the West of x
+(4)u is to the North-East of t
+(5)u is to the North-West of t
+Answer key: 3
+Solution: 
+Option 1 being true is a possibility as 'u' can be either to the East or North-East or South-East of 'd'.
+Option 2 is true as from the given relations we get 'd' is to the North-West of 't'.
+Option 3 is definitely false as 'u' is to the North-West of 'x'.
+Option 4 is true as from the given relations we get 'u' is to the North-East of 't'.
+Option 5 is true as from the given relations we get 'u' is to the North-West of 't'.
+
+
+11.Statements:
+w is to the South of v
+w is to the South-West of n
+n is to the South-West of k
+f is to the South of w
+
+(1)k is to the North-West of v
+(2)k is to the North-East of v
+(3)k is to the North-East of w
+(4)k is to the North-East of f
+(5)n is to the North-East of f
+Answer key: 1
+Solution: 
+Option 1 is definitely false as 'k' is either to the North-East or East or South-East of 'v'.
+Option 2 being true is a possibility as 'k' can be either to the North-East or East or South-East of 'v'.
+Option 3 is true as from the given relations we get 'k' is to the North-East of 'w'.
+Option 4 is true as from the given relations we get 'k' is to the North-East of 'f'.
+Option 5 is true as from the given relations we get 'n' is to the North-East of 'f'.
+
+
+12.Statements:
+u is to the South-East of l
+l is to the South-West of i
+c is to the South-West of u
+g is to the North-West of c
+
+(1)i is to the North-East of c
+(2)i is to the North of g
+(3)g is to the South-East of l
+(4)g is to the North-East of u
+(5)i is to the South-East of u
+Answer key: 4
+Solution: 
+Option 1 being true is a possibility as 'i' can be either to the North-East or North or North-West of 'c'.
+Option 2 being true is a possibility as 'i' can be either to the North-East or North or North-West or East or South-East of 'g'.
+Option 3 being true is a possibility as 'g' can be either to the West or North-West or South-West or South-East of 'l'.
+Option 4 is definitely false as 'g' is either to the West or North-West or South-West of 'u'.
+Option 5 being true is a possibility as 'i' can be either to the North-East or North or North-West or East or South-East of 'u'.
+
+
+13.Statements:
+p is to the East of s
+n is to the East of p
+p is to the South of h
+p is to the North of u
+
+(1)u is to the South of h
+(2)n is to the East of s
+(3)n is to the North-East of u
+(4)u is to the West of s
+(5)u is to the South-East of h
+Answer key: 4
+Solution: 
+Option 1 is true as from the given relations we get 'u' is to the South of 'h'.
+Option 2 is true as from the given relations we get 'n' is to the East of 's'.
+Option 3 is true as from the given relations we get 'n' is to the North-East of 'u'.
+Option 4 is definitely false as 'u' is to the East of 's'.
+Option 5 is true as from the given relations we get 'u' is to the South-East of 'h'.
+
+
+14.Statements:
+6 is to the North of 8
+8 is to the North of 2
+8 is to the West of 1
+8 is to the North-East of 4
+
+(1)2 is to the South of 6
+(2)1 is to the North-East of 4
+(3)6 is to the South of 1
+(4)4 is to the South-West of 6
+(5)1 is to the South of 2
+Answer key: 3
+Solution: 
+Option 1 is true as from the given relations we get '2' is to the South of '6'.
+Option 2 is true as from the given relations we get '1' is to the North-East of '4'.
+Option 3 is definitely false as '6' is to the North-West of '1'.
+Option 4 is true as from the given relations we get '4' is to the South-West of '6'.
+Option 5 is true as from the given relations we get '1' is to the South of '2'.
+
+
+15.Statements:
+2 is to the West of 6
+6 is to the South-East of 3
+5 is to the South-West of 2
+3 is to the South-West of 7
+
+(1)2 is to the South-East of 3
+(2)3 is to the West of 5
+(3)2 is to the North-West of 7
+(4)7 is to the South-West of 6
+(5)2 is to the North-West of 3
+Answer key: 2
+Solution: 
+Option 1 being true is a possibility as '2' can be either to the South or South-East or South-West of '3'.
+Option 2 is definitely false as '3' is either to the North or North-East or North-West of '5'.
+Option 3 being true is a possibility as '2' can be either to the North or North-East or North-West of '7'.
+Option 4 being true is a possibility as '7' can be either to the South-West or South or South-East of '6'.
+Option 5 being true is a possibility as '2' can be either to the North or North-East or North-West of '3'.
+
+
