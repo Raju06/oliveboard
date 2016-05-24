@@ -5,25 +5,33 @@ from itertools import combinations,permutations
 
 
 def createEquation():
-	integers=[x for x in range(-9,10)]
-	integers_without_zero=[x for x in integers if x!=0]
-	a=int(np.random.choice(integers_without_zero,1))
-	c=int(np.random.choice(integers_without_zero,1))
-	temp=random.randint(1,4)
-	if temp==1:
-		b=1
-		d=int(np.random.choice(integers_without_zero,1))
-	elif temp==2:
-		d=1
-		b=int(np.random.choice(integers_without_zero,1))
-	elif temp==3:
-		d=int(np.random.choice(integers_without_zero,1))
-		b=int(np.random.choice(integers_without_zero,1))
-	else:
-		b=1
-		d=1
-	coefficients=[b*d,-1*((a*d)+(b*c)),a*c]
+	def createCoefficients():
+		global a,b,c,d
+		integers=[x for x in range(-9,10)]
+		integers_without_zero=[x for x in integers if x!=0]
+		a=int(np.random.choice(integers_without_zero,1))
+		c=int(np.random.choice(integers_without_zero,1))
+		temp=random.randint(1,4)
+		if temp==1:
+			b=1
+			d=int(np.random.choice(integers_without_zero,1))
+		elif temp==2:
+			d=1
+			b=int(np.random.choice(integers_without_zero,1))
+		elif temp==3:
+			d=int(np.random.choice(integers_without_zero,1))
+			b=int(np.random.choice(integers_without_zero,1))
+		else:
+			b=1
+			d=1
+		return [b*d,-1*((a*d)+(b*c)),a*c]
+	coefficients=createCoefficients()
+	while coefficients[1]==0:
+		coefficients=createCoefficients()
 	divide=reduce(gcd,coefficients)
+	while divide not in [1,-1]:
+		coefficients=createCoefficients()
+		divide=reduce(gcd,coefficients)
 	coefficients=[x/divide for x in coefficients]
 	if coefficients[0]<0:
 		coefficients=[-1*x for x in coefficients]
@@ -64,8 +72,8 @@ def createSolution(coeffList,constant):
 	firstLine='%s%s%s%s%s%s=0'%(c1,constant,u"\u00B2",c2,constant,c3)
 
 	c1=b*d
-	c2=-1*(a*d)
-	c3=-1*(b*c)
+	c3=-1*(a*d)
+	c2=-1*(b*c)
 	c4=a*c
 	if c1<0:
 		c1*=-1
@@ -149,7 +157,11 @@ def createText(question):
 		eq1_c1=''
 	else:
 		eq1_c1=str(question[0][1][0])
-	if question[0][1][1]<0:
+	if question[0][1][1]==1:
+		eq1_c2='+'
+	elif question[0][1][1]==-1:
+		eq1_c2='-'
+	elif question[0][1][1]<0:
 		eq1_c2=str(question[0][1][1])
 	else:
 		eq1_c2='+'+str(question[0][1][1])
@@ -161,7 +173,11 @@ def createText(question):
 		eq2_c1=''
 	else:
 		eq2_c1=str(question[1][1][0])
-	if question[1][1][1]<0:
+	if question[1][1][1]==1:
+		eq2_c2='+'
+	elif question[1][1][1]==-1:
+		eq2_c2='-'
+	elif question[1][1][1]<0:
 		eq2_c2=str(question[1][1][1])
 	else:
 		eq2_c2='+'+str(question[1][1][1])
