@@ -96,41 +96,6 @@ def mainProgram():
 	text=createRelations(text)
 
 
-	def createExpression():
-		digitDict={'alphabets':['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-		,'numbers':['1','2','3','4','5','6','7','8','9'],'capitals':[x.upper() for x in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']]}
-		global q,inputSymbols
-		inputSymbols=list(np.random.choice(symbolList,4))
-		tempcreateExpression=random.choice([0,2])
-		levelType=random.randrange(1,3)
-		if tempcreateExpression == 0:
-			if levelType==1:
-				q=shuffle(digitDict['alphabets'])[:5]
-			else:
-				q=shuffle(digitDict['alphabets'])[:6]
-		elif tempcreateExpression==1:
-			if levelType==1:
-				q=shuffle(digitDict['numbers'])[:5]
-			else:
-				q=shuffle(digitDict['numbers'])[:6]
-		else:
-			if levelType==1:
-				q=shuffle(digitDict['capitals'])[:5]
-			else:
-				q=shuffle(digitDict['capitals'])[:6]
-		if levelType==1:
-			digitList=[[[q[0],q[1]],[q[1],q[2]],[q[2],q[3]],[q[3],q[4]]],[[q[0],q[1]],[q[1],q[2]],[q[2],q[3]],[q[1],q[4]]],[[q[0],q[1]],[q[1],q[2]],[q[1],q[3]],[q[1],q[4]]]]
-		else:
-			digitList=[[[q[0],q[1]],[q[2],q[3]],[q[3],q[4]],[q[4],q[5]]],[[q[0],q[1]],[q[2],q[3]],[q[3],q[4]],[q[3],q[5]]],[[q[0],q[1]],[q[1],q[2]],[q[3],q[4]],[q[3],q[5]]]]	
-		binaryPair=list(digitList[random.randrange(0,3)])
-		binaryPair=shuffle(binaryPair)
-		inputExpression=''
-		for i in range(len(binaryPair)):
-			inputExpression+=str(binaryPair[i][0]+inputSymbols[i]+binaryPair[i][1])+str(',')
-		
-		return inputExpression[:len(inputExpression)-1]
-
-
 	def checkValidity(exp):
 		resultList=[]
 		for i in range(len(finalList)):
@@ -159,6 +124,74 @@ def mainProgram():
 		if len(resultSymbolList)==0:
 			returnValue=False
 		return returnValue
+
+	def createExpression():
+		digitDict={'alphabets':['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+		,'numbers':['1','2','3','4','5','6','7','8','9'],'capitals':[x.upper() for x in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']]}
+		global q,inputSymbols
+		inputSymbols=list(np.random.choice(symbolList,4))
+		tempcreateExpression=random.choice([0,2])
+		levelType=random.randrange(1,3)
+		if tempcreateExpression == 0:
+			if levelType==1:
+				q=shuffle(digitDict['alphabets'])[:5]
+			else:
+				q=shuffle(digitDict['alphabets'])[:6]
+		elif tempcreateExpression==1:
+			if levelType==1:
+				q=shuffle(digitDict['numbers'])[:5]
+			else:
+				q=shuffle(digitDict['numbers'])[:6]
+		else:
+			if levelType==1:
+				q=shuffle(digitDict['capitals'])[:5]
+			else:
+				q=shuffle(digitDict['capitals'])[:6]
+		if levelType==1:
+			digitList=[[[q[0],q[1]],[q[1],q[2]],[q[2],q[3]],[q[3],q[4]]],[[q[0],q[1]],[q[1],q[2]],[q[2],q[3]],[q[1],q[4]]],[[q[0],q[1]],[q[1],q[2]],[q[1],q[3]],[q[1],q[4]]]]
+		else:
+			digitList=[[[q[0],q[1]],[q[2],q[3]],[q[3],q[4]],[q[4],q[5]]],[[q[0],q[1]],[q[2],q[3]],[q[3],q[4]],[q[3],q[5]]],[[q[0],q[1]],[q[1],q[2]],[q[3],q[4]],[q[3],q[5]]]]	
+		temprandom=random.randrange(0,3)
+		
+		global commonSolution
+		binaryPair=list(digitList[temprandom])
+		print binaryPair
+
+		if levelType==1:
+			if temprandom==0:
+				print 10
+				commonSolution=[[binaryPair[0][0],binaryPair[0][1],binaryPair[1][1],binaryPair[2][1],binaryPair[3][1]]]
+				print commonSolution
+			elif temprandom==1:
+				print 11
+				commonSolution=[[binaryPair[0][0],binaryPair[0][1],binaryPair[1][1],binaryPair[2][1]],[binaryPair[3][0],binaryPair[3][1]]]
+				print commonSolution
+			else:
+				print 12
+				commonSolution=[[binaryPair[0][0],binaryPair[0][1],binaryPair[1][1]],[binaryPair[2][1],binaryPair[2][0],binaryPair[3][1]]]
+				print commonSolution
+		else:
+			if temprandom==0:
+				print 20
+				commonSolution=[[binaryPair[0][0],binaryPair[0][1]],[binaryPair[1][0],binaryPair[1][1],binaryPair[2][1],binaryPair[3][1]]]
+				print commonSolution
+			elif temprandom==1:
+				print 21
+				commonSolution=[[binaryPair[0][0],binaryPair[0][1]],[binaryPair[1][0],binaryPair[1][1],binaryPair[2][1]],[binaryPair[3][0],binaryPair[3][1]]]
+				print commonSolution
+			else:
+				print 22
+				commonSolution=[[binaryPair[0][0],binaryPair[0][1],binaryPair[1][1]],[binaryPair[3][1],binaryPair[2][0],binaryPair[2][1]]]
+				print commonSolution
+		binaryPair=shuffle(binaryPair)
+		inputExpression=''
+		for i in range(len(binaryPair)):
+			inputExpression+=str(binaryPair[i][0]+inputSymbols[i]+binaryPair[i][1])+str(',')
+		
+		return inputExpression[:len(inputExpression)-1]
+
+
+	
 
 	def createSolution(question):
 		found=False
@@ -334,22 +367,31 @@ def mainProgram():
 			
 		else:
 			print "Avoiding infiniteLoop"
+
+	for item in commonSolution:
+		for i in range(len(item)-1):
+			for symbol in symbolList:
+				ans=checkValidity([item[i],symbol,item[i+1]])
+				if ans:
+					print convertExp(''.join([item[i],symbol,item[i+1]]))
+					break
+
 	return text
 
 
 countFinal=input('Enter number of sets to be written : ')
 sets_count=0
 while sets_count<countFinal:
-	try:
-		text=str('\nSet {}\n\n').format(sets_count+1)+mainProgram()
-		#print "Set {}".format(i+1)
-		global fn
-		fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
-		file = open(fn, "a")
-	 	file.write(text.encode('utf8'))
-	 	file.close()
-	 	sets_count+=1
-	except:
-		print ('\n')+"Error in Set {}".format(sets_count+1)
-		pass
+	#try:
+	text=str('\nSet {}\n\n').format(sets_count+1)+mainProgram()
+	#print "Set {}".format(i+1)
+	global fn
+	fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
+	file = open(fn, "a")
+ 	file.write(text.encode('utf8'))
+ 	file.close()
+ 	sets_count+=1
+	#except:
+	#	print ('\n')+"Error in Set {}".format(sets_count+1)
+	#	pass
 print 'Done. Output written to file : {} '.format(fn)
