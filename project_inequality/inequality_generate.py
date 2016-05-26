@@ -153,42 +153,40 @@ def mainProgram():
 			digitList=[[[q[0],q[1]],[q[2],q[3]],[q[3],q[4]],[q[4],q[5]]],[[q[0],q[1]],[q[2],q[3]],[q[3],q[4]],[q[3],q[5]]],[[q[0],q[1]],[q[1],q[2]],[q[3],q[4]],[q[3],q[5]]]]	
 		temprandom=random.randrange(0,3)
 		
-		global commonSolution
 		binaryPair=list(digitList[temprandom])
-		print binaryPair
 
 		if levelType==1:
 			if temprandom==0:
-				print 10
+				
 				commonSolution=[[binaryPair[0][0],binaryPair[0][1],binaryPair[1][1],binaryPair[2][1],binaryPair[3][1]]]
-				print commonSolution
+				
 			elif temprandom==1:
-				print 11
+				
 				commonSolution=[[binaryPair[0][0],binaryPair[0][1],binaryPair[1][1],binaryPair[2][1]],[binaryPair[3][0],binaryPair[3][1]]]
-				print commonSolution
+				
 			else:
-				print 12
+				
 				commonSolution=[[binaryPair[0][0],binaryPair[0][1],binaryPair[1][1]],[binaryPair[2][1],binaryPair[2][0],binaryPair[3][1]]]
-				print commonSolution
+				
 		else:
 			if temprandom==0:
-				print 20
+				
 				commonSolution=[[binaryPair[0][0],binaryPair[0][1]],[binaryPair[1][0],binaryPair[1][1],binaryPair[2][1],binaryPair[3][1]]]
-				print commonSolution
+				
 			elif temprandom==1:
-				print 21
+				
 				commonSolution=[[binaryPair[0][0],binaryPair[0][1]],[binaryPair[1][0],binaryPair[1][1],binaryPair[2][1]],[binaryPair[3][0],binaryPair[3][1]]]
-				print commonSolution
+				
 			else:
-				print 22
+				
 				commonSolution=[[binaryPair[0][0],binaryPair[0][1],binaryPair[1][1]],[binaryPair[3][1],binaryPair[2][0],binaryPair[2][1]]]
-				print commonSolution
+				
 		binaryPair=shuffle(binaryPair)
 		inputExpression=''
 		for i in range(len(binaryPair)):
 			inputExpression+=str(binaryPair[i][0]+inputSymbols[i]+binaryPair[i][1])+str(',')
 		
-		return inputExpression[:len(inputExpression)-1]
+		return inputExpression[:len(inputExpression)-1],commonSolution
 
 
 	
@@ -318,17 +316,34 @@ def mainProgram():
 	def subMain():
 		global finalList
 		global expression_list
-		expression_list=createExpression().split(',')
+		expression_list,commonSolution=createExpression()
+		expression_list=expression_list.split(',')
 		finalList= main(expression_list)
-		return expression_list,finalList
+		return expression_list,finalList,commonSolution
 
 
 	finalList_main=[]
 	expression_list_main=[]
 	i=0
 	while i<5:
-		expression_list,finalList=subMain()
+		expression_list,finalList,commonSolution=subMain()
 		questionList,answerList=createQuestionsList()
+		correctedExpFinalList=[]
+		convertedExp=''
+		for item in commonSolution:
+			finalExp=''
+			for m in range(len(item)-1):
+				for symbol in symbolList:
+					ans=checkValidity([item[m],symbol,item[m+1]])
+					if ans:
+						convertedExp=convertExp(''.join([item[m],symbol,item[m+1]]))
+						break
+				if m==0:
+					finalExp+=convertedExp
+				else:
+					finalExp+=convertedExp[1:]
+			correctedExpFinalList.append(finalExp)
+
 		if infiniteLoopCount<100:
 			finalList_main.append(finalList)
 			expression_list_main.append(expression_list)	
@@ -344,9 +359,7 @@ def mainProgram():
 			solution1=createSolution(questionList[0])
 			solution2=createSolution(questionList[1])
 			correctedExp1=convertExp(questionList[0])
-			correctedExpFinalList=[]
-			for item in finalList:
-				correctedExpFinalList.append(convertExp(item))
+			
 			CommonSolutionText='Common solution is %s\n'%(', '.join(correctedExpFinalList))
 			if answerList[0]==True:
 				solution1Text='{} means {}\nwhich is True as by decoding the expression we get {} '.format(questionList[0],correctedExp1,convertExp(solution1[0]))
@@ -364,17 +377,14 @@ def mainProgram():
 				else:
 					solution2Text='{} means {}\nwhich is False as by decoding the expression we get {} '.format(questionList[1],correctedExp2,convertExp(solution2[0]))	
 			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\n(1) If only conclusion I is true.\n(2) If only conclusion II is true.\n(3) If either conclusion I or II is true.\n(4) If neither conclusion I nor II is true.\n(5) If both the conclusions I and II are true.\nAnswer key: {}\nSolution:\n{}\n{}\n\n{}\n\n'.format(i,', '.join(expression_list),questionList[0],questionList[1],key,CommonSolutionText,solution1Text,solution2Text)
-			
+		
+
 		else:
 			print "Avoiding infiniteLoop"
+		
 
-	for item in commonSolution:
-		for i in range(len(item)-1):
-			for symbol in symbolList:
-				ans=checkValidity([item[i],symbol,item[i+1]])
-				if ans:
-					print convertExp(''.join([item[i],symbol,item[i+1]]))
-					break
+
+
 
 	return text
 
