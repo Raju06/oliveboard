@@ -286,7 +286,7 @@ def mainProgram():
 		questionList=[]
 		answerList=[]
 
-		while count<3:
+		while count<4:
 
 
 			answerListTemp=random.choice([True,False])
@@ -359,6 +359,7 @@ def mainProgram():
 			solution1=createSolution(questionList[0])
 			solution2=createSolution(questionList[1])
 			solution3=createSolution(questionList[2])
+			solution4=createSolution(questionList[3])
 			correctedExp1=convertExp(questionList[0])
 			
 			CommonSolutionText='Common solution is %s\n'%(', '.join(correctedExpFinalList))
@@ -369,6 +370,7 @@ def mainProgram():
 					solution1Text='{} means {}\nwhich is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[0],correctedExp1,convertExp(solution1[0]),convertExp(solution1[1]))
 				else:
 					solution1Text='{} means {}\nwhich is False as by decoding the expression we get {} '.format(questionList[0],correctedExp1,convertExp(solution1[0]))	
+			
 			correctedExp2=convertExp(questionList[1])
 			if answerList[1]==True:
 				solution2Text='{} means {}\nwhich is True as by decoding the expression we get {} '.format(questionList[1],correctedExp2,convertExp(solution2[0]))
@@ -377,6 +379,7 @@ def mainProgram():
 					solution2Text='{} means {}\nwhich is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[1],correctedExp2,convertExp(solution2[0]),convertExp(solution2[1]))
 				else:
 					solution2Text='{} means {}\nwhich is False as by decoding the expression we get {} '.format(questionList[1],correctedExp2,convertExp(solution2[0]))	
+			
 			correctedExp3=convertExp(questionList[2])
 			if answerList[2]==True:
 				solution3Text='{} means {}\nwhich is True as by decoding the expression we get {} '.format(questionList[2],correctedExp3,convertExp(solution3[0]))
@@ -384,8 +387,17 @@ def mainProgram():
 				if len(solution3)==2:
 					solution3Text='{} means {}\nwhich is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[2],correctedExp3,convertExp(solution3[0]),convertExp(solution3[1]))
 				else:
-					solution3Text='{} means {}\nwhich is False as by decoding the expression we get {} '.format(questionList[2],correctedExp3,convertExp(solution3[0]))			
-			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\nIII. {}\n(1) If only conclusion I is true.\n(2) If only conclusion II is true.\n(3) If either conclusion I or II is true.\n(4) If neither conclusion I nor II is true.\n(5) If both the conclusions I and II are true.\nAnswer key: {}\nSolution:\n{}\n{}\n\n{}\n\n{}\n\n'.format(i,', '.join(expression_list),questionList[0],questionList[1],questionList[2],key,CommonSolutionText,solution1Text,solution2Text,solution3Text)
+					solution3Text='{} means {}\nwhich is False as by decoding the expression we get {} '.format(questionList[2],correctedExp3,convertExp(solution3[0]))
+
+			correctedExp4=convertExp(questionList[3])
+			if answerList[3]==True:
+				solution4Text='{} means {}\nwhich is True as by decoding the expression we get {} '.format(questionList[3],correctedExp4,convertExp(solution4[0]))
+			else:
+				if len(solution4)==2:
+					solution4Text='{} means {}\nwhich is False as by decoding the expression we get that there is no direct relation between expressions {},{} '.format(questionList[3],correctedExp4,convertExp(solution4[0]),convertExp(solution4[1]))
+				else:
+					solution4Text='{} means {}\nwhich is False as by decoding the expression we get {} '.format(questionList[3],correctedExp4,convertExp(solution4[0]))			
+			text+='\n{}.Statement:\n{}\nConclusion:\nI. {}\nII. {}\nIII. {}\nIV. {}\n(1) If only conclusion I is true.\n(2) If only conclusion II is true.\n(3) If either conclusion I or II is true.\n(4) If neither conclusion I nor II is true.\n(5) If both the conclusions I and II are true.\nAnswer key: {}\nSolution:\n{}\n{}\n\n{}\n\n{}\n\n{}\n\n'.format(i,', '.join(expression_list),questionList[0],questionList[1],questionList[2],questionList[3],key,CommonSolutionText,solution1Text,solution2Text,solution3Text,solution4Text)
 		
 
 		else:
@@ -401,16 +413,16 @@ def mainProgram():
 countFinal=input('Enter number of sets to be written : ')
 sets_count=0
 while sets_count<countFinal:
-	#try:
-	text=str('\nSet {}\n\n').format(sets_count+1)+mainProgram()
-	#print "Set {}".format(i+1)
-	global fn
-	fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
-	file = open(fn, "a")
- 	file.write(text.encode('utf8'))
- 	file.close()
- 	sets_count+=1
-	#except:
-	#	print ('\n')+"Error in Set {}".format(sets_count+1)
-	#	pass
+	try:
+		text=str('\nSet {}\n\n').format(sets_count+1)+mainProgram()
+		#print "Set {}".format(i+1)
+		global fn
+		fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
+		file = open(fn, "a")
+	 	file.write(text.encode('utf8'))
+	 	file.close()
+	 	sets_count+=1
+	except:
+		print ('\n')+"Error in Set {}".format(sets_count+1)
+		pass
 print 'Done. Output written to file : {} '.format(fn)

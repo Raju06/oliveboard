@@ -59,7 +59,9 @@ def main(level_of_difficulty):
 			return 0
 		
 	def createLeftlist(left_list):
-		fh=open("C:\Users\Olive\Desktop\oliveboard\project_language\samplewords.txt", "r")
+		global fh
+		tempfh = os.path.join(os.path.dirname(__file__), 'samplewords.txt')
+		fh = open(tempfh, "r")
 		for line in fh:
 			samplewords=line.split()
 		words_list=[]
@@ -72,13 +74,22 @@ def main(level_of_difficulty):
 
 	def createRightlist(right_list):
 		letters=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-		tempList=list(itertools.combinations(letters,2))
-		lettersList=[]
-		for item in tempList:
-			lettersList.append(''.join(list(item)))
-		if random.choice([0,1,2])==0:
+		
+		tempChoice=int(np.random.choice([0,1,2],1,p=[0.1,0.6,0.3]))
+		
+		if tempChoice==0:
 			return list(np.random.choice([i for i in range(10,100)],len(right_list),replace=False))
+		elif tempChoice==1:
+			tempList=list(itertools.combinations(letters,2))
+			lettersList=[]
+			for item in tempList:
+				lettersList.append(''.join(list(item)))
+			return list(np.random.choice(lettersList,len(right_list),replace=False))
 		else:
+			tempList=list(itertools.combinations(letters,3))
+			lettersList=[]
+			for item in tempList:
+				lettersList.append(''.join(list(item)))
 			return list(np.random.choice(lettersList,len(right_list),replace=False))
 
 	def createLineslist(items_list,alist,number_of_lines):

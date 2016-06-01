@@ -401,16 +401,16 @@ def mainProgram():
 countFinal=input('Enter number of sets to be written : ')
 sets_count=0
 while sets_count<countFinal:
-	#try:
-	text=str('\nSet {}\n\n').format(sets_count+1)+mainProgram()
-	#print "Set {}".format(i+1)
-	global fn
-	fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
-	file = open(fn, "a")
- 	file.write(text.encode('utf8'))
- 	file.close()
- 	sets_count+=1
-	#except:
-	#	print ('\n')+"Error in Set {}".format(sets_count+1)
-	#	pass
+	try:
+		text=str('\nSet {}\n\n').format(sets_count+1)+mainProgram()
+		#print "Set {}".format(i+1)
+		global fn
+		fn = os.path.join(os.path.dirname(__file__), 'sampleQuestions.txt')
+		file = open(fn, "a")
+	 	file.write(text.encode('utf8'))
+	 	file.close()
+	 	sets_count+=1
+	except:
+		print ('\n')+"Error in Set {}".format(sets_count+1)
+		pass
 print 'Done. Output written to file : {} '.format(fn)

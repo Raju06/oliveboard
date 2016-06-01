@@ -1,7 +1,6 @@
 #defined functions
 from __future__ import division
-from pyparsing import (Literal,CaselessLiteral,Word,Combine,Group,Optional,
-                       ZeroOrMore,Forward,nums,alphas,oneOf)
+from pyparsing import (Literal,CaselessLiteral,Word,Combine,Group,Optional,ZeroOrMore,Forward,nums,alphas,oneOf)
 import operator
 import random
 import math,os
@@ -276,6 +275,9 @@ def mainFunction():
 		ind_set1=tuple(ind_set)
 		sets_list1=tuple(sets_list)
 		index_print=1
+		global fh
+		tempfh = os.path.join(os.path.dirname(__file__), 'samplewords.txt')
+		fh = open(tempfh, "r")		
 
 		while len(sets_list)!=0:
 			er=0
@@ -294,7 +296,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
+				
 				for line in fh:
 					samplewords=line.split()
 				alist = [ samplewords[i] for i in (random.sample(xrange(len(samplewords)), int(input_value[1])))]	
@@ -310,7 +312,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
+				
 				for line in fh:
 					samplewords=line.split()
 				alist = [ samplewords[i] for i in (random.sample(xrange(len(samplewords)), int(input_value[1])))]
@@ -332,7 +334,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
+				
 				samplewordsvowel=[]
 				for line in fh:
 					samplewords=line.split()
@@ -354,7 +356,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
+				
 				samplewordsconsonants=[]
 				for line in fh:
 					samplewords=line.split()
@@ -375,7 +377,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
+				
 				samplewordsvowel=[]
 				for line in fh:
 					samplewords=line.split()
@@ -413,7 +415,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
+				
 				samplewordsconsonant=[]
 				for line in fh:
 					samplewords=line.split()
@@ -451,7 +453,7 @@ def mainFunction():
 					input_value.append('0')
 					input_value.append(str(Subset_input[subsetValue]))
 					subsetValue+=2
-				fh=open("C:\Users\Olive\Desktop\oliveboard\project_Ipop\samplewords.txt", "r")
+				
 				for line in fh:
 					samplewords=line.split()
 				alist = [ samplewords[i] for i in (random.sample(xrange(len(samplewords)), int(input_value[1])))]

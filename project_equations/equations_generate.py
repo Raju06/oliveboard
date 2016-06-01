@@ -1,5 +1,5 @@
 import numpy as np
-import random,os
+import random,os,math
 from fractions import *
 from itertools import combinations,permutations
 
@@ -27,6 +27,8 @@ def createEquation():
 		return [b*d,-1*((a*d)+(b*c)),a*c]
 	coefficients=createCoefficients()
 	while coefficients[1]==0:
+		coefficients=createCoefficients()
+	while math.fabs(coefficients[0])>10 or math.fabs(coefficients[2])>40:
 		coefficients=createCoefficients()
 	divide=reduce(gcd,coefficients)
 	while divide not in [1,-1]:

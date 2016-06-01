@@ -1,0 +1,22 @@
+In this question four statements are given followed by five options. Based on the statements given one of the options is definitely false. Identify that option and mark it as your answer.
+
+1.Statements:
+b is to the South of u
+u is to the South-West of m
+m is to the South of v
+z is to the South-West of b
+
+(1)v is to the South-East of b
+(2)z is to the South-West of u
+(3)v is to the North-East of u
+(4)m is to the North-East of b
+(5)z is to the North-East of m
+Answer key: 1
+Solution: 
+Option 1 is definitely false as 'v' is to the North-East of 'b'.
+Option 2 is true as from the given relations we get 'z' is to the South-West of 'u'.
+Option 3 is true as from the given relations we get 'v' is to the North-East of 'u'.
+Option 4 is true as from the given relations we get 'm' is to the North-East of 'b'.
+Option 5 is true as from the given relations we get 'z' is to the North-East of 'm'.
+
+
