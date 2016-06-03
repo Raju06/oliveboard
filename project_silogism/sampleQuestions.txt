@@ -1,0 +1,935 @@
+
+Set 1
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+Some world are mouth.
+All world are bone.
+No mouth is news.
+Conclusion:
+(I) Some bone being news is a possibility.
+(II) All world are news.
+(III) Some mouth being bone is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+Some head are child.
+All head are day.
+No child is table.
+Conclusion:
+(I) Some day being table is a possibility.
+(II) All head are table.
+(III) Some child being day is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+Some hook are stuff.
+All hook are golf.
+No stuff is pipe.
+Conclusion:
+(I) Some golf being pipe is a possibility.
+(II) All hook are pipe.
+(III) Some stuff being golf is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+Some basis are bad.
+All basis are week.
+No bad is suit.
+Conclusion:
+(I) Some week being suit is a possibility.
+(II) All basis are suit.
+(III) Some bad being week is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+Some thing are film.
+All thing are area.
+No film is hair.
+Conclusion:
+(I) Some area being hair is a possibility.
+(II) All thing are hair.
+(III) Some film being area is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 1
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+Some virus are sign.
+All virus are mall.
+No mall is exit.
+Conclusion:
+(I) No mall being sign is a possibility.
+(II) No sign being mall is a possibility.
+(III) All mall are sign.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+Some book are tool.
+All book are mud.
+No mud is door.
+Conclusion:
+(I) No mud being tool is a possibility.
+(II) No tool being mud is a possibility.
+(III) All mud are tool.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+Some song are east.
+All song are drama.
+No drama is sort.
+Conclusion:
+(I) No drama being east is a possibility.
+(II) No east being drama is a possibility.
+(III) All drama are east.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+Some girl are error.
+All girl are rock.
+No rock is error.
+Conclusion:
+(I) No rock being error is a possibility.
+(II) No error being rock is a possibility.
+(III) All rock are error.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+Some sky are child.
+All sky are stock.
+No stock is role.
+Conclusion:
+(I) No stock being child is a possibility.
+(II) No child being stock is a possibility.
+(III) All stock are child.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 2
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+Some lock are grade.
+All grade are owner.
+No lock is video.
+Conclusion:
+(I) All lock being owner is a possibility.
+(II) No owner being video is a possibility.
+(III) All grade are video.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+Some limit are metal.
+All metal are depth.
+No limit is steak.
+Conclusion:
+(I) All limit being depth is a possibility.
+(II) No depth being steak is a possibility.
+(III) All metal are steak.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+Some focus are brush.
+All brush are piano.
+No focus is poet.
+Conclusion:
+(I) All focus being piano is a possibility.
+(II) No piano being poet is a possibility.
+(III) All brush are poet.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+Some birth are topic.
+All topic are mom.
+No birth is meal.
+Conclusion:
+(I) All birth being mom is a possibility.
+(II) No mom being meal is a possibility.
+(III) All topic are meal.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+Some dust are ice.
+All ice are youth.
+No dust is land.
+Conclusion:
+(I) All dust being youth is a possibility.
+(II) No youth being land is a possibility.
+(III) All ice are land.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 3
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+No work is data.
+Some work are music.
+No music is item.
+Conclusion:
+(I) Some work being item is a possibility.
+(II) Some item are work.
+(III) Some data being item is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+No virus is room.
+Some virus are rock.
+No rock is store.
+Conclusion:
+(I) Some virus being store is a possibility.
+(II) Some store are virus.
+(III) Some room being store is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+No mud is blow.
+Some mud are bench.
+No bench is south.
+Conclusion:
+(I) Some mud being south is a possibility.
+(II) Some south are mud.
+(III) Some blow being south is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+No mood is map.
+Some mood are mail.
+No mail is hair.
+Conclusion:
+(I) Some mood being hair is a possibility.
+(II) Some hair are mood.
+(III) Some map being hair is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+No scale is milk.
+Some scale are bed.
+No bed is duty.
+Conclusion:
+(I) Some scale being duty is a possibility.
+(II) Some duty are scale.
+(III) Some milk being duty is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 4
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+No time is kind.
+No kind is mouth.
+Some time are heat.
+Conclusion:
+(I) All kind are heat.
+(II) No heat is mouth.
+(III) All mouth are time.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+No game is light.
+No light is pain.
+Some game are ice.
+Conclusion:
+(I) All light are ice.
+(II) No ice is pain.
+(III) All pain are game.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+No salad is food.
+No food is towel.
+Some salad are horse.
+Conclusion:
+(I) All food are horse.
+(II) No horse is towel.
+(III) All towel are salad.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+No block is page.
+No page is radio.
+Some block are pack.
+Conclusion:
+(I) All page are pack.
+(II) No pack is radio.
+(III) All radio are block.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+No peace is lie.
+No lie is foot.
+Some peace are heat.
+Conclusion:
+(I) All lie are heat.
+(II) No heat is foot.
+(III) All foot are peace.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 5
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+No eye is movie.
+All eye are path.
+All movie are image.
+Conclusion:
+(I) Some eye are image.
+(II) Some movie are path.
+(III) All image being eye is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+No fruit is match.
+All fruit are item.
+All match are idea.
+Conclusion:
+(I) Some fruit are idea.
+(II) Some match are item.
+(III) All idea being fruit is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+No news is side.
+All news are pipe.
+All side are user.
+Conclusion:
+(I) Some news are user.
+(II) Some side are pipe.
+(III) All user being news is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+No noise is fat.
+All noise are nose.
+All fat are staff.
+Conclusion:
+(I) Some noise are staff.
+(II) Some fat are nose.
+(III) All staff being noise is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+No gas is dad.
+All gas are law.
+All dad are paper.
+Conclusion:
+(I) Some gas are paper.
+(II) Some dad are law.
+(III) All paper being gas is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 6
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+All tip are home.
+Some home are site.
+No tip is stuff.
+Conclusion:
+(I) No home is stuff.
+(II) All stuff are site.
+(III) All stuff are home.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+All sugar are iron.
+Some iron are golf.
+No sugar is level.
+Conclusion:
+(I) No iron is level.
+(II) All level are golf.
+(III) All level are iron.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+All piece are art.
+Some art are wheel.
+No piece is bath.
+Conclusion:
+(I) No art is bath.
+(II) All bath are wheel.
+(III) All bath are art.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+All bus are chip.
+Some chip are body.
+No bus is level.
+Conclusion:
+(I) No chip is level.
+(II) All level are body.
+(III) All level are chip.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+All hair are north.
+Some north are life.
+No hair is gene.
+Conclusion:
+(I) No north is gene.
+(II) All gene are life.
+(III) All gene are north.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 7
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+Some gap are base.
+Some gap are map.
+All base are model.
+Conclusion:
+(I) All gap being model is a possibility.
+(II) No map is model.
+(III) Some base being map is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+Some age are pot.
+Some age are pair.
+All pot are base.
+Conclusion:
+(I) All age being base is a possibility.
+(II) No pair is base.
+(III) Some pot being pair is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+Some apple are block.
+Some apple are drama.
+All block are place.
+Conclusion:
+(I) All apple being place is a possibility.
+(II) No drama is place.
+(III) Some block being drama is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+Some entry are file.
+Some entry are line.
+All file are ice.
+Conclusion:
+(I) All entry being ice is a possibility.
+(II) No line is ice.
+(III) Some file being line is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+Some birth are mark.
+Some birth are sport.
+All mark are red.
+Conclusion:
+(I) All birth being red is a possibility.
+(II) No sport is red.
+(III) Some mark being sport is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 8
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+All bread are horse.
+Some bread are coach.
+All horse are month.
+Conclusion:
+(I) Some bread are month.
+(II) No horse is coach.
+(III) No month being coach is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+All oven are wing.
+Some oven are ice.
+All wing are house.
+Conclusion:
+(I) Some oven are house.
+(II) No wing is ice.
+(III) No house being ice is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+All bed are front.
+Some bed are space.
+All front are cake.
+Conclusion:
+(I) Some bed are cake.
+(II) No front is space.
+(III) No cake being space is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+All buyer are test.
+Some buyer are bill.
+All test are price.
+Conclusion:
+(I) Some buyer are price.
+(II) No test is bill.
+(III) No price being bill is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+All issue are chart.
+Some issue are dog.
+All chart are bath.
+Conclusion:
+(I) Some issue are bath.
+(II) No chart is dog.
+(III) No bath being dog is a possibility.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 9
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+Some gas are fun.
+All fun are buddy.
+All gas are money.
+Conclusion:
+(I) Some buddy are money.
+(II) No gas being buddy is a possibility.
+(III) Some money are buddy.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+Some home are cycle.
+All cycle are mom.
+All home are light.
+Conclusion:
+(I) Some mom are light.
+(II) No home being mom is a possibility.
+(III) Some light are mom.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+Some wing are aside.
+All aside are cap.
+All wing are curve.
+Conclusion:
+(I) Some cap are curve.
+(II) No wing being cap is a possibility.
+(III) Some curve are cap.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+Some golf are chest.
+All chest are luck.
+All golf are pipe.
+Conclusion:
+(I) Some luck are pipe.
+(II) No golf being luck is a possibility.
+(III) Some pipe are luck.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+Some click are river.
+All river are pipe.
+All click are chart.
+Conclusion:
+(I) Some pipe are chart.
+(II) No click being pipe is a possibility.
+(III) Some chart are pipe.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+
+Set 10
+
+In this question three or four statements are given that may differ from the commonly known facts. Each statement is followed by three conclusions. You have to give correct answer out of the five options given below:
+
+(1) Statement:
+Some death are draft.
+All death are price.
+All draft are order.
+Conclusion:
+(I) All death being order is a possibility.
+(II) All draft are price.
+(III) No order is death.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(2) Statement:
+Some draft are chart.
+All draft are band.
+All chart are law.
+Conclusion:
+(I) All draft being law is a possibility.
+(II) All chart are band.
+(III) No law is draft.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(3) Statement:
+Some east are table.
+All east are gear.
+All table are meat.
+Conclusion:
+(I) All east being meat is a possibility.
+(II) All table are gear.
+(III) No meat is east.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(4) Statement:
+Some day are block.
+All day are unit.
+All block are site.
+Conclusion:
+(I) All day being site is a possibility.
+(II) All block are unit.
+(III) No site is day.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+
+(5) Statement:
+Some town are year.
+All town are heart.
+All year are group.
+Conclusion:
+(I) All town being group is a possibility.
+(II) All year are heart.
+(III) No group is town.
+(1) If only conclusion I and II follows but conclusion III do not follow
+(2) If only conclusion II and III follows but conclusion I do not follow
+(3) If only conclusion I and III follows but conclusion II do not follow
+(4) If all conclusion follows
+(5) If none conclusion follows
+Answer key: 
+Solution:
+

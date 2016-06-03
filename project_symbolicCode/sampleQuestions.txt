@@ -1,0 +1,146 @@
+
+Set 1
+
+Consider the following data:
+A - @
+C - %
+B - &
+E - }
+6 - !
+O - <
+0 - *
+3 - {
+5 - ?
+4 - ^
+W - ~
+V - #
+9 - $
+
+Each element is denoted by a symbol as shown above. Further, consider the given conditions and answer accordingly.
+(1) If the first letter of the word is even and sixth letter is consonant, then the code for both the letters should be coded as '@'.
+(2) If the third letter of the word is odd and sixth letter is vowel, then the code for both the letters should be interchanged.
+(3) If the first letter of the word is consonant and sixth letter is vowel, then the code for sixth letter should be the code for first letter.
+
+
+1. 0B354V
+(1) @*<?^@
+(2) @^{~^@
+(3) @!{?^@
+(4) @&{?^@
+(5) None of these
+Answer key : 4
+Solution: By rule (1)
+
+
+2. 530EVA
+(1) ?{*}*{
+(2) ?{*}#@
+(3) <!*}#@
+(4) ?!*?#@
+(5) None of these
+Answer key : 2
+Solution: It follows no rule.
+
+
+
+3. W9EAVO
+(1) ~$}@#~
+(2) ~$}@#?
+(3) ~$~@#~
+(4) ~#}~#~
+(5) None of these
+Answer key : 1
+Solution: By rule (3)
+
+
+4. 9A36CE
+(1) $@*!%{
+(2) ?$}!%{
+(3) *@}!%#
+(4) $@}!%{
+(5) None of these
+Answer key : 4
+Solution: By rule (2)
+
+
+5. 5A9W0O
+(1) }@<~*$
+(2) ?@<~*$
+(3) ~@<~*}
+(4) ?@}~*$
+(5) None of these
+Answer key : 2
+Solution: By rule (2)
+
+Set 1
+
+Consider the following data:
+A - *
+H - $
+O - {
+1 - ?
+9 - #
+S - !
+2 - ^
+U - %
+4 - ~
+7 - &
+6 - >
+Y - <
+X - |
+
+Each element is denoted by a symbol as shown above. Further, consider the given conditions and answer accordingly.
+(1) If the first letter of the word is vowel and sixth letter is consonant, then the code for both the letters should be interchanged.
+(2) If the first letter of the word is consonant and third letter is even, then the code for third letter should be the code for first letter.
+(3) If the first letter of the word is consonant and sixth letter is vowel, then the code for first letter should be the code for sixth letter.
+
+
+1. UY7OSX
+(1) |<&{!%
+(2) #<&{!%
+(3) |%&{!%
+(4) |<&^!~
+(5) None of these
+Answer key : 1
+Solution: By rule (1)
+
+
+2. YA2619
+(1) !*<>$#
+(2) <<<~?#
+(3) <*&>?|
+(4) <*<>?#
+(5) None of these
+Answer key : 4
+Solution: By rule (2)
+
+
+3. 672SA4
+(1) >&{!^~
+(2) *&^**~
+(3) >~<!*~
+(4) >&^!*~
+(5) None of these
+Answer key : 4
+Solution: It follows no rule.
+
+
+
+4. HAS92O
+(1) %*!>^{
+(2) {*>#^>
+(3) {*!#^{
+(4) {^<#^{
+(5) None of these
+Answer key : 3
+Solution: By rule (3)
+
+
+5. XS2764
+(1) #>|&>~
+(2) |!|&>~
+(3) |<|&><
+(4) *{|&>~
+(5) None of these
+Answer key : 2
+Solution: By rule (2)
